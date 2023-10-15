@@ -22,7 +22,7 @@ public class BuildHouse extends GraphicsProgram {
 	private void drawWindow() {
 		GRect window = new GRect (HOUSE_HEIGHT / 9, HOUSE_WIDTH / 9);
 		double x5 = getWidth() / 2 - HOUSE_WIDTH / 2;
-		double y5 = getHeight() - HOUSE_HEIGHT / 2.4;
+		double y5 = getHeight() - HOUSE_HEIGHT / 2.6;
 		
 		
 		add(window, x5, y5);
