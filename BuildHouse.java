@@ -20,7 +20,8 @@ public class BuildHouse extends GraphicsProgram {
 	private void drawWall() {
 		GRect wall = new GRect (HOUSE_HEIGHT, HOUSE_WIDTH);
 		double x = (getWidth() / 2 - HOUSE_WIDTH / 2);
-		DOUBLE Y = getHeight() - HOUSE_HEIGHT;
+		double Y = getHeight() - HOUSE_HEIGHT;
+		
 		add(wall);
 	}
 }
