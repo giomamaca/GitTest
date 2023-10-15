@@ -3,7 +3,7 @@ import acm.program.*;
 
 public class BuildHouse extends GraphicsProgram {
 	
-	private static final double HOUSE_HEIGHT = 200;
+	private static final double HOUSE_HEIGHT = 100;
 	private static final double HOUSE_WIDTH = 200;
 	private static final double ROOF_HEIGHT = 60;
 	
@@ -13,12 +13,17 @@ public class BuildHouse extends GraphicsProgram {
 
 	private void drawHouse() {
     	drawWall();
-		drawRoof();
+		drawRoof1();
+		drawRoof2();
 //		drawDoor();
 //		drawWindow();
 	}
 
-	private void drawRoof() {
+	private void drawRoof2() {
+		double x3 = 
+	}
+
+	private void drawRoof1() {
 		double x1 = (getWidth() / 2 - HOUSE_WIDTH / 2);
 		double y1 = getHeight() - HOUSE_HEIGHT;
 		double x2 = x1 + HOUSE_HEIGHT / 2;
