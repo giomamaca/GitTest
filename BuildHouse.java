@@ -5,6 +5,7 @@ public class BuildHouse extends GraphicsProgram {
 	
 	private static final double HOUSE_HEIGHT = 200;
 	private static final double HOUSE_WIDTH = 200;
+	private static final double ROOF_HEIGHT = 60;
 	
 	public void run (){
 		drawHouse();
@@ -21,7 +22,7 @@ public class BuildHouse extends GraphicsProgram {
 		double x1 = (getWidth() / 2 - HOUSE_WIDTH / 2);
 		double y1 = getHeight() - HOUSE_HEIGHT;
 		double x2 = x1 + HOUSE_HEIGHT / 2;
-		double y2 = y1;
+		double y2 = y1 - ROOF_HEIGHT;
 		
 		GLine line = new GLine (x1, y1, x2, y2);
 		add(line);
