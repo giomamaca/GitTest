@@ -1,4 +1,4 @@
-import acm.program.*;
+import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class BuildHouse extends GraphicsProgram  {
