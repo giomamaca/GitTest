@@ -15,12 +15,25 @@ public class BuildHouse extends GraphicsProgram {
     	drawWall();
 		drawRoof1();
 		drawRoof2();
-//		drawDoor();
-//		drawWindow();
+		drawDoor();
+		drawWindow();
+	}
+
+	private void drawWindow() {
+		GRect window = new GRect (HOUSE_HEIGHT / 10, HOUSE_WIDTH / 10);
+		double x5 = getWidth() / 2.5 - HOUSE_WIDTH / 2.5;
+		double y5 = geHeight();
+		
+		
+		add(window, x5, y5);
+	}
+
+	private void drawDoor() {
+		
 	}
 
 	private void drawRoof2() {
-		double x3 = getWidth()/2 + HOUSE_WIDTH/2;
+		double x3 = getWidth() / 2 + HOUSE_WIDTH / 2;
 		double y3 = getHeight() - HOUSE_HEIGHT;
 		double x4 = x3 - HOUSE_HEIGHT / 2;
 		double y4 = y3 - ROOF_HEIGHT;
@@ -30,7 +43,7 @@ public class BuildHouse extends GraphicsProgram {
 	}
 
 	private void drawRoof1() {
-		double x1 = (getWidth() / 2 - HOUSE_WIDTH / 2);
+		double x1 = getWidth() / 2 - HOUSE_WIDTH / 2;
 		double y1 = getHeight() - HOUSE_HEIGHT;
 		double x2 = x1 + HOUSE_HEIGHT / 2;
 		double y2 = y1 - ROOF_HEIGHT;
