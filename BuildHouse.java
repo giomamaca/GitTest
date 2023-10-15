@@ -21,6 +21,11 @@ public class BuildHouse extends GraphicsProgram  {
 	private void drawRoof() {
 		double x1 = (int) (getHeight() / 2 - HOUSE_HEIGHT  / 2);
 		double y1 = getWidth() - HOUSE_WIDTH;
+		double x2 = x1 + HOUSE_HEIGHT / 2;
+		double y2 = y1;
+		
+		GLine line = new GLine (x1, y1, x2, y2);
+		add(line);
 	}
 
 	private void drawWall() {
