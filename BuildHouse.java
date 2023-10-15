@@ -20,7 +20,7 @@ public class BuildHouse extends GraphicsProgram {
 	}
 
 	private void drawRoof2() {
-		double x3 = 
+		
 	}
 
 	private void drawRoof1() {
