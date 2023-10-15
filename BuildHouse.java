@@ -32,6 +32,8 @@ public class BuildHouse extends GraphicsProgram {
 		GRect door = new Grect (HOUSE_HEIGHT / 2, HOUSE_WIDTH / 5);
 		double x6 = getWidth() / 1.9 - HOUSE_WIDTH / 2;
 		double y6 = getHeight() - HOUSE_HEIGHT / 1.5;
+		
+		add(door, x6, y6);
 	}
 
 	private void drawRoof2() {
