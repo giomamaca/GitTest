@@ -3,7 +3,7 @@ import acm.program.*;
 
 public class BuildHouse extends GraphicsProgram {
 	
-	private static final double HOUSE_HEIGHT = 100;
+	private static final double HOUSE_HEIGHT = 200;
 	private static final double HOUSE_WIDTH = 200;
 	private static final double ROOF_HEIGHT = 60;
 	
