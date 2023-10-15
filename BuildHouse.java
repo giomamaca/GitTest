@@ -22,6 +22,9 @@ public class BuildHouse extends GraphicsProgram {
 		double y1 = getHeight() - HOUSE_HEIGHT;
 		double x2 = x1 + HOUSE_HEIGHT / 2;
 		double y2 = y1;
+		
+		GLine line = new Gline (x1, y1, x2, y2);
+		add(line);
 	}
 
 	private void drawWall() {
