@@ -25,7 +25,7 @@ public class BuildHouse extends GraphicsProgram {
 		double x4 = x3 + HOUSE_HEIGHT / 2;
 		double y4 = y3 - ROOF_HEIGHT;
 		
-		GRect line2 = new GRect (x3, y3, x4, y4);
+		Gline line2 = new line (x3, y3, x4, y4);
 		add(line2);
 	}
 
