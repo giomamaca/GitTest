@@ -25,12 +25,21 @@ public class BuildHouse extends GraphicsProgram {
 		drawRoof2();
 		drawDoor();
 		drawHandle();
-		drawWindow();
+		drawWindow1();
+		drawWindow2();
 	}
 	
 	
 
-	private void drawWindow() {
+	private void drawWindow2() {
+		GRect window = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
+		double wx1 = getWidth() / 2 - 60;
+		double wy1 = getHeight() / 2 + HOUSE_WIDTH;
+		
+		add(window, wx1, wy1);
+	}
+
+	private void drawWindow1() {
 		GRect window = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
 		double wx1 = getWidth() / 2 - 60;
 		double wy1 = getHeight() / 2 + 20;
