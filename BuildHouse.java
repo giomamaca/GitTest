@@ -30,7 +30,7 @@ public class BuildHouse extends GraphicsProgram {
 
 	private void drawHandle() {
 		GOval handle = new GOval (HANDLE_WIDTH, HANDLE_HEIGHT);
-		double hx = getWidth() / 2 + 25;
+		double hx = getWidth() / 2 + 55;
 		double hy = getHeight() / 2 + HOUSE_WIDTH / 2 ;
 		
 		add(handle, hx, hy);
