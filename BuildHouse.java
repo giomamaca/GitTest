@@ -28,7 +28,7 @@ public class BuildHouse extends GraphicsProgram {
 		double y5 = getHeight() - HOUSE_HEIGHT / 1.5;
 		
 		window.setFilled(true);
-		window.setColor(yellow);
+		window.setColor(Color.yellow);
 		
 		add(window, x5, y5);
 	}
