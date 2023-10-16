@@ -12,6 +12,8 @@ public class BuildHouse extends GraphicsProgram {
 	private static final double DOOR_HEIGHT = 100;
 	private static final double HANDLE_WIDTH = 10;
 	private static final double HANDLE_HEIGHT = 10;
+	private static final double WINDOW_WIDTH = 70;
+	private static final double WINDOW_HEIGHT = 70;
 	
 	public void run (){
 		drawHouse();
@@ -23,10 +25,15 @@ public class BuildHouse extends GraphicsProgram {
 		drawRoof2();
 		drawDoor();
 		drawHandle();
-//		drawWindow();
+		drawWindow();
 	}
 	
 	
+
+	private void drawWindow() {
+		GRect window = new GRect (WINDOW_WIDTH, WINDOW_HEIGHT);
+		double w1 = getWidth() / 2 - 80;
+	}
 
 	private void drawHandle() {
 		GOval handle = new GOval (HANDLE_WIDTH, HANDLE_HEIGHT);
