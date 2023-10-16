@@ -33,6 +33,9 @@ public class BuildHouse extends GraphicsProgram {
 		double hx = getWidth() / 2 + 55;
 		double hy = getHeight() / 2 + HOUSE_WIDTH / 1.5 ;
 		
+		handle.setFilled(true);
+		handle.setColor(Color.gray);
+		
 		add(handle, hx, hy);
 	}
 
