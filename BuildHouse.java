@@ -30,7 +30,7 @@ public class BuildHouse extends GraphicsProgram {
 		double doorx2 = getWidth() / 2 - 100 + 2*HOUSE_HEIGHT / 3;
 		double doory2 = getHeight() / 2 + HOUSE_WIDTH;
 		
-		GRect door = new GRect (doorx1, doory1);
+		GRect door = new GRect (doorx1, doory1, doorx2, doory2);
 		add(door);
 	}
 
