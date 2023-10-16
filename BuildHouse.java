@@ -45,7 +45,7 @@ public class BuildHouse extends GraphicsProgram {
 		double doory = getHeight() / 2 + HOUSE_WIDTH / 2 ;
 		
 		door.setFilled(true);
-		door.setColor(Color.CYAN);
+		door.setColor(Color.RED);
 		
 		add(door, doorx, doory);
 	}
