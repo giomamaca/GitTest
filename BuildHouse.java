@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.*;
 
@@ -6,6 +8,7 @@ public class BuildHouse extends GraphicsProgram {
 	private static final double HOUSE_HEIGHT = 200;
 	private static final double HOUSE_WIDTH = 200;
 	private static final double ROOF_HEIGHT = 60;
+	private Color yellow;
 	
 	public void run (){
 		drawHouse();
@@ -24,6 +27,8 @@ public class BuildHouse extends GraphicsProgram {
 		double x5 = getWidth() / 1.9 - HOUSE_WIDTH / 2;
 		double y5 = getHeight() - HOUSE_HEIGHT / 1.5;
 		
+		window.setFilled(true);
+		window.setColor(yellow);
 		
 		add(window, x5, y5);
 	}
