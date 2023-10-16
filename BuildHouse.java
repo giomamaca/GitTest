@@ -9,7 +9,7 @@ public class BuildHouse extends GraphicsProgram {
 	private static final double HOUSE_WIDTH = 200;
 	private static final double ROOF_HEIGHT = 60;
 	private static final double DOOR_WIDTH = 80;
-	private static final double DOOR_HEIGHT = 40;
+	private static final double DOOR_HEIGHT = 100;
 	
 	public void run (){
 		drawHouse();
@@ -28,7 +28,7 @@ public class BuildHouse extends GraphicsProgram {
 	private void drawDoor() {
 		GRect door = new GRect (DOOR_WIDTH,DOOR_HEIGHT);
 		double doorx = getWidth() / 2 + 50;
-		double doory = getHeight() / 2;
+		double doory = getHeight() / 2 - ;
 		
 		add(door, doorx, doory);
 	}
