@@ -18,11 +18,19 @@ public class BuildHouse extends GraphicsProgram {
     	drawWall();
 		drawRoof1();
 		drawRoof2();
-//		drawDoor();
+		drawDoor();
 //		drawWindow();
 	}
 	
 	
+
+	private void drawDoor() {
+		double doorx1 = getWidth() / 2 - 100 + HOUSE_HEIGHT / 3;
+		double doory1 = getHeight() / 2 + HOUSE_WIDTH;
+		
+		GRect door = new GRect (doorx1, doory1);
+		add(door);
+	}
 
 	private void drawRoof2() {
 		double x3 = getWidth() / 2 - 100 + HOUSE_HEIGHT /2;
