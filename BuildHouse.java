@@ -27,11 +27,16 @@ public class BuildHouse extends GraphicsProgram {
 	private void drawRoof1() {
 		double x1 = getWidth() / 2 - 100;
 		double y1 = getHeight() / 2;
+		double x2 = getWidth() / 2 - 100 + HOUSE_HEIGHT /2;
+		double y2 = y1 - 60;
+		
+		 GLine line = new GLine (x1, y1 ,x2, y2);
+		 add(line);
 	}
 
 	private void drawWall() {
 		GRect wall = new GRect (HOUSE_HEIGHT, HOUSE_WIDTH);
-		double x = (getWidth() / 2 - 100);
+		double x = getWidth() / 2 - 100;
 		double y = getHeight() / 2;
 		
 		add(wall, x, y);
