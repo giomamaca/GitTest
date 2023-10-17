@@ -6,6 +6,6 @@ public class dausgdad extends ConsoleProgram {
 		int x = readInt("enter x");
 		int y = readInt ("enter y");
 		double average = (double) (x + y) / 2;
-		add(average);
+		print(average);
 	}
 }
