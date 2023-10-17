@@ -5,8 +5,7 @@ public class Practice16 extends ConsoleProgram{
 		println ("write numbers and get");
 		int a = readInt ("enter a = ");
 		int b = readInt ("enter b = ");
-		int c = readInt ("enteer c = ");
-		double harmonic = (double) (a * b * c )/ (a + b + c);
-		print(harmonic);
+		int c = readInt ("enteer c = ");;
+		println(1 / (1/a + 1/b  + 1/c));
 	}
 }
