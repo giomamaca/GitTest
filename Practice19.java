@@ -1,4 +1,9 @@
+package worlds;
 
-public class Practice19 {
+import acm.program.ConsoleProgram;
 
+public class Practice19 extends ConsoleProgram {
+	public void run(){
+		
+	}
 }
