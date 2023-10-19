@@ -6,10 +6,15 @@ public class Practice21 extends GraphicsProgram {
 	public void run(){
 		for(int i = 0; i < NUM_LINES; i++){
 			drawHorisont(i);
+			drawVertical(i);
 		}
 	}
+	private void drawVertical(int i) {
+		double y1 = i * (getWidth() / (NUM_LINES - 1));
+		double 
+	}
 	private void drawHorisont(int i) {
-		double y = i * (getHeight() / (NUM_LINES ));
+		double y = i * (getHeight() / (NUM_LINES - 1));
 		double x1 = 0;
 		double x2 = getWidth();
 		GLine line = new GLine (x1, y, x2, y);
