@@ -6,12 +6,8 @@ public class Practice21 extends GraphicsProgram {
 	public void run(){
 		for(int i = 0; i < NUM_LINES; i++){
 			drawHorisont(i);
-			drawVertical(i);
+//			drawVertical(i);
 		}
-	}
-	private void drawVertical(int i) {
-		double y1 = i * (getWidth() / (NUM_LINES - 1));
-		double 
 	}
 	private void drawHorisont(int i) {
 		double y = i * (getHeight() / (NUM_LINES - 1));
