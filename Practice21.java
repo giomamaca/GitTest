@@ -1,7 +1,7 @@
-import acm.program.ConsoleProgram;
+import acm.program.GraphicsProgram;
 import acm.program.*;
 
-public class Practice21 extends ConsoleProgram {
+public class Practice21 extends GraphicsProgram {
 	private static final int NUM_LINES = 11;
 	public void run(){
 		for(int i = 0; i < NUM_LINES; i++){
