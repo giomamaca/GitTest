@@ -9,7 +9,7 @@ public class Practice21 extends GraphicsProgram {
 		}
 	}
 	private void drawHorisont(int i) {
-		double y = i * (getHeight() / (NUM_LINES - 1));
+		double y = i * (getHeight() / (NUM_LINES ));
 		double x1 = 0;
 		double x2 = getWidth();
 		GLine line = new GLine (x1, y, x2, y);
