@@ -14,7 +14,9 @@ public class Practice22 extends GraphicsProgram {
 			}
 		}
 	}
-	private void drawSquare() {
-		
+	private void drawSquare(double x, double y, double lenght, boolean isFilled) {
+		GRect square = new GRect(lenght, lenght);
+		square.setFilled(isFilled);
+		add(square, x, y);
 	}
 }
