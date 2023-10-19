@@ -1,5 +1,5 @@
+import acm.graphics.*;
 import acm.program.GraphicsProgram;
-import acm.program.*;
 
 public class Practice21 extends GraphicsProgram {
 	private static final int NUM_LINES = 11;
@@ -12,6 +12,6 @@ public class Practice21 extends GraphicsProgram {
 		double y = i * (getHeight() / (NUM_LINES - 1));
 		double x1 = 0;
 		double x2 = getWidth();
-		GLine line = new Gline (x1, y, x2, y);
+		GLine line = new GLine (x1, y, x2, y);
 	}
 }
