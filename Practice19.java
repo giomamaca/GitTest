@@ -9,4 +9,4 @@ public class Practice19 extends ConsoleProgram {
 			println("hello");
 		}
 	}
-}
+} 
