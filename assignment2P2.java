@@ -1,5 +1,6 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
+import javafx.scene.paint.Color;
 
 public class assignment2P2 extends GraphicsProgram{
 	private static final double R1 = 72;
@@ -9,7 +10,8 @@ public class assignment2P2 extends GraphicsProgram{
 		GOval largeOval = new GOval (R1, R1);
 		double x = getWidth() / 2 - 36;
 		double y = getHeight() / 2 - 36;
-		
+		largeOval.setFilled(true);
+		largeOval.setColor(Color.RED);
 		add(largeOval, x, y);
 	}
 }
