@@ -10,7 +10,6 @@ public class assignment2P6 extends ConsoleProgram{
 				int d = (c / 2);
 				print(d);
 			}
-			print(c);
 		}
 	}
 }
