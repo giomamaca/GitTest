@@ -6,6 +6,6 @@ public class assignment2P4 extends ConsoleProgram{
 		int b = readInt ("enter num2 = ");
 		
 		double c = Math.sqrt(a^2 + b^2);
-		
+		print(c);
 	}
 }
