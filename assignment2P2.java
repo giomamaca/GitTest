@@ -18,7 +18,7 @@ public class assignment2P2 extends GraphicsProgram{
 		double x2 = getWidth() / 2 - 24;
 		double y2 = getHeight() / 2 - 24 ;
 		medOval.setFilled(true);
-		medOval.setColor(Color.blue);
+		medOval.setColor(Color.white);
 		add(medOval, x2, y2);
 	}
 }
