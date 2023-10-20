@@ -17,7 +17,6 @@ public class assignment2P2 extends GraphicsProgram{
 		GOval medOval = new GOval (R2, R2);
 		double x1 = getWidth() / 2 - 36;
 		double y1 = getHeight() / 2 - 36;
-		medOval.setFilled(true);
-		medOval.setColor(Color.RED);
+		medOval.setFilled(false);
 	}
 }
