@@ -1,6 +1,6 @@
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
-import javafx.scene.paint.Color;
+import java.awt.Color;
 
 public class assignment2P2 extends GraphicsProgram{
 	private static final double R1 = 72;
