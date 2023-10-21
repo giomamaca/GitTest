@@ -7,7 +7,7 @@ public class assignment2P3 extends GraphicsProgram{
 	public void run(){
 		GRect rect1 = new GRect (RECT_WIDTH, RECT_HEIGHT);
 		double x = getWidth() / 2 - (RECT_WIDTH / 2);
-		double y = getHeight() / 3;
+		double y = getHeight() / 5;
 	    add(rect1, x, y);
 	}
 }
