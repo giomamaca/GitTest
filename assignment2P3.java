@@ -39,6 +39,6 @@ public class assignment2P3 extends GraphicsProgram{
 	    double lx4 = getWidth() / 2 - RECT_WIDTH /2 - SPACE_BETWEENREC / 2;
 	    double ly4 = getHeight() / 5 + MIDLINE_WIDTH;
 	    GLine leftLine = new GLine (lx3, ly3, lx4, ly4);
-	    add(midLine);
+	    add(leftLine);
 	}
 }
