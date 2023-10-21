@@ -1,12 +1,10 @@
+import acm.graphics.GLabel;
 import acm.program.ConsoleProgram;
 
 public class Practice19 extends ConsoleProgram {
 	public void run(){
-		println("enter number");
-		int x = readInt ("number = ");
+		GLabel lab = new GLabel ("dasdadad", 100, 110);
+		double a = lab.getWidth();
 		
-		for(int i = 0; i < x; i++){
-			println("hello");
-		}
 	}
 } 
