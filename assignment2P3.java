@@ -36,9 +36,16 @@ public class assignment2P3 extends GraphicsProgram{
 	    
 	    double lx3 = getWidth() / 2 ;
 	    double ly3 = getHeight() / 5 + RECT_HEIGHT;
-	    double lx4 = getWidth() / 2 - RECT_WIDTH /2 - SPACE_BETWEENREC + RECT_WIDTH / 2;
+	    double lx4 = getWidth() / 2 - SPACE_BETWEENREC;
 	    double ly4 = getHeight() / 5 + MIDLINE_WIDTH;
 	    GLine leftLine = new GLine (lx3, ly3, lx4, ly4);
 	    add(leftLine);
+	    
+	    double lx5 = getWidth() / 2 ;
+	    double ly5 = getHeight() / 5 + RECT_HEIGHT;
+	    double lx6 = getWidth() / 2 + SPACE_BETWEENREC;
+	    double ly6 = getHeight() / 5 + MIDLINE_WIDTH;
+	    GLine rightLine = new GLine (lx5, ly5, lx6, ly6);
+	    add(rightLine);
 	}
 }
