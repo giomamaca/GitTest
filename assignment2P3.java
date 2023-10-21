@@ -9,5 +9,8 @@ public class assignment2P3 extends GraphicsProgram{
 		double x = getWidth() / 2 - (RECT_WIDTH / 2);
 		double y = getHeight() / 5;
 	    add(rect1, x, y);
+	    
+	    GLabel label1 = new Glabel (40, 40);
+	    add(label1);
 	}
 }
