@@ -5,5 +5,6 @@ public class exercise extends GraphicsProgram{
 	public void run(){
 		GLabel lab = new GLabel ("dasda", 50, 50);
 		lab.getWidth();
+		add(lab);
 	}
 }
