@@ -3,8 +3,7 @@ import acm.program.GraphicsProgram;
 
 public class exercise extends GraphicsProgram{	
 	public void run(){
-		GLabel lab = new GLabel ("dasda", 0, 10);
-		lab.getWidth();
-		add(lab);
+		GLabel lab = new GLabel ("dasdadad", 0, 10);
+		double a = lab.getWidth();
 	}
 }
