@@ -4,7 +4,7 @@ import acm.program.GraphicsProgram;
 public class assignment2P3 extends GraphicsProgram{
 	private static final double RECT_WIDTH = 150;
 	private static final double RECT_HEIGHT = 75;
-	private static final double MIDLINE_WIDTH = 50;
+	private static final double MIDLINE_WIDTH = 100;
 	public void run(){
 		GRect rect1 = new GRect (RECT_WIDTH, RECT_HEIGHT);
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
