@@ -15,5 +15,10 @@ public class assignment2P3 extends GraphicsProgram{
 	    double x1 = getWidth() / 2 - RECT_WIDTH / 2;
 	    double y1 = getHeight() / 5 + MIDLINE_WIDTH;
 	    add(rect2, x1, y1);
+	    
+	    GRect rect3 = new GRect (RECT_WIDTH, RECT_HEIGHT);
+	    double x2 = getWidth() / 2 - RECT_WIDTH ;
+	    double y2 = getHeight() / 5 + MIDLINE_WIDTH;
+	    add(rect3, x2, y2);
 	}
 }
