@@ -11,7 +11,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    add(rect1, x, y);
 	    
 	    GLabel label1 = new GLabel (CENTER, 40, 40);
-	    double xLabel = getWidth() / 2 - RECT_WIDTH / 4 ;
+	    double xLabel = getWidth() / 2 - RECT_WIDTH / 2 ;
 	    double yLabel = getHeight() / 5;
 	    add(label1, xLabel, yLabel);
 	}
