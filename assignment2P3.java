@@ -5,7 +5,7 @@ public class assignment2P3 extends GraphicsProgram{
 	private static final double RECT_WIDTH = 150;
 	private static final double RECT_HEIGHT = 75;
 	private static final double MIDLINE_WIDTH = 150;
-	private static final double SPACE_BETWEENREC = 150;
+	private static final double SPACE_BETWEENREC = 170;
 	public void run(){
 		GRect rect1 = new GRect (RECT_WIDTH, RECT_HEIGHT);
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
