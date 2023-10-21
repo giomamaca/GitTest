@@ -10,7 +10,7 @@ public class assignment2P3 extends GraphicsProgram{
 		double y = getHeight() / 5;
 	    add(rect1, x, y);
 	    
-	    GLabel label1 = new Glabel (40, 40);
+	    GLabel label1 = new GLabel (40, 40);
 	    add(label1);
 	}
 }
