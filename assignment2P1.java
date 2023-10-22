@@ -5,7 +5,7 @@ public class assignment2P1 extends GraphicsProgram {
 	private static final double BRICK_WIDTH = 30;
 	private static final double BRICK_HEIGHT = 12;
 	private static final double BRICK_IN_BASE = 14;
-	private static final double BRICK_IN_ROW = 2;
+	private static final double BRICK_IN_ROW = 1;
 	public void run(){
 		for(int i = 0; i < BRICK_IN_BASE; i++){
 			for(int j = 0; j < BRICK_IN_ROW; j++){
