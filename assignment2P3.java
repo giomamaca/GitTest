@@ -2,9 +2,9 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class assignment2P3 extends GraphicsProgram{
-	private static final double RECT_WIDTH = 100;
+	private static final double RECT_WIDTH = 150;
 	private static final double RECT_HEIGHT = 75;
-	private static final double MIDLINE_WIDTH = 150;
+	private static final double MIDLINE_WIDTH = 100;
 	private static final double SPACE_BETWEENREC = 170;
 	public void run(){
 		GRect topRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
