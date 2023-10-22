@@ -22,7 +22,7 @@ public class Practice22 extends GraphicsProgram{
 		GRect chess = new GRect (chessX, chessY, BOARD_WIDTH, BOARD_HEIGHT);
 		if((i + j) % 2 == 0){
 			chess.setFilled(true);
-			chess.setFillColor(Color.RED);
+			chess.setFillColor(Color.black);
 		}
 		add(chess);
 	}
