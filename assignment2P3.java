@@ -12,7 +12,7 @@ public class assignment2P3 extends GraphicsProgram{
 		double y = getHeight() / 5;
 	    add(topRect, x, y);
 	    
-	    GLabel topLabel = new GLabel ("Programdass", getWidth() / 2 , getHeight() / 5);
+	    GLabel topLabel = new GLabel ("Programdass", getWidth() / 2 , getHeight() / 5 + RECT_HEIGHT / 2);
 	    add(topLabel);
 	    
 	    GRect midRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
