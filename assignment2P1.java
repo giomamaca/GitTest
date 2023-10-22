@@ -9,12 +9,12 @@ public class assignment2P1 extends GraphicsProgram {
 	public void run(){
 		for(int i = 0; i < BRICK_IN_BASE; i++){
 			for(int j = 0; j < BRICK_IN_ROW; j++){
-				addFirstLine(i, j);	
+				addFirstLine(i, j);
 			}
 		}
 	}
 	private void addFirstLine(int i, int j) {
-		double rectx = i * BRICK_WIDTH;
+		double rectx = i * BRICK_WIDTH + getWidth() - BRICK_HEIGHT;
 		double recty = j * BRICK_HEIGHT;
 		
 		GRect rect = new GRect(rectx, recty, BRICK_WIDTH, BRICK_HEIGHT);
