@@ -1,3 +1,5 @@
+import java.awt.Color;
+
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
@@ -18,6 +20,10 @@ public class Practice22 extends GraphicsProgram{
 		int chessY = (int) (j * BOARD_HEIGHT);
 		
 		GRect chess = new GRect (chessX, chessY, BOARD_WIDTH, BOARD_HEIGHT);
+		if((i + j) % 2 == 0){
+			chess.setFilled(true);
+			chess.setFillColor(Color.RED);
+		}
 		add(chess);
 	}
 }
