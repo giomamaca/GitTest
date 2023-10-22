@@ -9,7 +9,7 @@ public class assignment2P1 extends GraphicsProgram {
 		for(int i = 0; i < 14; i = i + 1){
 			double x1 = getWidth();
 			GRect block1 = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
-			add(block1);
+			add(block1 ,x1);
 		}
 	}
 }
