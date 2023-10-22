@@ -36,6 +36,9 @@ public class assignment2P3 extends GraphicsProgram{
 	    double y3 = getHeight() / 5 + MIDLINE_WIDTH;
 	    add(rightRect, x3, y3);
 	    
+	    GLabel rightLabel = new GLabel ("DialogProgram", getWidth() / 2 - RECT_WIDTH /2 + SPACE_BETWEENREC, getHeight() / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
+	    add(rightLabel);
+	    
 	    double lx1 = getWidth() / 2 ;
 	    double ly1 = getHeight() / 5 + RECT_HEIGHT;
 	    double lx2 = getWidth() / 2 ;
