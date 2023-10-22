@@ -7,8 +7,10 @@ public class assignment2P1 extends GraphicsProgram {
 	private static final double BRICK_IN_BASE = 14;
 	public void run(){
 		for(int i = 0; i < BRICK_IN_BASE; i++){
-			int rect1 = (int) (i * BRICK_IN_BASE);
+			int rect = (int) (i * BRICK_IN_BASE);
+			GRect rect1 = new GRect (50, getHeight(), BRICK_WIDTH, BRICK_HEIGHT);
 			add(rect1);
+			
 		}
 	}
 }
