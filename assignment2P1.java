@@ -6,10 +6,9 @@ public class assignment2P1 extends GraphicsProgram {
 	private static final double BRICK_HEIGHT = 12;
 	private static final double BRICK_IN_BASE = 14;
 	public void run(){
-		for(int i = 0; i < 14; i = i + 1){
-			double x1 = getWidth();
+		for(int i = 0; i < 14; i = i + 30){
 			GRect block1 = new GRect (BRICK_WIDTH, BRICK_HEIGHT);
-			add(block1 ,x1);
+			add(block1);
 		}
 	}
 }
