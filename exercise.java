@@ -9,7 +9,7 @@ public class exercise extends ConsoleProgram{
 		return num2;
 	}
 	public void run(){
-		int larger = max(5, 1);
+		int larger = max(5, 1) - 2;
 		print(larger);
 	}
 }
