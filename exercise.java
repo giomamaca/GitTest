@@ -10,5 +10,6 @@ public class exercise extends GraphicsProgram{
 	}
 	public void run(){
 		int larger = max(5, 1);
+		print(larger);
 	}
 }
