@@ -9,7 +9,7 @@ public class assignment2P1 extends GraphicsProgram {
 	public void run(){
 		for(int i = 0; i < BRICK_IN_BASE; i++){
 			for(int j = 0; j < BRICK_IN_ROW; j++){
-				addFirstLine();	
+				addFirstLine(i, j);	
 			}
 		}
 	}
