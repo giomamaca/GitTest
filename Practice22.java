@@ -2,8 +2,8 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Practice22 extends GraphicsProgram{
-	private static final double BOARD_WIDTH = 100;
-	private static final double BOARD_HEIGHT = 100;
+	private static final double BOARD_WIDTH = 200;
+	private static final double BOARD_HEIGHT = 200;
 	private static final double BLOCKS_IN_ROW = 8;
 	private static final double BLOCKS_IN_COLUMN = 8;
 	public void run(){
