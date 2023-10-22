@@ -1,7 +1,7 @@
-import acm.graphics.*;
-import acm.program.GraphicsProgram;
 
-public class exercise extends GraphicsProgram{	
+import acm.program.ConsoleProgram;
+
+public class exercise extends ConsoleProgram{	
 	private int max(int num1,int num2){
 		if(num1>=num2){
 			return num1;
