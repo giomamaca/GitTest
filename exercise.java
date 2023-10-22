@@ -1,4 +1,3 @@
-
 import acm.program.ConsoleProgram;
 
 public class exercise extends ConsoleProgram{	
@@ -9,7 +8,7 @@ public class exercise extends ConsoleProgram{
 		return num2;
 	}
 	public void run(){
-		int larger = max(5, 1) - 2;
+		int larger = max(5, 1);
 		print(larger);
 	}
 }
