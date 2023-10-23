@@ -28,7 +28,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    GLabel midLabel = new GLabel ("ConsoleProgram");
 	    double ML1 = midLabel.getWidth();
 	    double ML2 = midLabel.getAscent();
-	    add(midLabel, gW / 2 - RECT_WIDTH / 2 + ML1 / 4, gH / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2 );
+	    add(midLabel, gW / 2 - RECT_WIDTH / 2 + ML1 / 4, gH / 5 + MIDLINE_WIDTH  );
 	    
 	    GRect leftRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
 	    double x2 = gW / 2 - RECT_WIDTH /2 - SPACE_BETWEENREC;
