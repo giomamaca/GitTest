@@ -18,7 +18,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    GLabel topLabel = new GLabel ("Program");
 	    double TL1 = topLabel.getWidth();
 	    double TL2 = topLabel.getAscent();
-	    add(topLabel, gW / 2 - TL1 /2, TL2 / 5 + RECT_HEIGHT / 2);
+	    add(topLabel, gW / 2 - TL1 /2, gH / 5 + RECT_HEIGHT / 2);
 	    
 	    GRect midRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
 	    double x1 = gW / 2 - RECT_WIDTH / 2;
