@@ -48,7 +48,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    GLabel rightLabel = new GLabel ("DialogProgram");
 	    double RL1 = rightLabel.getWidth();
 	    double RL2 = rightLabel.getAscent();
-	    add(rightLabel, gW / 2 - RECT_WIDTH /2 + SPACE_BETWEENREC, gH / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2 - RL2 / 2);
+	    add(rightLabel, gW / 2 - RECT_WIDTH /2 + SPACE_BETWEENREC, gH / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2 + RL2 / 2);
 	    
 	    double lx1 = gW / 2 ;
 	    double ly1 = gH / 5 + RECT_HEIGHT;
