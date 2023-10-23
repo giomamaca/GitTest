@@ -7,7 +7,7 @@ public class assignment2P1 extends GraphicsProgram {
 	private static final double BRICK_IN_BASE = 14;
 	private static final double BRICK_IN_ROW = 14;
 	public void run(){
-		for(int i = 0; i < BRICK_IN_BASE; i--){
+		for(int i = 0; i < BRICK_IN_BASE; i++){
 			for(int j = 0; j < BRICK_IN_ROW; j++){
 				addFirstLine(i, j);
 			}
