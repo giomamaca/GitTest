@@ -7,14 +7,17 @@ public class assignment2P3 extends GraphicsProgram{
 	private static final double MIDLINE_WIDTH = 120;
 	private static final double SPACE_BETWEENREC = 170;
 	public void run(){
+		double gW = getWidth();
+		double gH = getHeight();
+		
 		GRect topRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
 		double x = getWidth() / 2 - RECT_WIDTH / 2;
 		double y = getHeight() / 5;
 	    add(topRect, x, y);
 	    
-	    GLabel topLabel = new GLabel ("Program", getWidth() / 2 , getHeight() / 5 + RECT_HEIGHT / 2);
-	    double LW = topLabel.getWidth();
-	    double LA = topLabel.getAscent();
+	    GLabel topLabel = new GLabel ("Program", gW / 2 , gH / 5 + RECT_HEIGHT / 2);
+	    double LW1 = topLabel.getWidth();
+	    double LA2 = topLabel.getAscent();
 	    add(topLabel);
 	    
 	    GRect midRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
@@ -22,7 +25,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    double y1 = getHeight() / 5 + MIDLINE_WIDTH;
 	    add(midRect, x1, y1);
 	    
-	    GLabel midLabel = new GLabel ("ConsoleProgram", getWidth() / 2 - RECT_WIDTH / 2, getHeight() / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
+	    GLabel midLabel = new GLabel ("ConsoleProgram", gW / 2 - RECT_WIDTH / 2, gH() / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
 	    add(midLabel);
 	    
 	    GRect leftRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
@@ -30,7 +33,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    double y2 = getHeight() / 5 + MIDLINE_WIDTH;
 	    add(leftRect, x2, y2);
 	    
-	    GLabel leftLabel = new GLabel ("GraphicsProgram", getWidth() / 2 - RECT_WIDTH /2 - SPACE_BETWEENREC, getHeight() / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
+	    GLabel leftLabel = new GLabel ("GraphicsProgram", gW / 2 - RECT_WIDTH /2 - SPACE_BETWEENREC, gH / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
 	    add(leftLabel);
 	    
 	    GRect rightRect = new GRect (RECT_WIDTH, RECT_HEIGHT);
@@ -38,7 +41,7 @@ public class assignment2P3 extends GraphicsProgram{
 	    double y3 = getHeight() / 5 + MIDLINE_WIDTH;
 	    add(rightRect, x3, y3);
 	    
-	    GLabel rightLabel = new GLabel ("DialogProgram", getWidth() / 2 - RECT_WIDTH /2 + SPACE_BETWEENREC, getHeight() / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
+	    GLabel rightLabel = new GLabel ("DialogProgram", gW / 2 - RECT_WIDTH /2 + SPACE_BETWEENREC, gH / 5 + MIDLINE_WIDTH + RECT_HEIGHT / 2);
 	    add(rightLabel);
 	    
 	    double lx1 = getWidth() / 2 ;
