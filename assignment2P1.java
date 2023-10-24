@@ -10,12 +10,9 @@ public class assignment2P1 extends GraphicsProgram{
 	public void run(){
 		for(int i = 0; i <= BLOCKS; i++){
 			for(int j = 0; j < i; j++){
-				addPiramid(i,j);
+				GRect stairs = new GRect (j*RIGHT + getWidth() / 2 - WIDTH / 2 - i*(WIDTH / 2), i*DOWN + getHeight() - 14*HEIGHT, WIDTH, HEIGHT);
+				add(stairs);
 			}
 		}
-	}
-	private void addPiramid(int i, int j) {
-		GRect stairs = new GRect (j*RIGHT + getWidth() / 2 - WIDTH / 2 - i*(WIDTH / 2), i*DOWN + getHeight() - 14*HEIGHT, WIDTH, HEIGHT);
-		add(stairs);
 	}
 }
