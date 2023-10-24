@@ -19,6 +19,6 @@ public class Practice26 extends ConsoleProgram{
 		int a =readInt();
 		int b = readInt();
 		int g = gcd(a,b);
-		
+		println("gcd is:" + g);
 	}
 }
