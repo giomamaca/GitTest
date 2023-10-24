@@ -2,6 +2,7 @@ import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class stairs extends GraphicsProgram{
+	private static final double BLOCKS = 14;
 	private static final double WIDTH = 30;
 	private static final double HEIGHT = 15;
 	private static final double DOWN = 15;
