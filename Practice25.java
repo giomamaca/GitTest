@@ -7,9 +7,10 @@ public class Practice25 extends ConsoleProgram{
 		int b = readInt ("enter b = ");
 		for(int i = 0; true; i += a){
 			while (a != b){
-				b += b;
-				a += a;
+				answer += b;
+			    answer += a;
 			}
+			print(answer);
 		}
 	}
 }
