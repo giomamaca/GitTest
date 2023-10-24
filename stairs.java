@@ -1,3 +1,4 @@
+import acm.graphics.GRect;
 import acm.program.GraphicsProgram;
 
 public class stairs extends GraphicsProgram{
@@ -15,5 +16,8 @@ public class stairs extends GraphicsProgram{
 	private void addStairs(int i, int j) {
 		int stairs = (int) ((int) i * WIDTH) + i*30;
 		int stairsy = (int) ((int) j *HEIGHT) + j*15;
+		
+		GRect stairs = new GRect (WIDTH, HEIGHT);
+		add(stairs);
 	}
 }
