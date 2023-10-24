@@ -10,7 +10,7 @@ public class stairs extends GraphicsProgram{
 		for(int i = 0; i <= 7; i++){
 			for(int j = 0; j < i; j++){
 				
-				GRect stairs = new GRect (j*RIGHT -WIDTH / 2, i*DOWN, WIDTH, HEIGHT);
+				GRect stairs = new GRect (j*RIGHT -WIDTH / 2 +300, i*DOWN, WIDTH, HEIGHT);
 				add(stairs);
 			}
 		}
