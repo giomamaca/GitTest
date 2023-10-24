@@ -14,7 +14,7 @@ public class stairs extends GraphicsProgram{
 		}
 	}
 	private void addStairs(int i, int j) {
-		int stairsx = (int) ((int) i * WIDTH);
+		int stairsx = (int) ((int) i * WIDTH) + 30;
 		int stairsy = (int) ((int) j *HEIGHT);
 		
 		GRect stairs = new GRect (stairsx, stairsy, WIDTH, HEIGHT);
