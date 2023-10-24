@@ -8,16 +8,10 @@ public class stairs extends GraphicsProgram{
 	private static final double RIGHT = 30;
 	public void run(){
 		for(int i = 0; i < 10; i++){
-			for(int j = 0; j < 10; j++){
-				addStairs(i, j);
+			for(int j = 0; j < (i+1)*DOWN; j++){
+				GRect stairs = new GRect (WIDTH, HEIGHT);
+				add(stairs);
 			}
 		}
-	}
-	private void addStairs(int i, int j) {
-		int stairsx = (int) ((int) i * WIDTH) + 30;
-		int stairsy = (int) ((int) j *HEIGHT);
-		
-		GRect stairs = new GRect (stairsx, stairsy, WIDTH, HEIGHT);
-	    add(stairs);
 	}
 }
