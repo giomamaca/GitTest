@@ -7,7 +7,7 @@ public class Practice27 extends ConsoleProgram{
 		int m = readInt ("eneter m = ");
 		for(int i = 0; i < m; i++){
 			answer *= n;
-			print(answer);
 		}
+		print(answer);
 	}
 }
