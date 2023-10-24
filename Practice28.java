@@ -8,14 +8,11 @@ public class Practice28 extends ConsoleProgram{
 		int answer = 0;
 		while(true){
 			int a = readInt();
-			if(a == SENTINEL){
-				println(answer);
-			}else{
-				if(a % 2 == 0){
-					answer++;
-				}
+			if(a == SENTINEL) break;
+			if(a % 2 == 0){
+				answer++;
 			}
 		}
-		
-	}
+		print(answer);
+	}	
 }
