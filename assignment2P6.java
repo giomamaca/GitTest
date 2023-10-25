@@ -5,7 +5,7 @@ public class assignment2P6 extends ConsoleProgram{
 		int a = readInt ("enter number = ");
 		if(a % 2 == 0){
 			for(int i = 0; true; i++){
-				int c = a / i*2;
+				int c = a / 2;
 				print(c);
 			}
 		}
