@@ -8,6 +8,7 @@ public class assignment2P6 extends ConsoleProgram{
 				a = a / 2;
 				print(a);
 			}else{
+				println("dada" + a);
 				a = a*3 + 1;
 			}
 		}
