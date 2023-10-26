@@ -4,8 +4,10 @@ public class assignment2P5 extends ConsoleProgram{
 	public void run(){
 		println("This program finds smallest and largest numbers.");
 		int n = readInt ("? ");
-		if(n != 0){
-			println("?" + n);
+		while(true){
+			if(n != 0){
+				println("?" + n);
+		   }
 		}
 	}
 }
