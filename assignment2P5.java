@@ -6,9 +6,8 @@ public class assignment2P5 extends ConsoleProgram{
 		int n = readInt ("? ");
 		while(true){
 			if(n != 0){
-				
-		}
-			println("?" + n);
+				println("?" + n); break;
+			}
 		}
 	}
 }
