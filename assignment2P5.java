@@ -5,7 +5,7 @@ public class assignment2P5 extends ConsoleProgram{
 		println("This program finds smallest and largest numbers.");
 		int n = readInt ("? ");
 		while(n != 0){
-			print(n);
+			println("?" + n);
 		}
 	}
 }
