@@ -13,6 +13,6 @@ public class Practice30 extends ConsoleProgram{
 	}
 	public void run(){
 		int a = readInt("?");
-		println(reverseNumber(int n));
+		println(reverseNumber(a));
 	}
 }
