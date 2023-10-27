@@ -6,6 +6,7 @@ public class Practice23 extends ConsoleProgram{
 		int n = readInt("");
 		for(int i = 1; i <= n; i++){
 			n = n + 1;
+			return n;
 		}
 		return n;
 	}
