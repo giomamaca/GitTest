@@ -7,6 +7,6 @@ public class Practice23 extends ConsoleProgram{
 		for(int i = 1; i < sum; i++){
 			n += i; 
 		}
-		println("sum = " + n);
+		println("sum = " + sum);
 	}
 }
