@@ -2,7 +2,6 @@ import acm.program.ConsoleProgram;
 
 public class Practice30 extends ConsoleProgram{
 	private int reverseNumber(int n){
-		int result = 0;
 		int k = 0;
 		while(n > 0){
 			k = k * 10 + n % 10;
@@ -12,6 +11,7 @@ public class Practice30 extends ConsoleProgram{
 	}
 	public void run(){
 		int a = readInt("?");
+		println("aa");
 		println(reverseNumber(a));
 	}
 }
