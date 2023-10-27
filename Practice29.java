@@ -11,6 +11,8 @@ public class Practice29 extends ConsoleProgram{
 		return b;
 	}
 	public void run(){
-
+		int a = readInt("");
+		int b = readInt("");
+		println(fibonacci(a));
 	}
 }
