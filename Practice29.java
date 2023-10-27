@@ -6,13 +6,12 @@ public class Practice29 extends ConsoleProgram{
 		for(int i = 0; i<=n; i++){
 			int c = a+ b;
 			a = b;
-			b = a;
+			b = c;
 		}
 		return b;
 	}
 	public void run(){
-		int a = readInt("a = ");
-		int b = readInt("b = ");
-		println(fibonacci(a));
+		int n = readInt("a = ");
+		println(fibonacci(n));
 	}
 }
