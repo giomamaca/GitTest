@@ -15,8 +15,8 @@ public class Practice26 extends ConsoleProgram{
 		return a;
 	}
 	public void run(){
-		int a =readInt();
-		int b = readInt();
+		int a =readInt("a = ");
+		int b = readInt("b = ");
 		int g = gcd(a,b);
 		println("gcd is:" + g);
 	}
