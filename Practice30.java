@@ -7,9 +7,8 @@ public class Practice30 extends ConsoleProgram{
 		while(n > 0){
 			k = k * 10 + n % 10;
 			int digital = n / 10;
-			
 		}
-		return result;
+		return k;
 	}
 	public void run(){
 		int a = readInt("?");
