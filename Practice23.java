@@ -7,6 +7,7 @@ public class Practice23 extends ConsoleProgram{
 		for(int i = 0; i < 5; i++){
 			while(n != 0){
 				n = n - 1;
+				n++;
 			}
 		}
 		return n;
