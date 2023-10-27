@@ -13,6 +13,7 @@ public class Practice24 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		
+		int k = readInt("k = ");
+		println("divisiors" + numDivisorsSlow(k));
 	}
 }
