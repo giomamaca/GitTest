@@ -1,11 +1,18 @@
 import acm.program.ConsoleProgram;
 
 public class exercise extends ConsoleProgram{
+	
+	private int factorial(int a){
+		for(int i = 0; i < a; i++){
+			if(a > 0){
+				a = a * i*a;
+			}
+		}
+		return a;
+	}
+	
 	public void run(){
-		int a = readInt ("enter num1 = ");
-		int b = readInt ("enter num2 = ");
-		
-		double c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
-		print(c);
+		int k = readInt("");
+		println(factorial(k));
 	}
 }
