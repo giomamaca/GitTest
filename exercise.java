@@ -1,13 +1,12 @@
 import acm.program.ConsoleProgram;
 
 public class exercise extends ConsoleProgram{	
+	
+	private int gamyofebi(int a){
+		
+	}
+	
 	public void run(){
-		int a = 8;
-		for(int i = 0; i < a; i++){
-			if(a > 0){
-				a *= i;
-				print(a);
-			}
-		}
+		
 	}
 }
