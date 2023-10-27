@@ -2,19 +2,28 @@ import acm.program.ConsoleProgram;
 
 public class Practice25 extends ConsoleProgram{
 	
-	private int gcdSlow(int a, int b) {
-		int result = 0;
-		for (int i = 1; i <= Math.min(a, b); i++) {
-			if (a % i == 0 && b % i == 0) {
-				result = i;
+	private int gcd(int n, int m) {
+		for (int i = Math.min(n, m); i >= 1; i--) {
+			if(n % i == 0 && m % i == 0) { 
+				return i;
 			}
 		}
-		return result;
+		return -1;
+	}
+	
+	private int readPositiveInt(String text) {
+		int n = readInt(text);
+		while( n <= 0) {
+			println("Number should positive");
+			n = readInt(text);
+		}
+		return n;
 	}
 	
 	public void run(){
-		int k = readInt("");
-		int c = readInt("");
-		println(gcdSlow(k, c));
+		int n = readPositiveInt("Enter n: ");
+		int m = readPositiveInt("Enter m: ");
+		int gcd = gcd(n, m);
+		println("GCD is: " + gcd);
 	}
 }
