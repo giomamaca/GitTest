@@ -2,20 +2,19 @@ import acm.program.ConsoleProgram;
 
 public class Practice25 extends ConsoleProgram{
 	
-	private int gcdFast(int a, int b) {
-		while (a % b != 0 && b % a != 0) {
-			if (a > b) {
-				a %= b;
-			} else {
-				b %= a; 
+	private int gcdSlow(int a, int b) {
+		int result = 0;
+		for (int i = 1; i <= Math.min(a, b); i++) {
+			if (a % i == 0 && b % i == 0) {
+				result = i;
 			}
 		}
-		return Math.min(a, b);
+		return result;
 	}
 	
 	public void run(){
 		int k = readInt("");
 		int c = readInt("");
-		println(gcdFast(k, c));
+		println(gcdSlow(k, c));
 	}
 }
