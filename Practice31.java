@@ -6,7 +6,7 @@ public class Practice31 extends ConsoleProgram{
 		int result = 0;
 		int a = readInt();
 		for (int i = 0; i <= (a / 2); i++){
-			a = a / i*1;
+			a = a ;
 			result++;
 		}
 		return result;
