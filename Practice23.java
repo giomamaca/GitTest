@@ -2,11 +2,11 @@ import acm.program.ConsoleProgram;
 
 public class Practice23 extends ConsoleProgram{	
 	public void run(){
-		int n = readInt("Enter n: ");
-		int sum = 0;
-		for (int i = 1; i <= n; i++) {
-			sum += i;
+		int sum = readInt("enter number = ");
+		int n = 0;
+		for(int i = 1; i <= sum; i++){
+			n += i; 
 		}
-		println("Sum 1..n " + sum);
+		println("sum = " + sum);
 	}
 }
