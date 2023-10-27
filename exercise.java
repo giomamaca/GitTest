@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class exercise extends ConsoleProgram{
 	
 	private int factorial(int a){
-		for(int i = 0; i < a; i++){
+		for(int i = 1; i < a; i++){
 			if(a > 0){
 				a = a * i*a;
 			}
