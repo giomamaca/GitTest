@@ -1,20 +1,12 @@
 import acm.program.ConsoleProgram;
 
-public class Practice23 extends ConsoleProgram{
-	
-	private int sum(int k){
-		int n = 0;
-		for(int i = 0; i < 5; i++){
-			while(n != 0){
-				n = n - i*1;
-				n++;
-			}
-		}
-		return n;
-	}
-	
+public class Practice23 extends ConsoleProgram{	
 	public void run(){
-		int k = readInt("enter num = ");
-		println(sum(k));
+		int sum = readInt("enter number = ");
+		int n = 0;
+		for(int i = 0; i < sum; i++){
+			n += n + i * 1; 
+		}
+		println("sum = " + n);
 	}
 }
