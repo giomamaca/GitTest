@@ -11,7 +11,7 @@ public class assignment2P2 extends GraphicsProgram{
 	private static final double R3 = cmToPx(0.76);
 	
 	
-	private static double cmToPx(int a){
+	private static double cmToPx(double d){
 		double cm = 72 / 2.54;
 		
 		return cm;
