@@ -8,7 +8,7 @@ public class Practice29 extends ConsoleProgram{
 			a = b;
 			b = c;
 		}
-		return b;
+		return c;
 	}
 	
 	public void run(){
