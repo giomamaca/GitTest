@@ -14,6 +14,8 @@ public class Practice26 extends ConsoleProgram{
 		}
 		return a;
 	}
+	
+	// 24 16 16 8 8 0  
 	public void run(){
 		int a =readInt("a = ");
 		int b = readInt("b = ");
