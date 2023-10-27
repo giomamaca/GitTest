@@ -6,6 +6,8 @@ public class Practice31 extends ConsoleProgram{
 		for(int i = 0 ; i < a; i++){
 			if(a % i == 0){
 			int	k = a / (a - i*1);
+			
+			println("k gamoyofebi" + k);
 			}
 		}
 	}
