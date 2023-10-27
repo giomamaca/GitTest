@@ -5,7 +5,7 @@ public class exercise extends ConsoleProgram{
 	private int factorial(int a){
 		for(int i = 1; i < a; i++){
 			if(a > 0){
-				a = a * i*a;
+				a = a * i;
 			}
 		}
 		return a;
