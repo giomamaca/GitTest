@@ -9,10 +9,6 @@ public class Practice26 extends ConsoleProgram{
 				b %= a;
 			}
 		}
-		if(a == 0){
-			return b;
-		}
-		return a;
 	}
 	public void run(){
 		int a =readInt("a = ");
