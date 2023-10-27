@@ -1,15 +1,20 @@
 import acm.program.ConsoleProgram;
 
 public class Practice31 extends ConsoleProgram{		
-	public void run(){
+	
+	private int simpleOrComplex(int a){
 		int n = readInt("");
-		int k = 0;
-		for(int i = 0; i<(n / 2); i++){
-			if(n % i == 0){
-				n = n / i; 
-				k++;
-				println("dsdsd" + k);
+		int result = 0;
+		for(int i = 0; i <= (n / 2); i++){ 
+			if(n % result == 0){
+				result++;
 			}
 		}
+		return result;
+	}
+	
+	public void run(){
+		int k = readInt("");
+		println(simpleOrComplex(k));
 	}
 }
