@@ -4,9 +4,9 @@ public class Practice31 extends ConsoleProgram{
 	
 	private int simpleOrComplex(int b){
 		int result = 0;
-		int a = readInt();
+		int a = 0;
 		for (int i = 0; i <= (a / 2); i++){
-			a = a ;
+			a = a /(i*1);
 			result++;
 		}
 		return result;
