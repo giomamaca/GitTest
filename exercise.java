@@ -1,19 +1,13 @@
 import acm.program.ConsoleProgram;
 
-public class exercise extends ConsoleProgram{
-	
-	private int factorial(int a){
-		for(int i = 1; i <= a; i++){
-			if(a> 0){
-			   a *= (a - 1) ;
-			   a = a - 1;
+public class exercise extends ConsoleProgram{	
+	public void run(){
+		int a = 5;
+		for(int i = 0; i < a; i++){
+			if(a > 0){
+				a *= i;
+				print(a);
 			}
 		}
-		return a;
-	}
-	
-	public void run(){
-		int k = readInt("enter number = ");
-		println(factorial(k));
 	}
 }
