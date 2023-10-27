@@ -4,11 +4,19 @@ import java.awt.Color;
 
 public class assignment2P2 extends GraphicsProgram{
 //	Radius of large oval
-	private static final double R1 = 72;
+	private static final double R1 = 2.54 * cmToPx();
 //	Radius of medium oval
-	private static final double R2 = 48;
+	private static final double R2 = 1.65 * cmToPx();
 //	Radius of small oval
-	private static final double R3 = 24;
+	private static final double R3 = 0.76 * cmToPx();
+	
+	
+	private static double cmToPx(){
+		double cm = 72 / 2.54;
+		
+		return cm;
+	}
+	
 	public void run(){
 //		Create large oval
 		GOval largeOval = new GOval (R1, R1);
