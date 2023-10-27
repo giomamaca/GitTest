@@ -9,6 +9,7 @@ public class Practice23 extends ConsoleProgram{
 				n = n - 1;
 			}
 		}
+		return n;
 	}
 	
 	public void run(){
