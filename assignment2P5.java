@@ -11,15 +11,15 @@ public class assignment2P5 extends ConsoleProgram{
 		if(large != STOP){
 			while(small != 0){
 				int k = readInt("?");
-				if(k == STOP){
-					break;
-				}else{
+				if(k != STOP){
 					if(k > large){
 						large = k;
 					}
 					if(k < large){
 						small = k;
 					}
+				}else{
+					break;
 				}
 			}
 		}
