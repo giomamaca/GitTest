@@ -11,8 +11,8 @@ public class assignment2P5 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		int c = readInt("");
 		println("This program finds smallest and largest numbers.");
+		int c = readInt("");
 		println(SmallLarge(c));
 	}
 }
