@@ -6,7 +6,7 @@ public class assignment2P6 extends ConsoleProgram{
 		while(a != 1){
 			if(a % 2 == 0){
 				println("" + a);
-				a /= 2;
+				a = a / 2;
 			}else{
 				println("" + a);
 				a = a*3 + 1;
