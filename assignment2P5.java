@@ -2,27 +2,30 @@ import acm.program.ConsoleProgram;
 
 public class assignment2P5 extends ConsoleProgram{
 	
+	private static final int STOP = 0;
 
 	private int SmallLarge(int a){
 		int large = readInt("?");
-		if(large == 0){
-			println("");
-		}else{
+		int small = large;
+		if(large != STOP){
 			while(true){
 				int k = readInt("?");
-				if(k == 0){
+				if(k == STOP){
 					break;
 				}else{
 					if(k > large){
 						large = k;
 					}
-					if(k < large){
-						return k;
+					if(k < small){
+						small = k;
 					}
 				}
 			}
 		}
-		return large;
+		if(large > small){
+			return large;
+		}
+		return small;
 	}
 	
 	public void run(){
