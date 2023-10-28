@@ -5,11 +5,13 @@ public class assignment2P5 extends ConsoleProgram{
 
 	private int SmallLarge(int a){
 		int large = readInt("?");
-		if(large != 0){
-			while(true){
-				int k = readInt("?");
-				if(k > large){
-					k = large;
+		if(a !=0){
+			if(large != 0){
+				while(true){
+					int k = readInt("?");
+					if(k > large){
+						k = large;
+					}
 				}
 			}
 		}
