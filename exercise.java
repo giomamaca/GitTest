@@ -1,18 +1,15 @@
 import acm.program.ConsoleProgram;
 
-public class exercise extends ConsoleProgram{	
-	
-	private static int specialNum = 0;
-	
+public class exercise extends ConsoleProgram{		
 	public void run(){
 		int max = readInt("");
 		int min = max;
-		if(max == specialNum){
+		if(max == 0){
 			println("dasdadadad");
 		}else{
 			while(true){
 				int a = readInt("");
-				if(a == specialNum){
+				if(a == 0){
 					break;
 				}else{
 					if(a < min){
