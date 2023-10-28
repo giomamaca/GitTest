@@ -16,7 +16,7 @@ public class assignment2P5 extends ConsoleProgram{
 					if(k > large){
 						large = k;
 					}
-					if(k < small){
+					if(k < large){
 						small = k;
 					}
 				}
