@@ -14,8 +14,6 @@ public class assignment2P5 extends ConsoleProgram{
 					}
 				}
 			}
-		}else{
-			return a;
 		}
 		return large;
 	}
