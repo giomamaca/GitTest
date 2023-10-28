@@ -25,7 +25,10 @@ public class assignment2P5 extends ConsoleProgram{
 		if(large > small){
 			println("largest : " + large);
 		}
-		return small;
+		if(small < large){
+			println("smallest" + small);
+		}
+		return 0;
 	}
 	
 	public void run(){
