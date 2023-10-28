@@ -7,9 +7,13 @@ public class assignment2P5 extends ConsoleProgram{
 		while(a != 0){
 			a = readInt("?");
 			if(a > 0){
-				return Math.max(0, a);
+				for(int i = 0; i < a; i++){
+					print(Math.max(0, a));
+				}
 			}else{
-				return Math.min(a, 0);
+				for(int i = 0; i > a; i++){
+					print(Math.min(a, 0));
+				}
 			}
 		}
 		return a;
