@@ -4,9 +4,16 @@ public class assignment2P5 extends ConsoleProgram{
 	
 
 	private int SmallLarge(int a){
-		int Large = 0;
-		int Small = 0;
-		
+		int large = readInt("?");
+		if(large != 0){
+			while(true){
+				int k = readInt("?");
+				if(k > large){
+					println("largest : " + k);
+				}
+			}
+		}
+		return large;
 	}
 	
 	public void run(){
