@@ -2,8 +2,8 @@ import acm.program.ConsoleProgram;
 
 public class exercise extends ConsoleProgram{		
 	public void run(){
-		int max = readInt("?");
-		int min = readInt("?");
+		int max = readInt("");
+		int min = max;
 		if(max == 0){
 			println("dasdadadad");
 		}else{
