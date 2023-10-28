@@ -23,7 +23,7 @@ public class assignment2P5 extends ConsoleProgram{
 			}
 		}
 		if(large > small){
-			return large;
+			println("largest : " + large);
 		}
 		return small;
 	}
