@@ -5,7 +5,6 @@ public class assignment2P5 extends ConsoleProgram{
 
 	private int SmallLarge(int a){
 		if(a != 0){
-			int k = readInt("?");
 		}
 		return a;
 	}
