@@ -11,6 +11,7 @@ public class Practice26 extends ConsoleProgram{
 				}
 			}
 		}
+		return a;
 	}
 	
 	public void run(){
