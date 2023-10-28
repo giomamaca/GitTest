@@ -3,8 +3,10 @@ import acm.program.ConsoleProgram;
 public class assignment2P5 extends ConsoleProgram{
 	
 	private static final int STOP = 0;
+	
+	public void run(){
+		println("This program finds smallest and largest numbers.");
 
-	private int SmallLarge(int a){
 		int large = readInt("?");
 		int small = large;
 		if(large != STOP){
@@ -26,14 +28,7 @@ public class assignment2P5 extends ConsoleProgram{
 			println("largest : " + large);
 		}
 		if(small < large){
-			println("smallest" + small);
+			println("smallest: " + small);
 		}
-		return 0;
-	}
-	
-	public void run(){
-		println("This program finds smallest and largest numbers.");
-		int c = readInt("?");
-		println(SmallLarge(c));
 	}
 }
