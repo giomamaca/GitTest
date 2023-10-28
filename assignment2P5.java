@@ -25,9 +25,7 @@ public class assignment2P5 extends ConsoleProgram{
 		if(large > small){
 			return large;
 		}
-		if(small < large){
-			return small;
-		}
+		return small;
 	}
 	
 	public void run(){
