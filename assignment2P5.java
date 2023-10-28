@@ -5,10 +5,21 @@ public class assignment2P5 extends ConsoleProgram{
 
 	private int SmallLarge(int a){
 		int large = readInt("?");
-		while(a == 0){
-					int k = readInt("?");
+		if(large == 0){
+			println("");
+		}else{
+			while(true){
+				int k = readInt("?");
+				if(k == 0){
+					break;
+				}else{
 					if(k > large){
-						k = large;
+						large = k;
+					}
+					if(k < large){
+						return k;
+					}
+				}
 			}
 		}
 		return large;
