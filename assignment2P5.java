@@ -9,7 +9,7 @@ public class assignment2P5 extends ConsoleProgram{
 			while(true){
 				int k = readInt("?");
 				if(k > large){
-					println("largest : " + k);
+					k = large;
 				}
 			}
 		}
