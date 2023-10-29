@@ -6,6 +6,7 @@ public class Practise32 extends ConsoleProgram{
 		for(int i = 0; i < a; i++){
 			return a;
 		}
+		return a;
 	}
 	
 	public void run(){
