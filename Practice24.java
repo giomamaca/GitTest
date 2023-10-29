@@ -10,7 +10,10 @@ public class Practice24 extends ConsoleProgram{
 			}
 		}
 		if(result == 2){
-			println("rtulia " + result);
+			println("martivia " + result);
+		}
+		if(result != 2){
+			println("martivia " + result);
 		}
 		return result;
 	}
