@@ -9,6 +9,9 @@ public class Practice24 extends ConsoleProgram{
 				result++;
 			}
 		}
+		if(result == 2){
+			println("rtulia " + result);
+		}
 		return result;
 	}
 	
