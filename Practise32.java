@@ -1,8 +1,7 @@
 import acm.program.ConsoleProgram;
 
 public class Practise32 extends ConsoleProgram{
-	
-	
+
 	private boolean isSimple(int k){
 		if(k == 1) return false;
 		if(k == 2) return true;
@@ -15,8 +14,15 @@ public class Practise32 extends ConsoleProgram{
 		return true;
 	}
 	
+	private void milion(){
+		for(int i = 2; i < 1000000; i++){
+			if(isSimple(i)){
+				println("?" + i);
+			}
+		}
+	}
+	
 	public void run(){
-		int a = readInt ();
-		print(isSimple(a));
+		
 	}
 }
