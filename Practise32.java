@@ -5,7 +5,7 @@ public class Practise32 extends ConsoleProgram{
 	private int milion(int n){
 		int result = 0;
 		for(int i = 1; i <= n; i ++){
-				if(n % i == 0){
+				while(n % i == 0){
 				result++;
 				while(result == 2){
 					return i;
