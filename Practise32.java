@@ -2,18 +2,20 @@ import acm.program.ConsoleProgram;
 
 public class Practise32 extends ConsoleProgram{
 	
-	public void run(){
-		int result = 0;
-		int n = readInt("");
-		for(int i = 1; i <= n; i ++){
-			for(int j = 1; j <= i; j++){
-				if(i % j == 0){
-					result ++;
-				}
-				while(result == 2){
-					print(i);
-				}
+	
+	private boolean isSimple(int k){
+		if(k == 2) return true;
+		if(k % 2 == 0) return false;
+		for(int i = 3; i * i <= k; i += 2) {
+			if (k % i == 0){
+				return false;
 			}
 		}
+		return true;
+	}
+	
+	public void run(){
+		int a = readInt ();
+		print(isSimple(a));
 	}
 }
