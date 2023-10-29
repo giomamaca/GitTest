@@ -2,25 +2,18 @@ import acm.program.ConsoleProgram;
 
 public class Practise32 extends ConsoleProgram{
 	
-	private int milion(int n){
+	public void run(){
 		int result = 0;
+		int n = readInt("");
 		for(int i = 1; i <= n; i ++){
 			for(int j = 0; j <= i; j++){
-				if(i % j != 0){
+				if(i % j == 0){
 					result ++;
 				}
-				while(n > 0){
-					if(result == 2){
-						return i;
-					}
+				if(result == 0){
+					print(i);
 				}
 			}
 		}
-		return 0;
-	}
-	
-	public void run(){
-		int c = readInt("?");
-		print(milion(c));
 	}
 }
