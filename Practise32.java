@@ -14,6 +14,7 @@ public class Practise32 extends ConsoleProgram{
 				}
 			}
 		}
+		return result;
 	}
 	
 	public void run(){
