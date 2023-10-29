@@ -10,7 +10,7 @@ public class Practise32 extends ConsoleProgram{
 				if(i % j == 0){
 					result ++;
 				}
-				if(result == 2){
+				while(result == 2){
 					print(i);
 				}
 			}
