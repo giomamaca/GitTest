@@ -23,6 +23,6 @@ public class Practise32 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		
+		milion();
 	}
 }
