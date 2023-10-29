@@ -6,7 +6,7 @@ public class Practice31 extends ConsoleProgram{
 		int result = 0;
 		int n = readInt("enter number = ");
 		for (int i = 0; i <= n; i++) {
-			if (n % i == 0) {
+			while(n % i == 0){
 				result++;
 			}
 		}
