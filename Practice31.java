@@ -11,10 +11,10 @@ public class Practice31 extends ConsoleProgram{
 			}
 		}
 		if(result == 2){
-			println("martivia " + result);
+			println("martivia ");
 		}
 		if(result != 2){
-			println("martivia " + result);
+			println("rtulia ");
 		}
 	}
 }
