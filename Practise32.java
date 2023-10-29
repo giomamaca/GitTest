@@ -6,7 +6,7 @@ public class Practise32 extends ConsoleProgram{
 		int result = 0;
 		for(int i = 1; i <= n; i ++){
 			for(int j = 0; j <= i; j++){
-				if(n % i == 0){
+				if(i % j == 0){
 					result ++;
 				}
 				while(n > 0){
