@@ -8,7 +8,7 @@ public class Practice24 extends ConsoleProgram{
 			if (n % i == 0) {
 				result++;
 			}
-		}z
+		}
 		return result;
 	}
 	
