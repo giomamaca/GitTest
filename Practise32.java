@@ -8,8 +8,7 @@ public class Practise32 extends ConsoleProgram{
 				if(n % i == 0){
 				result++;
 				if(result == 2){
-					print(i);
-					println("");
+					return i;
 				}
 			}
 		}
