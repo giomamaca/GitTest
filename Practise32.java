@@ -6,11 +6,11 @@ public class Practise32 extends ConsoleProgram{
 		int result = 0;
 		int n = readInt("");
 		for(int i = 1; i <= n; i ++){
-			for(int j = 0; j <= i; j++){
+			for(int j = 1; j <= i; j++){
 				if(i % j == 0){
 					result ++;
 				}
-				if(result == 0){
+				if(result == 2){
 					print(i);
 				}
 			}
