@@ -12,7 +12,7 @@ public class Practise32 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		int k = readInt("enter a = ");
+		int k = readInt("enter k = ");
 		println(divisiors(k));
 	}
 }
