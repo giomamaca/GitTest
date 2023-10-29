@@ -8,13 +8,7 @@ public class Practice24 extends ConsoleProgram{
 			if (n % i == 0) {
 				result++;
 			}
-		}
-		if(result == 2){
-			println("martivia " + result);
-		}
-		if(result != 2){
-			println("martivia " + result);
-		}
+		}z
 		return result;
 	}
 	
