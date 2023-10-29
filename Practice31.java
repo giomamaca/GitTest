@@ -4,8 +4,8 @@ public class Practice31 extends ConsoleProgram{
 	
 	public void run(){
 		int result = 0;
-		int n = readInt("");
-		for (int i = 1; i <= n; i++) {
+		int n = readInt("enter number = ");
+		for (int i = 0; i <= n; i++) {
 			if (n % i == 0) {
 				result++;
 			}
