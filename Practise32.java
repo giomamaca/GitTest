@@ -6,8 +6,8 @@ public class Practise32 extends ConsoleProgram{
 		int a = readInt("enter a = ");
 		for(int i = 0; i <= a; i++){
 			for(int j = 0; j <= i; j++){
-				if(i % i == 0){
-					result++;
+				if(i % j == 0){
+					print(i);
 				}
 			}
 		}
