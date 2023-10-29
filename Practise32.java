@@ -9,6 +9,7 @@ public class Practise32 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		
+		int k = readInt("enter a = ");
+		println(divisiors(k));
 	}
 }
