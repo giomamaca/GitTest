@@ -8,12 +8,12 @@ public class Practise32 extends ConsoleProgram{
 				if(n % i == 0){
 				result++;
 				if(result == 2){
-					println("");
 					print(i);
+					println("");
 				}
 			}
 		}
-		return result;
+		return 0;
 	}
 	
 	public void run(){
