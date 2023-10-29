@@ -17,7 +17,7 @@ public class Practise32 extends ConsoleProgram{
 	private void milion(){
 		for(int i = 2; i < 100; i++){
 			if(isSimple(i)){
-				println("?" + i);
+				println("? " + i);
 			}
 		}
 	}
