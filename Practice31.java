@@ -11,7 +11,7 @@ public class Practice31 extends ConsoleProgram{
 				if(result == 2){
 					println("martivia " + result);
 				}else{
-					println("rtulia " + result);
+					println("rtulia " + result)
 				}
 			}
 		}
