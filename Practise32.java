@@ -8,6 +8,7 @@ public class Practise32 extends ConsoleProgram{
 				if(n % i == 0){
 				result++;
 				if(result == 2){
+					println("");
 					print(i);
 				}else{
 					
@@ -18,7 +19,7 @@ public class Practise32 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		int c = readInt("");
+		int c = readInt("?");
 		print(milion(c));
 	}
 }
