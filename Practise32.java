@@ -8,10 +8,8 @@ public class Practise32 extends ConsoleProgram{
 			for(int j = 0; j <= i; j++){
 				if(i % j == 0){
 					result++;
+					print(result);
 				}
-			}
-			while(result == 2){
-				print(i);
 			}
 		}
 	}
