@@ -18,7 +18,7 @@ public class Practice322 extends ConsoleProgram{
 	
 	private void addSimples() {
 		for(int i = 1; i <= 100; i++){
-			int divisors = numDivisors(i);
+			int divisors = numDivisors(i);;
 			
 			if(divisors == 2){
 				print(i);
