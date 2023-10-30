@@ -6,11 +6,11 @@ public class Practice322 extends ConsoleProgram{
 		addSimples();
 	}
 	
-	private int numDivisors(int k){
+	private int numDivisors(int i){
 		int result = 0;
 		
-		for(int j = 1; j <= k; j++){
-			if(k % j == 0){
+		for(int j = 1; j <= 1000000; j++){
+			if(i % j == 0){
 				result += 1;
 			}
 		}
@@ -18,7 +18,7 @@ public class Practice322 extends ConsoleProgram{
 	}
 	
 	private void addSimples() {
-		for(int i = 1; i <= 100; i++){
+		for(int i = 1; i <= 1000000; i++){
 			int divisors = numDivisors(i);
 			
 			if(divisors == 2){
