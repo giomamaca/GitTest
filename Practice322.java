@@ -2,9 +2,9 @@ import acm.program.ConsoleProgram;
 
 public class Practice322 extends ConsoleProgram{
 	
-	private int numDivisors(int k){
+	private int numDivisors(int i){
 		int result = 0;
-		for(int j = 1; j <= k; j++){
+		for(int j = 1; j <= i; j++){
 			if(k % j == 0){
 				result ++;
 			}
