@@ -21,7 +21,7 @@ public class Practice322 extends ConsoleProgram{
 			int divisors = numDivisors(i);
 			
 			if(divisors == 2){
-				print(i);
+				println("" + i);
 			}
 		}
 	}
