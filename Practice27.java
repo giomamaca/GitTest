@@ -5,7 +5,7 @@ public class Practice27 extends ConsoleProgram{
 		int answer = 1;
 		double n = readDouble("");
 		int m = readInt("");
-		for(int i = 0; i <= m; i++){
+		for(int i = 1; i <= m; i++){
 			answer *= n;
 		}
 		print(answer);
