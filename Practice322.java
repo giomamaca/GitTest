@@ -2,17 +2,18 @@ import acm.program.ConsoleProgram;
 
 public class Practice322 extends ConsoleProgram{
 	
+	private boolean isSimple(int a){
+		if(a == 1) return false;
+		if(a % 2 == 0) return false;
+		if(a == 2) return true;
+		for(int i = 3; i <= a; i += 2){
+			
+		}
+	}
+	
 	public void run(){
 		for(int i = 1; i <= 100; i++){
-			int result = 0;
-			for(int j = 1; j <= i; i++){
-				if(i % j == 0){
-					result ++;
-				}
-			}
-			if(result == 2){
-				print(i);
-			}
+			
 		}
 	}
 }
