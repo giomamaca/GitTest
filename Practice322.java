@@ -2,27 +2,17 @@ import acm.program.ConsoleProgram;
 
 public class Practice322 extends ConsoleProgram{
 	
-//	private int divisors(int a){
-//		for(int i = 1; i <= a; i++){
-//		}
-//		return 0;
-//	}
-	
-	private void milion(){
-		int result = 0;
-		int k = 10;
-		for(int j = 1; j < k; j++){
-			if(k % j == 0){
-				result++;
-			}
-			if(result == 2){
-				println("");
-				print(j);
+	public void run(){
+		for(int i = 1; i <= 100; i++){
+			int result = 0;
+			for(int j = 1; j <= i; i++){
+				if(i % j == 0){
+					result ++;
+				}
+				if(result == 2){
+					print(i);
+				}
 			}
 		}
-	}
-	
-	public void run(){
-		milion();
 	}
 }
