@@ -9,8 +9,8 @@ public class assignment2P5 extends ConsoleProgram{
 		int large = readInt("?");
 		int small = large;
 		if(large != STOP){
-			while(small != 0){
-				int k = readInt("?");
+			while(small != STOP){
+				int k = readInt("? ");
 				if(k != STOP){
 					if(k > large){
 						large = k;
