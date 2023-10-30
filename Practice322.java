@@ -15,7 +15,7 @@ public class Practice322 extends ConsoleProgram{
 	}
 	
 	private void milion(){
-		for(int i = 2; i < 1000; i++){
+		for(int i = 2; i < 1000; i += 2){
 			if(isSimple(i)){
 				println("? " + i);
 			}
