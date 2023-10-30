@@ -20,7 +20,7 @@ public class Practice322 extends ConsoleProgram{
 		
 		for(int j = 1; j <= 1000000; j++){
 			if(i % j == 0){
-				result ++;
+				result += 1;
 			}
 		}
 		return result;
