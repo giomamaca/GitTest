@@ -16,6 +16,7 @@ public class Practice322 extends ConsoleProgram{
 				result++;
 			}
 			if(result == 2){
+				println("");
 				print(j);
 			}
 		}
