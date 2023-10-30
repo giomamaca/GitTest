@@ -2,9 +2,13 @@ import acm.program.ConsoleProgram;
 
 public class Practice322 extends ConsoleProgram{
 	
+	public void run(){
+		addSimples();
+	}
+	
 	private int numDivisors(int i){
 		int result = 0;
-		for(int j = 0; j < i; j++){
+		for(int j = 1; j <= i; j++){
 			if(i % j == 0){
 				result ++;
 			}
@@ -12,11 +16,8 @@ public class Practice322 extends ConsoleProgram{
 		return result;
 	}
 	
-	public void run(){
-		addSimples();
-	}
 	private void addSimples() {
-		for(int i = 0; i < 100; i++){
+		for(int i = 1; i <= 100; i++){
 			int divisors = numDivisors(i);
 			
 			if(divisors == 2){
