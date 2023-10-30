@@ -10,7 +10,7 @@ public class Practice322 extends ConsoleProgram{
 	
 	private void milion(){
 		int result = 0;
-		int k = 100;
+		int k = 10;
 		for(int j = 1; j < k; j++){
 			if(k % j == 0){
 				result++;
