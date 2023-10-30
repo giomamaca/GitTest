@@ -15,7 +15,7 @@ public class Practice322 extends ConsoleProgram{
 			if(k % j == 0){
 				result++;
 			}
-			while(result == 2){
+			if(result == 2){
 				print(j);
 			}
 		}
