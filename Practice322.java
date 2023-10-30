@@ -8,7 +8,7 @@ public class Practice322 extends ConsoleProgram{
 	
 	private int numDivisors(int i){
 		int result = 0;
-		for(int j = 1; j <= i; j++){
+		for(int j = 1; j <= 100; j++){
 			if(i % j == 0){
 				result ++;
 			}
@@ -18,7 +18,7 @@ public class Practice322 extends ConsoleProgram{
 	
 	private void addSimples() {
 		for(int i = 1; i <= 100; i++){
-			int divisors = numDivisors(i);;
+			int divisors = numDivisors(i);
 			
 			if(divisors == 2){
 				print(i);
