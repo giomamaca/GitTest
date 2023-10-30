@@ -8,6 +8,7 @@ public class Practice322 extends ConsoleProgram{
 	
 	private int numDivisors(int k){
 		int result = 0;
+		
 		for(int j = 1; j <= k; j++){
 			if(k % j == 0){
 				result += 1;
@@ -21,7 +22,7 @@ public class Practice322 extends ConsoleProgram{
 			int divisors = numDivisors(i);
 			
 			if(divisors == 2){
-				println("" + i);
+				println("num = " + i);
 			}
 		}
 	}
