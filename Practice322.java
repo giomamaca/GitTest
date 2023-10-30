@@ -24,6 +24,6 @@ public class Practice322 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		milion
+		milion();
 	}
 }
