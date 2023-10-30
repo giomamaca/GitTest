@@ -5,11 +5,11 @@ public class assignment2P6 extends ConsoleProgram{
 		int a = readInt ("enter number = ");
 		while(a != 1){
 			if(a % 2 == 0){
-				println("" + a);
 				a = a / 2;
-			}else{
 				println("" + a);
+			}else{
 				a = a*3 + 1;
+				println("" + a);
 			}
 		}
 	}
