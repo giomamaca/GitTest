@@ -9,9 +9,9 @@ public class Practice322 extends ConsoleProgram{
 				if(i % j == 0){
 					result ++;
 				}
-				if(result == 2){
-					print(i);
-				}
+			}
+			if(result == 2){
+				print(i);
 			}
 		}
 	}
