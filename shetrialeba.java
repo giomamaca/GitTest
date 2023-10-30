@@ -8,6 +8,7 @@ public class shetrialeba extends ConsoleProgram{
 			k = k*10 + a % 10;
 			a = a / 10;
 		}
+		return k;
 	}
 	
 	public void run(){
