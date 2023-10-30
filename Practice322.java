@@ -6,6 +6,15 @@ public class Practice322 extends ConsoleProgram{
 		addSimples();
 	}
 	
+	private void addSimples() {
+		for(int i = 1; i <= 1000000; i++){
+			int divisors = numDivisors(i);;
+			
+			if(divisors == 2){
+				println("num = " + i);
+			}
+		}
+	}
 	private int numDivisors(int i){
 		int result = 0;
 		
@@ -15,15 +24,5 @@ public class Practice322 extends ConsoleProgram{
 			}
 		}
 		return result;
-	}
-	
-	private void addSimples() {
-		for(int i = 1; i <= 1000000; i++){
-			int divisors = numDivisors(i);
-			
-			if(divisors == 2){
-				println("num = " + i);
-			}
-		}
 	}
 }
