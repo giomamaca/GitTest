@@ -6,7 +6,7 @@ import acm.util.RandomGenerator;
 
 public class Practice33 extends GraphicsProgram{
 	public void run(){
-		int r = rgen.nextInt(10, 100);
+		int r = rgen.nextInt(10, 1000);
 		int X = getWidth();
 		int Y = getHeight();
 		Color color = rgen.nextColor();
