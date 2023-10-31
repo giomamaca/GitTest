@@ -10,7 +10,7 @@ public class Practice33 extends GraphicsProgram{
 		int X = getWidth();
 		int Y = getHeight();
 		Color color = rgen.nextColor();
-		GOval oval = new GOval(X / 2 - r / 2, Y / 2 - r , r, r);
+		GOval oval = new GOval(X / 2 - r / 2, Y / 2 - r / 2, r, r);
 		oval.setFilled(true);
 		oval.setColor(color);
 		add(oval);
