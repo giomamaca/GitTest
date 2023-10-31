@@ -11,6 +11,8 @@ public class Practice38 extends ConsoleProgram{
 		
 		if(k > 36) return false;
 		if(k < 0) return false;
+		
+		return true;
 	}
 	
 	public void run(){
