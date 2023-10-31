@@ -10,8 +10,8 @@ public class Practice38 extends ConsoleProgram{
 		int money = readInt("prise = ");
 		
 		for(int i = 0; i < 100000; i++){
+			println("eneter num = " + k);
 			int k = readInt(0, 36);
-			println("enter num = " + k);
 			int a = rGen.nextInt(0, 36);
 			println("" + a);
 				
