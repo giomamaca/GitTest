@@ -13,9 +13,11 @@ public class Practice37 extends ConsoleProgram{
 		for(int i = 0; true; i++){
 			if(bount != 0){
 				if(a == true){
+					println("blue");
 					bount = bount + 50;
 					println("you win: " + bount); 
 				}else{
+					println("red");
 					bount = bount - 50;
 					println("you lose: " + bount);
 				}
