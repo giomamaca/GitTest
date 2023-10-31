@@ -10,6 +10,7 @@ public class Practice38 extends ConsoleProgram{
 		int money = readInt("enter prise = ");
 		int k = readInt("enter num = ");
 		
+		while(bount != 0){
 			for(int i = 0; i < 10; i++){
 				boolean num = rGen.nextBoolean();
 				
@@ -20,6 +21,7 @@ public class Practice38 extends ConsoleProgram{
 				}
 				if(a != k ){
 					bount = bount - money;
+				}
 			}
 		}
 	}
