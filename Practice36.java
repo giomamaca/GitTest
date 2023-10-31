@@ -1,4 +1,4 @@
 
-public class Practice36 {
+public class Practice36 extends {
 
 }
