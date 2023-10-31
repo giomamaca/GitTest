@@ -17,10 +17,14 @@ public class Practice35 extends ConsoleProgram{
 		while(true){
 			boolean a = rgen.nextBoolean();
 			
-			if(a){
+			if(a == true){
 				println("arioli");
 			}else{
 				println("reshka");
+			}
+			if(a == false){
+				println("dadadadadad");
+				break;
 			}
 		}
 	}	
