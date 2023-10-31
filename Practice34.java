@@ -10,12 +10,14 @@ public class Practice34 extends GraphicsProgram{
 		int x = getWidth();
 		int y = getHeight();
 		Color color = rgen.nextColor();
-		GOval oval = new GOval(x/ 2 - r / 2, y / 2 - r / 2, r, r);
-		oval.setFilled(true);
-		oval.setColor(color);
-		add(oval);
-		
+		for(int i = 0; i < 1000; i++){
+			GOval oval = new GOval(x/ 2 - r / 2, y / 2 - r / 2, r, r);
+			oval.setFilled(true);
+			oval.setColor(color);
+			add(oval);
+			
 		}
+	}
 	
 	RandomGenerator rgen = new RandomGenerator() ;
 }
