@@ -8,11 +8,11 @@ public class Practice38 extends ConsoleProgram{
 	public void run(){
 		int bount = 1000;
 		int a = rGen.nextInt(0, 36);
-		int money = readInt();
+		int money = readInt("enter prise = ");
 		int k = readInt("enter num = ");
 		
 		while(bount != 0){
-			for(int i = 0; true; i++){
+			for(int i = 0; i < 10; i++){
 				boolean num = rGen.nextBoolean();
 				
 				if(a == k){
