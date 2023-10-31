@@ -6,7 +6,7 @@ public class Practice38 extends ConsoleProgram{
 	RandomGenerator rGen = new RandomGenerator();
 	
 	public void run(){
-		int bount = 1000;
+		int bount = 100;
 		int money = readInt("prise = ");
 		int k = readInt("enter num = ");
 		
