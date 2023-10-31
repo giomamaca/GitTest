@@ -20,7 +20,7 @@ public class Practice38 extends ConsoleProgram{
 		int money = readInt("prise = ");
 		
 		for(int i = 0; i < 100000; i++){
-			int k = readInt();
+			int k = readInt("enter num = ");
 			int a = rGen.nextInt(0, 36);
 			println("" + a);
 				
