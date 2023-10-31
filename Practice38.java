@@ -5,22 +5,12 @@ public class Practice38 extends ConsoleProgram{
 	
 	RandomGenerator rGen = new RandomGenerator();
 	
-	private boolean k(int k){
-		if(k >= 0) return true;
-		if(k <= 36) return true;
-		
-		if(k > 36) return false;
-		if(k < 0) return false;
-		
-		return true;
-	}
-	
 	public void run(){
 		int bount = 1000;
 		int money = readInt("prise = ");
 		
 		for(int i = 0; i < 100000; i++){
-			int k = readInt("enter num = ");
+			int k = readInt(0, 36);
 			int a = rGen.nextInt(0, 36);
 			println("" + a);
 				
