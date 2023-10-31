@@ -12,9 +12,10 @@ public class Practice35 extends ConsoleProgram{
 		int r = rgen.nextInt(10, 200);
 		int x = getWidth();
 		int y  = getHeight();
+		int k = readInt("?");
 		
 		
-		while(true){
+		for(int i = 0; i < k; i++){
 			boolean a = rgen.nextBoolean();
 			
 			if(a == true){
@@ -23,10 +24,7 @@ public class Practice35 extends ConsoleProgram{
 			}else{
 				println("reshka");
 			}
-			if(a == false){
-				println("dadadadadad = " + result);
-				break;
-			}
+			print(result / k);
 		}
 	}	
 }
