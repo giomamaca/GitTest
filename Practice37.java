@@ -10,13 +10,15 @@ public class Practice37 extends ConsoleProgram{
 		
 		boolean a = rGen.nextBoolean();
 		
-		if(bount != 0){
-			if(a == true){
-				bount = bount + 50;
-				println("you win: " + bount); 
-			}else{
-				bount = bount - 50;
-				println("you lose: " + bount);
+		for(int i = 0; true; i++){
+			if(bount != 0){
+				if(a == true){
+					bount = bount + 50;
+					println("you win: " + bount); 
+				}else{
+					bount = bount - 50;
+					println("you lose: " + bount);
+				}
 			}
 		}
 	}
