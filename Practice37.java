@@ -6,11 +6,11 @@ public class Practice37 extends ConsoleProgram{
 	RandomGenerator rGen = new RandomGenerator();
 	
 	public void run(){
-		int bount = 1000; 
-		
-		boolean a = rGen.nextBoolean();
+		int bount = 1000;
 		
 		for(int i = 0; true; i++){
+			boolean a = rGen.nextBoolean();
+			
 			if(bount != 0){
 				if(a == true){
 					println("blue");
