@@ -5,6 +5,10 @@ public class Practice36 extends ConsoleProgram{
 	
 	RandomGenerator rgen = new RandomGenerator();
 	
+	private boolean chance(){
+		 
+	}
+	
 	public void run(){
 		int result = 0;
 		for(int i = 0; i < 15; i++){
