@@ -16,9 +16,11 @@ public class Practice38 extends ConsoleProgram{
 				
 			if(a == k){
 				bount = bount  + money;
+				println("you won : " + bount);
 			}
 			if(a != k ){
 				bount = bount - money;
+				println("you lost : " + bount);
 			}
 		}
 		println("your bount = " + bount);
