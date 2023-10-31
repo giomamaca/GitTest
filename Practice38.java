@@ -23,5 +23,6 @@ public class Practice38 extends ConsoleProgram{
 				}
 			}
 		}
+		println("your bount = " + bount);
 	}
 }
