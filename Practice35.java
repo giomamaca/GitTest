@@ -12,10 +12,8 @@ public class Practice35 extends ConsoleProgram{
 		int r = rgen.nextInt(10, 200);
 		int x = getWidth();
 		int y  = getHeight();
-		double k = readDouble("?");
 		
-		
-		for(int i = 0; i < k; i++){
+		for(int i = 0; i < 100; i++){
 			boolean a = rgen.nextBoolean();
 			
 			if(a == true){
@@ -25,6 +23,6 @@ public class Practice35 extends ConsoleProgram{
 				println("reshka");
 			}
 		}
-		print(result / k);
+		print(result / 100);
 	}	
 }
