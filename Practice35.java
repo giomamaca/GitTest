@@ -8,7 +8,7 @@ public class Practice35 extends ConsoleProgram{
 	RandomGenerator rgen = new RandomGenerator();
 	
 	public void run(){
-		
+		int result = 0;
 		int r = rgen.nextInt(10, 200);
 		int x = getWidth();
 		int y  = getHeight();
@@ -19,11 +19,12 @@ public class Practice35 extends ConsoleProgram{
 			
 			if(a == true){
 				println("arioli");
+				result++;
 			}else{
 				println("reshka");
 			}
 			if(a == false){
-				println("dadadadadad");
+				println("dadadadadad" + result);
 				break;
 			}
 		}
