@@ -11,7 +11,6 @@ public class Practice38 extends ConsoleProgram{
 		int k = readInt("enter num = ");
 		
 		for(int i = 0; i < 100000; i++){
-			while(bount != 0){
 				if(true){
 					int a = rGen.nextInt(0, 36);
 					println("" + a);
@@ -21,7 +20,6 @@ public class Practice38 extends ConsoleProgram{
 					}
 					if(a != k ){
 						bount = bount - money;
-					}
 				}
 			}
 		}
