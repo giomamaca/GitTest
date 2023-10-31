@@ -24,7 +24,7 @@ public class Practice35 extends ConsoleProgram{
 			}else{
 				println("reshka");
 			}
-			print(result / k);
 		}
+		print(result / k);
 	}	
 }
