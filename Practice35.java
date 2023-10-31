@@ -24,7 +24,7 @@ public class Practice35 extends ConsoleProgram{
 				println("reshka");
 			}
 			if(a == false){
-				println("dadadadadad" + result);
+				println("dadadadadad = " + result);
 				break;
 			}
 		}
