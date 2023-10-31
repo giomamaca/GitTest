@@ -10,16 +10,18 @@ public class Practice38 extends ConsoleProgram{
 		int money = readInt("prise = ");
 		int k = readInt("enter num = ");
 		
-		while(bount != 0){
-			if(true){
-				int a = rGen.nextInt(0, 36);
-				println("" + a);
-			
-				if(a == k){
-					bount = bount  + money;
-				}
-				if(a != k ){
-					bount = bount - money;
+		for(int i = 0; i < 100000; i++){
+			while(bount != 0){
+				if(true){
+					int a = rGen.nextInt(0, 36);
+					println("" + a);
+				
+					if(a == k){
+						bount = bount  + money;
+					}
+					if(a != k ){
+						bount = bount - money;
+					}
 				}
 			}
 		}
