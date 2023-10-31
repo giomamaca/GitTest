@@ -7,14 +7,13 @@ public class Practice38 extends ConsoleProgram{
 	
 	public void run(){
 		int bount = 1000;
-		int a = rGen.nextInt(0, 36);
 		int money = readInt("enter prise = ");
 		int k = readInt("enter num = ");
 		
 		while(bount != 0){
 			for(int i = 0; i < 10; i++){
 				boolean num = rGen.nextBoolean();
-				
+				int a = rGen.nextInt(0, 36);
 				if(a == k){
 					bount = bount  + money;
 				}
