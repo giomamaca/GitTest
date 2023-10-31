@@ -12,7 +12,7 @@ public class Practice35 extends ConsoleProgram{
 		int r = rgen.nextInt(10, 200);
 		int x = getWidth();
 		int y  = getHeight();
-		int k = readInt("?");
+		double k = readDouble("?");
 		
 		
 		for(int i = 0; i < k; i++){
