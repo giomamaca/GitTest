@@ -5,25 +5,18 @@ public class Practice36 extends ConsoleProgram{
 	
 	RandomGenerator rgen = new RandomGenerator();
 	
-	private boolean chance(){
-		for(int j = 1; j <= 3; j++){
-			if(true){
-				return false;
-			}
-		}
-		return true;
-	}
-	
-	public void run(){	
-		int result = 0;
-		
+	public void run(){			
 		for(int i = 0; i < 1000000; i++){
+			int result = 0;
 			boolean a = rgen.nextBoolean(); 
 			if(a == true){
 				println("ariol");
+				result ++;
 			}else{
 				println("reshka");
-				if(chance())break;
+			}
+			if(result == 3){
+				break;
 			}
 		}
 	}
