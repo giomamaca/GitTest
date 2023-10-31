@@ -13,12 +13,15 @@ public class Practice35 extends ConsoleProgram{
 		int x = getWidth();
 		int y  = getHeight();
 		
-		boolean a = rgen.nextBoolean();
 		
-		if(a){
-			println("arioli");
-		}else{
-			println("reshka");
+		while(true){
+			boolean a = rgen.nextBoolean();
+			
+			if(a){
+				println("arioli");
+			}else{
+				println("reshka");
+			}
 		}
 	}	
 }
