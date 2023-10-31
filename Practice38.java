@@ -11,9 +11,9 @@ public class Practice38 extends ConsoleProgram{
 		int k = readInt("enter num = ");
 		
 		if(bount != 0){
-			for(int i = 0; i < 10; i++){
+			for(int i = 0;true ; i++){
 				int a = rGen.nextInt(0, 36);
-				print(a);
+				println("" + a);
 				if(a == k){
 					bount = bount  + money;
 				}
