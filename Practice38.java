@@ -8,19 +8,17 @@ public class Practice38 extends ConsoleProgram{
 	public void run(){
 		int bount = 100;
 		int money = readInt("prise = ");
-		int k = readInt("enter num = ");
 		
 		for(int i = 0; i < 100000; i++){
-				if(true){
-					int a = rGen.nextInt(0, 36);
-					println("" + a);
+			int k = readInt("enter num = ");
+			int a = rGen.nextInt(0, 36);
+			println("" + a);
 				
-					if(a == k){
-						bount = bount  + money;
-					}
-					if(a != k ){
-						bount = bount - money;
-				}
+			if(a == k){
+				bount = bount  + money;
+			}
+			if(a != k ){
+				bount = bount - money;
 			}
 		}
 		println("your bount = " + bount);
