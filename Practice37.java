@@ -10,7 +10,7 @@ public class Practice37 extends ConsoleProgram{
 		
 		boolean a = rGen.nextBoolean();
 		
-		while(bount != 0){
+		if(bount != 0){
 			if(a == true){
 				bount = bount + 50;
 				println("you win: " + bount); 
