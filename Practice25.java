@@ -8,16 +8,16 @@ public class Practice25 extends ConsoleProgram{
 			}else{
 				for(int i = 0; i*i < a; i++){
 					if(a % i == 0){
-						return i;
+						print(i);
 					}
 					a = a / i;
 					b = b / i;
 					int d = a * b * i;
-					return d;
+					print(d);
 				}
 			}
 		}
-		return 0;
+		return a;
 	}
 	
 	public void run(){
