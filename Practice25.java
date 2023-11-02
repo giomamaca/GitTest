@@ -1,28 +1,28 @@
 import acm.program.ConsoleProgram;
 
 public class Practice25 extends ConsoleProgram{
-	private int LCM(int a, int b){
-		if(a > b){
-			if(a % b == 0){
-				return a;
-			}else{
-				for(int i = 0; i*i < a; i++){
-					if(a % i == 0){
-						print(i);
-					}
-					a = a / i;
-					b = b / i;
-					int d = a * b * i;
-					print(d);
-				}
+	
+	private int divisors(int d, int p){
+		int l = 0;
+		for(int i = 0; i*i < d; i++){
+			if(d % i == 0){
+				l = i;
 			}
 		}
-		return a;
+		d = d / l;
+		p = p / l;
+		l = d * p * l;
+		
+		return l;
 	}
+	
+//	private int LCM(int a, int b){
+//		
+//	}
 	
 	public void run(){
 		int c = readInt("c = ");
 		int k = readInt("k = ");
-		println(LCM(c, k));
+		println(divisors(c, k));
 	}
 }
