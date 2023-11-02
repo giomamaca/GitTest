@@ -10,12 +10,6 @@ public class Practice25 extends ConsoleProgram{
 				l = i;
 			}
 		}
-		if(d % l == 0){
-			d = d / l;
-		}
-		if(p % l == 0){
-			p = p / l;
-		}
 		 o = (d * p) / l;
 		
 		return o;
