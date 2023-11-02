@@ -1,9 +1,6 @@
 import acm.program.ConsoleProgram;
 
 public class Practice25 extends ConsoleProgram{
-	
-
-	
 	private int LCM(int a, int b){
 		if(a > b){
 			if(a % b == 0){
