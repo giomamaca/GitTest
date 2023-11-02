@@ -21,8 +21,6 @@ public class Practice25 extends ConsoleProgram{
 		// least common multipler
 		return it;
 	}
-
-}
 	public void run(){
 		int c = readInt();
 		int k = readInt();
