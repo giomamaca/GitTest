@@ -24,8 +24,8 @@ public class Practice25 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		int c = readInt();
-		int k = readInt();
+		int c = readInt("c = ");
+		int k = readInt("k = ");
 		println(LCM(c, k));
 	}
 }
