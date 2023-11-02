@@ -4,17 +4,14 @@ public class Practice25 extends ConsoleProgram{
 	
 	private int divisors(int d, int p){
 		int l = 0;
-		for(int i = 2; i > 0; i++){
+		for(int i = d; i > 0; i--){
 			if(d % i == 0 & p % i == 0){
 				l = i;
 			}
 		}
-		if(d % l == 0){
-			d = d / l;
-		}
-		if(p % l == 0){
-			p = p / l;
-		}
+		
+		d = d / l;
+		p = p / l;
 		l = d * p * l;
 		
 		return l;
