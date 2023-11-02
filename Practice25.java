@@ -5,7 +5,7 @@ public class Practice25 extends ConsoleProgram{
 	private int divisors(int d, int p){
 		int l = 0;
 		for(int i = 2; i*i < d; i++){
-			if(d % i == 0){
+			if(d % i == 0 & p % i == 0){
 				l = i;
 			}
 		}
