@@ -12,7 +12,7 @@ public class Practice25 extends ConsoleProgram{
 		}
 		d = d / l;
 		p = p / l;
-		o = (d * p)l* l;
+		o = (d * p) * l;
 		return o;
 	}
 	
