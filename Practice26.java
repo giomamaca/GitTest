@@ -15,6 +15,6 @@ public class Practice26 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		
+	gcd(32, 16);	
 	}
 }
