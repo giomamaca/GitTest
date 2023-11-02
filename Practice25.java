@@ -11,13 +11,9 @@ public class Practice25 extends ConsoleProgram{
 		}
 		d = d / l;
 		p = p / l;
-		int dp = d * p * l;
-		return dp;
+		int gcd = d * p * l;
+		return gcd;
 	}
-	
-//	private int LCM(int a, int b){
-//		
-//	}
 	
 	public void run(){
 		int c = readInt("c = ");
