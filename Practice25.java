@@ -2,25 +2,27 @@ import acm.program.ConsoleProgram;
 
 public class Practice25 extends ConsoleProgram{
 	
-	
-	
-	private int LCM(int a, int b) {
-		// swap - Optional (But helps)
-		if (a < b) {
-			int temp = a;
-			a = b;
-			b = temp;
-		}
 
-		// it - 12
-		int it = a;
-		// it - 12; it - 24; it - 36 (and stopped since 36 % 9 == 0)
-		while (it % b != 0) {
-			it += a;
+	
+	private int LCM(int a, int b){
+		if(a > b){
+			if(a % b == 0){
+				return a;
+			}else{
+				for(int i = 0; i*i < a; i++){
+					if(a % i == 0){
+						return i;
+					}
+					a = a / i;
+					b = b / i;
+					int d = a * b * i;
+					return d;
+				}
+			}
 		}
-		// least common multipler
-		return it;
+		return b;
 	}
+	
 	public void run(){
 		int c = readInt();
 		int k = readInt();
