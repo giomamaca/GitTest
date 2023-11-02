@@ -6,7 +6,7 @@ public class Practice25 extends ConsoleProgram{
 		int l = 1;
 		for(int i = d; i >= 2; i--){
 			if(d % i == 0 & p % i == 0){
-				l =l * i;
+				l = i;
 			}
 		}
 		d = d / l;
