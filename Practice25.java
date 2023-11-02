@@ -10,8 +10,9 @@ public class Practice25 extends ConsoleProgram{
 				l = i;
 			}
 		}
-		o = (d * p);
-		o = o / l;
+		d = d / l;
+		p = p / l;
+		o = (d * p)l* l;
 		return o;
 	}
 	
