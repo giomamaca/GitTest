@@ -17,7 +17,7 @@ public class Practice25 extends ConsoleProgram{
 				}
 			}
 		}
-		return b;
+		return 0;
 	}
 	
 	public void run(){
