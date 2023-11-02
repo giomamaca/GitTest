@@ -3,7 +3,6 @@ import acm.program.ConsoleProgram;
 public class Practice25 extends ConsoleProgram{
 	
 	private int divisors(int d, int p){
-		int o = 0;
 		int l = 0;
 		for(int i = d; i >= 2; i--){
 			if(d % i == 0 & p % i == 0){
@@ -12,8 +11,8 @@ public class Practice25 extends ConsoleProgram{
 		}
 		d = d / l;
 		p = p / l;
-		o = (d * p) * l;
-		return o;
+		int dp = d * p * l;
+		return dp;
 	}
 	
 //	private int LCM(int a, int b){
