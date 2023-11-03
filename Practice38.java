@@ -11,7 +11,6 @@ public class Practice38 extends ConsoleProgram{
 		
 		for(int i = 0; i < 100000; i++){
 			int k = readInt(0, 36);
-			println("enter num = " + k);
 			int a = rGen.nextInt(0, 36);
 			println("" + a);
 				
