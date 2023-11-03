@@ -7,7 +7,7 @@ public class Practice36 extends ConsoleProgram {
 
 	public void run() {
 		int result = 0;
-		for (int i = 0; i < 15; i++) {
+		for (int i = 0; i < 1000000; i++) {
 			boolean a = rgen.nextBoolean();
 			if (a == true) {
 				println("arioli");
@@ -16,7 +16,7 @@ public class Practice36 extends ConsoleProgram {
 				println("reshka");
 				result = 0;
 			}
-			if(result == 4){
+			if(result == 3){
 				break;
 			}
 		}
