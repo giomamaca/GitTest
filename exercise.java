@@ -3,16 +3,21 @@ import acm.program.*;
 import java.awt.*;
 
 public class exercise extends GraphicsProgram {
-	
-	private static final int BRICK_WIDTH = 30;
-
-//  Width of each brick in pixels */
-	private static final int BRICK_HEIGHT = 12;
-
-//  Number of bricks in the base of the pyramid */
-	private static final int BRICKS_IN_BASE = 14;
-	
 	public void run(){
-		
+		int max = readInt();
+		int min = max;
+		if(max != 0){
+			while(min != 0){
+				int k = readInt();
+				if(k != 0){
+				if(k < min){
+					min = k;
+				}
+				if(k > max){
+					max = k;
+				}
+				}else break;
+			}
+		}
 	}
 }
