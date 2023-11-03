@@ -7,11 +7,11 @@ public class exercise extends GraphicsProgram {
 	private static final double SENTINEL = 0;
 	
 	public void run() {
-		int max = readInt();
+		int max = readInt("? ");
 		int min = max;
 		if (max != SENTINEL) {
 			while (min != SENTINEL) {
-				int k = readInt();
+				int k = readInt("? ");
 				if (k != SENTINEL) {
 					if (k < max) {
 						min = k;
