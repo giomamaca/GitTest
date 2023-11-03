@@ -19,5 +19,7 @@ public class exercise extends GraphicsProgram {
 				}else break;
 			}
 		}
+		println("max = " + max);
+		println("min = " + min);
 	}
 }
