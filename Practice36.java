@@ -11,8 +11,10 @@ public class Practice36 extends ConsoleProgram {
 			boolean a = rgen.nextBoolean();
 			if (a == true) {
 				result++;
+				print("arioli");
 			} else {
 				result = 0;
+				print("reshka");
 			}
 			if(result == 3){
 				break;
