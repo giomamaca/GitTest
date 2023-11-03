@@ -7,7 +7,7 @@ public class exercise extends ConsoleProgram {
 		int a = 100;
 		for(int i = 0; i < a; i++){
 			int c = 100 - i;
-			println(c + "" + i);
+			println(c + " " + i);
 		}
 	}
 }
