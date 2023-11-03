@@ -9,7 +9,7 @@ public class Practice36 extends ConsoleProgram {
 		int divisor = 0;
 		int average = 0;
 		int result = 0;
-		for (int i = 0; i < 1000000; i++) {
+		for (int i = 1; i < 1000000; i++) {
 			boolean a = rgen.nextBoolean();
 			if (a == true) {
 				average += i;
