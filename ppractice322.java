@@ -20,8 +20,9 @@ public class ppractice322 extends ConsoleProgram{
 	
 	public void run(){
 		int c = 0;
+		for(int j = 2; j < 100; j++)
 		for(int i = 2; i < 100; i++){
-			if(100 % i == 0){
+			if(i % i == 0){
 				c++;
 				if(c == 2){
 					print(i);
