@@ -28,7 +28,7 @@ public class exercise extends GraphicsProgram {
 //			for discribes how much much blocks should be put on vertikal
 			for(int i = 0; i <= BRICKS_IN_BASE; i++){
 //				This for adds one block on every other line
-				for(int j = 0; j < i; j++){
+				for(int j = 0; j < 10; j++){
 					addPiramid(i,j);
 				}
 			}
