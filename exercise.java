@@ -3,27 +3,11 @@ import acm.program.*;
 import java.awt.*;
 
 public class exercise extends ConsoleProgram {
-	
-	private static final double SENTINEL = 0;
-	
 	public void run() {
-		int max = readInt("? ");
-		int min = max;
-		if (max != SENTINEL) {
-			while (min != SENTINEL) {
-				int k = readInt("? ");
-				if (k != SENTINEL) {
-					if (k < min) {
-						min = k;
-					}
-					if (k > max) {
-						max = k;
-					}
-				} else
-					break;
-			}
+		int a = 100;
+		for(int i = 0; i < a; i++){
+			a = a - i;
+			print(a);
 		}
-		println("max = " + max);
-		println("min = " + min);
 	}
 }
