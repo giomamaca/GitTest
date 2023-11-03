@@ -13,7 +13,7 @@ public class exercise extends ConsoleProgram {
 			while (min != SENTINEL) {
 				int k = readInt("? ");
 				if (k != SENTINEL) {
-					if (k < max) {
+					if (k < min) {
 						min = k;
 					}
 					if (k > max) {
