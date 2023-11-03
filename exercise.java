@@ -3,20 +3,24 @@ import acm.program.*;
 import java.awt.*;
 
 public class exercise extends GraphicsProgram {
-	public void run(){
+	
+	private static final double SENTINEL = 0;
+	
+	public void run() {
 		int max = readInt();
 		int min = max;
-		if(max != 0){
-			while(min != 0){
+		if (max != SENTINEL) {
+			while (min != SENTINEL) {
 				int k = readInt();
-				if(k != 0){
-				if(k < min){
-					min = k;
-				}
-				if(k > max){
-					max = k;
-				}
-				}else break;
+				if (k != SENTINEL) {
+					if (k < max) {
+						min = k;
+					}
+					if (k > max) {
+						max = k;
+					}
+				} else
+					break;
 			}
 		}
 		println("max = " + max);
