@@ -27,6 +27,7 @@ public class ppractice322 extends ConsoleProgram {
 				}
 				if(c == 2){
 					println(j);
+					c = 0;
 				}
 			}
 		}
