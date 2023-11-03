@@ -9,7 +9,7 @@ public class ppractice322 extends ConsoleProgram {
 	}
 
 	private void milion() {
-		for(int j = 0; j < 100; j++){
+		for(int j = 1; j < 100; j++){
 			int gamyofebi = divisors(j);
 			
 			if(gamyofebi == 2){
@@ -20,7 +20,7 @@ public class ppractice322 extends ConsoleProgram {
 	
 	private int divisors(int a){
 		int k = 0;
-		for(int i = 0; i < 100; i++){
+		for(int i = 1; i < 100; i++){
 			if(a % i == 0){
 				k++;
 			}
