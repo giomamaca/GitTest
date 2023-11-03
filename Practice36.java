@@ -1,24 +1,21 @@
 import acm.program.ConsoleProgram;
 import acm.util.RandomGenerator;
 
-public class Practice36 extends ConsoleProgram{
-	
+public class Practice36 extends ConsoleProgram {
+
 	RandomGenerator rgen = new RandomGenerator();
-	
-	public void run(){
+
+	public void run() {
 		int result = 0;
-		for(int i = 0; i < 15; i++){
-			boolean a = rgen.nextBoolean(); 
-			if(a == true){
+		for (int i = 0; i < 15; i++) {
+			boolean a = rgen.nextBoolean();
+			if (a == true) {
 				result++;
-				if(result != 3){
-					println("ariol");
-				}else{
-					break;
-				}
-			}else{
-				result--;
-				println("reshka");
+			} else {
+				result = 0;
+			}
+			if(result == 3){
+				break;
 			}
 		}
 	}
