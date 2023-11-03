@@ -6,7 +6,7 @@ public class exercise extends ConsoleProgram {
 	public void run() {
 		int a = 100;
 		for(int i = 0; i < a; i++){
-			a = a - i;
+			a = 100 - i;
 			println("" + a);
 		}
 	}
