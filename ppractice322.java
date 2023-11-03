@@ -25,10 +25,10 @@ public class ppractice322 extends ConsoleProgram {
 				if(i % j == 0){
 					c++;
 				}
-				if(c == 2){
-					println(j);
-					c = 0;
-				}
+			}
+			if(c == 2){
+				println(j);
+				c = 0;
 			}
 		}
 	}
