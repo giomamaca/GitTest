@@ -10,10 +10,10 @@ public class Practice36 extends ConsoleProgram {
 		for (int i = 0; i < 15; i++) {
 			boolean a = rgen.nextBoolean();
 			if (a == true) {
-				print("arioli");
+				println("arioli");
 				result++;
 			} else {
-				print("reshka");
+				println("reshka");
 				result = 0;
 			}
 			if(result == 3){
