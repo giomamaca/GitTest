@@ -19,6 +19,6 @@ public class exercise extends GraphicsProgram{
 			}
 		}
 		private void addPiramid(int i, int j) {
-			addPiramid(i, j);
+			addPiramid(i, j );
 		}
 }
