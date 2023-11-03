@@ -1,7 +1,8 @@
 import acm.graphics.GRect;
 import acm.program.ConsoleProgram;
+import acm.program.GraphicsProgram;
 
-public class exercise extends ConsoleProgram{		
+public class exercise extends GraphicsProgram{		
 //  Width of each brick in pixels */
 	private static final int BRICK_WIDTH = 30;
 
