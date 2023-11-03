@@ -13,8 +13,8 @@ public class Practice26 extends ConsoleProgram{
 	}
 	
 	public void run(){
-		int a = readInt();
-		int b = readInt();
-		print(GCM(a, b));
+		int a = readInt("a = ");
+		int b = readInt("b = ");
+		println("GCM = " + GCM(a, b));
 	}
 }
