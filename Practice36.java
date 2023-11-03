@@ -16,7 +16,7 @@ public class Practice36 extends ConsoleProgram {
 				println("reshka");
 				result = 0;
 			}
-			if(result == 3){
+			if(result == 4){
 				break;
 			}
 		}
