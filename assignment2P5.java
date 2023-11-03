@@ -1,29 +1,29 @@
 import acm.program.ConsoleProgram;
 
-public class assignment2P5 extends ConsoleProgram{
-	
-	private static final int STOP = 0;
-	
-	public void run(){
+public class assignment2P5 extends ConsoleProgram {
+
+	private static final int SENTINEL = 0;
+
+	public void run() {
 		println("This program finds smallest and largest numbers.");
 		int large = readInt("?");
 		int small = large;
-		if(large != STOP){
-			while(small != STOP){
+		if (large != SENTINEL) {
+			while (small != SENTINEL) {
 				int k = readInt("? ");
-				if(k != STOP){
-					if(k > large){
+				if (k != SENTINEL) {
+					if (k > large) {
 						large = k;
 					}
-					if(k < large){
+					if (k < large) {
 						small = k;
 					}
-				}else{
+				} else {
 					break;
 				}
 			}
 		}
-			println("largest : " + large);
-			println("smallest: " + small);
+		println("largest : " + large);
+		println("smallest: " + small);
 	}
 }
