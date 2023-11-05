@@ -9,5 +9,8 @@ public class exercise extends ConsoleProgram {
 			int c = 100 - i;
 			println(c + " + " + i);
 		}
+		for(int j = 0; j < 100; j++){
+			
+		}
 	}
 }
