@@ -9,7 +9,7 @@ public class exercise extends GraphicsProgram {
 		add(Ball);
 		
 		while(Ball.getX() < getWidth() / 2){
-			Ball.move(1, 0);
+			Ball.move(1, 1);
 			pause(10);
 		}
 	}
