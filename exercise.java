@@ -17,7 +17,7 @@ public class exercise extends GraphicsProgram {
 			pause(10);
 		}
 		while(Ball.getY() == 0){
-			Ball.move(1, 1);
+			Ball.move(-1, 1);
 			pause(10);
 		}
 	}
