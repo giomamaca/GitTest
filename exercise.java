@@ -8,7 +8,7 @@ public class exercise extends GraphicsProgram {
 		Ball.setFilled(true);
 		add(Ball);
 		
-		while(Ball.getX() < getWidth() / 2){
+		while(Ball.getX() < getWidth() / 2 && Ball.getY() != getHeight() - 18){
 			Ball.move(1, 1);
 			pause(10);
 		}
