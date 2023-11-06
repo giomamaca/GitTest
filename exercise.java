@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class exercise extends GraphicsProgram {
 	public void run() {
-		GOval Ball = new GOval (0, getHeight() / 2, 100, 100);
+		GOval Ball = new GOval (0, getHeight() / 2, 20, 20);
 		Ball.setFilled(true);
 		add(Ball);
 		
