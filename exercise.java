@@ -12,6 +12,9 @@ public class exercise extends GraphicsProgram {
 			Ball.move(1, 1);
 			pause(10);
 		}
-		
+		while(Ball.getX() != Ball.getWidth() + 18){
+			Ball.move(-1,  1);
+			pause(10);
+		}
 	}
 }
