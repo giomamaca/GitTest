@@ -2,15 +2,15 @@ import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
 
-public class exercise extends ConsoleProgram {
+public class exercise extends GraphicsProgram {
 	public void run() {
-		int a = 100;
-		for(int i = 0; i <= a / 2; i++){
-			int c = 100 - i;
-			println(c + " + " + i);
-		}
-		for(int j = 0; j < 100; j++){
-			
+		GOval Ball = new GOval (0, getHeight(), 50, 50);
+		Ball.setFilled(true);
+		add(Ball);
+		
+		while(Ball.getX() < getWidth() / 2){
+			Ball.move(1, 0);
+			pause(10);
 		}
 	}
 }
