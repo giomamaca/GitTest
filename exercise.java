@@ -14,7 +14,7 @@ public class exercise extends GraphicsProgram {
 		GOval Ball = new GOval (0, getHeight() / 2, 18, 18);
 		Ball.setFilled(true);
 		add(Ball);
-		for(int i = 0; i < 14; i++){
+		for(int i = 0; i < 10; i++){
 			GRect Block = new GRect (20 + i * 70, 100, BLOCK_WIDTH, BLOCK_HEIGHT);
 			Block.setFilled(true);
 			Block.setColor(Color.red);
