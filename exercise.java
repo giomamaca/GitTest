@@ -10,11 +10,11 @@ public class exercise extends GraphicsProgram {
 		
 		while(Ball.getX() < getWidth() / 2 && Ball.getY() != getHeight() - 18){
 			Ball.move(1, 0);
-			pause(30);
+			pause(5);
 		}
 		while(Ball.getX() != Ball.getWidth() + 18){
 			Ball.move(-1, 0);
-			pause(30);
+			pause(5);
 		}
 	}
 }
