@@ -14,7 +14,7 @@ public class exercise extends GraphicsProgram {
 		
 		while(true){
 			Ball.move(x, y);
-			Ball.pause(2);
+			Ball.pause(1);
 			if(Ball.getX()== getWidth() - 18){
 				x *= -1;
 			}
