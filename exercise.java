@@ -5,6 +5,7 @@ import java.awt.*;
 public class exercise extends GraphicsProgram {
 	
 	private int x = 1;
+	private int y = 1;
 	
 	public void run() {
 		GOval Ball = new GOval (0, getHeight() / 2, 18, 18);
@@ -12,10 +13,11 @@ public class exercise extends GraphicsProgram {
 		add(Ball);
 		
 		while(true){
-			Ball.move(x, 0);
+			Ball.move(x, y);
 			Ball.pause(5);
 			if(Ball.getX()== getWidth() - 18){
 				x *= -1;
+				y *= -1;
 			}
 			if(Ball.getX() == 0){
 				x *= -1;					
