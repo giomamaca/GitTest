@@ -16,10 +16,13 @@ public class exercise extends GraphicsProgram {
 			Ball.pause(5);
 			while(Ball.getX()== 0){
 				x *= 1;
+				if(Ball.getX() == getWidth() - 18){
+					x *= -1;					
+				}
 			}
-			if(Ball.getX() == getWidth() - 18){
-				x *= -1;					
-			}
+//			if(Ball.getX() == getWidth() - 18){
+//				x *= -1;					
+//			}
 		}
 	}
 }
