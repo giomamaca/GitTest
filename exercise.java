@@ -18,7 +18,7 @@ public class exercise extends GraphicsProgram {
 		
 		for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 4; j++){
-				GRect Block = new GRect(20 + i * 70, 100 + j * 30, BLOCK_WIDTH, BLOCK_HEIGHT);
+				GRect Block = new GRect(20 + i * 70, 20 + j * 30, BLOCK_WIDTH, BLOCK_HEIGHT);
 				Block.setFilled(true);
 				Block.setColor(Color.red);
 				add(Block);	
