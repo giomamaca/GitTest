@@ -18,7 +18,9 @@ public class exercise extends GraphicsProgram {
 				x *= 1;
 			}
 			if(Ball.getX() == getWidth()){
-				x *= -1;
+				if(Ball.getX() == 0){
+					x *= -1;					
+				}
 			}
 		}
 	}
