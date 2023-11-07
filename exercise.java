@@ -5,7 +5,7 @@ import java.awt.*;
 public class exercise extends GraphicsProgram {
 	
 	private static final double BLOCK_WIDTH = 60;
-	private static final double BLOCK_HEIGHT = 30;
+	private static final double BLOCK_HEIGHT = 20;
 	
 	private int x = 1;
 	private int y = 1;
