@@ -13,8 +13,10 @@ public class SpiningBall extends GraphicsProgram {
 		add(Ball);
 
 		while (true) {
-			Ball.move(x + Math.cos(0.1), y + Math.sin(1));
-			pause(10);
+			for (int i = 0; i < 1000; i++){
+				Ball.move(x + i*Math.cos(0.1), y + i*Math.sin(0.1));
+				pause(10);				
+			}
 		}
 	}
 }
