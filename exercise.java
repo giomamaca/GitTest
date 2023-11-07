@@ -8,13 +8,15 @@ public class exercise extends GraphicsProgram {
 		Ball.setFilled(true);
 		add(Ball);
 		
-		while(Ball.getX() < getWidth() / 2 && Ball.getY() != getHeight() - 18){
-			Ball.move(1, 0);
-			pause(5);
-		}
-		while(Ball.getX() != Ball.getWidth() + 18){
-			Ball.move(-1, 0);
-			pause(5);
+		while(true){
+			if(Ball.getX()== 0){
+				Ball.move(1, 0);
+				pause(5);
+			}
+			if(Ball.getX() == getWidth()){
+				Ball.move(-1,  0);
+				pause(5);
+			}
 		}
 	}
 }
