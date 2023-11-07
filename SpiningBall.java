@@ -15,11 +15,6 @@ public class SpiningBall extends GraphicsProgram {
 		while (true) {
 			Ball.move(x, y);
 			pause(10);
-
-			for (int i = 0; i < 10; i++) {
-				x = x + i * (10);
-				y = y + i * (10);
-			}
 		}
 	}
 }
