@@ -13,7 +13,7 @@ public class SpiningBall extends GraphicsProgram {
 		add(Ball);
 
 		while (true) {
-			Ball.move(x + Math.cos(3), y + Math.sin(1));
+			Ball.move(x + Math.cos(0.1), y + Math.sin(1));
 			pause(10);
 		}
 	}
