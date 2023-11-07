@@ -14,7 +14,7 @@ public class SpiningBall extends GraphicsProgram {
 
 		while (true) {
 			for (int i = 0; i < 1000; i++){
-				Ball.move(x + i*Math.cos(0.1), y + i*Math.sin(0.1));
+				Ball.move(x + i*Math.cos(0.01), y + i*Math.sin(0.01));
 				pause(10);				
 			}
 		}
