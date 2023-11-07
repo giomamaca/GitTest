@@ -4,8 +4,8 @@ import java.awt.*;
 
 public class exercise extends GraphicsProgram {
 	
-	private static final double BLOCK_WIDTH = 100;
-	private static final double BLOCK_HEIGHT = 50;
+	private static final double BLOCK_WIDTH = 60;
+	private static final double BLOCK_HEIGHT = 30;
 	
 	private int x = 1;
 	private int y = 1;
