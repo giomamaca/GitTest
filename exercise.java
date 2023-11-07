@@ -22,7 +22,7 @@ public class exercise extends GraphicsProgram {
 		}
 		
 		while(true){
-			Ball.move(x, y);
+			Ball.move(x, 0);
 			Ball.pause(1);
 			if(Ball.getX()== getWidth() - 18){
 				x *= -1;
