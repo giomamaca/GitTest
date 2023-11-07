@@ -14,11 +14,12 @@ public class exercise extends GraphicsProgram {
 		GOval Ball = new GOval (0, getHeight() / 2, 18, 18);
 		Ball.setFilled(true);
 		add(Ball);
-		
-		GRect Block = new GRect (getWidth() / 2 - BLOCK_WIDTH / 2, 100, BLOCK_WIDTH, BLOCK_HEIGHT);
-		Block.setFilled(true);
-		Block.setColor(Color.red);
-		add(Block);
+		for(int i = 0; i < 15; i++){
+			GRect Block = new GRect (getWidth() / 2 - BLOCK_WIDTH / 2, 100, BLOCK_WIDTH, BLOCK_HEIGHT);
+			Block.setFilled(true);
+			Block.setColor(Color.red);
+			add(Block);
+		}
 		
 		while(true){
 			Ball.move(x, y);
