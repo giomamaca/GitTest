@@ -17,8 +17,8 @@ public class SpiningBall extends GraphicsProgram {
 			pause(10);
 
 			for (int i = 0; i < 10; i++) {
-				x = x + i * (1 / 2);
-				y = y + i * (1 / 2);
+				x = x + i * (10);
+				y = y + i * (10);
 			}
 		}
 	}
