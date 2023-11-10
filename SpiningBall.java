@@ -7,7 +7,7 @@ public class SpiningBall extends GraphicsProgram {
 	private static final double GRAVITY = 3;
 	
 	public void run(){
-		GOval ball = new GOval (100, 100);
+		GOval ball = new GOval (60, 60);
 		ball.setFilled(true);
 		add(ball);
 		
