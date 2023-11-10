@@ -8,6 +8,8 @@ public class SpiningBall extends GraphicsProgram {
 		GOval ball = new GOval (100, 100);
 		ball.setFilled(true);
 		add(ball);
-		ball.move(1, 0);
+		while(true){
+			ball.move(1, 0);			
+		}
 	}
 }
