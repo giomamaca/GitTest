@@ -17,7 +17,7 @@ public class BouncingBall extends GraphicsProgram{
 	}
 
 	private void moveBall() {
-		ball.move(X, y);
+		ball.move(X, Y);
 		pause(50);
 	}
 
