@@ -43,7 +43,7 @@ public class assignment extends GraphicsProgram{
 	private void movingBall() {
 		ball = new GOval (10, 10);
 		ball.move(vx, vy);
-		pause(10);
+		pause(100);
 	}
 
 	private void Bricks(int i, int j) {
