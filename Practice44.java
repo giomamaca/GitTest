@@ -1,11 +1,7 @@
-import acm.program.GraphicsProgram;
-
-import java.awt.Component;
-
-import com.sun.glass.events.MouseEvent;
-
-import acm.graphics.GOval;
+import acm.graphics.*;
 import acm.program.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
 
 public class Practice44 extends GraphicsProgram {
 
