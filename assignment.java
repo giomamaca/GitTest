@@ -57,7 +57,7 @@ public class assignment extends GraphicsProgram{
 		while(true){			
 			ball.move(vx, vy);
 			pause(10);
-			if(ball.getX() < 200 - PADDLE_WIDTH){
+			if(ball.getX() < 100 - PADDLE_WIDTH){
 				vx *= -1;
 			}
 			if(ball.getX() == 0){
