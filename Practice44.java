@@ -27,7 +27,6 @@ public class Practice44 extends GraphicsProgram {
 	private void dropBall() {
 		while (true)
 			oval.move(0, 1);
-		pause(3);
 	}
 
 
