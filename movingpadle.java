@@ -11,5 +11,6 @@ public class movingpadle extends GraphicsProgram{
 		addMouseListeners();
 	}
 	public void MouseMoved(MouseEvent e){
+		e.getX();
 	}
 }
