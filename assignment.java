@@ -23,6 +23,7 @@ public class assignment extends GraphicsProgram{
 	private static final int BALL_RADIUS = 10;
 	private static final int BRICK_Y_OFFSET = 70;
 	private static final int NTURNS = 3;
+	private static final int RADIUS = 10;
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double vx = rgen.nextDouble(1.0, 3.0);
@@ -51,13 +52,13 @@ public class assignment extends GraphicsProgram{
 
 
 	private void movingBall() {
-		ball = new GOval (10, 10);
+		ball = new GOval (RADIUS, RADIUS);
 		ball.setFilled(true);
 		add(ball);
 		while(true){			
 			ball.move(vx, vy);
 			pause(10);
-			if(ball.getX() > APPLICATION_WIDTH - 10){
+			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
 				vx *= -1;
 			}
 			if(ball.getX() < 0){
