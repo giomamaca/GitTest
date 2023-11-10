@@ -28,6 +28,7 @@ public class assignment extends GraphicsProgram{
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
+	private GRect paddle;
 	
 	public void run(){
 		for(int i = 0; i < NBRICK_ROWS; i++){
@@ -36,15 +37,18 @@ public class assignment extends GraphicsProgram{
 			}
 		}
 		movingBall();
-		GRect padle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
-		padle.setFilled(true);
-		add(padle);
+		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
+		add(paddle);
 		addMouseListeners();
 	}
 
 	
-	public void mouseMoved(MouseEvent e){
-		
+	public void mouseMoved(MouseEvent e) {
+		if(paddle.getX() != getWidth() - 50){
+			paddle.setLocation(e.getX() - 50, getHeight() - 50);
+			add(paddle);	
+		}
 	}
 
 	private void movingBall() {
