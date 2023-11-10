@@ -9,7 +9,7 @@ public class MouseListener extends GraphicsProgram{
 		addMouseListeners();
 	}
 	
-	public void mouseMoved(MouseEvent e){
+	public void mouseClicked(MouseEvent e){
 		System.out.println("hi");
 	}
 }
