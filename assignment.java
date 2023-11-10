@@ -27,10 +27,15 @@ public class assignment extends GraphicsProgram{/** Width and height of applicat
 	public void run(){
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
-				GRect Bricks = new GRect (i*BRICK_WIDTH,PADDLE_HEIGHT + i*(PADDLE_HEIGHT + BRICK_SEP), PADDLE_WIDTH, PADDLE_HEIGHT);
-				Bricks.setFilled(true);
-				add(Bricks);
+				Bricks(i, j);
 			}
 		}
+	}
+
+	private void Bricks(int i, int j) {
+		int Xcord = (int)(i*BRICK_WIDTH);
+		int Ycord = (int)(j*BRICK_HEIGHT);
+		GRect Bricks = new GRect (Xcord, Ycord);
+		add(Bricks);
 	}
 }
