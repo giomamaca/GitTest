@@ -46,7 +46,7 @@ public class assignment extends GraphicsProgram{
 		add(ball);
 		while(true){			
 			ball.move(vx, vy);
-			pause(100);
+			pause(10);
 		}
 	}
 
