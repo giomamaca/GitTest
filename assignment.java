@@ -44,8 +44,10 @@ public class assignment extends GraphicsProgram{
 		ball = new GOval (10, 10);
 		ball.setFilled(true);
 		add(ball);
-		ball.move(vx, vy);
-		pause(100);
+		while(true){			
+			ball.move(vx, vy);
+			pause(100);
+		}
 	}
 
 	private void Bricks(int i, int j) {
