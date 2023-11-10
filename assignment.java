@@ -38,8 +38,8 @@ public class assignment extends GraphicsProgram{
 				Bricks(i, j);
 			}
 		}
-		movingBall();
 		addMouseListeners();
+		movingBall();
 	}
 
 	
