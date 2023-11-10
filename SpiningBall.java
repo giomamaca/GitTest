@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class SpiningBall extends GraphicsProgram {
 
-	private static final double GRAVITY = 0.1;
+	private double GRAVITY = 0.1;
 
 	public void run() {
 		GOval ball = new GOval(60, 60);
