@@ -11,7 +11,7 @@ public class MouseListener extends GraphicsProgram{
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		GOval oval = new GOval(100, 100);
+		GOval oval = new GOval(100, 5);
 		oval.setFilled(true);
 		add(oval);
 	}
