@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class assignment extends GraphicsProgram{/** Width and height of application window in pixels */
+public class assignment extends GraphicsProgram{
 	public static final int APPLICATION_WIDTH = 400;
 	public static final int APPLICATION_HEIGHT = 600;
 	private static final int WIDTH = APPLICATION_WIDTH;
@@ -24,12 +24,24 @@ public class assignment extends GraphicsProgram{/** Width and height of applicat
 	private static final int BRICK_Y_OFFSET = 70;
 	private static final int NTURNS = 3;
 	
+	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private double vx = rgen.nextDouble(1.0, 3.0);
+	private double vy = rgen.nextDouble(1.0, 3.0);
+	private GOval ball;
+	
 	public void run(){
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
 				Bricks(i, j);
 			}
 		}
+		movingBall();
+		
+	}
+
+	private void movingBall() {
+		ball.move(vx, vy);
+		pause(10);
 	}
 
 	private void Bricks(int i, int j) {
