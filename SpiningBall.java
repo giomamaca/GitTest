@@ -9,7 +9,8 @@ public class SpiningBall extends GraphicsProgram {
 		ball.setFilled(true);
 		add(ball);
 		while(true){
-			ball.move(1, 0);			
+			ball.move(1, 0);
+			pause(10);
 		}
 	}
 }
