@@ -1,41 +1,36 @@
-import acm.program.*;
 import acm.graphics.*;
+import acm.program.*;
+import javafx.scene.input.MouseEvent;
+
+import java.awt.*;
+
+
 
 public class Practice44 extends GraphicsProgram {
 
-	private static final int DIAM_BALL = 30;
-	private static final double GRAVITY = 3;
-	private static final double X_VEL = 5;
-	private static final double BOUNCE_REDUCE = 0.2;
-	private double xVel = X_VEL;
-	private double yVel = 0.0;
-	private GOval ball;
+	private static final double BALL_SIZE = 50;
+
+	private GOval oval;
 
 	public void run() {
-		setup();
-		while (ball.getX() < getWidth()) {
-			moveBall();
-			checkForCollision();
-			pause(50);
+		addMouseListeners();
+		initBall();
+		dropBall();
+	}
+
+	private void initBall() {
+		oval = new GOval(BALL_SIZE, BALL_SIZE);
+		add(oval);
+	}
+
+	private void dropBall() {
+		while (true) {
+			oval.move(0, 1);
+			pause(3);
 		}
 	}
 
-	private void setup() {
-		ball = new GOval(DIAM_BALL, DIAM_BALL);
-		ball.setFilled(true);
-		add(ball);
-	}
-
-	private void moveBall() {
-		yVel += GRAVITY;
-		ball.move(xVel, yVel);
-	}
-
-	private void checkForCollision() {
-		if (ball.getY() > getHeight() - DIAM_BALL) {
-			yVel = -yVel * BOUNCE_REDUCE;
-			double diff = ball.getY() - (getHeight() - DIAM_BALL);
-			ball.move(0, -2 * diff);
-		}
+	private void mouseClicked(MouseEvent e) {
+		oval.setLocation(e.getX() - oval.getWidth() / 2, e.getY() - oval.getHeight() / 2);
 	}
 }
