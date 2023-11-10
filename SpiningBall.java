@@ -19,8 +19,6 @@ public class SpiningBall extends GraphicsProgram {
 			pause(10);
 			if (ball.getY() != getHeight() - 120) {
 				y += GRAVITY;
-			}else{
-				y =y*(-1);
 			}
 		}
 	}
