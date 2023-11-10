@@ -4,22 +4,41 @@ import java.awt.*;
 
 public class SpiningBall extends GraphicsProgram {
 
+	private static final double DIAM = 30;
+	private static final double BOUNCE_REDUCE = 0.9;
+	private static final double X_START = DIAM / 2;
+	private static final double Y_START = 100;
 	private double GRAVITY = 0.1;
+	private double X = 5;
+	private double Y = 0;
+	private GOval ball;
 
 	public void run() {
-		GOval ball = new GOval(60, 60);
+		setup();
+		while(ball.getX() < getWidth()){
+			moveBall();
+			Check();
+		}
+	}
+
+
+	private void Check() {
+		if(ball.getY() < getHeight() - DIAM){
+			Y = Y;
+		}
+	}
+
+
+	private void moveBall() {
+		Y += GRAVITY;
+		ball.move(X, Y);
+		
+	}
+
+
+	private void setup() {
+		ball = new GOval (DIAM, DIAM);
 		ball.setFilled(true);
 		add(ball);
-
-		double x = 1;
-		double y = 1;
-
-		while (true) {
-			ball.move(x, y);
-			pause(2);
-			if (ball.getY() == getHeight() - 60) {
-				break;
-			}
-		}
 	}
 }
