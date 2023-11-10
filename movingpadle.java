@@ -5,7 +5,7 @@ import java.awt.event.MouseEvent;
 
 public class movingpadle extends GraphicsProgram{	
 	public void run(){
-		GRect r = new GRect (100, 10, getWidth() / 2 - 50, getHeight() - 50);
+		GRect r = new GRect (getWidth() / 2 - 50, getHeight() - 50, 100, 10);
 		r.setFilled(true);
 		add(r);
 		addMouseListeners();
