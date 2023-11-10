@@ -10,6 +10,7 @@ public class movingpadle extends GraphicsProgram{
 	public void run(){
 		GRect r = new GRect (100, 10, getWidth() / 2 - 50, getHeight() - 50);
 		r.setFilled(true);
+		add(r);
 		addMouseListeners();
 	}
 	public void mouseMoved(MouseEvent e){
