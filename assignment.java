@@ -42,6 +42,7 @@ public class assignment extends GraphicsProgram{
 
 	private void movingBall() {
 		ball = new GOval (10, 10);
+		ball.setFilled(true);
 		add(ball);
 		ball.move(vx, vy);
 		pause(100);
