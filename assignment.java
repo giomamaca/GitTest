@@ -45,11 +45,13 @@ public class assignment extends GraphicsProgram{
 
 	
 	public void mouseMoved(MouseEvent e) {
-		if(paddle.getX() != getWidth() - 50){
+		if(paddle.getX() != APPLICATION_WIDTH - 30){
 			paddle.setLocation(e.getX() - 50, getHeight() - 50);
 			add(paddle);	
 		}
 	}
+
+
 
 	private void movingBall() {
 		ball = new GOval (10, 10);
