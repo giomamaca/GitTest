@@ -44,7 +44,7 @@ public class assignment extends GraphicsProgram{
 
 	
 	public void mouseMoved(MouseEvent e) {
-			paddle.setLocation(e.getX() - 50, getHeight() - 50);
+			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - 50);
 			add(paddle);	
 	}
 
