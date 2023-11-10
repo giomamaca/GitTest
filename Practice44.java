@@ -14,6 +14,7 @@ public class Practice44 extends GraphicsProgram{
 	}
 
 	private void mouseClicked(MouseEvent e) {
+		oval.setFilled(true);
 		add(oval);
 	}
 }
