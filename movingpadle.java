@@ -11,6 +11,6 @@ public class movingpadle extends GraphicsProgram{
 		addMouseListeners();
 	}
 	public void mouseMoved(MouseEvent e){
-		add(new GRect(100, 5), e.getX() , getHeight() - 100);
+		add(new GRect(100, 5), e.getX() , getHeight() - 50);
 	}
 }
