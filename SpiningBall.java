@@ -18,7 +18,7 @@ public class SpiningBall extends GraphicsProgram {
 		while(ball.getX() < getWidth()){
 			moveBall();
 			Check();
-			pause(1000);
+			pause(10);
 		}
 	}
 
@@ -40,7 +40,7 @@ public class SpiningBall extends GraphicsProgram {
 
 
 	private void setup() {
-		ball = new GOval (DIAM, DIAM);
+		ball = new GOval (X_START, Y_START, DIAM, DIAM);
 		ball.setFilled(true);
 		add(ball);
 	}
