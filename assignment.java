@@ -39,7 +39,6 @@ public class assignment extends GraphicsProgram{
 		movingBall();
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
-		add(paddle);
 		addMouseListeners();
 	}
 
