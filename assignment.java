@@ -60,7 +60,7 @@ public class assignment extends GraphicsProgram{
 			if(ball.getX() > APPLICATION_WIDTH - 10){
 				vx *= -1;
 			}
-			if(ball.getX() == 0){
+			if(ball.getX() < 0){
 				vy *= -1;
 			}
 		}
