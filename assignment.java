@@ -30,7 +30,6 @@ public class assignment extends GraphicsProgram{
 	private GOval ball;
 	
 	public void run(){
-		Ball();
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
 				Bricks(i, j);
@@ -40,12 +39,10 @@ public class assignment extends GraphicsProgram{
 		
 	}
 
-	private void Ball() {
-		ball = new GOval (10, 10);
-		add(ball);
-	}
 
 	private void movingBall() {
+		ball = new GOval (10, 10);
+		add(ball);
 		ball.move(vx, vy);
 		pause(10);
 	}
