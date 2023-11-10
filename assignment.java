@@ -27,7 +27,7 @@ public class assignment extends GraphicsProgram{/** Width and height of applicat
 	public void run(){
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
-				GRect Bricks = new GRect (PADDLE_WIDTH, PADDLE_HEIGHT);
+				GRect Bricks = new GRect (PADDLE_WIDTH + i*10 ,PADDLE_HEIGHT + i*10, PADDLE_WIDTH, PADDLE_HEIGHT);
 				Bricks.setFilled(true);
 				add(Bricks);
 			}
