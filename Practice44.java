@@ -1,4 +1,19 @@
+import acm.program.GraphicsProgram;
 
-public class Practice44 {
+import com.sun.glass.events.MouseEvent;
 
+import acm.graphics.GOval;
+import acm.program.*;
+
+public class Practice44 extends GraphicsProgram{
+	
+	private GOval oval;
+	
+	public void run(){
+		addMouseListeners();
+	}
+
+	private void mouseClicked(MouseEvent e) {
+		add(oval);
+	}
 }
