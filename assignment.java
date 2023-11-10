@@ -68,6 +68,7 @@ public class assignment extends GraphicsProgram{
 			}
 			if(ball.getY() > APPLICATION_HEIGHT){
 				println("you lose");
+				break;
 			}
 		}
 	}
