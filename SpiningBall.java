@@ -12,16 +12,13 @@ public class SpiningBall extends GraphicsProgram {
 		add(ball);
 
 		double x = 1;
-		double y = 0;
+		double y = 1;
 
 		while (true) {
 			ball.move(x, y);
 			pause(10);
 			if (ball.getY() != getHeight()) {
-				y += GRAVITY;
-			}else{
-				x=0;
-				y=0;
+				
 			}
 		}
 	}
