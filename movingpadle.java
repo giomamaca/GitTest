@@ -5,6 +5,7 @@ import java.awt.event.MouseEvent;
 
 public class movingpadle extends GraphicsProgram {
 
+	
 	private GRect r;
 
 	public void run() {
