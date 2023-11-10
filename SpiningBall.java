@@ -25,7 +25,9 @@ public class SpiningBall extends GraphicsProgram {
 
 	private void Check() {
 		if(ball.getY() < getHeight() - DIAM){
-			Y = Y;
+			Y = -Y * BOUNCE_REDUCE;
+			double diff = ball.getY() - (getHeight() - DIAM);
+			ball.move(0, -2 * diff);
 		}
 	}
 
