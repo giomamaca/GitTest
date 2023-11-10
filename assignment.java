@@ -36,9 +36,9 @@ public class assignment extends GraphicsProgram{
 				Bricks(i, j);
 			}
 		}
-		movingBall();
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
+		movingBall();
 		addMouseListeners();
 	}
 
