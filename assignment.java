@@ -35,7 +35,7 @@ public class assignment extends GraphicsProgram{/** Width and height of applicat
 	private void Bricks(int i, int j) {
 		int Xcord = (int)(i*BRICK_WIDTH);
 		int Ycord = (int)(j*BRICK_HEIGHT);
-		GRect Bricks = new GRect (Xcord, Ycord);
+		GRect Bricks = new GRect (Xcord + 4, Ycord);
 		add(Bricks);
 	}
 }
