@@ -17,7 +17,7 @@ public class movingpadle extends GraphicsProgram {
 	public void mouseMoved(MouseEvent e) {
 		if(r.getX() != getWidth() - 50){
 			r.setLocation(e.getX() - 50, getHeight() - 50);
-			add(r);	
+			add(r);
 		}
 	}
 }
