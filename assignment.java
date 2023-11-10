@@ -36,9 +36,16 @@ public class assignment extends GraphicsProgram{
 			}
 		}
 		movingBall();
-		
+		GRect padle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		padle.setFilled(true);
+		add(padle);
+		addMouseListeners();
 	}
 
+	
+	public void mouseMoved(MouseEvent e){
+		
+	}
 
 	private void movingBall() {
 		ball = new GOval (10, 10);
