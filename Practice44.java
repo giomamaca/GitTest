@@ -24,7 +24,7 @@ public class Practice44 extends GraphicsProgram {
 	}
 
 	private void setup() {
-		ball = new GOval(X_START, Y_START, DIAM_BALL, DIAM_BALL);
+		ball = new GOval(DIAM_BALL, DIAM_BALL);
 		ball.setFilled(true);
 		add(ball);
 	}
