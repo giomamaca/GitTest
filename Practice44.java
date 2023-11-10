@@ -25,13 +25,13 @@ public class Practice44 extends GraphicsProgram {
 	}
 
 	private void dropBall() {
-		while (true) {
+		while (true)
 			oval.move(0, 1);
-			pause(3);
-		}
+		pause(3);
 	}
 
+
 	private void mouseClicked(MouseEvent e) {
-		oval.setLocation(oval.getWidth() / 2, oval.getHeight() / 2);
+		oval.setLocation(e.getX() - oval.getWidth() / 2, e.getY() - oval.getHeight() / 2);
 	}
 }
