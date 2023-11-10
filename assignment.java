@@ -34,12 +34,12 @@ public class assignment extends GraphicsProgram{
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
+		addMouseListeners();
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
 				Bricks(i, j);
 			}
 		}
-		addMouseListeners();
 		movingBall();
 	}
 
