@@ -8,6 +8,7 @@ public class movingpadle extends GraphicsProgram{
 	private GRect r;
 	
 	public void run(){
+		GRect r = new GRect (100, 10, getWidth() / 2 - 50, getHeight() - 50);
 		addMouseListeners();
 	}
 	public void mouseMoved(MouseEvent e){
