@@ -17,7 +17,7 @@ public class SpiningBall extends GraphicsProgram {
 		while (true) {
 			ball.move(x, y);
 			pause(2);
-			if (ball.getY() != getHeight()) {
+			if (ball.getY() == getHeight()) {
 				break;
 			}
 		}
