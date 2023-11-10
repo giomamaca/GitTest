@@ -3,19 +3,19 @@ import acm.program.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
-public class movingpadle extends GraphicsProgram{
-	
+public class movingpadle extends GraphicsProgram {
+
 	private GRect r;
-	
-	public void run(){
+
+	public void run() {
 		addMouseListeners();
-		r = new GRect(100,5);
+		r = new GRect(100, 5);
 		r.setFilled(true);
 	}
-	public void mouseMoved(MouseEvent e){
-		if(r.getX() != getWidth() - 100 && r.getX() != 0){
-			
-			r.setLocation(e.getX() - 50 , getHeight() - 50);
+
+	public void mouseMoved(MouseEvent e) {
+		while (r.getX() != getWidth() - 100) {
+			r.setLocation(e.getX() - 50, getHeight() - 50);
 			add(r);
 		}
 	}
