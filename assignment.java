@@ -78,6 +78,9 @@ public class assignment extends GraphicsProgram{
 		if(j > 1 && j <= 3){
 			Bricks.setColor(Color.ORANGE);
 		}
+		if(j > 2 && j <= 5){
+			Bricks.setColor(Color.YELLOW);
+		}
 		add(Bricks);
 	}
 }
