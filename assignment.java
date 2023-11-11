@@ -72,7 +72,7 @@ public class assignment extends GraphicsProgram{
 		int Ycord = (int)(j*(BRICK_HEIGHT + BRICK_SEP));
 		GRect Bricks = new GRect (Xcord + BRICK_SEP / 2, Ycord, BRICK_WIDTH, BRICK_HEIGHT);
 		Bricks.setFilled(true);
-		if(j <= 2){
+		if(j < 2){
 			Bricks.setColor(Color.RED);
 		}
 		if(j > 2 && j <= 4){
