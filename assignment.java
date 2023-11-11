@@ -37,7 +37,7 @@ public class assignment extends GraphicsProgram{
 		addMouseListeners();
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
-				Bricks(i, j);
+				Bricks(i + 2, j);
 			}
 		}
 		movingBall();
