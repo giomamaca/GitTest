@@ -64,9 +64,6 @@ public class assignment extends GraphicsProgram{
 			if(ball.getX() < 0){
 				vx *= -1;
 			}
-			if(ball.getY() < 0){
-				vy *= -1;
-			}
 		}
 	}
 
