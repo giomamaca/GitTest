@@ -33,6 +33,9 @@ public class assignment extends GraphicsProgram{
 	public GObject getElementAt() {
 		return null;
 	} 
+	private GObject getCollidingObject() {
+		return null;
+	}
 	
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -60,8 +63,9 @@ public class assignment extends GraphicsProgram{
 		ball = new GOval (getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2,RADIUS, RADIUS);
 		ball.setFilled(true);
 		add(ball);
+		int y = 3;
 		while(true){
-			ball.move(vx, 3);
+			ball.move(vx, y);
 			pause(10);
 //			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
 //
