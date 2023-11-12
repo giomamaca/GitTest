@@ -9,6 +9,7 @@ public class crashingBall extends GraphicsProgram{
 	
 	public void run(){
 		ball = new GOval (getWidth() / 2, getHeight() / 2, 10, 10);
+		add(ball);
 		ball.move(1, 0);			
 		pause(10);
 		addMouseListeners();
