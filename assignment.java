@@ -26,16 +26,10 @@ public class assignment extends GraphicsProgram{
 	private static final int RADIUS = 10;
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private double vx = rgen.nextDouble(-3.0, 3.0);
+	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	public GObject getElementAt() {
-		return null;
-	} 
-	private GObject getCollidingObject() {
-		return null;
-	}
 	
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -63,17 +57,15 @@ public class assignment extends GraphicsProgram{
 		ball = new GOval (getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2,RADIUS, RADIUS);
 		ball.setFilled(true);
 		add(ball);
-		int y = 3;
-		while(true){
-			ball.move(vx, y);
+		while(true){			
+			ball.move(0, 1);
 			pause(10);
-//			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
-//
-//			}
-//			if(ball.getX() < 0){
-//				double vx = rgen.nextDouble(1.0, 3.0);
-//				if (rgen.nextBoolean(0.5)) vx = -vx;
-//			}
+			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
+				vx *= -1;
+			}
+			if(ball.getX() < 0){
+				vx *= -1;
+			}
 		}
 	}
 
