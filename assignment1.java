@@ -44,13 +44,16 @@ public class assignment1 extends GraphicsProgram{
 		ball.setFilled(true);
 		add(ball);
 		while(true){			
-			ball.move(0, 1);
+			ball.move(vx, vy);
 			pause(10);
 			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
 				vx *= -1;
 			}
 			if(ball.getX() < 0){
 				vx *= -1;
+			}
+			if(ball.getX() == paddle.getX()){
+				vx *= - 1;
 			}
 		}
 	}
