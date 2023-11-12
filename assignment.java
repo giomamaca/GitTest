@@ -47,24 +47,24 @@ public class assignment extends GraphicsProgram{
 	public void mouseMoved(MouseEvent e) {
 			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - 50);
 			add(paddle);	
-			ball = new GOval (RADIUS, RADIUS);
-			ball.setFilled(true);
-			add(ball);
-			while(true){			
-				ball.move(0, 0);
-				pause(10);
-				if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
-					vx *= -1;
-				}
-				if(ball.getX() < 0){
-					vx *= -1;
-				}
-			}
 	}
 
 
 
 	private void movingBall() {
+		ball = new GOval (paddle.getX() - 2 * RADIUS, getHeight() - 50,RADIUS, RADIUS);
+		ball.setFilled(true);
+		add(ball);
+		while(true){			
+			ball.move(0, 0);
+			pause(10);
+			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
+				vx *= -1;
+			}
+			if(ball.getX() < 0){
+				vx *= -1;
+			}
+		}
 	}
 
 	private void Bricks(int i, int j) {
