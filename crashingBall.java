@@ -16,7 +16,7 @@ public class crashingBall extends GraphicsProgram {
 		add(ball);
 		while (true) {
 			ball.move(1, 0);
-			pause(5);
+			pause(2);
 			GRect block = new GRect(700, getHeight() / 2 - HEIGHT / 2, WIDTH, HEIGHT);
 			block.setFilled(true);
 			block.setColor(Color.red);
