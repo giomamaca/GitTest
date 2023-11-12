@@ -12,6 +12,5 @@ public class crashingBall extends GraphicsProgram{
 		add(ball);
 		ball.move(1, 0);			
 		pause(10);
-		addMouseListeners();
 	}
 }
