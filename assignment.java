@@ -33,6 +33,7 @@ public class assignment extends GraphicsProgram{
 	
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setColor(Color.black);
 		addMouseListeners();
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
