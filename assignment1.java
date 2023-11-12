@@ -52,8 +52,8 @@ public class assignment1 extends GraphicsProgram{
 			if(ball.getX() < 0){
 				vx *= -1;
 			}
-			if(ball.getY() == paddle.getY()){
-				vx *= - 1;
+			if(ball.getY() == getHeight() - PADDLE_Y_OFFSET){
+				vy *= - 1;
 			}
 		}
 	}
