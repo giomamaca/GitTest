@@ -35,8 +35,32 @@ public class assignment1 extends GraphicsProgram{
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		addMouseListeners();
-}
+		for(int i = 0; i < NBRICK_ROWS; i++){
+			for(int j = 0; j < NBRICK_ROWS; j++){
+				Bricks(i, j);
+			}
+		}
+		ball = new GOval (getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2,RADIUS, RADIUS);
+		ball.setFilled(true);
+		add(ball);
+		while(true){			
+			ball.move(0, 1);
+			pause(10);
+			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
+				vx *= -1;
+			}
+			if(ball.getX() < 0){
+				vx *= -1;
+			}
+		}
+	}
 
+	
+	public void mouseMoved(MouseEvent e) {
+			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
+			add(paddle);	
+	}
+	
 	private void Bricks(int i, int j) {
 		int Xcord = (int)(i*(BRICK_WIDTH + BRICK_SEP));
 		int Ycord = (int)(j*(BRICK_HEIGHT + BRICK_SEP));
