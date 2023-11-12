@@ -8,11 +8,11 @@ public class crashingBall extends GraphicsProgram{
 	private GOval ball;
 	
 	public void run(){
+		ball = new GOval (getWidth() / 2, getHeight() / 2, 10, 10);
 		addMouseListeners();
 	}
 	public void mouseMoved(MouseEvent e){
 		while(true){
-			ball = new GOval (getWidth() / 2, getHeight() / 2, 10, 10);
 			ball.move(1, 0);			
 			pause(10);
 		}
