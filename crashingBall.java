@@ -3,12 +3,9 @@ import java.awt.event.MouseEvent;
 import acm.graphics.GOval;
 import acm.program.GraphicsProgram;
 
-public class crashingBall extends GraphicsProgram{
-	
-	private GOval ball;
-	
+public class crashingBall extends GraphicsProgram{	
 	public void run(){
-		ball = new GOval (getWidth() / 2, getHeight() / 2, 10, 10);
+		GOval ball = new GOval (getWidth() / 2, getHeight() / 2, 10, 10);
 		add(ball);
 		ball.move(1, 0);			
 		pause(10);
