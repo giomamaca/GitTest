@@ -52,7 +52,7 @@ public class assignment1 extends GraphicsProgram{
 			if(ball.getX() < 0){
 				vx *= -1;
 			}
-			if(ball.getX() > paddle.getX()){
+			if(ball.getY() == paddle.getY()){
 				vx *= - 1;
 			}
 		}
