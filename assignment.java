@@ -56,17 +56,18 @@ public class assignment extends GraphicsProgram{
 		ball = new GOval (getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2,RADIUS, RADIUS);
 		ball.setFilled(true);
 		add(ball);
-		while(true){			
+		while(true){
+			double vx = rgen.nextDouble(1.0, 3.0);
+			if (rgen.nextBoolean(0.5)) vx = -vx;
 			ball.move(vx, 3);
 			pause(10);
-			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
-				double vx = rgen.nextDouble(1.0, 3.0);
-				if (rgen.nextBoolean(0.5)) vx = -vx;
-			}
-			if(ball.getX() < 0){
-				double vx = rgen.nextDouble(1.0, 3.0);
-				if (rgen.nextBoolean(0.5)) vx = -vx;
-			}
+//			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
+//
+//			}
+//			if(ball.getX() < 0){
+//				double vx = rgen.nextDouble(1.0, 3.0);
+//				if (rgen.nextBoolean(0.5)) vx = -vx;
+//			}
 		}
 	}
 
