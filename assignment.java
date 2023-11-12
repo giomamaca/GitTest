@@ -26,7 +26,6 @@ public class assignment extends GraphicsProgram{
 	private static final int RADIUS = 10;
 	
 	private RandomGenerator rgen = RandomGenerator.getInstance();
-	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
@@ -58,13 +57,15 @@ public class assignment extends GraphicsProgram{
 		ball.setFilled(true);
 		add(ball);
 		while(true){			
-			ball.move(0, 3);
+			ball.move(vx, 3);
 			pause(10);
 			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
-				vx *= -1;
+				double vx = rgen.nextDouble(1.0, 3.0);
+				if (rgen.nextBoolean(0.5)) vx = -vx;
 			}
 			if(ball.getX() < 0){
-				vx *= -1;
+				double vx = rgen.nextDouble(1.0, 3.0);
+				if (rgen.nextBoolean(0.5)) vx = -vx;
 			}
 		}
 	}
