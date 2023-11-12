@@ -9,6 +9,7 @@ public class crashingBall extends GraphicsProgram {
 
 	private static final double WIDTH = 50;
 	private static final double HEIGHT = 200;
+	
 
 	public void run() {
 		GOval ball = new GOval(0, getHeight() / 2, 10, 10);
@@ -23,6 +24,5 @@ public class crashingBall extends GraphicsProgram {
 			
 			add(block);
 		}
-
 	}
 }
