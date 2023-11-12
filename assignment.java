@@ -29,11 +29,10 @@ public class assignment extends GraphicsProgram{
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
-	private GRect paddle;
+	private GObject paddle;
 	
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
 		addMouseListeners();
 		for(int i = 0; i < NBRICK_ROWS; i++){
 			for(int j = 0; j < NBRICK_ROWS; j++){
