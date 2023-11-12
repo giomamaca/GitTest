@@ -45,7 +45,7 @@ public class assignment1 extends GraphicsProgram{
 		add(ball);
 		while(true){			
 			ball.move(vx, vy);
-			pause(10);
+			pause(20);
 			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
 				vx *= -1;
 			}
