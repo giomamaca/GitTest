@@ -18,6 +18,7 @@ public class crashingBall extends GraphicsProgram{
 //		}
 		
 		GRect block = new GRect (700, getHeight() / 2 - HEIGHT / 2, WIDTH, HEIGHT);
+		block.setFilled(true);
 		add(block);
 	}
 }
