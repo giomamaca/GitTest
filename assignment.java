@@ -29,6 +29,9 @@ public class assignment extends GraphicsProgram{
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
+	public GObject getElementAt() {
+		return null;
+	} 
 	
 	public void run(){
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -58,7 +61,7 @@ public class assignment extends GraphicsProgram{
 		add(ball);
 		while(true){
 			double vx = rgen.nextDouble(1.0, 3.0);
-			if (rgen.nextBoolean(0.6)) vx = -vx;
+			if (rgen.nextBoolean(0.5)) vx = -vx;
 			ball.move(vx, 3);
 			pause(10);
 //			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
