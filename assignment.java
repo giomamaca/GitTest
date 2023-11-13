@@ -27,7 +27,7 @@ public class assignment extends GraphicsProgram {
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
-	private GOval ball;
+	public GOval ball;
 	private GRect paddle;
 
 	public void run() {
