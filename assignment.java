@@ -48,7 +48,9 @@ public class assignment extends GraphicsProgram {
 	private void ballHitsPaddle() {
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
-		if (hitPad1 == paddle || hitPad2 == paddle) {
+		GObject hitPad3 = getElementAt(ball.getX() + 2* BALL_RADIUS, ball.getY());
+		GObject hitPad4 = getElementAt(ball.getX(), ball.getY());
+		if (hitPad1 == paddle || hitPad2 == paddle || hitPad3 == paddle || hitPad4 == paddle) {
 			vy = -vy;
 			vy *= 1.1;
 			vx *= 1.1;
