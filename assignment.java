@@ -60,7 +60,7 @@ public class assignment extends GraphicsProgram {
 		if (paddle.getX() > getWidth() - PADDLE_WIDTH) {
 			paddle.setLocation(getWidth() - PADDLE_WIDTH, getHeight() - PADDLE_Y_OFFSET);
 		}
-		if(paddle.getX() < PADDLE_WIDTH){
+		if(paddle.getX() < 0){
 			paddle.setLocation(0,getHeight() - PADDLE_Y_OFFSET);
 		}
 	}
