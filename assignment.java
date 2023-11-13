@@ -55,12 +55,13 @@ public class assignment extends GraphicsProgram {
 	}
 
 	public void mouseMoved(MouseEvent e) {
-		paddle.setLocation(e.getX(), getHeight() );
+		paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
 	}
 
 	private void movingBall() {
 		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS, RADIUS);
 		ball.setFilled(true);
+		ballHitsPaddle();
 		add(ball);
 		while (true) {
 			ball.move(vx, vy);
