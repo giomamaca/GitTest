@@ -6,7 +6,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class assignment extends GraphicsProgram{
+public class assignment extends GraphicsProgram {
 	public static final int APPLICATION_WIDTH = 400;
 	public static final int APPLICATION_HEIGHT = 600;
 	private static final int WIDTH = APPLICATION_WIDTH;
@@ -17,14 +17,13 @@ public class assignment extends GraphicsProgram{
 	private static final int NBRICKS_PER_ROW = 10;
 	private static final int NBRICK_ROWS = 10;
 	private static final int BRICK_SEP = 4;
-	private static final int BRICK_WIDTH =
-	  (WIDTH - (NBRICKS_PER_ROW - 1) * BRICK_SEP) / NBRICKS_PER_ROW;
+	private static final int BRICK_WIDTH = (WIDTH - (NBRICKS_PER_ROW - 1) * BRICK_SEP) / NBRICKS_PER_ROW;
 	private static final int BRICK_HEIGHT = 8;
 	private static final int BALL_RADIUS = 10;
 	private static final int BRICK_Y_OFFSET = 70;
 	private static final int NTURNS = 3;
 	private static final int RADIUS = 10;
-	
+
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
@@ -32,13 +31,13 @@ public class assignment extends GraphicsProgram{
 	private GRect paddle;
 	private double a = 0;
 	private double b = 1;
-	
-	public void run(){
+
+	public void run() {
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		addMouseListeners();
-		for(int i = 0; i < NBRICK_ROWS; i++){
-			for(int j = 0; j < NBRICK_ROWS; j++){
+		for (int i = 0; i < NBRICK_ROWS; i++) {
+			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
 			}
 		}
@@ -46,59 +45,57 @@ public class assignment extends GraphicsProgram{
 		ballHitsPaddle();
 	}
 
-	
 	private void ballHitsPaddle() {
-		if(ball.getY() + 2 * BALL_RADIUS == paddle.getY()){
-			GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS); 
-			GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS); 
-			if(hitPad1 != null){
+		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
+		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
+		if (ball.getY() + 2 * BALL_RADIUS == paddle.getY()) {
+			if (hitPad1 != null) {
 				b = -b;
 			}
 		}
 	}
 
-
 	public void mouseMoved(MouseEvent e) {
-			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
-			add(paddle);	
+		paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
+		add(paddle);
 	}
 
 	private void movingBall() {
-		ball = new GOval (getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2,RADIUS, RADIUS);
+		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS, RADIUS);
 		ball.setFilled(true);
 		add(ball);
 		int a = 0;
 		int b = 1;
-		while(true){			
+		while (true) {
 			ball.move(a, b);
 			pause(10);
-			if(ball.getX() > APPLICATION_WIDTH - RADIUS / 2){
+			if (ball.getX() > APPLICATION_WIDTH - RADIUS / 2) {
 				vx *= -1;
 			}
-			if(ball.getX() < 0){
+			if (ball.getX() < 0) {
 				vx *= -1;
 			}
 		}
 	}
 
 	private void Bricks(int i, int j) {
-		int Xcord = (int)(i*(BRICK_WIDTH + BRICK_SEP));
-		int Ycord = (int)(j*(BRICK_HEIGHT + BRICK_SEP));
-		GRect Bricks = new GRect (Xcord + BRICK_SEP / 2, Ycord, BRICK_WIDTH, BRICK_HEIGHT);
+		int Xcord = (int) (i * (BRICK_WIDTH + BRICK_SEP));
+		int Ycord = (int) (j * (BRICK_HEIGHT + BRICK_SEP));
+		GRect Bricks = new GRect(Xcord + BRICK_SEP / 2, Ycord, BRICK_WIDTH, BRICK_HEIGHT);
 		Bricks.setFilled(true);
-		if(j < 2){
+		if (j < 2) {
 			Bricks.setColor(Color.RED);
 		}
-		if(j > 1 && j <= 3){
+		if (j > 1 && j <= 3) {
 			Bricks.setColor(Color.ORANGE);
 		}
-		if(j > 3 && j <= 5){
+		if (j > 3 && j <= 5) {
 			Bricks.setColor(Color.YELLOW);
 		}
-		if(j > 5 && j <= 7){
+		if (j > 5 && j <= 7) {
 			Bricks.setColor(Color.GREEN);
 		}
-		if(j > 7 && j < 10){
+		if (j > 7 && j < 10) {
 			Bricks.setColor(Color.CYAN);
 		}
 		add(Bricks);
