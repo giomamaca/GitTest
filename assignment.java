@@ -59,7 +59,7 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void movingBall() {
-		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS, RADIUS);
+		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS * 2, RADIUS * 2);
 		ball.setFilled(true);
 		add(ball);
 		while (true) {
