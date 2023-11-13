@@ -53,7 +53,7 @@ public class assignment extends GraphicsProgram{
 				vy = -vy;
 			}
 			if(hitPad2 != null){
-				vy *= -1;
+				vy ==-5;
 			}
 		}
 	}
