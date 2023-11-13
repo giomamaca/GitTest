@@ -31,7 +31,7 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	public void run() {
-		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle = new GRect(0,getHeight() - PADDLE_Y_OFFSET ,PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		add(paddle);
 		addMouseListeners();
