@@ -49,7 +49,7 @@ public class assignment extends GraphicsProgram {
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
 		if (ball.getY() + 2 * BALL_RADIUS == paddle.getY()) {
-			if (hitPad1 != null) {
+			if (hitPad1 != null && hitPad2 != null) {
 				b = -b;
 			}
 		}
