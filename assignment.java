@@ -31,7 +31,8 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	public void run() {
-		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH,
+				PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		add(paddle);
 		addMouseListeners();
@@ -55,7 +56,10 @@ public class assignment extends GraphicsProgram {
 	}
 
 	public void mouseMoved(MouseEvent e) {
-			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
+		paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
+		if (paddle.getX() > getWidth() - PADDLE_WIDTH) {
+			System.out.println("1341234");
+		}
 	}
 
 	private void movingBall() {
