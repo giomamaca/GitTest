@@ -52,7 +52,7 @@ public class assignment extends GraphicsProgram{
 			GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS); 
 			GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS); 
 			if(hitPad1 != null){
-				b = -vy;
+				b = -b;
 			}
 		}
 	}
