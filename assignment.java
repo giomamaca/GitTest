@@ -31,9 +31,6 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	public void run() {
-		paddle = new GRect(0,getHeight() - PADDLE_Y_OFFSET ,PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
-		add(paddle);
 		addMouseListeners();
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
@@ -45,12 +42,15 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void ballHitsPaddle() {
+		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
+		add(paddle);
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
 		if (hitPad1 == paddle || hitPad2 == paddle) {
-				vy = -vy;
-				vy *= 1.05;
-				vx *= 1.05;			
+			vy = -vy;
+			vy *= 1.05;
+			vx *= 1.05;
 		}
 	}
 
