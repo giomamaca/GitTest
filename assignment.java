@@ -41,7 +41,7 @@ public class assignment extends GraphicsProgram {
 			}
 		}
 		movingBall();
-		ballHitsPaddle();
+
 	}
 
 
@@ -75,6 +75,8 @@ public class assignment extends GraphicsProgram {
 			if(ball.getY() < 0){
 				vy *= -1;
 			}
+			
+			ballHitsPaddle();
 		}
 	}
 
