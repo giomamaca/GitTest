@@ -51,7 +51,7 @@ public class assignment extends GraphicsProgram {
 		if (ball.getY() + 2 * BALL_RADIUS == paddle.getY()) {
 			if (hitPad1 != null || hitPad2 != null) {
 				b = -vy;
-				vy = 1.05 * vy;
+				vy = -1.05 * vy;
 			}
 		}
 	}
@@ -66,7 +66,7 @@ public class assignment extends GraphicsProgram {
 		ball.setFilled(true);
 		add(ball);
 		while (true) {
-			ball.move(a, b);
+			ball.move(vx, vy);
 			pause(10);
 			if (ball.getX() > APPLICATION_WIDTH - RADIUS / 2) {
 				vx *= -1;
