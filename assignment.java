@@ -52,6 +52,9 @@ public class assignment extends GraphicsProgram{
 			if(hitPad1 != null){
 				vy = -vy;
 			}
+			if(hitPad2 != null){
+				vy *= -1;
+			}
 		}
 	}
 
