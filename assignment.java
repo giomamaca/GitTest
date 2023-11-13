@@ -29,8 +29,6 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	private double a = 0;
-	private double b = 1;
 
 	public void run() {
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
@@ -50,8 +48,8 @@ public class assignment extends GraphicsProgram {
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
 		if (ball.getY() + 2 * BALL_RADIUS == paddle.getY()) {
 			if (hitPad1 != null || hitPad2 != null) {
-				b = -vy;
-				vy = -1.05 * vy;
+				vy = -vy;
+				vy = 1.05 * vy;
 			}
 		}
 	}
