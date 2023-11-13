@@ -28,7 +28,7 @@ public class assignment extends GraphicsProgram {
 	private double vx = rgen.nextDouble(1.0, 3.0);
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
-	public GRect paddle;
+	private GRect paddle;
 
 	public void run() {
 		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
