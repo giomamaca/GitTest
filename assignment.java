@@ -41,14 +41,9 @@ public class assignment extends GraphicsProgram {
 			}
 		}
 		movingBall();
-		ballHitsBricks();
 		ballHitsPaddle();
 	}
 
-	private void ballHitsBricks() {
-		// TODO Auto-generated method stub
-		
-	}
 
 	private void ballHitsPaddle() {
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
@@ -70,7 +65,7 @@ public class assignment extends GraphicsProgram {
 		add(ball);
 		while (true) {
 			ball.move(-vx, -vy);
-			pause(5);
+			pause(10);
 			if (ball.getX() > APPLICATION_WIDTH - RADIUS / 2) {
 				vx *= -1;
 			}
