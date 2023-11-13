@@ -41,7 +41,13 @@ public class assignment extends GraphicsProgram {
 			}
 		}
 		movingBall();
+		ballHitsBricks();
 		ballHitsPaddle();
+	}
+
+	private void ballHitsBricks() {
+		// TODO Auto-generated method stub
+		
 	}
 
 	private void ballHitsPaddle() {
@@ -64,7 +70,7 @@ public class assignment extends GraphicsProgram {
 		add(ball);
 		while (true) {
 			ball.move(-vx, -vy);
-			pause(10);
+			pause(5);
 			if (ball.getX() > APPLICATION_WIDTH - RADIUS / 2) {
 				vx *= -1;
 			}
