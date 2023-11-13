@@ -34,10 +34,6 @@ public class assignment extends GraphicsProgram {
 		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
 		paddle.setFilled(true);
 		add(paddle);
-		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS, RADIUS);
-		ball.setFilled(true);
-		add(ball);
-		addMouseListeners();
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
@@ -45,6 +41,7 @@ public class assignment extends GraphicsProgram {
 		}
 		movingBall();
 		ballHitsPaddle();
+		addMouseListeners();
 	}
 
 	private void ballHitsPaddle() {
@@ -62,6 +59,9 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void movingBall() {
+		ball = new GOval(getWidth() / 2 - RADIUS / 2, getHeight() / 2 - RADIUS / 2, RADIUS, RADIUS);
+		ball.setFilled(true);
+		add(ball);
 		while (true) {
 			ball.move(vx, vy);
 			pause(10);
