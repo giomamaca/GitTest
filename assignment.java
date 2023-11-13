@@ -31,9 +31,6 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	public void run() {
-		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
-		add(paddle);
 		addMouseListeners();
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
@@ -50,13 +47,14 @@ public class assignment extends GraphicsProgram {
 		if (hitPad1 == paddle || hitPad2 == paddle) {
 				vy = -vy;
 				vy *= 1.05;
-				vx *= 1.05;
-				System.out.println("dadad");
-			
+				vx *= 1.05;			
 		}
 	}
 
 	public void mouseMoved(MouseEvent e) {
+		paddle = new GRect(PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
+		add(paddle);
 		paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
 	}
 
