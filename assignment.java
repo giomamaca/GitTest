@@ -37,14 +37,14 @@ public class assignment extends GraphicsProgram {
 				Bricks(i, j);
 			}
 		}
+		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
+		add(paddle);
 		movingBall();
 		ballHitsPaddle();
 	}
 
 	private void ballHitsPaddle() {
-		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
-		add(paddle);
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
 		if (hitPad1 == paddle || hitPad2 == paddle) {
