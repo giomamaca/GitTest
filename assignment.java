@@ -51,7 +51,7 @@ public class assignment extends GraphicsProgram {
 		GObject hitPad3 = getElementAt(ball.getX() + 2* BALL_RADIUS, ball.getY());
 		GObject hitPad4 = getElementAt(ball.getX(), ball.getY());
 		if (hitPad1 == paddle || hitPad2 == paddle || hitPad3 == paddle || hitPad4 == paddle) {
-			ball.setLocation(paddle.getX() , getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2);
+			ball.setLocation(ball.getX() , getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2);
 			vy = -vy;
 			vy *= 1.01;
 			vx *= 1.01;
