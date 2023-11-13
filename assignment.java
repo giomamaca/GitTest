@@ -55,9 +55,7 @@ public class assignment extends GraphicsProgram {
 	}
 
 	public void mouseMoved(MouseEvent e) {
-		if(paddle.getX() > PADDLE_WIDTH / 2 && paddle.getX() < getWidth() - PADDLE_WIDTH / 2){
-			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);			
-		}
+			paddle.setLocation(e.getX() - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET);
 	}
 
 	private void movingBall() {
