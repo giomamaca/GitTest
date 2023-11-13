@@ -13,14 +13,14 @@ public class crashingBall extends GraphicsProgram {
 	public void run() {
 		GOval ball = new GOval(0, getHeight() / 2, 10, 10);
 		add(ball);
+		GRect block = new GRect(700, getHeight() / 2 - HEIGHT / 2, WIDTH, HEIGHT);
+		block.setFilled(true);
+		block.setColor(Color.red);
+		
+		add(block);
 		while (true) {
 			ball.move(1, 0);
 			pause(10);
-			GRect block = new GRect(700, getHeight() / 2 - HEIGHT / 2, WIDTH, HEIGHT);
-			block.setFilled(true);
-			block.setColor(Color.red);
-			
-			add(block);
 		}
 
 	}
