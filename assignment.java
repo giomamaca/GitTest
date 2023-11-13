@@ -52,8 +52,8 @@ public class assignment extends GraphicsProgram {
 		GObject hitPad4 = getElementAt(ball.getX(), ball.getY());
 		if (hitPad1 == paddle || hitPad2 == paddle || hitPad3 == paddle || hitPad4 == paddle) {
 			vy = -vy;
-			vy *= 1.1;
-			vx *= 1.1;
+			vy *= 1.01;
+			vx *= 1.01;
 		}
 	}
 
@@ -73,7 +73,7 @@ public class assignment extends GraphicsProgram {
 		add(ball);
 		while (true) {
 			ball.move(vx, vy);
-			pause(15);
+			pause(8);
 			if (ball.getX() > APPLICATION_WIDTH - RADIUS * 2) {
 				vx *= -1;
 			}
