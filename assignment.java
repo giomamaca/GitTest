@@ -31,15 +31,15 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	public void run() {
+		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
+		paddle.setFilled(true);
+		add(paddle);
 		addMouseListeners();
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
 			}
 		}
-		paddle = new GRect(0, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH, PADDLE_HEIGHT);
-		paddle.setFilled(true);
-		add(paddle);
 		movingBall();
 		ballHitsPaddle();
 	}
@@ -63,7 +63,7 @@ public class assignment extends GraphicsProgram {
 		ball.setFilled(true);
 		add(ball);
 		while (true) {
-			ball.move(vx, vy);
+			ball.move(-vx, -vy);
 			pause(10);
 			if (ball.getX() > APPLICATION_WIDTH - RADIUS / 2) {
 				vx *= -1;
