@@ -48,7 +48,14 @@ public class assignment extends GraphicsProgram {
 		}
 		breakingBricks();
 		movingBall();
+		Losing();
+	}
 
+	private void Losing() {
+		if(ball.getY() < getHeight()){
+			GLabel lose = new GLabel ("YOU LOSE!");
+			add(lose);
+		}
 	}
 
 	private void breakingBricks() {
