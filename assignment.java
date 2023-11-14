@@ -61,11 +61,11 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void breakingBricks() {
-		GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
-			while(collider1 != null){
-				remove(collider1);
-				vy *= -1;
-		}
+//		GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
+//			if(collider1 != null){
+//				remove(collider1);
+//				vy *= -1;
+//		}
 	}
 
 	private void ballHitsPaddle() {
