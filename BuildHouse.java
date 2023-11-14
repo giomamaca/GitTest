@@ -14,9 +14,16 @@ public class BuildHouse extends GraphicsProgram {
 	private static final double HANDLE_HEIGHT = 10;
 	private static final double WINDOW_WIDTH = 70;
 	private static final double WINDOW_HEIGHT = 70;
+	private GObject getCollidingObject(int a, int b) {
+		return getElementAt(a,b);
+	}
 	
 	public void run (){
 		drawHouse();
+		GObject collider = getCollidingObject(500,50);
+		if(collider != null){
+			remove(collider);
+		}
 	}
 
 	private void drawHouse() {
