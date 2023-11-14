@@ -29,7 +29,6 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	private GObject Bricks;
 
 	private GObject getCollidingObject(double a, double b) {
 		return getElementAt(a,b);
@@ -62,7 +61,7 @@ public class assignment extends GraphicsProgram {
 
 	private void breakingBricks() {
 		GObject collider = getCollidingObject(ball.getX(), ball.getY());
-		if(ball.getX() > getWidth() - 100 - 20){
+		if(ball.getX() > 4){
 			if(collider != null){
 				remove(collider);
 				vy *= -1;
