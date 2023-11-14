@@ -57,6 +57,7 @@ public class assignment extends GraphicsProgram {
 			double TL1 = lose.getWidth();
 			double TL2 = lose.getAscent();
 			add(lose, TL1, TL2);
+			System.out.println("dadadadada");
 		}
 	}
 
