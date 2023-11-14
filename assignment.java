@@ -112,10 +112,10 @@ public class assignment extends GraphicsProgram {
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
 			if (ball.getX() > 4) {
 				if (collider2 != null) {
-					remove(collider2);
 					if(collider2 == paddle){
 						paddle.setLocation(paddle.getX(), paddle.getY());
 					}
+					remove(collider2);
 					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
 				}
