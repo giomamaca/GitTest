@@ -99,26 +99,14 @@ public class assignment extends GraphicsProgram {
 				vy *= -1;
 			}
 			GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
-			if (ball.getX() > 4) {
-				if (collider1 != null) {
-					remove(collider1);
-					ball.setLocation(ball.getX(), ball.getY());
-					vy *= -1;
-					if(collider1 == paddle){
-						ball.setLocation(ball.getX(), ball.getY() - 2 * BALL_RADIUS);
-						paddle = new GRect(paddle.getX(), paddle.getY(), PADDLE_WIDTH, PADDLE_HEIGHT);
-						paddle.setFilled(true);
-						add(paddle);
-					}
-				}
-			}
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
 			if (ball.getX() > 4) {
-				if (collider2 != null) {
+				if (collider1 != null || collider2 != null) {
+					remove(collider1);
 					remove(collider2);
 					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
-					if(collider2 == paddle){
+					if(collider1 == paddle){
 						ball.setLocation(ball.getX(), ball.getY() - 2 * BALL_RADIUS);
 						paddle = new GRect(paddle.getX(), paddle.getY(), PADDLE_WIDTH, PADDLE_HEIGHT);
 						paddle.setFilled(true);
