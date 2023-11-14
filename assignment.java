@@ -30,6 +30,7 @@ public class assignment extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private GRect Bricks;
+	private GObject getCollidingObject;
 
 	public void run() {
 		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH,
@@ -88,7 +89,11 @@ public class assignment extends GraphicsProgram {
 				vy *= -1;
 			}
 			ballHitsPaddle();
-			GObject collider = getCollidingObject();
+			GObject collider = getCollidingObject;
+			if(collider != null){
+				remove(collider);
+				vy *= -1;
+			}
 		}
 	}
 
