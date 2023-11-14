@@ -51,7 +51,7 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void breakingBricks() {
-		GObject collider = getCollidingObject(BRICK_WIDTH + BRICK_SEP, BRICK_Y_OFFSET);
+		GObject collider = getCollidingObject(400,300);
 		if(collider != null){
 			remove(collider);
 		}
