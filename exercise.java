@@ -18,7 +18,7 @@ public class exercise extends GraphicsProgram {
 		add(ball);
 		while(true){
 			ball.move(1, 0);
-			pasue(10);
+			pause(10);
 		}
 	}
 }
