@@ -29,7 +29,8 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	private GObject getCollidingObject(){
+
+	private GObject getCollidingObject() {
 		return null;
 	}
 
@@ -42,7 +43,15 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
-//				GObject Bricks = getElementAt() 
+				GObject Coordinates1 = getElementAt(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
+						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_Y_OFFSET);
+				GObject Coordinates2 = getElementAt(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
+						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_HEIGHT + BRICK_Y_OFFSET);
+				GObject Coordinates3 = getElementAt(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
+						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_HEIGHT + BRICK_Y_OFFSET);
+				GObject Coordinates4 = getElementAt(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
+						BRICK_HEIGHT + j * BRICK_HEIGHT + BRICK_Y_OFFSET);
+				GObject collider = getCollidingObject();
 			}
 		}
 		movingBall();
@@ -52,14 +61,14 @@ public class assignment extends GraphicsProgram {
 	private void ballHitsPaddle() {
 		GObject hitPad1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 		GObject hitPad2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
-		GObject hitPad3 = getElementAt(ball.getX() + 2* BALL_RADIUS, ball.getY());
+		GObject hitPad3 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY());
 		GObject hitPad4 = getElementAt(ball.getX(), ball.getY());
 		if (hitPad1 == paddle || hitPad2 == paddle || hitPad3 == paddle || hitPad4 == paddle) {
-			ball.setLocation(ball.getX() , getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2);
+			ball.setLocation(ball.getX(), getHeight() - PADDLE_Y_OFFSET - BALL_RADIUS * 2);
 			vy = -vy;
 			vy *= 1.01;
 			vx *= 1.01;
-			
+
 		}
 	}
 
@@ -68,8 +77,8 @@ public class assignment extends GraphicsProgram {
 		if (paddle.getX() > getWidth() - PADDLE_WIDTH) {
 			paddle.setLocation(getWidth() - PADDLE_WIDTH, getHeight() - PADDLE_Y_OFFSET);
 		}
-		if(paddle.getX() < 0){
-			paddle.setLocation(0,getHeight() - PADDLE_Y_OFFSET);
+		if (paddle.getX() < 0) {
+			paddle.setLocation(0, getHeight() - PADDLE_Y_OFFSET);
 		}
 	}
 
@@ -93,7 +102,6 @@ public class assignment extends GraphicsProgram {
 			ballHitsPaddle();
 		}
 	}
-
 
 	private void Bricks(int i, int j) {
 		int Xcord = (int) (i * (BRICK_WIDTH + BRICK_SEP));
