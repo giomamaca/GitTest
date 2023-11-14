@@ -22,7 +22,7 @@ public class exercise extends GraphicsProgram {
 		block.setFilled(true);
 		add(block);
 		GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
-		if(ball.getX() == getWidth() - 100){
+		if(ball.getX() > getWidth() - 100){
 			if(collider != null){
 				remove(collider);
 			}
