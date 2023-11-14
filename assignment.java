@@ -31,7 +31,7 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 
 	private GObject getCollidingObject(double a, double b) {
-		return getElementAt(a,b);
+		return getElementAt(a, b);
 	}
 
 	public void run() {
@@ -50,8 +50,8 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void Losing() {
-		if(ball.getY() < getHeight()){
-			GLabel lose = new GLabel ("YOU LOSE!");
+		if (ball.getY() < getHeight()) {
+			GLabel lose = new GLabel("YOU LOSE!");
 			double TL1 = lose.getWidth();
 			double TL2 = lose.getAscent();
 			add(lose, TL1, TL2);
@@ -99,19 +99,25 @@ public class assignment extends GraphicsProgram {
 				vy *= -1;
 			}
 			GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
-			if(ball.getX() > 4){
-				if(collider1 != null){
+			if (ball.getX() > 4) {
+				if (collider1 != null) {
 					remove(collider1);
 					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
+					if(collider1 == paddle){
+						paddle.setLocation(paddle.getX(), paddle.getY());
+					}
 				}
 			}
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
-			if(ball.getX() > 4){
-				if(collider2 != null){
+			if (ball.getX() > 4) {
+				if (collider2 != null) {
 					remove(collider2);
 					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
+					if(collider2 == paddle){
+						paddle.setLocation(paddle.getX(), paddle.getY());
+					}
 				}
 			}
 			ballHitsPaddle();
