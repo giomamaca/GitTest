@@ -16,6 +16,8 @@ public class exercise extends GraphicsProgram {
 	
 	public void run() {
 		block = new GRect(getWidth() -200, getHeight() / 2 - 50, 200,100);
+		block.setFilled(true);
+		add(block);
 		
 		ball = new GOval(0, getHeight() / 2 - 10, 20, 20);
 		add(ball);
