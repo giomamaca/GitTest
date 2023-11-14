@@ -113,11 +113,11 @@ public class assignment extends GraphicsProgram {
 			if (ball.getX() > 4) {
 				if (collider2 != null) {
 					remove(collider2);
-					ball.setLocation(ball.getX(), ball.getY());
-					vy *= -1;
 					if(collider2 == paddle){
 						paddle.setLocation(paddle.getX(), paddle.getY());
 					}
+					ball.setLocation(ball.getX(), ball.getY());
+					vy *= -1;
 				}
 			}
 			ballHitsPaddle();
