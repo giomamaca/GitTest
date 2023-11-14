@@ -45,7 +45,13 @@ public class assignment extends GraphicsProgram {
 				Bricks(i, j);
 			}
 		}
-		breakingBricks();
+		GObject collider = getCollidingObject(ball.getX(), ball.getY());
+		if(ball.getX() > 4){
+			if(collider != null){
+				remove(collider);
+				vy *= -1;
+			}
+		}
 		movingBall();
 		Losing();
 	}
@@ -56,16 +62,6 @@ public class assignment extends GraphicsProgram {
 			double TL1 = lose.getWidth();
 			double TL2 = lose.getAscent();
 			add(lose, TL1, TL2);
-		}
-	}
-
-	private void breakingBricks() {
-		GObject collider = getCollidingObject(ball.getX(), ball.getY());
-		if(ball.getX() > 4){
-			if(collider != null){
-				remove(collider);
-				vy *= -1;
-			}
 		}
 	}
 
