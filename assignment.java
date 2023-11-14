@@ -54,7 +54,9 @@ public class assignment extends GraphicsProgram {
 	private void Losing() {
 		if(ball.getY() < getHeight()){
 			GLabel lose = new GLabel ("YOU LOSE!");
-			add(lose, 500, 500);
+			double TL1 = lose.getWidth();
+			double TL2 = lose.getAscent();
+			add(lose, TL1, TL2);
 		}
 	}
 
