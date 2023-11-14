@@ -90,9 +90,6 @@ public class assignment extends GraphicsProgram {
 				vy *= -1;
 			}
 			ballHitsPaddle();
-			if(getCollidingObject == brickXY){
-				remove(getCollidingObject);
-			}
 		}
 	}
 
