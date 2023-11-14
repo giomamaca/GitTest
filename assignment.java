@@ -29,6 +29,7 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
+	private GRect Bricks;
 
 	public void run() {
 		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH,
@@ -94,7 +95,7 @@ public class assignment extends GraphicsProgram {
 	private void Bricks(int i, int j) {
 		int Xcord = (int) (i * (BRICK_WIDTH + BRICK_SEP));
 		int Ycord = (int) (j * (BRICK_HEIGHT + BRICK_SEP));
-		GRect Bricks = new GRect(Xcord + BRICK_SEP / 2, Ycord + BRICK_Y_OFFSET, BRICK_WIDTH, BRICK_HEIGHT);
+	    Bricks = new GRect(Xcord + BRICK_SEP / 2, Ycord + BRICK_Y_OFFSET, BRICK_WIDTH, BRICK_HEIGHT);
 		Bricks.setFilled(true);
 		if (j < 2) {
 			Bricks.setColor(Color.RED);
