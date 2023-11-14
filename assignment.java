@@ -31,6 +31,7 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 	private GRect Bricks;
 	private GObject getCollidingObject;
+	private GObject brickXY;
 
 	public void run() {
 		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH,
@@ -41,7 +42,7 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
-				
+				brickXY = getElementAt(i * (BRICK_WIDTH + BRICK_SEP), j * (BRICK_HEIGHT + BRICK_SEP));
 			}
 		}
 		movingBall();
@@ -89,14 +90,11 @@ public class assignment extends GraphicsProgram {
 				vy *= -1;
 			}
 			ballHitsPaddle();
-			GObject collider = getCollidingObject;
-			if(collider != null){
-				remove(collider);
-				vy *= -1;
+			if(getCollidingObject == brickXY){
+				remove(getCollidingObject);
 			}
 		}
 	}
-
 
 	private void Bricks(int i, int j) {
 		int Xcord = (int) (i * (BRICK_WIDTH + BRICK_SEP));
