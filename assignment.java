@@ -40,6 +40,7 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
+				
 			}
 		}
 		movingBall();
@@ -86,8 +87,8 @@ public class assignment extends GraphicsProgram {
 			if (ball.getY() < 0) {
 				vy *= -1;
 			}
-
 			ballHitsPaddle();
+			GObject collider = getCollidingObject();
 		}
 	}
 
