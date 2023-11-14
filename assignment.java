@@ -102,6 +102,7 @@ public class assignment extends GraphicsProgram {
 			if(ball.getX() > 4){
 				if(collider1 != null){
 					remove(collider1);
+					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
 				}
 			}
@@ -109,6 +110,7 @@ public class assignment extends GraphicsProgram {
 			if(ball.getX() > 4){
 				if(collider2 != null){
 					remove(collider2);
+					ball.setLocation(ball.getX(), ball.getY());
 					vy *= -1;
 				}
 			}
