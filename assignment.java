@@ -29,8 +29,12 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
+	private GObject Bricks;
 
-	private GObject getCollidingObject(int i, int j) {
+	private GObject getCollidingObject(int a, int b) {
+		if(a >= (BRICK_WIDTH + BRICK_SEP) && a <= (11 * BRICK_WIDTH + 9 * BRICK_SEP)){
+			return Bricks;
+		}
 		return null;
 	}
 
