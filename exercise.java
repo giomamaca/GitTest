@@ -21,18 +21,18 @@ public class exercise extends GraphicsProgram {
 		block = new GRect(getWidth() - 100, getHeight() / 2 - 100, 100,200);
 		block.setFilled(true);
 		add(block);
-		GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
-		if(ball.getX() > getWidth() - 100){
-			if(collider != null){
-				remove(collider);
-			}
-		}
 		
 		ball = new GOval(0, getHeight() / 2 - 10, 20, 20);
 		add(ball);
 		while(true){
 			ball.move(1, 0);
 			pause(10);
+			GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
+			if(ball.getX() > getWidth() - 100){
+				if(collider != null){
+					remove(collider);
+				}
+			}
 		}
 	}
 }
