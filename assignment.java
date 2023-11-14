@@ -29,9 +29,9 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	private GRect Bricks;
-	private GObject getCollidingObject;
-	private GObject brickXY;
+	private GObject getCollidingObject(){
+		return null;
+	}
 
 	public void run() {
 		paddle = new GRect(getWidth() / 2 - PADDLE_WIDTH / 2, getHeight() - PADDLE_Y_OFFSET, PADDLE_WIDTH,
@@ -42,7 +42,7 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
-				brickXY = getElementAt(i * (BRICK_WIDTH + BRICK_SEP), j * (BRICK_HEIGHT + BRICK_SEP));
+//				GObject Bricks = getElementAt() 
 			}
 		}
 		movingBall();
@@ -89,14 +89,16 @@ public class assignment extends GraphicsProgram {
 			if (ball.getY() < 0) {
 				vy *= -1;
 			}
+
 			ballHitsPaddle();
 		}
 	}
 
+
 	private void Bricks(int i, int j) {
 		int Xcord = (int) (i * (BRICK_WIDTH + BRICK_SEP));
 		int Ycord = (int) (j * (BRICK_HEIGHT + BRICK_SEP));
-	    Bricks = new GRect(Xcord + BRICK_SEP / 2, Ycord + BRICK_Y_OFFSET, BRICK_WIDTH, BRICK_HEIGHT);
+		GRect Bricks = new GRect(Xcord + BRICK_SEP / 2, Ycord + BRICK_Y_OFFSET, BRICK_WIDTH, BRICK_HEIGHT);
 		Bricks.setFilled(true);
 		if (j < 2) {
 			Bricks.setColor(Color.RED);
