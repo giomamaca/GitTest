@@ -106,6 +106,7 @@ public class assignment extends GraphicsProgram {
 					vy *= -1;
 					if(collider1 == paddle){
 						ball.setLocation(ball.getX(), ball.getY());
+						paddle = new GRect(paddle.getX(), paddle.getY(), PADDLE_WIDTH, PADDLE_HEIGHT);
 					}
 				}
 			}
