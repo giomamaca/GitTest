@@ -45,13 +45,6 @@ public class assignment extends GraphicsProgram {
 				Bricks(i, j);
 			}
 		}
-		GObject collider = getCollidingObject(ball.getX(), ball.getY());
-		if(ball.getX() > 4){
-			if(collider != null){
-				remove(collider);
-				vy *= -1;
-			}
-		}
 		movingBall();
 		Losing();
 	}
@@ -105,7 +98,13 @@ public class assignment extends GraphicsProgram {
 			if (ball.getY() < 0) {
 				vy *= -1;
 			}
-
+			GObject collider = getCollidingObject(ball.getX(), ball.getY());
+			if(ball.getX() > 4){
+				if(collider != null){
+					remove(collider);
+					vy *= -1;
+				}
+			}
 			ballHitsPaddle();
 		}
 	}
