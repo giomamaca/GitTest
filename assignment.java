@@ -32,7 +32,7 @@ public class assignment extends GraphicsProgram {
 	private GObject Bricks;
 
 	private GObject getCollidingObject(int a, int b) {
-		return ball;
+		return getElementAt(a,b);
 	}
 
 	public void run() {
