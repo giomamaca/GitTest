@@ -31,8 +31,8 @@ public class assignment extends GraphicsProgram {
 	private GRect paddle;
 	private GObject Bricks;
 
-	private GObject getCollidingObject(double a, double b) {
-		return getElementAt(a,b);
+	public GObject getElementAt(double x, double y) {
+		return getElementAt(x, y);
 	}
 
 	public void run() {
@@ -61,11 +61,11 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void breakingBricks() {
-//		GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
-//			if(collider1 != null){
-//				remove(collider1);
-//				vy *= -1;
-//		}
+		GObject collider1 = getElementAt(ball.getX(), ball.getY());
+			if(collider1 != null){
+				remove(collider1);
+				vy *= -1;
+		}
 	}
 
 	private void ballHitsPaddle() {
