@@ -30,7 +30,7 @@ public class assignment extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 
-	private GObject getCollidingObject() {
+	private GObject getCollidingObject(int i, int j) {
 		return null;
 	}
 
@@ -43,15 +43,23 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
-				GObject Coordinates1 = getElementAt(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
+				GObject Coordinates1 = getCollidingObject(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
 						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_Y_OFFSET);
-				GObject Coordinates2 = getElementAt(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
+				GObject Coordinates2 = getCollidingObject(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
 						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_HEIGHT + BRICK_Y_OFFSET);
-				GObject Coordinates3 = getElementAt(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
+				GObject Coordinates3 = getCollidingObject(BRICK_SEP + i * (BRICK_WIDTH + BRICK_SEP),
 						j * (BRICK_HEIGHT + BRICK_SEP) + BRICK_HEIGHT + BRICK_Y_OFFSET);
-				GObject Coordinates4 = getElementAt(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
+				GObject Coordinates4 = getCollidingObject(BRICK_SEP + BRICK_WIDTH + i * (BRICK_WIDTH + BRICK_SEP),
 						BRICK_HEIGHT + j * BRICK_HEIGHT + BRICK_Y_OFFSET);
-				GObject collider = getCollidingObject();
+				GObject ballCoord1 = getElementAt(ball.getX(), ball.getY());
+				GObject ballCoord2 = getElementAt(ball.getX(), ball.getY() + BALL_RADIUS * 2);
+				GObject ballCoord3 = getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY());
+				GObject ballCoord4 = getElementAt(ball.getX() + BALL_RADIUS * 2, ball.getY() + 2 * BALL_RADIUS);
+				GObject collider = getCollidingObject(i, j);
+				if(collider == Coordinates1 || collider == Coordinates2 || collider == Coordinates3 || collider == Coordinates4){
+					remove(collider);
+				}
+
 			}
 		}
 		movingBall();
