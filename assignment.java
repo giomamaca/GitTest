@@ -69,6 +69,7 @@ public class assignment extends GraphicsProgram {
 		if(hitBricks4 == collider){
 			if(collider != null){
 				remove(collider);
+				vy *= -1;
 			}			
 		}
 	}
