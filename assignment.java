@@ -57,7 +57,6 @@ public class assignment extends GraphicsProgram {
 			double TL1 = lose.getWidth();
 			double TL2 = lose.getAscent();
 			add(lose, TL1, TL2);
-			System.out.println("dadadadada");
 		}
 	}
 
@@ -65,6 +64,7 @@ public class assignment extends GraphicsProgram {
 		GObject collider = getCollidingObject(200,30);
 		if(collider != null){
 			remove(collider);
+			System.out.println("aad");
 		}
 	}
 
