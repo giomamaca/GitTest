@@ -61,16 +61,10 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void breakingBricks() {
-//		GObject hitBricks1 = getElementAt(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
-//		GObject hitBricks2 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
-//		GObject hitBricks3 = getElementAt(ball.getX() + 2 * BALL_RADIUS, ball.getY());
-		GObject hitBricks4 = getElementAt(ball.getX(), ball.getY());
 		GObject collider = getCollidingObject(200,30);
-		if(hitBricks4 == collider){
 			if(collider != null){
 				remove(collider);
 				vy *= -1;
-			}			
 		}
 	}
 
