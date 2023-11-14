@@ -13,7 +13,7 @@ public class exercise extends GraphicsProgram {
 	private int x = 1;
 	private int y = 1;
 
-	private GObject getCollidingObject(int a, int b){
+	private GObject getCollidingObject(double a, double b){
 		return getElementAt(a, b);
 	}
 	
@@ -27,7 +27,7 @@ public class exercise extends GraphicsProgram {
 		while(true){
 			ball.move(x, 0);
 			pause(5);
-			GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
+			GObject collider = getCollidingObject(ball.getX(), ball.getY());
 			if(ball.getX() > getWidth() - 100 - 20){
 				if(collider != null){
 					remove(collider);
