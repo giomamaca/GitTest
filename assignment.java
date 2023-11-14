@@ -98,10 +98,31 @@ public class assignment extends GraphicsProgram {
 			if (ball.getY() < 0) {
 				vy *= -1;
 			}
-			GObject collider = getCollidingObject(ball.getX(), ball.getY());
+			GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
 			if(ball.getX() > 4){
-				if(collider != null){
-					remove(collider);
+				if(collider1 != null){
+					remove(collider1);
+					vy *= -1;
+				}
+			}
+			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
+			if(ball.getX() > 4){
+				if(collider2 != null){
+					remove(collider2);
+					vy *= -1;
+				}
+			}
+			GObject collider3 = getCollidingObject(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
+			if(ball.getX() > 4){
+				if(collider3 != null){
+					remove(collider3);
+					vy *= -1;
+				}
+			}
+			GObject collider4 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2* BALL_RADIUS);
+			if(ball.getX() > 4){
+				if(collider4 != null){
+					remove(collider4);
 					vy *= -1;
 				}
 			}
