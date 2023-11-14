@@ -14,7 +14,7 @@ public class exercise extends GraphicsProgram {
 
 	
 	public void run() {
-		ball = new GOval(0, getHeight() - 10, 20, 20);
+		ball = new GOval(0, getHeight() / 2 - 10, 20, 20);
 		add(ball);
 		while(true){
 			ball.move(1, 0);
