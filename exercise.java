@@ -25,12 +25,13 @@ public class exercise extends GraphicsProgram {
 		ball = new GOval(0, getHeight() / 2 - 10, 20, 20);
 		add(ball);
 		while(true){
-			ball.move(1, 0);
-			pause(10);
+			ball.move(x, 0);
+			pause(5);
 			GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
-			if(ball.getX() > getWidth() - 100){
+			if(ball.getX() > getWidth() - 100 - 20){
 				if(collider != null){
 					remove(collider);
+					x *= -1;
 				}
 			}
 		}
