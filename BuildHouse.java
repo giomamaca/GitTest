@@ -20,7 +20,7 @@ public class BuildHouse extends GraphicsProgram {
 	
 	public void run (){
 		drawHouse();
-		GObject collider = getCollidingObject(500,50);
+		GObject collider = getCollidingObject(500,500);
 		if(collider != null){
 			remove(collider);
 		}
