@@ -44,11 +44,6 @@ public class assignment extends GraphicsProgram {
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
 				Bricks(i, j);
-				GObject collider = getCollidingObject(200,30);
-				if(collider != null){
-					remove(collider);
-					vy *= -1;
-				}
 			}
 		}
 		breakingBricks();
@@ -66,6 +61,11 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void breakingBricks() {
+		GObject collider = getCollidingObject(4, PADDLE_Y_OFFSET);
+			if(collider != null){
+				remove(collider);
+				vy *= -1;
+		}
 	}
 
 	private void ballHitsPaddle() {
