@@ -13,11 +13,18 @@ public class exercise extends GraphicsProgram {
 	private int x = 1;
 	private int y = 1;
 
+	private GObject getCollidingObject(int a, int b){
+		return getElementAt(a, b);
+	}
 	
 	public void run() {
 		block = new GRect(getWidth() - 100, getHeight() / 2 - 100, 100,200);
 		block.setFilled(true);
 		add(block);
+		GObject collider = getCollidingObject(getWidth() - 100, getHeight() / 2 - 100);
+		if(collider != null){
+			remove(collider);
+		}
 		
 		ball = new GOval(0, getHeight() / 2 - 10, 20, 20);
 		add(ball);
