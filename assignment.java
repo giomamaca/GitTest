@@ -100,7 +100,7 @@ public class assignment extends GraphicsProgram {
 			}
 			GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
-			if (ball.getX() > 4) {
+			if (ball.getX() > 0) {
 				if (collider1 != null || collider2 != null) {
 					if(collider1 != null){
 						remove(collider1);						
