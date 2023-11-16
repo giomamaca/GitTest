@@ -18,7 +18,10 @@ public class exercise extends GraphicsProgram {
 	}
 	
 	public void run() {
-		block = new GRect(getWidth() - 100, getHeight() / 2 - 100, 100,200);
+		for(int i = 0 ; i < 9; i++){
+			block = new GRect(getWidth() - 100, getHeight() / 2 - 100, 100,200);
+			
+		}
 		block.setFilled(true);
 		add(block);
 		
