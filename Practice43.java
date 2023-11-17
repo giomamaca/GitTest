@@ -24,10 +24,10 @@ public class Practice43 extends GraphicsProgram{
 			ball.setLocation(e.getX() - x, e.getY() - y);
 		}
 	}
-//	public void mousePressed(MouseEvent e){
-//		if(getElementAt(e.getX(), e.getY()) == ball){
-//			x = e.getX() - ball.getX();
-//			y = e.getY() - ball.getY();
-//		}
-	}
+////	public void mousePressed(MouseEvent e){
+////		if(getElementAt(e.getX(), e.getY()) == ball){
+////			x = e.getX() - ball.getX();
+////			y = e.getY() - ball.getY();
+////		}
+//	}
 }
