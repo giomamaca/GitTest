@@ -17,14 +17,14 @@ public class Practice43 extends GraphicsProgram{
 		add(ball);
 		
 		addMouseListeners();
-		if(ball.getY() < 0){
-			ball.setLocation(ball.getX(), ball.getY());
-		}
 	}
 	
 	public void mouseDragged(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == ball){
 			ball.setLocation(e.getX() - x, e.getY() - y);
+		}
+		if(ball.getY() < 0){
+			ball.setLocation(ball.getX(), ball.getY());
 		}
 	}
 	public void mousePressed(MouseEvent e){
