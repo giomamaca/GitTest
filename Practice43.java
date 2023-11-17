@@ -7,8 +7,8 @@ public class Practice43 extends GraphicsProgram{
 	private static final double RADIUS = 10;
 	private GOval circle;
 	
-	private double x = 10;
-	private double y = 10;
+	private double x = 100;
+	private double y = 100;
 	
 	
 	public void run(){
