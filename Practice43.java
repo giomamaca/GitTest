@@ -4,7 +4,7 @@ import acm.graphics.*;
 import acm.program.GraphicsProgram;
 
 public class Practice43 extends GraphicsProgram{
-	private static final double RADIUS = 10;
+	private static final double RADIUS = 100;
 	private GOval circle;
 	
 	private double x = 100;
