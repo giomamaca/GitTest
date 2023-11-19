@@ -144,16 +144,12 @@ public class assignment extends GraphicsProgram {
 			if (collider1 != null || collider2 != null || collider3 != null || collider4 != null) {
 				// If ball hits any brick it will be removed
 				if (collider1 != null && collider1 != paddle) {
-					bounceClip.play();
 					remove(collider1);
 				} else if (collider2 != null && collider2 != paddle) {
-					bounceClip.play();
 					remove(collider2);
 				} else if (collider3 != null && collider3 != paddle) {
-					bounceClip.play();
 					remove(collider3);
 				} else if (collider4 != null && collider4 != paddle) {
-					bounceClip.play();
 					remove(collider4);
 				}
 				//If ball hits bricks "vy" will be multiplayed by -1
