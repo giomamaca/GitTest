@@ -87,16 +87,16 @@ public class assignment extends GraphicsProgram {
 		// Let's tell ball what it should do
 		movingBall();
 	}
-
-	private void Losing() {
-		if (ball.getY() > getHeight()) {
-			removeAll();
-			GLabel lose = new GLabel("YOU LOSE!");
-			double TL1 = getWidth() / 2 - lose.getWidth() / 2;
-			double TL2 = getHeight() / 2 - lose.getAscent() / 2;
-			add(lose, TL1, TL2);
-		}
-	}
+//
+//	private void Losing() {
+//		if (ball.getY() > getHeight()) {
+//			removeAll();
+//			GLabel lose = new GLabel("YOU LOSE!");
+//			double TL1 = getWidth() / 2 - lose.getWidth() / 2;
+//			double TL2 = getHeight() / 2 - lose.getAscent() / 2;
+//			add(lose, TL1, TL2);
+//		}
+//	}
 
 	private void ballHitsPaddle() {
 		// Ball coordinates
@@ -191,8 +191,8 @@ public class assignment extends GraphicsProgram {
 				vx *= -1;
 			}
 			ballHitsPaddle();
-			Losing();
-			Wining();
+//			Losing();
+//			Wining();
 		}
 	}
 
