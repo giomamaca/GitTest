@@ -53,7 +53,6 @@ public class assignment extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private int lives = 2;
-	AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
 
 	private GObject getCollidingObject(double a, double b) {
 		return getElementAt(a, b);
