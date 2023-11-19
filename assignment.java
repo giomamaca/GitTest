@@ -180,7 +180,7 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void Win() {
-		if(point == 3){
+		if(point == 5){
 			removeAll();
 			GLabel lose = new GLabel("YOU WON!");
 			double TL1 = getWidth() / 2 - lose.getWidth() / 2;
