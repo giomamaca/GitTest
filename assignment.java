@@ -187,7 +187,6 @@ public class assignment extends GraphicsProgram {
 			double TL2 = getHeight() / 2 - lose.getAscent() / 2;
 			add(lose, TL1, TL2);
 		}
-		}
 	}
 
 	private void lose() {
