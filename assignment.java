@@ -53,7 +53,6 @@ public class assignment extends GraphicsProgram {
 	private GOval ball;
 	private GRect paddle;
 	private int lives = 2;
-	private int points =0;
 	AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
 
 	private GObject getCollidingObject(double a, double b) {
@@ -147,19 +146,15 @@ public class assignment extends GraphicsProgram {
 				if (collider1 != null && collider1 != paddle) {
 					bounceClip.play();
 					remove(collider1);
-					points++;
 				} else if (collider2 != null && collider2 != paddle) {
 					bounceClip.play();
 					remove(collider2);
-					points++;
 				} else if (collider3 != null && collider3 != paddle) {
 					bounceClip.play();
 					remove(collider3);
-					points++;
 				} else if (collider4 != null && collider4 != paddle) {
 					bounceClip.play();
 					remove(collider4);
-					points++;
 				}
 				//If ball hits bricks "vy" will be multiplayed by -1
 				vy *= -1;
@@ -172,11 +167,9 @@ public class assignment extends GraphicsProgram {
 				//If ball hits brick with right or left side it vx will be multyplayed by -1 
 				if(colliderCenter1 != null && colliderCenter1 != paddle){
 					remove(colliderCenter1);
-					points++;
 				}
 				if(colliderCenter2 != null && colliderCenter2 != paddle){
 					remove(colliderCenter2);
-					points++;
 				}
 				vx *= -1;
 			}
