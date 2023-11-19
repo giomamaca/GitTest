@@ -154,52 +154,41 @@ public class assignment extends GraphicsProgram {
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
 			GObject collider3 = getCollidingObject(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
 			GObject collider4 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
-			GObject colliderCenter1 = getCollidingObject(ball.getX() + BALL_RADIUS, ball.getY());
-			GObject colliderCenter2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY() + BALL_RADIUS);
-			if (ball.getX() > 0) {
-				if (collider1 != null || collider2 != null || collider3 != null || collider4 != null) {
-						// If ball hits any brick it will be removed
-						if (collider1 != null) {
-							remove(collider1);
-							bounceClip.play();
-							point++;
-						}
-						if (collider2 != null) {
-							remove(collider2);
-							point++;
-							bounceClip.play();
-						}
-						if (collider3 != null) {
-							remove(collider3);
-							point++;
-							bounceClip.play();
-						}
-						if (collider4 != null) {
-							remove(collider4);
-							point++;
-							bounceClip.play();
-						}
-						vy *= -1;
-						if(vx < 0 && vy > 0){
-							if(colliderCenter1 != null){								
-								vx *= -1;
-							}
-						}
-						if(vx > 0 && vy > 0){
-							if(colliderCenter1 != null){								
-								vx *= -1;
-							}
-						}
-						
-					// To not to remove paddle
-					if (collider1 == paddle || collider2 == paddle || collider3 == paddle || collider4 == paddle
-							|| colliderCenter1 == paddle || colliderCenter2 == paddle) {
-						ball.setLocation(ball.getX(), ball.getY() - BALL_RADIUS);
-						paddle = new GRect(paddle.getX(), paddle.getY(), PADDLE_WIDTH, PADDLE_HEIGHT);
-						paddle.setFilled(true);
-						add(paddle);
-					}
+			GObject colliderCenter1 = getCollidingObject(ball.getX() - 1, ball.getY() + BALL_RADIUS);
+			GObject colliderCenter2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS + 1, ball.getY() + BALL_RADIUS);
+			if (collider1 != null || collider2 != null || collider3 != null || collider4 != null) {
+				// If ball hits any brick it will be removed
+				if (collider1 != null && collider1 != paddle) {
+					remove(collider1);
+					bounceClip.play();
+					point++;
+				} else if (collider2 != null && collider2 != paddle) {
+					remove(collider2);
+					bounceClip.play();
+					point++;
+				} else if (collider3 != null && collider3 != paddle) {
+					remove(collider3);
+					bounceClip.play();
+					point++;
+				} else if (collider4 != null && collider4 != paddle) {
+					remove(collider4);
+					bounceClip.play();
+					point++;
 				}
+				vy *= -1;
+				// To not to remove paddle
+				if (collider1 == paddle || collider2 == paddle || collider3 == paddle || collider4 == paddle) {
+					ball.setLocation(ball.getX(), ball.getY() - BALL_RADIUS);
+				}
+			}
+			if(colliderCenter1 != null || colliderCenter2 != null){
+				if(colliderCenter1 != null && colliderCenter1 != paddle){
+					remove(colliderCenter1);
+				}
+				if(colliderCenter2 != null && colliderCenter2 != paddle){
+					remove(colliderCenter2);
+				}
+				vx *= -1;
 			}
 			ballHitsPaddle();
 			Losing();
@@ -208,7 +197,7 @@ public class assignment extends GraphicsProgram {
 	}
 
 	private void Wining() {
-		if (point == NBRICKS_PER_ROW * NBRICK_ROWS) {
+		if (point > 3) {
 			removeAll();
 			GLabel Win = new GLabel("YOU WON!");
 			double XW1 = getWidth() / 2 - Win.getWidth() / 2;
