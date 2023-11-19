@@ -57,7 +57,6 @@ public class assignment extends GraphicsProgram {
 	private GObject getCollidingObject(double a, double b) {
 		return getElementAt(a, b);
 	}
-	AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
 
 	/* Method: run() */
 	/** Runs the Breakout program. */
@@ -68,6 +67,7 @@ public class assignment extends GraphicsProgram {
 		paddle.setFilled(true);
 		add(paddle);
 		addMouseListeners();
+		AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
 		// Let's draw bricks
 		for (int i = 0; i < NBRICK_ROWS; i++) {
 			for (int j = 0; j < NBRICK_ROWS; j++) {
