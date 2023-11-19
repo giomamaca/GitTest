@@ -1,13 +1,3 @@
-
-/*
- * File: Breakout.java
- * -------------------
- * Name:
- * Section Leader:
- * 
- * This file will eventually implement the game of Breakout.
- */
-
 import acm.graphics.*;
 import acm.program.*;
 import acm.util.*;
@@ -62,8 +52,7 @@ public class assignment extends GraphicsProgram {
 	private double vy = rgen.nextDouble(1.0, 3.0);
 	private GOval ball;
 	private GRect paddle;
-	private int point = 0;
-	AudioClip bounceClip = MediaTools.loadAudioClip("bounce.au");
+	private int lives = 2;
 
 	private GObject getCollidingObject(double a, double b) {
 		return getElementAt(a, b);
@@ -87,16 +76,6 @@ public class assignment extends GraphicsProgram {
 		// Let's tell ball what it should do
 		movingBall();
 	}
-//
-//	private void Losing() {
-//		if (ball.getY() > getHeight()) {
-//			removeAll();
-//			GLabel lose = new GLabel("YOU LOSE!");
-//			double TL1 = getWidth() / 2 - lose.getWidth() / 2;
-//			double TL2 = getHeight() / 2 - lose.getAscent() / 2;
-//			add(lose, TL1, TL2);
-//		}
-//	}
 
 	private void ballHitsPaddle() {
 		// Ball coordinates
@@ -149,32 +128,30 @@ public class assignment extends GraphicsProgram {
 			if (ball.getY() < 0) {
 				vy *= -1;
 			}
-			// Ball coordinates
+			// Ball's top left coordinate
 			GObject collider1 = getCollidingObject(ball.getX(), ball.getY());
+			//Ball's top right coordinate
 			GObject collider2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY());
+			//Ball's bottom left coordinate
 			GObject collider3 = getCollidingObject(ball.getX(), ball.getY() + 2 * BALL_RADIUS);
+			//Ball's bottom right coordinate
 			GObject collider4 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS, ball.getY() + 2 * BALL_RADIUS);
+			//Coordinate of left wall's center
 			GObject colliderCenter1 = getCollidingObject(ball.getX() - 1, ball.getY() + BALL_RADIUS);
+			//Coordinates of right wall's center
 			GObject colliderCenter2 = getCollidingObject(ball.getX() + 2 * BALL_RADIUS + 1, ball.getY() + BALL_RADIUS);
 			if (collider1 != null || collider2 != null || collider3 != null || collider4 != null) {
 				// If ball hits any brick it will be removed
 				if (collider1 != null && collider1 != paddle) {
 					remove(collider1);
-					bounceClip.play();
-					point++;
 				} else if (collider2 != null && collider2 != paddle) {
 					remove(collider2);
-					bounceClip.play();
-					point++;
 				} else if (collider3 != null && collider3 != paddle) {
 					remove(collider3);
-					bounceClip.play();
-					point++;
 				} else if (collider4 != null && collider4 != paddle) {
 					remove(collider4);
-					bounceClip.play();
-					point++;
 				}
+				//If ball hits bricks "vy" will be multiplayed by -1
 				vy *= -1;
 				// To not to remove paddle
 				if (collider1 == paddle || collider2 == paddle || collider3 == paddle || collider4 == paddle) {
@@ -182,6 +159,7 @@ public class assignment extends GraphicsProgram {
 				}
 			}
 			if(colliderCenter1 != null || colliderCenter2 != null){
+				//If ball hits brick with right or left side it vx will be multyplayed by -1 
 				if(colliderCenter1 != null && colliderCenter1 != paddle){
 					remove(colliderCenter1);
 				}
@@ -191,18 +169,26 @@ public class assignment extends GraphicsProgram {
 				vx *= -1;
 			}
 			ballHitsPaddle();
-//			Losing();
-//			Wining();
+			lose();
 		}
 	}
 
-	private void Wining() {
-		if (point > 3) {
-			removeAll();
-			GLabel Win = new GLabel("YOU WON!");
-			double XW1 = getWidth() / 2 - Win.getWidth() / 2;
-			double XW2 = getHeight() / 2 - Win.getAscent() / 2;
-			add(Win, XW1, XW2);
+	private void lose() {
+		// We have 3 lives
+		if (lives > 0) {
+			if (ball.getY() > getHeight()) {
+				// If ball is under map it has less lives
+				lives--;
+				ball.setLocation(getWidth() / 2 - BALL_RADIUS / 2, getHeight() / 2 - BALL_RADIUS / 2);
+			}
+		}
+		if (lives == 0) {
+			//If user left 0 lives ball want respawn
+//			removeAll();
+//			GLabel lose = new GLabel("YOU LOSE!");
+//			double TL1 = getWidth() / 2 - lose.getWidth() / 2;
+//			double TL2 = getHeight() / 2 - lose.getAscent() / 2;
+//			add(lose, TL1, TL2);
 		}
 	}
 
