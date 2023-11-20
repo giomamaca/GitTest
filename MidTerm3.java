@@ -14,8 +14,6 @@ public class MidTerm3 extends GraphicsProgram{
 	public void mousePressed(MouseEvent e){
 		line = new GLine(0,0, e.getX(), e.getY());
 		add(line);
-	}
-	public void mouseDragged(MouseEvent q){
-		line.setEndPoint(q.getX(), q.getY());
+		line.setEndPoint(e.getX(), e.getY());
 	}
 }
