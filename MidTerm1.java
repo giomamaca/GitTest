@@ -9,9 +9,6 @@ public class MidTerm1 extends ConsoleProgram{
 			n *= n;
 			log++;
 		}
-		if(n == m){
-			log++;
-		}
 		print("log = " + log);
 	}
 }
