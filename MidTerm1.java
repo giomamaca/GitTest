@@ -6,8 +6,8 @@ public class MidTerm1 extends ConsoleProgram{
 		int n = readInt("n = ");
 		int m = readInt("m = ");
 		while (n <= m){
-			n *= n;
 			log++;
+			n *= n;
 		}
 		print("log = " + log);
 	}
