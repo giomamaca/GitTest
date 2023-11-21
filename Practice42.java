@@ -8,7 +8,6 @@ public class Practice42 extends GraphicsProgram{
 	private GLine line;
 	private int startX = 0;
 	private int startY = 0;
-	private int lastX 
 	
 	public void run(){
 		addMouseListeners();
