@@ -8,20 +8,19 @@ public class Practice42 extends GraphicsProgram{
 	private GLine line;
 	private int startX = 0;
 	private int startY = 0;
-	private int lastX = 0;
-	private int lastY = 0;
+	private int lastX 
 	
 	public void run(){
 		addMouseListeners();
 	}
 	
 	public void mousePressed(MouseEvent e){
-		line = new GLine (lastX, lastY, startX, startY);
+		line = new GLine (e.getX(), e.getY(), e.getX(),e.getY());
 		add(line);
-		line.setEndPoint(lastX, lastY);
-		startX = e.getX();
-		startY = e.getY();
-		lastX = startX;
-		lastY = startY;
-	}	
+		
+	}
+	
+	public void mouseDragged(MouseEvent e){
+		line.setEndPoint(e.getX(), e.getY());
+	}
 }
