@@ -18,8 +18,7 @@ public class Practice42 extends GraphicsProgram{
 	public void mousePressed(MouseEvent e){
 		startX = e.getX();
 		startY = e.getY();
-		lastX = e.getX();
-		lastY = e.getY();
+	
 	}
 	
 	public void mouseMoved(MouseEvent e){
