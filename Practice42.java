@@ -22,7 +22,7 @@ public class Practice42 extends GraphicsProgram{
 	}
 	
 	public void mouseMoved(MouseEvent e){
-		line = new GLine (startX, startY, lastX, lastY);
+		line = new GLine (lastX, lastY, startX, startY);
 		add(line);
 		
 	}
