@@ -16,7 +16,7 @@ public class Practice42 extends GraphicsProgram{
 	}
 	
 	public void mousePressed(MouseEvent e){
-		line = new GLine (startX, startY, lastX, lastY);
+		line = new GLine (100, 100, startX, startY);
 		add(line);
 		startX = e.getX();
 		startY = e.getY();
