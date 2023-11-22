@@ -18,7 +18,7 @@ public class Practice46 extends ConsoleProgram{
 	private int countCharacter(String str, char c) {
 		int count = 0;
 		int index = 0;
-		while(true){
+		while(index != -1){
 			index =str.indexOf(c, index + 1);
 			count++;
 		}
