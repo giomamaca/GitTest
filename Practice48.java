@@ -5,9 +5,10 @@ public class Practice48 extends ConsoleProgram{
 		String str = readLine();
 		char c = 'a';
 		for(char ch = 0; ch  < 26; ch++){
+			char next = (char)('a' + ch);
 			int num = countCharacter(str, ch);
 			if(num > 0){
-				println((char)('a' + ch) + ":" + num);				
+				println(next + ":" + (double) num / str.length() * 100 + '%');			
 			}
 		}
 	}
