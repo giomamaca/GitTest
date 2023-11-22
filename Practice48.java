@@ -6,8 +6,7 @@ public class Practice48 extends ConsoleProgram{
 		char c = 'a';
 		for(char chr = 'a'; chr < str.length(); chr++){
 			int num = countCharacter(str, c);
-			println(num);
-			
+			print(num);
 		}
 	}
 	private int countCharacter(String str, char c){
