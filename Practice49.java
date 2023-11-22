@@ -6,7 +6,7 @@ public class Practice49 extends ConsoleProgram{
 		int result = 0;
 		for(int i = 0; i < s.length(); i++){
 			char c = s.charAt(i);
-			int a = c;
+			int a = c - '0';
 			result = result * 10 + a;
 		}
 		print(result);
