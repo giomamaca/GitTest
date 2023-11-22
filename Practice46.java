@@ -8,7 +8,7 @@ public class Practice46 extends ConsoleProgram{
 		for(char c = 'a'; c <= 'z'; c++){
 			int count = countCharacter(str, c);
 			if(count > max){
-				chr = c;
+				max = count;
 				max++;
 			}
 		}
