@@ -5,6 +5,6 @@ import java.awt.*;
 public class exercise extends ConsoleProgram {	
 	public void run() {
 		char  c = 'a';
-		println(c + 1);
+		println('c' + 1);
 	}
 }
