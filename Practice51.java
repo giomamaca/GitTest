@@ -9,8 +9,8 @@ public class Practice51 extends ConsoleProgram {
 	}
 
 	private void printTokens(String s) {
-		char a = 0;
-		char b = 0;
+		char a = 'a';
+		char b = 'a';
 		for (int i = 0; i < s.length(); i++) {
 			a = s.charAt(i);
 			if(b != a){
