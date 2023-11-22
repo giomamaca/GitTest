@@ -1,6 +1,6 @@
 import acm.program.ConsoleProgram;
 
-public class Practice45<chr> extends ConsoleProgram{
+public class Practice45 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
 		String chr = readLine();
