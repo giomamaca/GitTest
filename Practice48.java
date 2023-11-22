@@ -7,10 +7,10 @@ public class Practice48 extends ConsoleProgram{
 	}
 	private void metod(String str) {
 		for(int ch = 0; ch  < 26; ch++){
-			char chr = (char)('a' + ch);
-			int num = countCharacter(str, chr);
+			char c = (char)('a' + ch);
+			int num = countCharacter(str, c);
 			if(num > 0){
-				println(chr + ":" + (double) (num / str.length()) * 100 + '%');			
+				println(c + ":" + (double) (num / str.length()) * 100 + '%');			
 			}
 		}
 	}
