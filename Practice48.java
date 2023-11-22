@@ -3,11 +3,15 @@ import acm.program.ConsoleProgram;
 public class Practice48 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
+		metod(str);
+	}
+
+	private void metod(String str) {
 		for(int ch = 0; ch  < 26; ch++){
-			char next = (char)('a' + ch);
-			int num = countCharacter(str, next);
+			char chr = (char)('a' + ch);
+			int num = countCharacter(str, chr);
 			if(num > 0){
-				println(next + ":" + (double) num / str.length() * 100 + '%');			
+				println(chr + ":" + (double) (num / str.length()) * 100 + '%');			
 			}
 		}
 	}
