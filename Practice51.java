@@ -9,7 +9,7 @@ public class Practice51 extends ConsoleProgram{
 			if(a != b){
 				print(s);
 			}else{
-				return;
+				break;
 			}
 		}
 	}
