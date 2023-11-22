@@ -1,14 +1,14 @@
-import acm.program.ConsoleProgram;
+import acm.graphics.*;
+import acm.program.*;
+import java.awt.*;
 
-public class exercise extends ConsoleProgram {
+public class exercise extends ConsoleProgram {	
 	public void run() {
-		String s = readLine("Enter string: ");
-		int result = 0;
-		for (int i = 0; i < s.length(); i++) {
-			char next = s.charAt(i);
-			int digit = next - '0';
-			result = result * 10 + digit;
+		String str = "dessert";
+		String answer = "";
+		for(int i = 0; i < str.length(); i++){
+			answer = str.charAt(i) + answer;
 		}
-		println(result);
+		println(answer);
 	}
 }
