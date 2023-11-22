@@ -4,7 +4,7 @@ public class Practice48 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
 		char c = 'a';
-		for(char chr = 'a'; chr < 'z'; chr++){
+		for(char chr = 'a'; chr < 26; chr++){
 			int num = countCharacter(str, chr);
 			println((char)('a' + chr) + ":" + num);
 		}
