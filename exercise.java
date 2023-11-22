@@ -6,7 +6,7 @@ public class exercise extends ConsoleProgram {
 	public void run() {
 		String str = "dessert";
 		for(int i = 0; i <= str.length(); i++){
-			str = str + str.charAt(i);
+			str =str.charAt(i) + str;
 		}
 		println(str);
 	}
