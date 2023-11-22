@@ -3,7 +3,6 @@ import acm.program.ConsoleProgram;
 public class Practice48 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
-		char c = 'a';
 		for(char ch = 0; ch  < 26; ch++){
 			char next = (char)('a' + ch);
 			int num = countCharacter(str, ch);
