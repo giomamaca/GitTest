@@ -16,7 +16,7 @@ public class Practice51 extends ConsoleProgram {
 			if(b != a){
 				b = a;				
 			}
+			print(s);
 		}
-		print(s);
 	}
 }
