@@ -10,7 +10,7 @@ public class Practice48 extends ConsoleProgram{
 			char c = (char)('a' + ch);
 			int num = countCharacter(str, c);
 			if(num > 0){
-				println(c + ":" + (double) (num / str.length()) * 100 + '%');			
+				println(c + ":" + (double) num / str.length() * 100 + '%');			
 			}
 		}
 	}
