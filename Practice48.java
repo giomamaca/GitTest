@@ -4,18 +4,20 @@ public class Practice48 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
 		char c = 'a';
-		for(int i = 0; i < 26; i++){
-			int num = countCharacter(str, i);
-			println((char)('a' + i) + ":" + num);
+		for(char ch = 0; ch  < 26; ch++){
+			int num = countCharacter(str, ch);
+			if(num > 0){
+				println((char)('a' + ch) + ":" + num);				
+			}
 		}
 	}
 
-	private int countCharacter(String s, int i) {
+	private int countCharacter(String s, char c) {
 		int count = 0;
-		i = 'a';
-		for(i = 'a'; i < s.length(); i++){
-			int result = s.charAt(i);
-			if(result == i){
+		c = 'a';
+		for(c = 'a'; c < s.length(); c++){
+			int result = s.charAt(c);
+			if(result == c){
 				count++;
 			}
 		}
