@@ -18,7 +18,7 @@ public class Practice48 extends ConsoleProgram{
 		int count = 0;
 		for(int i = 0; i < s.length(); i++){
 			int result = s.charAt(i);
-			if(result == i){
+			if(result == c){
 				count++;
 			}
 		}
