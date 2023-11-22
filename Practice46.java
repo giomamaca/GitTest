@@ -12,7 +12,7 @@ public class Practice46 extends ConsoleProgram{
 				max++;
 			}
 		}
-		println(max);
+		println(chr);
 	}
 
 	private int countCharacter(String str, char c) {
