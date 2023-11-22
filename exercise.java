@@ -7,7 +7,7 @@ public class exercise extends ConsoleProgram {
 		String str = "dessert";
 		String answer = "";
 		for(int i = 0; i < str.length(); i++){
-			answer = str.charAt(i);
+			answer = answer + str.charAt(i);
 		}
 		println(str);
 	}
