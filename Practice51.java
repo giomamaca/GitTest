@@ -14,7 +14,7 @@ public class Practice51 extends ConsoleProgram {
 		for (int i = 0; i < s.length(); i++) {
 			a = s.charAt(i);
 			b = a;
-			print(s);
 		}
+		print(s);
 	}
 }
