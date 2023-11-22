@@ -3,9 +3,9 @@ import acm.program.ConsoleProgram;
 public class Practice48 extends ConsoleProgram{
 	public void run(){
 		String str = readLine();
-		for(char ch = 0; ch  < 26; ch++){
+		for(int ch = 0; ch  < 26; ch++){
 			char next = (char)('a' + ch);
-			int num = countCharacter(str, ch);
+			int num = countCharacter(str, next);
 			if(num > 0){
 				println(next + ":" + (double) num / str.length() * 100 + '%');			
 			}
