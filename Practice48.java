@@ -5,7 +5,6 @@ public class Practice48 extends ConsoleProgram{
 		String str = readLine();
 		metod(str);
 	}
-
 	private void metod(String str) {
 		for(int ch = 0; ch  < 26; ch++){
 			char chr = (char)('a' + ch);
@@ -15,12 +14,11 @@ public class Practice48 extends ConsoleProgram{
 			}
 		}
 	}
-
 	private int countCharacter(String s, char c) {
 		int count = 0;
-		for(c = 0; c < s.length(); c++){
-			int result = s.charAt(c);
-			if(result == c){
+		for(int i = 0; i < s.length(); i++){
+			int result = s.charAt(i);
+			if(result == i){
 				count++;
 			}
 		}
