@@ -14,7 +14,7 @@ public class Practice48 extends ConsoleProgram{
 
 	private int countCharacter(String s, char chr) {
 		int count = 0;
-		for(int i = 0; i < 26; i++){
+		for(int i = 0; i < s.length(); i++){
 			int num = s.charAt(i);
 			if(num == chr){
 				count++;
