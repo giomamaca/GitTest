@@ -13,8 +13,8 @@ public class Practice45 extends ConsoleProgram{
 
 	private int countChar(String str, char c) {
 		int count = 0;
-		int index = 0;
-		while(index != 1){
+		int index = -2;
+		while(index != -1){
 			index = str.indexOf(c, index + 1);
 			count++;
 		}
