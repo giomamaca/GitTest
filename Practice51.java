@@ -1,14 +1,21 @@
+import java.util.StringTokenizer;
+
 import acm.program.ConsoleProgram;
 
-public class Practice51 extends ConsoleProgram{
-	public void run(){
+public class Practice51 extends ConsoleProgram {
+	public void run() {
 		String s = readLine("enter string : ");
-		for(int i = 0; i < s.length(); i++){
-				char a = s.charAt(i);
-				if(a == (char)(a - 1)){
-					break;
-			}else{
-				print(s);
+		printTokens(s);
+	}
+
+	private void printTokens(String s) {
+		char a = 0;
+		char b = 0;
+		for (int i = 0; i < s.length(); i++) {
+			a = s.charAt(i);
+			b = a;
+			if (a == b) {
+				break;
 			}
 		}
 	}
