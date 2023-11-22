@@ -5,8 +5,9 @@ import java.awt.*;
 public class exercise extends ConsoleProgram {	
 	public void run() {
 		String str = "dessert";
+		String answer = "";
 		for(int i = 0; i <= str.length(); i++){
-			str =str.charAt(i) + str;
+			answer = str.charAt(i) + answer;
 		}
 		println(str);
 	}
