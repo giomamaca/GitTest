@@ -8,8 +8,6 @@ public class Practice51 extends ConsoleProgram{
 			char b = s.charAt(i -1);
 			if(a != b){
 				print(s);
-			}else{
-				break;
 			}
 		}
 	}
