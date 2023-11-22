@@ -9,7 +9,7 @@ public class Practice46 extends ConsoleProgram{
 			int count = countCharacter(str, c);
 			if(count > max){
 				max = count;
-				max++;
+				chr = c;
 			}
 		}
 		println(chr);
