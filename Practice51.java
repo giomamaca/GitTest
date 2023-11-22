@@ -9,14 +9,14 @@ public class Practice51 extends ConsoleProgram {
 	}
 
 	private void printTokens(String s) {
-		char a = 'a';
-		char b = 'a';
+		String a = "";
+		String b = "";
 		for (int i = 0; i < s.length(); i++) {
-			a = s.charAt(i);
-			if(b != a){
-				b = a;				
+			a = s.charAt(i) + a;
+			b = s.charAt(i -1) +b;
+			if(a != b){
+				print(s);				
 			}
-			print(s);
 		}
 	}
 }
