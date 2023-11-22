@@ -1,28 +1,14 @@
-import acm.program.ConsoleProgram;
+import acm.graphics.*;
+import acm.program.*;
+import java.awt.*;
 
-public class exercise extends ConsoleProgram {
+public class exercise extends ConsoleProgram {	
 	public void run() {
-		String s = readLine("Enter string: ");
-		printFrequency(s);
-	}
-
-	private void printFrequency(String s) {
-		for (int i = 0; i < 26; i++) {
-			char next = (char) ('a' + i);
-			int countSymbol = countSymbolInString(s, next);
-			if (countSymbol > 0)
-				println(next + ":" + (double) countSymbol / s.length() * 100 + '%');
+		String str = "dessert";
+		String answer = "";
+		for(int i = 0; i < str.length(); i++){
+			answer = str.charAt(i) + answer;
 		}
-	}
-
-	private int countSymbolInString(String s, char ch) {
-		int count = 0;
-		for (int i = 0; i < s.length(); i++) {
-			int current = s.charAt(i);
-			if (current == ch) {
-				count++;
-			}
-		}
-		return count;
+		println(answer);
 	}
 }
