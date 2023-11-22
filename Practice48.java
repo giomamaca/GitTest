@@ -7,7 +7,7 @@ public class Practice48 extends ConsoleProgram{
 			char chr = (char)('a' + c);
 			int percent = countCharacter(s, chr);
 			if(percent > 0){
-				println(chr + ":" + (double)s.length() / percent * 100 + "%");
+				println(chr + ":" + (double) percent / s.length() * 100 + "%");
 			}
 		}
 	}
