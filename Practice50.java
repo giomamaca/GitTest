@@ -10,7 +10,7 @@ public class Practice50 extends ConsoleProgram{
 	}
 
 	private void printTokens(String s) {
-		StringTokenizer tokenizer = new StringTokenizer(s, " ");
+		StringTokenizer tokenizer = new StringTokenizer(s, "go");
 		int count = 1;
 		while(tokenizer.hasMoreTokens()){
 			println("Token #" + count + ":" + tokenizer.nextToken());
