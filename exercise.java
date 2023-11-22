@@ -9,6 +9,6 @@ public class exercise extends ConsoleProgram {
 		for(int i = 0; i < str.length(); i++){
 			answer = answer + str.charAt(i);
 		}
-		println(str);
+		println(answer);
 	}
 }
