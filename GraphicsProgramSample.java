@@ -30,14 +30,24 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			}
 		}
 		addMouseListeners();
+		System.out.println(count);
 	}
 
 
 
 	public void mouseClicked(MouseEvent e){
-		GObject click = getElementAt(e.getX(), e.getY());
-		if(click != null){
-			((GRect) click).setFillColor(Color.BLACK);
+		GObject click1 = getElementAt(e.getX(), e.getY());
+		GObject click2 = getElementAt(e.getX(), e.getY());
+		if(click1 != null || click2 != null){
+			if(count <= 2){
+				((GRect) click1).setFillColor(Color.BLACK);		
+				count++;
+				((GRect) click2).setFillColor(Color.BLACK);
+				count++;
+			}
+			if(count % 2 == 1){
+				
+			}
 		}
 	}
 }
