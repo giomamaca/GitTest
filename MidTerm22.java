@@ -5,7 +5,7 @@ public class MidTerm22 extends ConsoleProgram {
 	private int divisor = 0;
 
 	public void run() {
-		int k = readInt();
+		int k = readInt("k = ");
 		getBiggestDivisor(k);
 		print(divisor);
 	}
