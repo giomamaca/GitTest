@@ -25,7 +25,7 @@ public class MidTerm22 extends ConsoleProgram {
 			return true;
 		if (a % 2 == 0)
 			return false;
-		for (int i = 3; i * i <= a; i++) {
+		for (int i = 3; i * i <= a; i += 2) {
 			if (a % i == 0) {
 				return false;
 			}
