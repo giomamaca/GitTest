@@ -24,7 +24,7 @@ public class isGeometriProgres extends ConsoleProgram {
 			}
 			previous = current;
 		}
-		print(answer);
+		println(answer);
 	}
 
 	private double gcd(int d, int a) {
