@@ -24,7 +24,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				double rectY = (double)(50 + j * SIZE);
 				rect = new GRect (rectX, rectY, SIZE, SIZE);
 				rect.setFilled(true);
-				
+				rect.setFillColor(Color.WHITE);
 				add(rect);
 			}
 		}
@@ -36,7 +36,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e){
 		GObject click = getElementAt(e.getX(), e.getY());
 		if(click != null){
-			((GRect) click).setColor(Color.BLACK);
+			((GRect) click).setFillColor(Color.BLACK);
 			System.out.println("ffsaas");
 		}
 	}
