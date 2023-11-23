@@ -20,7 +20,7 @@ public class Practice43 extends GraphicsProgram{
 	}
 	public void mouseDragged (MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == ball){
-			ball.setLocation(e.getX() - x, e.getY() - y);
+			ball.setLocation(e.getX() , e.getY() );
 		}
 	}
 }
