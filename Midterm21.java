@@ -7,6 +7,9 @@ public class Midterm21 extends GraphicsProgram{
 	
 	private static final double BOX_SIZE = 200; 
 	private GRect rect;
+	
+	private double recX = getWidth() / 2 - BOX_SIZE / 2;
+	private double recY =  getHeight() / 2 - BOX_SIZE / 2;
 	public void run(){
 		
 		
@@ -27,6 +30,8 @@ public class Midterm21 extends GraphicsProgram{
 	public void mouseDragged(MouseEvent e){	
 		if(getElementAt(e.getX(), e.getY()) == rect ){	
 			rect.setLocation(e.getX() - 100, e.getY() - 100);
+			recX = e.getX(); 
+			recY = e.getY();
 		}
 	}
 }
