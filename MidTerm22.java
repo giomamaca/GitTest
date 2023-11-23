@@ -16,8 +16,8 @@ public class MidTerm22 extends ConsoleProgram {
 					divisor = a;					
 				}
 			}
-			print(divisor);
 		}
+		print(divisor);
 	}
 
 	private boolean simple(int a) {
