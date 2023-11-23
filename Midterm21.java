@@ -28,5 +28,5 @@ public class Midterm21 extends GraphicsProgram{
 //		if(getElementAt(e.getX(), e.getY()) == rect){	
 //			rect.setLocation(e.getX() - 100, e.getY() - 100);
 //		}
-	}
+	
 }
