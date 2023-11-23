@@ -27,7 +27,7 @@ public class Midterm21 extends GraphicsProgram{
 	}
 	
 	public void mouseDragged(MouseEvent e){	
-		if(getElementAt(e.getX(), e.getY()) == rect && getElementAt(e.getX(), e.getY()) == num){	
+		if(getElementAt(e.getX(), e.getY()) == rect || getElementAt(e.getX(), e.getY()) == num){	
 			rect.setLocation(e.getX() - 100, e.getY() - 100);
 			num.setLocation(e.getX() - 100, e.getY() - 100);
 		}
