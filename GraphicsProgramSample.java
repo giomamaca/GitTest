@@ -35,9 +35,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	}
 
 
-	public void mousedragged(MouseEvent e){
+	public void mousePressed(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
-			rect.setLocation(e.getX() - 25, e.getY() - 25);
 			rect.setFilled(true);
 			rect.setColor(Color.BLACK);
 		}
