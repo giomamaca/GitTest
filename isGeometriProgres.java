@@ -2,18 +2,16 @@ import acm.program.ConsoleProgram;
 
 public class isGeometriProgres extends ConsoleProgram {
 
-	private static final double STOP = -1;
+	private static final double SENTINEL = -1;
 
 	public void run() {
-		int k = readInt();
-		if (k != STOP) {
-			int a = readInt();
-			while (a != STOP) {
-				int d = readInt();
-				if (d == STOP) {
-					println("dasdad");
-				}
-			}
+		int g = 0;
+		
+		int previous = readInt();
+		while(previous != SENTINEL){
+			int current = readInt();
+			if(current == SENTINEL) break;
+			
 		}
 	}
 
