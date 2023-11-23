@@ -15,7 +15,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	
 	private static final double SIZE = 50;
 	
-	public GRect rect;
+	private GRect rect;
 	
 	public void run() {
 		for(int i = 0; i < 8; i++){
@@ -34,8 +34,9 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 
 	public void mouseClicked(MouseEvent e){
-		if(getElementAt(e.getX(), e.getY()) != null){
-			getElementAt(e.getX(), e.getY()).setColor(Color.BLACK);
+		GObject click = getElementAt(e.getX(), e.getY());
+		if(click != null){
+			((GRect) click).setColor(Color.BLACK);
 		}
 	}
 }
