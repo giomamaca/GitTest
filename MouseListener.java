@@ -10,13 +10,13 @@ import acm.program.*;
 
 public class MouseListener extends GraphicsProgram{
 	
-	private static final double SIZE = 100;
+	private static final double SIZE = 50;
 	
 	private GRect rect;
 	
 	public void run(){
 		for(int i = 0; i < 8; i++){
-			rect = new GRect(getWidth() / 2 - SIZE / 2 + i * 100,getHeight()/ 2 - SIZE / 2 ,SIZE, SIZE);
+			rect = new GRect(getWidth() / 2 - SIZE / 2 + i * 100, getHeight()/ 2 - SIZE / 2 ,SIZE, SIZE);
 			add(rect);			
 		}
 		addMouseListeners();
