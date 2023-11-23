@@ -14,19 +14,19 @@ public class Midterm21 extends GraphicsProgram{
 	public void run(){
 		
 		rect = new GRect (recX, recY, BOX_SIZE, BOX_SIZE); 
+		add(rect);
+		
 		GLabel num = new GLabel("k");
 		double X = num.getWidth();
 		double Y = num.getAscent();
 		add(num, recX + BOX_SIZE / 2 - X / 2, recY + BOX_SIZE / 2 + Y / 2);
-		add(rect);
-		
 		
 		addMouseListeners();
 	}
 	
-	public void mouseDragged(MouseEvent e){	
-		if(getElementAt(e.getX(), e.getY()) == rect){	
-			rect.setLocation(e.getX() - 100, e.getY() - 100);
-		}
+//	public void mouseDragged(MouseEvent e){	
+//		if(getElementAt(e.getX(), e.getY()) == rect){	
+//			rect.setLocation(e.getX() - 100, e.getY() - 100);
+//		}
 	}
 }
