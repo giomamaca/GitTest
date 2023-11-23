@@ -26,19 +26,4 @@ public class isGeometriProgres extends ConsoleProgram {
 		}
 		println(answer);
 	}
-
-	private double gcd(int d, int a) {
-		double div = 0;
-		for (int i = 1; i <= d; i++) {
-			if (d % i == 0 && a % i == 0) {
-				div = i;
-			}
-		}
-		return div;
-	}
-
-	private double divisor(double k, double a) {
-		double d = a / k;
-		return (double) d;
-	}
 }
