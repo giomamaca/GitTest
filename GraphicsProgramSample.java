@@ -37,7 +37,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		GObject click = getElementAt(e.getX(), e.getY());
 		if(click != null){
 			((GRect) click).setFillColor(Color.BLACK);
-			System.out.println("ffsaas");
 		}
 	}
 }
