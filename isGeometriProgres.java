@@ -11,7 +11,7 @@ public class isGeometriProgres extends ConsoleProgram {
 			while (a != STOP) {
 				int d = readInt();
 				if (d == STOP) {
-					return;
+					println("dasdad");
 				}
 			}
 		}
