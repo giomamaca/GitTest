@@ -12,8 +12,6 @@ public class Midterm21 extends GraphicsProgram{
 	private double recY =  getHeight() / 2 - BOX_SIZE / 2;
 	
 	public void run(){
-		int number = 0;
-		
 		
 		rect = new GRect (recX, recY, BOX_SIZE, BOX_SIZE); 
 		add(rect);
