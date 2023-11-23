@@ -9,7 +9,6 @@ public class isGeometriProgres extends ConsoleProgram{
 		if(k != STOP){
 			while(k != STOP){
 				int a = readInt();
-				if(k != STOP)
 			}
 		}
 	}
