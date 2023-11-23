@@ -24,7 +24,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				double rectY = (double)(50 + j * SIZE);
 				rect = new GRect (rectX, rectY, SIZE, SIZE);
 				rect.setFilled(true);
-				rect.setColor(Color.WHITE);
+				rect.setFillColor(Color.WHITE);
 				add(rect);
 			}
 		}
