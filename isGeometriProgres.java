@@ -5,13 +5,23 @@ public class isGeometriProgres extends ConsoleProgram {
 	private static final double SENTINEL = -1;
 
 	public void run() {
-		int g = 0;
-		
-		int previous = readInt();
-		while(previous != SENTINEL){
-			int current = readInt();
-			if(current == SENTINEL) break;
-			
+		int count = 1;
+		double firstG = 0;
+		double previous = readDouble();
+		double current = previous;
+		while (current != SENTINEL) {
+			current = readDouble();
+			if (current == SENTINEL)
+				break;
+			count++;
+			if (count == 2) {
+				firstG = current / previous;
+			} else {
+				if(current / previous != firstG){
+					println("fafsfsfas");
+				}
+			}
+			previous = current;
 		}
 	}
 
