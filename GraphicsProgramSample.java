@@ -40,11 +40,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		if (click1 != null || click2 != null) {
 			((GRect) click1).setFillColor(Color.BLACK);
 			count++;
-			((GRect) click2).setFillColor(Color.BLACK);
-			count++;
-			if(count > 2 && count % 2 == 1){
-				((GRect) click1).setFillColor(Color.white);
-			}
 		}
 	}
 }
