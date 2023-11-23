@@ -3,21 +3,21 @@ import acm.program.ConsoleProgram;
 public class Practice47 extends ConsoleProgram{
 	public void run(){
 		String s = readLine("enter string : ");
-		if(predicat(s)){
+		if(isPredicat(s)){
 			println("predicat");
 		}else{
-			println("no predicat");
+			println("not predicat");
 		}
 	}
 
-	private boolean predicat(String s) {
-		for(int i = 0; i < s.length(); i++){
+	private boolean isPredicat(String s) {
+		for(int i = 0; i < 26; i++){
 			char a = s.charAt(i);
-			char b = s.charAt(s.length() - i -1);
-			if(a != b){
-				return false; 
+			char b = s.charAt(s.length() - i - 1);
+			if(a == b){
+				return true;
 			}
 		}
-		return true;
+		return false;
 	}
 }
