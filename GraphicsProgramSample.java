@@ -23,8 +23,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				double rectX = (double)(50 + i * SIZE);
 				double rectY = (double)(50 + j * SIZE);
 				rect = new GRect (rectX, rectY, SIZE, SIZE);
-				rect.setFilled(true);
-				rect.setFillColor(Color.WHITE);
+				
 				add(rect);
 			}
 		}
