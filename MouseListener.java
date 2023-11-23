@@ -16,12 +16,12 @@ public class MouseListener extends GraphicsProgram{
 	
 	public void run(){
 		rect = new GRect(getWidth() / 2 - SIZE / 2,getHeight()/ 2 - SIZE / 2 ,SIZE, SIZE);
-		rect.setFilled(true);
 		add(rect);
 		addMouseListeners();
 	}
 	public void mouseClicked(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
+			rect.setFilled(true);
 			rect.setColor(Color.red);
 		}
 	}
