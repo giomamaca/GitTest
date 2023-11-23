@@ -11,10 +11,10 @@ public class Practice47 extends ConsoleProgram{
 	}
 
 	private boolean isPredicat(String s) {
-		for(int i = 0; i < 26; i++){
+		for(int i = 0; i < s.length(); i++){
 			char a = s.charAt(i);
 			char b = s.charAt(s.length() - i - 1);
-			if(a == b){
+			if(a != b){
 				return false;
 			}
 		}
