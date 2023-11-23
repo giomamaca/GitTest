@@ -7,15 +7,15 @@ public class MidTerm22 extends ConsoleProgram {
 	public void run() {
 		int k = readInt("k = ");
 		getBiggestDivisor(k);
-		print(divisor);
 	}
 
 	private void getBiggestDivisor(int a) {
-		for (int i = 1; i <= a; i+=2) {
+		for (int i = 1; i <= a; i++) {
 			if (simple(i)) {
 				if(a % i == 0){
 					divisor = a;					
 				}
+				print(divisor);
 			}
 		}
 	}
