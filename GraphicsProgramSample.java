@@ -32,9 +32,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 
 	public void mouseClicked(MouseEvent e){
-		if(getElementAt(e.getX(), e.getY()) == rect){
+		if(getElementAt(e.getX(), e.getY()) != null){
 			rect.setFilled(true);
-			rect.setColor(Color.red);
 		}
 	}
 }
