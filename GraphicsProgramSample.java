@@ -18,6 +18,12 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	public GRect rect;
 	
 	public void run() {
+		chessBoard();
+		addMouseListeners();
+	}
+
+	
+	private void chessBoard() {
 		for(int i = 0; i < 8; i++){
 			for(int j = 0; j < 8; j++){
 				double rectX = (double)(50 + i * SIZE);
@@ -26,12 +32,12 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				add(rect);
 			}
 		}
-		addMouseListeners();
 	}
 
-	
-	public void mouseClicked(MouseEvent e){
+
+	public void mousedragged(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
+			rect.setLocation(e.getX() - 25, e.getY() - 25);
 			rect.setFilled(true);
 			rect.setColor(Color.BLACK);
 		}
