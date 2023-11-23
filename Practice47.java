@@ -15,9 +15,9 @@ public class Practice47 extends ConsoleProgram{
 			char a = s.charAt(i);
 			char b = s.charAt(s.length() - i - 1);
 			if(a == b){
-				return true;
+				return false;
 			}
 		}
-		return false;
+		return true;
 	}
 }
