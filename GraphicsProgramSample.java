@@ -30,7 +30,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				double rectY = (double)(50 + j * SIZE);
 				rect = new GRect (rectX, rectY, SIZE, SIZE);
 				rect.setFilled(true);
-				rect.setColor(Color.red);
 				add(rect);
 			}
 		}
@@ -40,7 +39,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
 			rect.setFilled(true);
-			rect.setColor(Color.BLACK);
+			rect.setColor(Color.red);
 		}
 	}
 }
