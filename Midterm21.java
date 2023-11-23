@@ -13,8 +13,7 @@ public class Midterm21 extends GraphicsProgram{
 	public void run(){
 		
 		
-		double recX = getWidth() / 2 - BOX_SIZE / 2;
-		double recY =  getHeight() / 2 - BOX_SIZE / 2;
+
 		
 		rect = new GRect (recX, recY, BOX_SIZE, BOX_SIZE); 
 		GLabel num = new GLabel("k");
