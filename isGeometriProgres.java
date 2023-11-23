@@ -10,7 +10,29 @@ public class isGeometriProgres extends ConsoleProgram{
 			int a = readInt();
 			while(a != STOP){
 				int d = readInt();
+				if(d != STOP){
+					if(divisor(k , a) == gcd(d,a)){
+						println("sworia");
+					}else{
+						println("ara");
+					}
+				}
 			}
 		}
+	}
+
+	private double gcd(int d, int a) {
+		double div = 0;
+		for(int i = 1; i <= d; i++){
+			if(d % i ==0 && a % i == 0){
+				div = i;
+			}
+		}
+		return div;
+	}
+
+	private double divisor(double k, double a) {
+		double d = a / k;
+		return (double) d;
 	}
 }
