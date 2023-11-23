@@ -21,7 +21,7 @@ public class MouseListener extends GraphicsProgram{
 		}
 		addMouseListeners();
 	}
-	public void mouseClicked(MouseEvent e){
+	public void mousePressed(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
 			rect.setFilled(true);
 			rect.setColor(Color.red);
