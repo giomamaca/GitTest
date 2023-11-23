@@ -1,29 +1,26 @@
 import acm.program.ConsoleProgram;
 
-public class isGeometriProgres extends ConsoleProgram{
-	
+public class isGeometriProgres extends ConsoleProgram {
+
 	private static final double STOP = -1;
-	
-	public void run(){
+
+	public void run() {
 		int k = readInt();
-		if(k != STOP){
+		if (k != STOP) {
 			int a = readInt();
-			while(a != STOP){
+			while (a != STOP) {
 				int d = readInt();
-//				if(d != STOP){
-//					if(divisor(k , a) == divisor(a,d)){
-//						println("sworia");
-//					}else{
-//						println("ara");
-//					}
+				if (d == STOP) {
+					break;
 				}
 			}
-		}	
+		}
+	}
 
 	private double gcd(int d, int a) {
 		double div = 0;
-		for(int i = 1; i <= d; i++){
-			if(d % i ==0 && a % i == 0){
+		for (int i = 1; i <= d; i++) {
+			if (d % i == 0 && a % i == 0) {
 				div = i;
 			}
 		}
