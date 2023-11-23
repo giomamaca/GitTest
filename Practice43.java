@@ -18,19 +18,9 @@ public class Practice43 extends GraphicsProgram{
 		
 		addMouseListeners();
 	}
-	
-	public void mouseDragged(MouseEvent e){
+	public void mouseDragged (MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == ball){
-			ball.setLocation(e.getX() - x, e.getY() - y);
-		}
-		if(ball.getY() < 0){
-			ball.setLocation(ball.getX(), ball.getY());
-		}
-	}
-	public void mousePressed(MouseEvent e){
-		if(getElementAt(e.getX(), e.getY()) == ball){
-			x = e.getX() - ball.getX();
-			y = e.getY() - ball.getY();
+			ball.setLocation(e.getX(), e.getY());
 		}
 	}
 }
