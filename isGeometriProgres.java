@@ -18,8 +18,7 @@ public class isGeometriProgres extends ConsoleProgram{
 //					}
 				}
 			}
-		}
-	}
+		}	
 
 	private double gcd(int d, int a) {
 		double div = 0;
