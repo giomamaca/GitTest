@@ -16,6 +16,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	private static final double SIZE = 50;
 	
 	private GRect rect;
+	private int count = 0;
 	
 	public void run() {
 		for(int i = 0; i < 8; i++){
