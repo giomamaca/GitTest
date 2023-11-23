@@ -5,6 +5,7 @@ public class isGeometriProgres extends ConsoleProgram {
 	private static final double SENTINEL = -1;
 
 	public void run() {
+		String answer = "yes";
 		int count = 1;
 		double firstG = 0;
 		double previous = readDouble();
@@ -17,12 +18,13 @@ public class isGeometriProgres extends ConsoleProgram {
 			if (count == 2) {
 				firstG = current / previous;
 			} else {
-				if(current / previous != firstG){
-					println("fafsfsfas");
+				if (current / previous != firstG) {
+					answer = "no";
 				}
 			}
 			previous = current;
 		}
+		print(answer);
 	}
 
 	private double gcd(int d, int a) {
