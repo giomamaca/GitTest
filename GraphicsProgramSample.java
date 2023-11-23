@@ -20,18 +20,15 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	public void run() {
 		for(int i = 0; i < 8; i++){
 			for(int j = 0; j < 8; j++){
-				rects(i, j);
+				double rectX = (double)(50 + i * SIZE);
+				double rectY = (double)(50 + j * SIZE);
+				rect = new GRect (rectX, rectY, SIZE, SIZE);
+				add(rect);
 			}
 		}
 		addMouseListeners();
 	}
 
-	private void rects(int i, int j) {
-		double rectX = (double)(50 + i * SIZE);
-		double rectY = (double)(50 + j * SIZE);
-		rect = new GRect (rectX, rectY, SIZE, SIZE);
-		add(rect);
-	}
 	
 	public void mousePressed(MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) == rect){
