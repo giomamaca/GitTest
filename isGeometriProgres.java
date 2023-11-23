@@ -11,7 +11,7 @@ public class isGeometriProgres extends ConsoleProgram{
 			while(a != STOP){
 				int d = readInt();
 				if(d != STOP){
-					if(divisor(k , a) == gcd(d,a)){
+					if(divisor(k , a) == divisor(d,a)){
 						println("sworia");
 					}else{
 						println("ara");
