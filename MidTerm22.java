@@ -12,10 +12,9 @@ public class MidTerm22 extends ConsoleProgram {
 	private void getBiggestDivisor(int a) {
 		for (int i = 1; i <= a; i++) {
 			if (simple(i)) {
-//				if(a % i == 0){
-//					divisor = a;					
-//				}
-				print(i);
+				if(a % i == 0){
+					divisor = i;					
+				}
 			}
 		}
 		print(divisor);
