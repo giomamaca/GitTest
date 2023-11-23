@@ -15,8 +15,8 @@ public class MidTerm22 extends ConsoleProgram {
 				if(a % i == 0){
 					divisor = a;					
 				}
-				print(divisor);
 			}
+			print(divisor);
 		}
 	}
 
