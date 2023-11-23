@@ -7,11 +7,11 @@ public class Midterm21 extends GraphicsProgram{
 	
 	private static final double BOX_SIZE = 200; 
 	private GRect rect;
-	
-	private double recX = getWidth() / 2 - BOX_SIZE / 2;
-	private double recY =  getHeight() / 2 - BOX_SIZE / 2;
-	
 	public void run(){
+		
+		
+		double recX = getWidth() / 2 - BOX_SIZE / 2;
+		double recY =  getHeight() / 2 - BOX_SIZE / 2;
 		
 		rect = new GRect (recX, recY, BOX_SIZE, BOX_SIZE); 
 		add(rect);
