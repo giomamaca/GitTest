@@ -1,9 +1,15 @@
 import acm.program.ConsoleProgram;
 
 public class isGeometriProgres extends ConsoleProgram{
+	
+	private static final double STOP = -1;
+	
 	public void run(){
-		for(int i = 0; i != -1; i++){
-			int k = readInt();
+		int k = readInt();
+		if(k != STOP){
+			while(k != -STOP){
+				int a = readInt();
+			}
 		}
 	}
 }
