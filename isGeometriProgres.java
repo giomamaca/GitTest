@@ -10,12 +10,12 @@ public class isGeometriProgres extends ConsoleProgram{
 			int a = readInt();
 			while(a != STOP){
 				int d = readInt();
-				if(d != STOP){
-					if(divisor(k , a) == divisor(a,d)){
-						println("sworia");
-					}else{
-						println("ara");
-					}
+//				if(d != STOP){
+//					if(divisor(k , a) == divisor(a,d)){
+//						println("sworia");
+//					}else{
+//						println("ara");
+//					}
 				}
 			}
 		}
