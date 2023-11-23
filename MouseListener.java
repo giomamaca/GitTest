@@ -15,8 +15,10 @@ public class MouseListener extends GraphicsProgram{
 	private GRect rect;
 	
 	public void run(){
-		rect = new GRect(getWidth() / 2 - SIZE / 2,getHeight()/ 2 - SIZE / 2 ,SIZE, SIZE);
-		add(rect);
+		for(int i = 0; i < 8; i++){
+			rect = new GRect(getWidth() / 2 - SIZE / 2,getHeight()/ 2 - SIZE / 2 ,SIZE, SIZE);
+			add(rect);			
+		}
 		addMouseListeners();
 	}
 	public void mouseClicked(MouseEvent e){
