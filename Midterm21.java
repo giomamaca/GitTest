@@ -8,8 +8,8 @@ public class Midterm21 extends GraphicsProgram{
 	private static final double BOX_SIZE = 200; 
 	private GRect rect;
 	
-	private double recX = getWidth() / 2 - BOX_SIZE / 2;
-	private double recY =  getHeight() / 2 - BOX_SIZE / 2;
+	public double recX = getWidth() / 2 - BOX_SIZE / 2;
+	public double recY =  getHeight() / 2 - BOX_SIZE / 2;
 	public void run(){
 		
 		
