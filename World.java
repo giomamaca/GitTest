@@ -13,8 +13,9 @@ public class World extends ConsoleProgram{
 			char aso = ori.charAt(i);
 			int index = erti.indexOf(aso);
 			if(index == -1) return false;
-			erti = erti.substring(index + 1, erti.length() - 1);
+			erti = erti.substring(index + 1, erti.length());
 		}
+		
 		
 		
 		
