@@ -16,7 +16,4 @@ public class World extends ConsoleProgram{
 		}
 		return true;
 	}
-	
-	
-	
 }
