@@ -38,13 +38,24 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		GObject click1 = getElementAt(e.getX(), e.getY());
-		GObject click2 = getElementAt(e.getX()- 100, e.getY());
-		if (click1 != null) {
-			((GRect) click1).setFillColor(Color.BLACK);
-		}
-		if(click2 != null){
-			((GRect) click2).setFillColor(Color.BLACK);
-			count++;			
+		GObject click2 = getElementAt(e.getX(), e.getY());
+		if (click1 != null || click2 != null) {
+			if( count == 1){
+				((GRect) click1).setFillColor(Color.BLACK);
+				count++;
+				((GRect) click2).setFillColor(Color.BLACK);
+				count++;
+				rect1 = (GRect) click1;
+			}
+			if(count == 2){
+				rect2 = (GRect) click2;
+			}
+			if(count > 2 && count % 2 == 1){
+				rect1.setFillColor(Color.WHITE);
+			}
+			if(count >2 && count % 2 == 0){
+				rect2.setFillColor(Color.white);
+			}
 		}
 	}
 }
