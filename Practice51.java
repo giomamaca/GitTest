@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class Practice51 extends ConsoleProgram {
 	public void run() {
 		String s = readLine("enter string : ");
-		duble(s);
+		println(duble(s));
 	}
 
 	private String duble(String s) {
