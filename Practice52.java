@@ -1,6 +1,6 @@
 import acm.program.ConsoleProgram;
 
-public class Practice52 extends ConsoleProgram {
+public class Practice52 extends ConsoleProgram{
 	public void run() {
 		int n = readInt("number of nums = ");
 		int biggest = readInt("num = ");
