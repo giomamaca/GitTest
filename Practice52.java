@@ -12,7 +12,7 @@ public class Practice52 extends ConsoleProgram {
 		}
 		
 		for(int i = 0; i < n-2; i++){
-			int num = readInt();
+			int num = readInt("num = ");
 			if(num > biggest){
 				int temp = biggest;
 				biggest = num;
