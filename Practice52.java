@@ -2,9 +2,9 @@ import acm.program.ConsoleProgram;
 
 public class Practice52 extends ConsoleProgram {
 	public void run() {
-		int n = readInt();
-		int biggest = readInt();
-		int secondBiggest = readInt();
+		int n = readInt("number of nums = ");
+		int biggest = readInt("num = ");
+		int secondBiggest = readInt("num = ");
 		if(secondBiggest > biggest){
 			int a =  secondBiggest;
 			secondBiggest = biggest;
