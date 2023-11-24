@@ -4,8 +4,8 @@ public class Practice52 extends ConsoleProgram{
 	public void run(){
 		int count = 0;
 		int n = readInt("enter num of numbers : ");
-		int large = 0;
-		int small = 0;
+		int large = readInt();
+		int small = large;
 		while(true){
 			int num = readInt("num = ");
 			count++;
