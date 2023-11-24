@@ -10,12 +10,12 @@ public class Practice52 extends ConsoleProgram{
 			int num = readInt("num = ");
 			count++;
 			if(count == n) break;
-			if(num > large){
-				large = num;
-			}
 			num = small;
-			if(small < large){
+			if(small < num){
 				large = small;
+			}
+			if(large < num){
+				large =num;
 			}
 		}
 		print(large);
