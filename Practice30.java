@@ -10,6 +10,6 @@ public class Practice30 extends ConsoleProgram{
 		if(k == 0){
 			a = a / 10;
 		}
-		print(a);
+		println(a);
 	}
 }
