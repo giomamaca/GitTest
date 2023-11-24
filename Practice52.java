@@ -15,7 +15,7 @@ public class Practice52 extends ConsoleProgram{
 				large = small;
 			}
 			if(large < num){
-				large =num;
+				large = num;
 			}
 		}
 		println(large);
