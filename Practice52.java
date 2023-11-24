@@ -1,26 +1,26 @@
 import acm.program.ConsoleProgram;
 
-public class Practice52 extends ConsoleProgram{
-	public void run(){
-		int count = 1;
-		int n = readInt("enter num of numbers : ");
-		int large = readInt("num = ");
-		int small = large;
-//		while(true){
-//			int num = readInt("num = ");
-//			count++;
-//			if(count == n) break;
-//			small = num;
-//			if(small < num){
-//				large = small;
-//			}
-//			if(large < num){
-//				large = num;
-//			}
-//			
-//		}
+public class Practice52 extends ConsoleProgram {
+	public void run() {
+		int n = readInt();
+		int biggest = readInt();
+		int secondBiggest = readInt();
+		if(secondBiggest > biggest){
+			int a =  secondBiggest;
+			secondBiggest = biggest;
+			biggest = a;
+		}
 		
-		println(large);
-		println(small);
+		for(int i = 0; i < n-2; i++){
+			int num = readInt();
+			if(num > biggest){
+				int temp = biggest;
+				biggest = num;
+				secondBiggest = temp;
+			}
+			if(num > secondBiggest){
+				secondBiggest = num;
+			}
+		}
 	}
 }
