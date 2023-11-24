@@ -5,18 +5,16 @@ import acm.program.ConsoleProgram;
 public class Practice51 extends ConsoleProgram {
 	public void run() {
 		String s = readLine("enter string : ");
-		printTokens(s);
+		duble(s);
 	}
 
-	private void printTokens(String s) {
-		String a = "";
-		String b = "";
-		for (int i = 0; i < s.length(); i++) {
-			a = s.charAt(i) + a;
-			b = s.charAt(i -1) +b;
-			if(a == b){
-				print(s);				
+	private String duble(String s) {
+		String answer = "";
+		for(int i = 0; i < s.length(); i++){
+			if(s.charAt(i) != s.charAt(i - 1) || i == 0){
+				answer += s.charAt(i);
 			}
 		}
+		return answer;
 	}
 }
