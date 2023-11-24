@@ -8,18 +8,13 @@ public class World extends ConsoleProgram{
 	}
 	
 	private boolean possible(String erti, String ori){
-		boolean ans = true;
 		for(int i = 0; i < ori.length(); i++){
 			char aso = ori.charAt(i);
 			int index = erti.indexOf(aso);
 			if(index == -1) return false;
 			erti = erti.substring(index + 1, erti.length());
 		}
-		
-		
-		
-		
-		
+		return true;
 	}
 	
 	
