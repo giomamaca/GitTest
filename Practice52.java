@@ -10,7 +10,7 @@ public class Practice52 extends ConsoleProgram{
 			int num = readInt("num = ");
 			count++;
 			if(count == n) break;
-			num = small;
+			small = num;
 			if(small < num){
 				large = small;
 			}
