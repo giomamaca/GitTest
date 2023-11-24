@@ -8,7 +8,6 @@ public class MidTerm2 extends ConsoleProgram{
 	}
 
 	private boolean isFath(String father, String son) {
-		
 		for(int i = 0; i < son.length(); i++){
 			char s1 = son.charAt(i);
 			char s2 = son.charAt(i + 1);
