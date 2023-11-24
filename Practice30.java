@@ -7,7 +7,7 @@ public class Practice30 extends ConsoleProgram{
 		while(a > 0){
 			k = k * 10 + k % 10;
 			a = a / 10;
+			print(k);
 		}
-		print(k);
 	}
 }
