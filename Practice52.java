@@ -2,9 +2,9 @@ import acm.program.ConsoleProgram;
 
 public class Practice52 extends ConsoleProgram{
 	public void run(){
-		int count = 0;
+		int count = 1;
 		int n = readInt("enter num of numbers : ");
-		int large = readInt();
+		int large = readInt("num = ");
 		int small = large;
 		while(true){
 			int num = readInt("num = ");
