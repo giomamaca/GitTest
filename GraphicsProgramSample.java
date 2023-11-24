@@ -18,6 +18,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	private GRect rect;
 	private int count = 0;
+	private GRect rect1;
+	private GRect rect2;
 
 	public void run() {
 		for (int i = 0; i < 8; i++) {
@@ -36,9 +38,10 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	public void mouseClicked(MouseEvent e) {
 		GObject click1 = getElementAt(e.getX(), e.getY());
-		GObject click2 = getElementAt(e.getX(), e.getY());
+		GObject click2 = getElementAt(e.getX()- 100, e.getY());
 		if (click1 != null || click2 != null) {
 			((GRect) click1).setFillColor(Color.BLACK);
+			((GRect) click2).setFillColor(Color.BLACK);
 			count++;
 		}
 	}
