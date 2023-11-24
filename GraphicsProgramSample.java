@@ -40,7 +40,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		GObject click1 = getElementAt(e.getX(), e.getY());
 		GObject click2 = getElementAt(e.getX(), e.getY());
 		if (click1 != null || click2 != null) {
-			if( count == 1){
+			if(true){
 				((GRect) click1).setFillColor(Color.BLACK);
 				count++;
 				((GRect) click2).setFillColor(Color.BLACK);
