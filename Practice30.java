@@ -5,7 +5,7 @@ public class Practice30 extends ConsoleProgram{
 		int k = readInt();
 		int a = 0;
 		while(k != 0){
-			a = k % 10 * 10;
+			a = 10*a + k % 10;
 		}
 		if(k == 0){
 			a = a / 10;
