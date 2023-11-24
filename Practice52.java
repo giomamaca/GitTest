@@ -18,7 +18,7 @@ public class Practice52 extends ConsoleProgram{
 				large =num;
 			}
 		}
-		print(large);
-		print(small);
+		println(large);
+		println(small);
 	}
 }
