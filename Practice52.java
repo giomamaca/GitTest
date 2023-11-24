@@ -22,5 +22,7 @@ public class Practice52 extends ConsoleProgram {
 				secondBiggest = num;
 			}
 		}
+		println(biggest);
+		println(secondBiggest);
 	}
 }
