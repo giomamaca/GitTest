@@ -8,26 +8,26 @@ public class MidTerm1633 extends ConsoleProgram{
 //		if(a != 0 && b != 1){
 //			return;
 //		}
-//		if(a == 1 && b == 0){
-//			int temp = a;
-//			a = b;
-//			b = temp;
-//		}
+		if(a == 1 && b == 0){
+			int temp = a;
+			a = b;
+			b = temp;
+		}
 		while(true){
 			int num = readInt();
-			while(num != -1){
-				fibonaci(num, b);
+			while(num != -1){				
+				
 			}
 		}
 	}
 
-	private boolean fibonaci(int num, int b) {
-		if(num >= 1) return true;
-		int sum = 0;
-		sum = num + b;
-		b = num;
-		if(num == sum) return true;
-		
-		return false;
-	}
-}
+//	private boolean fibonaci(int num, int b) {
+//		if(num >= 1) return true;
+//		int sum = 0;
+//		sum = num + b;
+//		b = num;
+//		if(num == sum) return true;
+//		
+//		return false;
+//	}
+//}
