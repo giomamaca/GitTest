@@ -1,6 +1,9 @@
 import acm.program.ConsoleProgram;
 
 public class MidTerm1633 extends ConsoleProgram {
+	
+	private int num;
+	
 	public void run() {
 		// String s = readLine("Fibonacci");
 		int a = readInt();
@@ -13,8 +16,9 @@ public class MidTerm1633 extends ConsoleProgram {
 //			a = b;
 //			b = temp;
 //		}
-		while (true) {
-			int num = readInt();
+		while (num != -1) {
+			num = readInt();
+			
 		}
 	}
 }
