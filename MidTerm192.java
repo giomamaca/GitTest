@@ -8,7 +8,7 @@ public class MidTerm192 extends ConsoleProgram{
 			k = k / 10;
 			count++;
 			for(int i = 0; i < count; i++){
-				println(i + k % 10);
+				println(i + "" + k % 10);
 			}
 		}
 	}
