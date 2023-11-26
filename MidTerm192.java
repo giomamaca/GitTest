@@ -34,10 +34,10 @@ public class MidTerm192 extends ConsoleProgram{
 		if(count % 2 == 1){
 			int div1 = n % a;
 			int div2 = n / (a*10);			
-//			while(div2 != 0){
-//				swap = swap * 10 + div2 % 10;
-//				div2 = div2 / 10;
-//			}
+			while(div2 != 0){
+				swap = swap * 10 + div2 % 10;
+				div2 = div2 / 10;
+			}
 			println(div1);
 			println(div2);
 			if(div1 == swap){
