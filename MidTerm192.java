@@ -10,7 +10,7 @@ public class MidTerm192 extends ConsoleProgram{
 			count++;
 		}
 		int half = count / 2;
-		int swap = 0;
+		int swap = 1;
 		int a = 1;
 		while(half != 0){
 			a *= 10;
