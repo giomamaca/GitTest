@@ -3,7 +3,6 @@ import acm.program.ConsoleProgram;
 public class MidTerm192 extends ConsoleProgram{
 	public void run(){
 		int count = 0;
-		int swap = 0;
 		int k = readInt();
 		int n = k;
 		int a = k;
@@ -25,12 +24,13 @@ public class MidTerm192 extends ConsoleProgram{
 			}
 		}
 		if(count % 2 == 1){
+			int swap = 0;
 			int div1 = n % (10 ^ count / 2);
 			int div2 = a / (10 ^ ((count / 2) + 1));			
 			while(div2 != 0){
 				swap = swap * 10 + div2 % 10;
 				div2 = div2 / 10;
-			}		
+			}
 			if(div1 == swap){
 				println("correct");
 			}else{
