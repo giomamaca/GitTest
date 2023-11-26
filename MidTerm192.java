@@ -18,8 +18,8 @@ public class MidTerm192 extends ConsoleProgram{
 		}
 		swap = swap / 10;
 				
-		print(swap);
-		if(div1 == swap){
+				
+		if(div1 == div2){
 			println("correct");
 		}else{
 			println("wrong");
