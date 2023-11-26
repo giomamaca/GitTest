@@ -10,9 +10,14 @@ public class MidTerm192 extends ConsoleProgram{
 			count++;
 		}
 		int swap = 0;
+		int a = 1;
+		while(count / 2 != 0){
+			a *= 10;
+			count--;
+		}
 		if(count % 2 == 0){
-			int div1 = n % (100);
-			int div2 = n / (100);			
+			int div1 = n % a;
+			int div2 = n / a;			
 //			while(div2 != 0){
 //				swap = swap * 10 + n % 10;
 //				div2 = div2 / 10;
@@ -26,8 +31,8 @@ public class MidTerm192 extends ConsoleProgram{
 			}
 		}
 		if(count % 2 == 1){
-			int div1 = n % (10 ^ (count / 2));
-			int div2 = n / (10 ^ ((count / 2) + 1));			
+			int div1 = n % a;
+			int div2 = n / (a*10);			
 //			while(div2 != 0){
 //				swap = swap * 10 + div2 % 10;
 //				div2 = div2 / 10;
