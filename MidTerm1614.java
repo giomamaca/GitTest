@@ -6,7 +6,7 @@ public class MidTerm1614 extends ConsoleProgram{
 		longestRunCompression(text);
 		
 	}
-	private String longestRunCompression(String text){
+	private int longestRunCompression(String text){
 		int count = 0;
 		String S = "";
 		for(int i = 0; i < text.length(); i++){
@@ -20,6 +20,6 @@ public class MidTerm1614 extends ConsoleProgram{
 				count = 0;				
 			}
 		}
-		return S;
+		return count;
 	}
 }
