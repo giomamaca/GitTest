@@ -10,12 +10,11 @@ public class MidTerm192 extends ConsoleProgram{
 			count++;
 		}
 		int swap = 0;
-		int a = 1;
+		int a = 10;
 		while((count / 2) != 0){
 			count--;
 			a *= 10;
 		}
-		a = a / 10;
 		if(count % 2 == 0){
 			int div1 = n % a;
 			int div2 = n / a;			
