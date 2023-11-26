@@ -8,11 +8,11 @@ public class MidTerm1633 extends ConsoleProgram {
 		// if(a != 0 && b != 1){
 		// return;
 		// }
-		if (a == 1 && b == 0) {
-			int temp = a;
-			a = b;
-			b = temp;
-		}
+//		if (a == 1 && b == 0) {
+//			int temp = a;
+//			a = b;
+//			b = temp;
+//		}
 		while (true) {
 			int num = readInt();
 			while (num != -1) {
