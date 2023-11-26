@@ -10,6 +10,7 @@ public class MidTerm192 extends ConsoleProgram{
 			k = k / 10;
 			count++;
 		}
+		int swap = 0;
 		if(count % 2 == 0){
 			int div1 = n % (10 ^ count / 2);
 			int div2 = a / (10 ^ count / 2);			
@@ -24,7 +25,6 @@ public class MidTerm192 extends ConsoleProgram{
 			}
 		}
 		if(count % 2 == 1){
-			int swap = 0;
 			int div1 = n % (10 ^ count / 2);
 			int div2 = a / (10 ^ ((count / 2) + 1));			
 			while(div2 != 0){
