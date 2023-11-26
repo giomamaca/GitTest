@@ -6,20 +6,21 @@ public class MidTerm1614 extends ConsoleProgram{
 		longestRunCompression(text);
 		
 	}
-	private int longestRunCompression(String text){
+	private String longestRunCompression(String text){
 		int count = 0;
 		String S = "";
+		char test = 'a';
 		for(int i = 0; i < text.length(); i++){
 			char ch = text.charAt(i);
-			char chr = ch;
-			if(ch == chr){
+			test = ch;
+			if(ch == test){
 				count++;
-				S = "" + count + chr;
+				S = "" + count + test;
 			}
-			if(ch != chr){
+			if(ch != test){
 				count = 0;				
 			}
 		}
-		return count;
+		return S;
 	}
 }
