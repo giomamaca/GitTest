@@ -9,16 +9,15 @@ public class MidTerm1614 extends ConsoleProgram{
 	private String longestRunCompression(String text){
 		int count = 0;
 		String S = "";
-		char test = 'a';
 		for(int i = 0; i < text.length(); i++){
 			char ch = text.charAt(i);
-			test = ch;
-			if(ch == test){
+			char chr = text.charAt(text.length()/text.length() + i);
+			if(ch == chr){
 				count++;
-				S = "" + count + test;
 			}
-			if(ch != test){
-				count = 0;				
+			if(ch != chr){
+				S = "" + count + ch;
+				count = 0;	
 			}
 		}
 		return S;
