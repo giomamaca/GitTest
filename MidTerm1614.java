@@ -12,11 +12,13 @@ public class MidTerm1614 extends ConsoleProgram{
 		for(int i = 0; i < text.length(); i++){
 			char ch = text.charAt(i);
 			char chr = ch;
-			while(ch == chr){
+			if(ch == chr){
 				count++;
-				S = "" + count + ch;
+				S = "" + count + chr;
 			}
-			count = 0;
+			if(ch != chr){
+				count = 0;				
+			}
 		}
 		return S;
 	}
