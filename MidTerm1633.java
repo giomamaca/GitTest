@@ -16,8 +16,7 @@ public class MidTerm1633 extends ConsoleProgram{
 		while(true){
 			int num = readInt();
 			while(num != -1){
-				if(fibonaci(num, b)){
-				}				
+				fibonaci(num, b);
 			}
 		}
 	}
