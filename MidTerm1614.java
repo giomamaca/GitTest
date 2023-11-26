@@ -16,7 +16,7 @@ public class MidTerm1614 extends ConsoleProgram{
 				count++;
 			}
 			if(ch != chr){
-				S = "" + count + ch;
+				S = ("" + count) + ch;
 				count = 0;	
 			}
 		}
