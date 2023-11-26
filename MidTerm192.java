@@ -15,7 +15,6 @@ public class MidTerm192 extends ConsoleProgram{
 			count--;
 			a *= 10;
 		}
-		if(count % 2 == 0){
 			int div1 = n % a;
 			int div2 = n / a;			
 //			while(div2 != 0){
@@ -29,7 +28,6 @@ public class MidTerm192 extends ConsoleProgram{
 			}else{
 				println("wrong");
 			}
-		}
 //		if(count % 2 == 1){
 //			int div1 = n % a;
 //			int div2 = n / (a*10);			
