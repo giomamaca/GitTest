@@ -18,19 +18,21 @@ public class MidTerm1633 extends ConsoleProgram {
 		}
 		while (num != -1) {
 			num = readInt();
-			if(fibonaci(num, b)){
-				
+			if(num == -1){
+				if(fibonaci(num, b)){
+					println("correct");
+				}else{
+					println("not correct");
+				}
 			}
 		}
 	}
 
 	private boolean fibonaci(int num, int b) {
-		if (num >= 1)
-			return true;
 		int sum = 0;
-		sum = num + b;
+		sum = b;
 		b = num;
-		if (num == sum)
+		if (num == sum + b)
 			return true;
 
 		return false;
