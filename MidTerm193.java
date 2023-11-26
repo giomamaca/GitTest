@@ -14,7 +14,7 @@ public class MidTerm193 extends GraphicsProgram{
 	}
 	
 	public void mouseClicked(MouseEvent e){
-		oval = new GOval(e.getX() + RADIUS, e.getY() + RADIUS, 2*RADIUS, 2*RADIUS);
+		oval = new GOval(e.getX() - RADIUS, e.getY() - RADIUS, 2*RADIUS, 2*RADIUS);
 		add(oval);
 	}
 	
