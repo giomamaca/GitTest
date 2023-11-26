@@ -25,7 +25,7 @@ public class MidTerm192 extends ConsoleProgram{
 			}		
 			println(div1);
 			println(div2);
-			if(div1 == div2){
+			if(div1 == swap){
 				println("correct");
 			}else{
 				println("wrong");
