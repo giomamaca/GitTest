@@ -21,6 +21,8 @@ public class MidTerm192 extends ConsoleProgram{
 		}
 		if(divider1 == divider2){
 			println("correct");
+		}else{
+			println("wrong");
 		}
 	}
 }
