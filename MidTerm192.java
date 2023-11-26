@@ -37,5 +37,6 @@ public class MidTerm192 extends ConsoleProgram{
 				println("wrong");
 			}
 		}
+		print(swap);
 	}
 }
