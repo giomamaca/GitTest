@@ -18,7 +18,7 @@ public class MidTerm1633 extends ConsoleProgram {
 		}
 		while (num != -1) {
 			num = readInt();
-			if(num == -1){
+			if(num == 5){
 				if(fibonaci(num, b)){
 					println("correct");
 				}else{
