@@ -2,7 +2,7 @@ import acm.program.ConsoleProgram;
 
 public class MidTerm1633 extends ConsoleProgram{
 	public void run(){
-		String s = readLine("Fibonacci");
+//		String s = readLine("Fibonacci");
 		int a = readInt();
 		int b = readInt();
 		if(a != 0 && b != 1){
