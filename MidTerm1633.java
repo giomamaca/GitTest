@@ -5,9 +5,9 @@ public class MidTerm1633 extends ConsoleProgram{
 //		String s = readLine("Fibonacci");
 		int a = readInt();
 		int b = readInt();
-		if(a != 0 && b != 1){
-			return;
-		}
+//		if(a != 0 && b != 1){
+//			return;
+//		}
 //		if(a == 1 && b == 0){
 //			int temp = a;
 //			a = b;
