@@ -11,18 +11,31 @@ public class MidTerm192 extends ConsoleProgram{
 			k = k / 10;
 			count++;
 		}
-		int div1 = n % (10 * count / 2);
-		int div2 = a / (10 * count / 2);
-		while(div2 != 0){
-			swap = swap + (n % 10) *10;
-		}
-		swap = swap / 10;
-				
-				
-		if(div1 == div2){
-			println("correct");
-		}else{
-			println("wrong");
-		}
+		print(count);
+//		if(count % 2 == 0){
+//			int div1 = n % (10 ^ count / 2);
+//			int div2 = a / (10 ^ count / 2);			
+//			while(div2 != 0){
+//				swap = swap * 10 + n % 10;
+//				div2 = div2 / 10;
+//			}		
+//			if(div1 == div2){
+//				println("correct");
+//			}else{
+//				println("wrong");
+//			}
+//		}else{
+//			int div1 = n % (10 ^ count / 2);
+//			int div2 = a / (10 ^ (count / 2 + 1));			
+//			while(div2 != 0){
+//				swap = swap * 10 + n % 10;
+//				div2 = div2 / 10;
+//			}		
+//			if(div1 == div2){
+//				println("correct");
+//			}else{
+//				println("wrong");
+//			}
+//		}
 	}
 }
