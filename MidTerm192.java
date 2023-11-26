@@ -15,6 +15,7 @@ public class MidTerm192 extends ConsoleProgram{
 			count--;
 			a *= 10;
 		}
+		a = a / 10;
 		if(count % 2 == 0){
 			int div1 = n % a;
 			int div2 = n / a;			
