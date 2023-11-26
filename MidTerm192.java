@@ -7,7 +7,7 @@ public class MidTerm192 extends ConsoleProgram{
 		while(k != 0){
 			k = k / 10;
 			count++;
-			for(int i = 0; i < count; i++){
+			for(int i = 1; i < count; i++){
 				println(i + "" + k % 10);
 			}
 		}
