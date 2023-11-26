@@ -23,7 +23,7 @@ public class MidTerm1633 extends ConsoleProgram{
 	}
 
 	private boolean fibonaci(int num, int b) {
-		if(num == 1) return true;
+		if(num >= 1) return true;
 		int sum = 0;
 		sum = num + b;
 		b = num;
