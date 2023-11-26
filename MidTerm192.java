@@ -30,6 +30,7 @@ public class MidTerm192 extends ConsoleProgram{
 			while(div2 != 0){
 				swap = swap * 10 + div2 % 10;
 				div2 = div2 / 10;
+				print(div2);
 			}
 			if(div1 == swap){
 				println("correct");
@@ -37,6 +38,5 @@ public class MidTerm192 extends ConsoleProgram{
 				println("wrong");
 			}
 		}
-		print(swap);
 	}
 }
