@@ -11,7 +11,7 @@ public class MidTerm1614 extends ConsoleProgram{
 		String S = "";
 		for(int i = 0; i < text.length(); i++){
 			char ch = text.charAt(i);
-			char chr = text.charAt(text.length()/text.length() + i);
+			char chr = text.charAt(1 + i);
 			if(ch == chr){
 				count++;
 			}
