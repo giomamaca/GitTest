@@ -18,6 +18,8 @@ public class MidTerm192 extends ConsoleProgram{
 				swap = swap * 10 + n % 10;
 				div2 = div2 / 10;
 			}		
+			println(div1);
+			println(div2);
 			if(div1 == div2){
 				println("correct");
 			}else{
@@ -30,8 +32,9 @@ public class MidTerm192 extends ConsoleProgram{
 			while(div2 != 0){
 				swap = swap * 10 + div2 % 10;
 				div2 = div2 / 10;
-				print(div2);
 			}
+			println(div1);
+			println(div2);
 			if(div1 == swap){
 				println("correct");
 			}else{
