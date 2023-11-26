@@ -14,7 +14,7 @@ public class MidTerm192 extends ConsoleProgram{
 		int a = 1;
 		while(half != 0){
 			a *= 10;
-			count--;
+			half--;
 		}
 		if(count % 2 == 0){
 			int div1 = n % a;
