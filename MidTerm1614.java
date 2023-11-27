@@ -23,8 +23,8 @@ public class MidTerm1614 extends ConsoleProgram{
 				str += S;				
 				let -= count;
 				count = 1;	
+				str += ("" + let) + last;
 			}
-			str += ("" + let) + last;
 		}
 		
 		return str;
