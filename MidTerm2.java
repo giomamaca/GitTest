@@ -10,15 +10,14 @@ public class MidTerm2 extends ConsoleProgram {
 	}
 
 	private boolean isFath(String father, String son) {
+		String so = "";
 		for (int i = 0; i < son.length(); i++) {
-			for (int j = 0; j < son.length(); j++) {
+			for (int j = i+1; j < son.length(); j++) {
 				String s = son.substring(i, j);
-				for (int a = 0; a < father.length(); a++) {
-					for (int b = 0; b < father.length(); b++) {
-						String f = father.substring(a, b);
-						if (s == f) return true;
+					so = s;
+					if (father.contains(s) && so.length() >= father.length() / 2){ 
+						return true;
 					}
-				}
 			}
 		}
 		return false;
