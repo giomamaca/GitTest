@@ -18,9 +18,6 @@ public class MidTerm1614 extends ConsoleProgram{
 			if(ch == chr){
 				count++;
 			}
-			if(count == 1){
-				str += chr;
-			}
 			if(ch != chr){
 				String S = ("" + count) + chr;
 				str += S;				
