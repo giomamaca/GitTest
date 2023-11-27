@@ -4,9 +4,7 @@ public class MidTerm2 extends ConsoleProgram {
 	public void run() {
 		String father = readLine();
 		String son = readLine();
-		if(isFath(father, son)){
-			println("correct");
-		}
+		println(isFath(father, son));
 	}
 
 	private boolean isFath(String father, String son) {
