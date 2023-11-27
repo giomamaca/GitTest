@@ -19,7 +19,7 @@ public class MidTerm1614 extends ConsoleProgram{
 				String S = ("" + count) + chr;
 				str += S;
 				count = 1;	
-				return S;
+				
 			}
 		}
 		return str;
