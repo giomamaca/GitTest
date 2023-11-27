@@ -22,6 +22,8 @@ public class MidTerm1614 extends ConsoleProgram{
 				count = 1;	
 				
 			}
+			String S = ("" + count) + chr;
+			str += S;
 		}
 		return str;
 	}
