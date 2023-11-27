@@ -3,7 +3,7 @@ import acm.program.ConsoleProgram;
 public class MidTerm1614 extends ConsoleProgram{
 	public void run(){
 		String text = readLine();
-		longestRunCompression(text);
+		println(longestRunCompression(text));
 		
 	}
 	private String longestRunCompression(String text){
