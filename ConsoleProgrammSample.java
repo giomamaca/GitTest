@@ -1,3 +1,4 @@
+
 /*
  * File: FindRange.java
  * --------------------
@@ -10,7 +11,17 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void run() {
-		// You fill this in
+		int num = readInt();
+		int k = num;
+		int a = 0;
+		while (num != 0) {
+			a = a * 10 + num % 10;
+			num = num / 10;
+		}
+		if (a == k) {
+			println("correct");
+		} else {
+			println("not correct");
+		}
 	}
-
 }
