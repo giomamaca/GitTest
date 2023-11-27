@@ -26,17 +26,17 @@ public class MidTerm1614 extends ConsoleProgram{
 				count = 1;	
 			}
 		}
-		for(int j = text.length(); j > 0; j++){
-			char ch = text.charAt(text.length() - j);
-	 		char chr = text.charAt(text.length() - (j - 1));
-	 		if(ch == chr){
-	 			count1++;
-	 		}
-	 		if(ch != chr) {
-	 			str = str + "" + count1 + chr;
-	 			break;
-	 		}
-		}
+//		for(int j = text.length(); j > 0; j++){
+//			char ch = text.charAt(text.length() - j);
+//	 		char chr = text.charAt(text.length() - (j - 1));
+//	 		if(ch == chr){
+//	 			count1++;
+//	 		}
+//	 		if(ch != chr) {
+//	 			str = str + "" + count1 + chr;
+//	 			break;
+//	 		}
+//		}
 		return str;
 	}
 }
