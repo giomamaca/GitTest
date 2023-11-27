@@ -17,13 +17,13 @@ public class MidTerm1614 extends ConsoleProgram{
 			char last = text.charAt(text.length() -1);
 			if(ch == chr){
 				count++;
+				str += ("" + let) + last;
 			}
 			if(ch != chr){
 				String S = ("" + count) + chr;
 				str += S;				
 				let -= count;
 				count = 1;	
-				str += ("" + let) + last;
 			}
 		}
 		
