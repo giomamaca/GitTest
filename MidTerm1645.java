@@ -10,18 +10,18 @@ public class MidTerm1645 extends GraphicsProgram{
 	private final static int CIRCLE_NUM = 50;
 	private final static int DELAY = 2000;
 	
-	public int count = 0;
+	private int count = 0;
 	private GOval ball;
 	RandomGenerator rgen = new RandomGenerator();
 	
 	public void run(){
 		drawCircle();
-		while(getElementCount() != 0 && getElementCount() <= 50){
+		pause(DELAY);
+		while(getElementCount() != 0 && getElementCount() <= CIRCLE_NUM){
 			drawCircle();			
 			pause(DELAY);
 		}
 		addMouseListeners();
-		System.out.println(count);
 	}
 
 	public void mouseClicked (MouseEvent e){
