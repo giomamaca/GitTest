@@ -15,6 +15,7 @@ public class MidTerm1645 extends GraphicsProgram{
 	RandomGenerator rgen = new RandomGenerator();
 	
 	public void run(){
+		drawCircle();
 		while(getElementCount() != 0 && getElementCount() <= 50){
 			drawCircle();			
 			pause(DELAY);
