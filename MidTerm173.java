@@ -5,14 +5,14 @@ public class MidTerm173 extends ConsoleProgram{
 		String gamarjoba = readLine();
 		String baro = readLine();
 		
+		String s = "";
+		
 		for(int i = 0; i< baro.length(); i++){
-			int k = 0;
 			char bar = baro.charAt(i);
-			if(gamarjoba.contains(baro)){
-				println("correct");
-				k++;
-				if(k == baro.length()){
-					println(baro);
+			for(int j = i; j < gamarjoba.length(); j++){
+				char gam = gamarjoba.charAt(j);
+				if(bar == gam){
+					s += bar;
 				}
 			}
 		}
