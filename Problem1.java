@@ -12,7 +12,7 @@ public class Problem1 extends ConsoleProgram {
 	}
 
 	private int iseRa(int x, double y, GObject r, String s) {
-		x+= 1;
+		x++;
 		y += 1;
 		r.move(x, y);
 		s = s.substring(s.indexOf('a'));
