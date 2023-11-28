@@ -21,6 +21,7 @@ public class MidTerm1645 extends GraphicsProgram{
 			pause(DELAY);
 		}
 		addMouseListeners();
+		println(count);
 	}
 
 	public void mouseClicked (MouseEvent e){
