@@ -13,7 +13,7 @@ public class MidTerm3 extends GraphicsProgram{
 		addMouseListeners();
 	}
 	
-	public void mousePressed(MouseEvent e){
+	public void mouseClicked(MouseEvent e){
 		line = new GLine(startX, startY, e.getX(), e.getY());
 		add(line);
 		line.setEndPoint(e.getX(), e.getY());
