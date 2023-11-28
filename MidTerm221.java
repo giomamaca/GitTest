@@ -9,9 +9,12 @@ public class MidTerm221 extends ConsoleProgram{
 			if(s == "END"){
 				break;
 			}
-			for(int i = 0; i < s.length(); i++){
+			if(count > max){
+				max = count;
+			}
+			for(int i = 0; i < 256; i++){
 				char a = s.charAt(i);
-				for(int j = i; j < s.length(); j++){
+				for(int j = i; j < 256); j++){
 					char b = s.charAt(j);
 					if(a == b){
 						return;
@@ -21,9 +24,6 @@ public class MidTerm221 extends ConsoleProgram{
 						println(s);
 					}
 				}
-			}
-			if(count > max){
-				max = count;
 			}
 		}
 	}
