@@ -14,7 +14,7 @@ public class MidTerm221 extends ConsoleProgram{
 			}
 			for(int i = 0; i < 256; i++){
 				char a = s.charAt(i);
-				for(int j = i; j < 256); j++){
+				for(int j = i; j < 256; j++){
 					char b = s.charAt(j);
 					if(a == b){
 						return;
