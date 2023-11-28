@@ -20,9 +20,9 @@ public class MidTerm3 extends GraphicsProgram{
 		startX = e.getX();
 		startY = e.getY();
 	}
-//	public void mouseDragged(MouseEvent q){
-//		line.setEndPoint(q.getX(), q.getY());
-//		startX = q.getX();
-//		startY = q.getY();
-//	}
+	public void mouseDragged(MouseEvent q){
+		line.setEndPoint(q.getX(), q.getY());
+		startX = q.getX();
+		startY = q.getY();
+	}
 }
