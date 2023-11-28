@@ -6,7 +6,7 @@ public class Problem1 extends ConsoleProgram {
 		int x = 1;
 		int y = 2;
 		GObject o = new GRect(x, y);
-		String s = "shalaxo";
+		String s = "shalaxxxo";
 		println(iseRa(x, y, o, s));
 		println(iseRa(x, y, o, s));
 	}
