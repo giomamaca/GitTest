@@ -10,7 +10,7 @@ public class MidTerm1645 extends GraphicsProgram{
 	private final static int CIRCLE_NUM = 50;
 	private final static int DELAY = 2000;
 	
-	private int count = 0;
+	public int count = 0;
 	private GOval ball;
 	RandomGenerator rgen = new RandomGenerator();
 	
