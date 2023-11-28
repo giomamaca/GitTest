@@ -9,19 +9,18 @@
 import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
-
-	public void run() {
-		int num = readInt();
-		int k = num;
-		int a = 0;
-		while (num != 0) {
-			a = a * 10 + num % 10;
-			num = num / 10;
+	
+	private boolean isAlthwenating(int num){
+		int last = num % 10;
+		num /= 10;
+		while(num > 0){
+			int dig = num % 10;
+			if(dig %2 == last % 2){
+				return false;
+			}
+			num /= 10;
+			last = dig;
 		}
-		if (a == k) {
-			println("correct");
-		} else {
-			println("not correct");
-		}
+		return true;
 	}
 }
