@@ -7,7 +7,6 @@ public class BuildHouse extends GraphicsProgram {
 	
 	private static final double HOUSE_HEIGHT = 400;
 	private static final double HOUSE_WIDTH = 200;
-	private static final double ROOF_HEIGHT = 60;
 	private static final double DOOR_WIDTH = 80;
 	private static final double DOOR_HEIGHT = 100;
 	private static final double HANDLE_WIDTH = 10;
