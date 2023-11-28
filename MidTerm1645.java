@@ -31,7 +31,7 @@ public class MidTerm1645 extends GraphicsProgram{
 				count++;
 				ball = oval;
 				if(count == 3){
-					remove(oval);
+					remove(ball);
 					count = 0;
 				}
 			}			
