@@ -12,6 +12,7 @@ public class MidTerm1645 extends GraphicsProgram{
 	
 	private int count = 0;
 	private GOval ball;
+	private GOval oval;
 	RandomGenerator rgen = new RandomGenerator();
 	
 	public void run(){
@@ -26,11 +27,14 @@ public class MidTerm1645 extends GraphicsProgram{
 
 	public void mouseClicked (MouseEvent e){
 		if(getElementAt(e.getX(), e.getY()) != null){
-			count++;
-			if(count == 3){
-				remove(ball);
-				count = 0;
-			}
+			if(getElementAt(e.getX(), e.getY()) == ball){
+				count++;
+				ball = oval;
+				if(count == 3){
+					remove(oval);
+					count = 0;
+				}
+			}			
 		}
 	}
 
