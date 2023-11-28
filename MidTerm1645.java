@@ -15,13 +15,13 @@ public class MidTerm1645 extends GraphicsProgram{
 	RandomGenerator rgen = new RandomGenerator();
 	
 	public void run(){
+		addMouseListeners();
 		drawCircle();
 		pause(DELAY);
 		while(getElementCount() != 0 && getElementCount() <= CIRCLE_NUM){
 			drawCircle();			
 			pause(DELAY);
 		}
-		addMouseListeners();
 	}
 
 	public void mouseClicked (MouseEvent e){
