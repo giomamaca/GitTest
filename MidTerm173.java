@@ -20,7 +20,7 @@ public class MidTerm173 extends ConsoleProgram{
 			char a = s.charAt(k);
 			char b = s.charAt(k - 1);
 			if(a != b){
-				s = s + a;
+				s += a;
 			}
 		}
 		s = s + s.charAt(s.length());
