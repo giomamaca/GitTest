@@ -9,12 +9,14 @@ public class MidTerm174 extends ConsoleProgram{
 		int k = readInt();
 		
 		while(k != 0){
-			boolean bool = rgen.nextBoolean();
-			if(bool == true){
-				k /= 2;
-			}
-			if(bool == false){
-				k -=1;
+			for(int i = 0; true; i++){
+				boolean bool = rgen.nextBoolean();				
+				if(bool == true){
+					k /= 2;
+				}
+				if(bool == false){
+					k -=1;
+				}
 			}
 			println(k);
 		}
