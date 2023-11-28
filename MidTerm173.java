@@ -16,7 +16,6 @@ public class MidTerm173 extends ConsoleProgram{
 				}
 			}
 		}
-		println(s);
-		
+		println(s); 
 	}
 }
