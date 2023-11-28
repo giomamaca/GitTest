@@ -33,7 +33,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			}
 		}
 		addMouseListeners();
-		System.out.println(count);
+		
 	}
 
 	public void mouseClicked(MouseEvent e) {
