@@ -43,10 +43,10 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				count++;
 				rect1 = (GRect) click1;
 				rect2 = rect1;
+			if(count == 2){
+				rect1.setFillColor(Color.WHITE);
+				count = 1;
+			}
 		}
-//		if(count == 2){
-//			rect1.setFillColor(Color.WHITE);
-//			count = 1;
-//		}
 	}
 }
