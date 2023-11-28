@@ -16,14 +16,15 @@ public class MidTerm173 extends ConsoleProgram{
 				}
 			}
 		}
-//		for(int k = 1; k < s.length(); k++){
-//			char a = s.charAt(k);
-//			char b = s.charAt(k - 1);
-//			if(a != b){
-//				s += a;
-//			}
-//		}
-//		s = s + s.charAt(s.length());
+		for(int k = 1; k < s.length()- 1; k++){
+			char a = s.charAt(k);
+			char b = s.charAt(k - 1);
+			if(a != b){
+				s += a;
+			}
+		}
+		
+		s = s + s.charAt(s.length());
 		println(s); 
 	}
 }
