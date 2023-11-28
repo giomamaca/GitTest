@@ -4,19 +4,20 @@ public class MidTerm173 extends ConsoleProgram{
 	public void run(){
 		String gamarjoba = readLine();
 		String baro = readLine();
+		println(isIn(gamarjoba, baro));
 		
-		String s = "";
-		
+	}
+
+	private boolean isIn(String gamarjoba, String baro) {
 		for(int i = 0; i< baro.length(); i++){
 			char bar = baro.charAt(i);
 			for(int j = i; j < gamarjoba.length(); j++){
 				char gam = gamarjoba.charAt(j);
 				if(bar == gam){
-					s += bar;
+					return true;
 				}
 			}
 		}
-		
-		println(s); 
+		return false;
 	}
 }
