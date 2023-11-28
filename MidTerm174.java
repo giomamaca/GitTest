@@ -17,8 +17,8 @@ public class MidTerm174 extends ConsoleProgram{
 				if(bool == false){
 					k -=1;
 				}
+				println(k);
 			}
-			println(k);
 		}
 	}
 }
