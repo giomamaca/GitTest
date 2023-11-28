@@ -9,6 +9,7 @@ public class MidTerm172 extends ConsoleProgram{
 				div = i;
 			}
 		}
+		println(div);
 	}
 
 	private boolean simple(int i) {
