@@ -26,18 +26,18 @@ public class MidTerm193 extends GraphicsProgram{
 			add(oval);
 			pause(DELAY);
 		}		
-		if(getElementAt(x,y) != null){
-			obj = getElementAt(x,y);
-			while(obj.getColor() !=  java.awt.Color.GREEN){
-				obj.setColor(randomColor());
-			}
-		}
+//		if(getElementAt(x,y) != null){
+//			obj = getElementAt(x,y);
+//			while(obj.getColor() !=  java.awt.Color.GREEM){
+//				obj.setColor(randomColor());
+//			}
+//		}
 	}
 
 	private java.awt.Color randomColor() {
 		int a = rgen.nextInt(5);
 		if(a == 0){
-			return java.awt.Color.GREEN;
+			return java.awt.Color.green;
 		}
 		if(a == 1){
 			return java.awt.Color.RED;
