@@ -44,19 +44,19 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		if(obj != null){
 			if(r1 == null){
 				if(obj != null){
-					r1 = obj;
+					
 					r1.setFilled(true);
 				}
 			}
 			if(r1 != null && r2 == null){
 				if(obj != null && obj != r1){
-					r2 = obj;
+					
 					r2.setFilled(true);
 				}
 			}
 			if(r1 != null && r2 != null && r3 == null){
 				if(obj != null){
-					r3 = obj;
+					
 					r3.setFilled(true);
 				}
 				r1.setFilled(false);
@@ -64,7 +64,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			}
 			if(r1 == null && r2 != null && r3 != null){
 				if(obj != null){
-					r1 = obj;
+					
 					r1.setFilled(true);
 				}
 				r2.setFilled(false);
@@ -72,7 +72,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			}
 			if(r1 != null && r2 == null && r3 != null){
 				if(obj != null){
-					r2 = obj;
+					
 					r2.setFilled(true);
 				}
 				r3.setFilled(false);
