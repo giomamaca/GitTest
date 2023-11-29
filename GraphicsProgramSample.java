@@ -24,7 +24,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			for (int j = 0; j < 8; j++) {
 				double rectX = (double) (50 + i * SIZE);
 				double rectY = (double) (50 + j * SIZE);
-				GRect rect = new GRect(rectX, rectY, SIZE, SIZE);
+				GRect rect = new GRect(SIZE, SIZE);
 				add(rect, rectX, rectY);
 			}
 		}
@@ -40,7 +40,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		GObject click = getElementAt(x, y);
 		if (click != null) {
 			((GRect) click).setFillColor(Color.BLACK);
-			count++;
 		}
 	}
 }
