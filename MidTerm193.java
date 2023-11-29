@@ -20,7 +20,7 @@ public class MidTerm193 extends GraphicsProgram{
 		double y = e.getY();
 		
 		if(getElementAt(x,y) == null){
-			GOval oval = new GOval (x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D / 2, CIRCLE_D / 2);
+			GOval oval = new GOval (x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			oval.setFilled(true);
 			oval.setColor(randomColor());
 			add(oval);
