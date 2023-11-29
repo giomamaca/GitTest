@@ -8,57 +8,45 @@ import javafx.scene.paint.Color;
 public class MidTerm193 extends GraphicsProgram{
 	private final int CIRCLE_D = 100;
 	private final int DELAY = 100;
-	private RandomGenerator rgen;
-	private GObject selectedObject = null;
+	RandomGenerator rgen = new RandomGenerator();
+	private GObject obj;
 
-	@Override
-	public void init() {
+	public void run(){
 		addMouseListeners();
-		rgen = RandomGenerator.getInstance();
 	}
-
-	public void run() {
-		while (true) {
-			if (selectedObject != null) {
-				while (selectedObject.getColor() != Color.GREEN) {
-					Color color = myRandomColor();
-					selectedObject.setColor(color);
-					println(selectedObject);
-					pause(DELAY);
-				}
-				selectedObject = null;
-			}
-			println("E");
-		}
-	}
-
-	@Override
-	public void mouseClicked(MouseEvent e) {
+	
+	public void mouseClicked(MouseEvent e){
 		double x = e.getX();
 		double y = e.getY();
-
-		GObject object = getElementAt(x, y);
-		println(object);
-		if (object == null) {
-			GOval oval = new GOval(CIRCLE_D, CIRCLE_D);
-			add(oval, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
+		
+		if(getElementAt(x,y) == null){
+			GOval oval = new GOval (x, y, CIRCLE_D / 2, CIRCLE_D / 2);
 			oval.setFilled(true);
-			oval.setColor(myRandomColor());
-		} else {
-			selectedObject = object;
+			oval.setColor(randomColor());
+			add(oval);
+		}		
+		if(getElementAt(x,y) != null){
+			obj = getElementAt(x,y);
+			while(obj.getColor() !=  java.awt.Color.green){
+				obj.setColor(randomColor());
+			}
 		}
 	}
 
-	private Color myRandomColor() {
-		int randomNum = rgen.nextInt(5);
-		if (randomNum == 0)
-			return Color.GREEN;
-		if (randomNum == 1)
-			return Color.RED;
-		if (randomNum == 2)
-			return Color.BLUE;
-		if (randomNum == 3)
-			return Color.BLACK;
-		return Color.YELLOW;
+	private java.awt.Color randomColor() {
+		int a = rgen.nextInt(5);
+		if(a == 0){
+			return java.awt.Color.green;
+		}
+		if(a == 1){
+			return java.awt.Color.RED;
+		}
+		if(a == 2){
+			return java.awt.Color.BLUE;
+		}
+		if(a == 3){
+			return java.awt.Color.BLACK;
+		}
+		return java.awt.Color.YELLOW;
 	}
 }
