@@ -18,6 +18,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	private GRect r1 = null;
 	private GRect r2 = null;
+	private GRect r3 = null;
 
 	public void run() {
 		drawBoard();
@@ -40,36 +41,43 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		double y = e.getY();
 
 		GRect obj = (GRect) getElementAt(x, y);
-		if (obj == null)
-			return;
-		if (r1 == null && r2 == null) {
-			r2 = obj;
-			r2.setFilled(true);
-			return;
-		}
-		if (r2 == null & r1 != null) {
-			if (obj != null) {
-				r1.setFilled(false);
+		if(obj != null){
+			if(r1 == null){
+				if(obj != null){
+					r1 = obj;
+					r1.setFilled(true);
+				}
 			}
-			r2 = r1;
-			r1 = obj;
-			r1.setFilled(true);
-			return;
+			if(r1 != null && r2 == null){
+				if(obj != null && obj != r1){
+					r2 = obj;
+					r2.setFilled(true);
+				}
+			}
+			if(r1 != null && r2 != null && r3 == null){
+				if(obj != null){
+					r3 = obj;
+					r3.setFilled(true);
+				}
+				r1.setFilled(false);
+				r1 = null;
+			}
+			if(r1 == null && r2 != null && r3 != null){
+				if(obj != null){
+					r1 = obj;
+					r1.setFilled(true);
+				}
+				r2.setFilled(false);
+				r2 = null;
+			}
+			if(r1 != null && r2 == null && r3 != null){
+				if(obj != null){
+					r2 = obj;
+					r2.setFilled(true);
+				}
+				r3.setFilled(false);
+				r3 = null;
+			}
 		}
-		if (obj == r2) {
-			r2.setFilled(false);
-			r2 = null;
-			return;
-		}
-		if (obj == r1) {
-			r1.setFilled(false);
-			r1 = r2;
-			r2 = null;
-			return;
-		}
-		r2.setFilled(false);
-		r2 = r1;
-		r1 = obj;
-		r1.setFilled(true);
 	}
 }
