@@ -35,9 +35,9 @@ public class MidTerm193 extends GraphicsProgram{
 
 	private java.awt.Color randomColor() {
 		int a = rgen.nextInt(5);
-		if(a == 0){
-			return java.awt.Color.green;
-		}
+//		if(a == 0){
+//			return java.awt.Color.green;
+//		}
 		if(a == 1){
 			return java.awt.Color.RED;
 		}
