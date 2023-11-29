@@ -18,7 +18,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	private GRect r1 = null;
 	private GRect r2 = null;
-	private GRect r3 = null;
 
 	public void run() {
 		for (int i = 0; i < 8; i++) {
@@ -42,33 +41,30 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		if (obj != null) {
 			if(r1 == null && r2 == null){
 				r1 = obj;
-				r1.setFilled(true);				
+				r1.setFilled(true);		
 			}
-			if(r1 != null & r2 == null){
-				r2 = obj;
-				r2.setFilled(true);
-			}
-			if(r1 != null && r2 != null && r3 == null){
-				if(obj != null){
-					r1.setFilled(false);
-				}
-				r3 = obj;
-				r3.setFilled(true);
-			}
-			if(r2 != null && r3 != null){
+			if(r1 == null & r2 != null){
 				if(obj != null){
 					r2.setFilled(false);
 				}
-				r1 = obj;
-				r1.setFilled(true);
-			}
-			if(r1 != null && r3 != null){
-				if(obj != null){
-					r3.setFilled(false);
-				}
+				r1 = r2;
 				r2 = obj;
 				r2.setFilled(true);
 			}
+			if(obj == r1){
+				r1.setFilled(false);
+				r1 = null;
+			}
+			if(obj == r2){
+				r2.setFilled(true);
+				r2 = r1;
+				r1 = null;
+			}
+			r1.setFilled(true);
+			r1 = r2;
+			r1 = obj;
+			r1.setFilled(true);
+			
 		}
 	}
 }
