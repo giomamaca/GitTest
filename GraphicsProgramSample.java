@@ -18,8 +18,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	private GRect rect;
 	private int count = 0;
-	private GRect rect1;
-	private GRect rect2;
+	private GRect r1 = null;
+	private GRect r2 = null;
 
 	public void run() {
 		for (int i = 0; i < 8; i++) {
