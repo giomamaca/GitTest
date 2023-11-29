@@ -23,32 +23,31 @@ public class MidTerm193 extends GraphicsProgram{
 			GOval oval = new GOval (x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			oval.setFilled(true);
 			oval.setColor(randomColor());
-			pause(DELAY);
 			add(oval);
+			pause(DELAY);
 		}		
 		if(getElementAt(x,y) != null){
 			obj = getElementAt(x,y);
-			while(obj.getColor() !=  java.awt.Color.green){
+			while(obj.getColor() !=  java.awt.Color.GREEN){
 				obj.setColor(randomColor());
 			}
 		}
 	}
 
 	private java.awt.Color randomColor() {
-//		int a = rgen.nextInt(4);
-//		if(a == 1){
-//			return java.awt.Color.GREEN;
-//		}
-//		if(a == 2){
-//			return java.awt.Color.RED;
-//		}
-//		if(a == 3){
-//			return java.awt.Color.BLUE;
-//		}
-//		if(a == 4){
-//			return java.awt.Color.BLACK;
-//		}
-//		System.out.println(a);
+		int a = rgen.nextInt(5);
+		if(a == 0){
+			return java.awt.Color.GREEN;
+		}
+		if(a == 1){
+			return java.awt.Color.RED;
+		}
+		if(a == 2){
+			return java.awt.Color.BLUE;
+		}
+		if(a == 3){
+			return java.awt.Color.BLACK;
+		}
 		return java.awt.Color.YELLOW;
 	}
 }
