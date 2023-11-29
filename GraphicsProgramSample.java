@@ -37,9 +37,9 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		double y = e.getY();
 		
 		
-		GObject click = getElementAt(x, y);
-		if (click != null) {
-			((GRect) click).setFillColor(Color.BLACK);
+		GRect obj = (GRect) getElementAt(x, y);
+		if (obj != null) {
+			obj.setFilled(true);
 		}
 	}
 }
