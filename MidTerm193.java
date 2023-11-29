@@ -48,6 +48,7 @@ public class MidTerm193 extends GraphicsProgram{
 		if(a == 4){
 			return java.awt.Color.BLACK;
 		}
+		System.out.println(a);
 		return java.awt.Color.YELLOW;
 	}
 }
