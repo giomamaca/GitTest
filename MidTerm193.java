@@ -23,8 +23,8 @@ public class MidTerm193 extends GraphicsProgram{
 			GOval oval = new GOval (x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			oval.setFilled(true);
 			oval.setColor(randomColor());
-			pause(DELAY);
 			add(oval);
+			pause(DELAY);
 		}		
 		if(getElementAt(x,y) != null){
 			obj = getElementAt(x,y);
