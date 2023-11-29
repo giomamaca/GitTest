@@ -48,21 +48,21 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				r2 = obj;
 				r2.setFilled(true);
 			}
-			if(r1 != null && r2 != null){
+			if(r1 != null && r2 != null && r3 == null){
 				if(obj != null){
 					r1.setFilled(false);
 				}
 				r3 = obj;
 				r3.setFilled(true);
 			}
-			if(r3 != null && r2 != null){
+			if(r3 != null && r2 != null && r1 == null){
 				if(obj != null){
 					r2 = null;
 				}
 				r1 = obj;
 				r1.setFilled(true);
 			}
-			if(r1 != null && r3 != null){
+			if(r1 != null && r3 != null && r2 == null){
 				if(obj != null){
 					r3 = null;
 				}
