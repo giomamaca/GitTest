@@ -29,7 +29,7 @@ public class MidTerm193 extends GraphicsProgram{
 		if(getElementAt(x,y) != null){
 			obj = getElementAt(x,y);
 			while(obj.getColor() !=  java.awt.Color.GREEN){
-				obj.setColor(randomColor());
+				((GOval) obj).setFillColor(randomColor());
 			}
 		}
 	}
