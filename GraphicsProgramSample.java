@@ -16,8 +16,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 
 	private static final double SIZE = 50;
 
-	private GRect rect;
-	private int count = 0;
 	private GRect r1 = null;
 	private GRect r2 = null;
 
@@ -26,10 +24,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			for (int j = 0; j < 8; j++) {
 				double rectX = (double) (50 + i * SIZE);
 				double rectY = (double) (50 + j * SIZE);
-				rect = new GRect(rectX, rectY, SIZE, SIZE);
-				rect.setFilled(true);
-				rect.setFillColor(Color.WHITE);
-				add(rect);
+				GRect rect = new GRect(rectX, rectY, SIZE, SIZE);
+				add(rect, rectX, rectY);
 			}
 		}
 		addMouseListeners();
@@ -37,7 +33,11 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	}
 
 	public void mouseClicked(MouseEvent e) {
-		GObject click = getElementAt(e.getX(), e.getY());
+		double x = e.getX();
+		double y = e.getY();
+		
+		
+		GObject click = getElementAt(x, y);
 		if (click != null) {
 			((GRect) click).setFillColor(Color.BLACK);
 			count++;
