@@ -35,20 +35,20 @@ public class MidTerm193 extends GraphicsProgram{
 	}
 
 	private java.awt.Color randomColor() {
-		int a = rgen.nextInt(4);
-		if(a == 1){
-			return java.awt.Color.GREEN;
-		}
-		if(a == 2){
-			return java.awt.Color.RED;
-		}
-		if(a == 3){
-			return java.awt.Color.BLUE;
-		}
-		if(a == 4){
-			return java.awt.Color.BLACK;
-		}
-		System.out.println(a);
+//		int a = rgen.nextInt(4);
+//		if(a == 1){
+//			return java.awt.Color.GREEN;
+//		}
+//		if(a == 2){
+//			return java.awt.Color.RED;
+//		}
+//		if(a == 3){
+//			return java.awt.Color.BLUE;
+//		}
+//		if(a == 4){
+//			return java.awt.Color.BLACK;
+//		}
+//		System.out.println(a);
 		return java.awt.Color.YELLOW;
 	}
 }
