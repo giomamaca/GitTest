@@ -56,7 +56,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				r2 = null;
 			}
 			if(obj == r1){
-				r1.setFilled(true);
+				r1.setFilled(false);
 				r1 = r2;
 				r2 = null;
 			}
