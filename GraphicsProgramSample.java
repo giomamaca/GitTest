@@ -40,11 +40,11 @@ public class GraphicsProgramSample extends GraphicsProgram {
 		
 		GRect obj = (GRect) getElementAt(x, y);
 		if (obj != null) {
-			if(r1 == null && r2 == null && r3 == null){
+			if(r1 == null && r2 == null){
 				r1 = obj;
 				r1.setFilled(true);				
 			}
-			if(r1 != null & r2 == null ){
+			if(r1 != null & r2 == null){
 				r2 = obj;
 				r2.setFilled(true);
 			}
