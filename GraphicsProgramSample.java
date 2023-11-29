@@ -56,6 +56,8 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				}
 				return;
 			}
+		}
+		if(obj != null){			
 			if(r1 != null && r2 != null){
 				if(obj != null){
 					r3 = obj;
