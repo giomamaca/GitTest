@@ -47,7 +47,7 @@ public class GraphicsProgramSample extends GraphicsProgram {
 			r2.setFilled(true);
 			return;
 		}
-		if (r1 == null & r2 != null) {
+		if (r2 == null & r1 != null) {
 			if (obj != null) {
 				r1.setFilled(false);
 			}
