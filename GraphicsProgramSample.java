@@ -20,6 +20,11 @@ public class GraphicsProgramSample extends GraphicsProgram {
 	private GRect r2 = null;
 
 	public void run() {
+		drawBoard();
+		addMouseListeners();
+	}
+
+	private void drawBoard() {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
 				double rectX = (double) (50 + i * SIZE);
@@ -28,8 +33,6 @@ public class GraphicsProgramSample extends GraphicsProgram {
 				add(rect, rectX, rectY);
 			}
 		}
-		addMouseListeners();
-
 	}
 
 	public void mouseClicked(MouseEvent e) {
