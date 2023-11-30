@@ -15,5 +15,4 @@ public class MidTerm1615 extends GraphicsProgram{
 	public void mouseDragged(MouseEvent e){
 		
 	}
-	
 }
