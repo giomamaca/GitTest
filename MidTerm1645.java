@@ -12,6 +12,7 @@ public class MidTerm1645 extends GraphicsProgram {
 
 	private int count = 0;
 	private GOval ball;
+	private GObject objTest;
 	RandomGenerator rgen = new RandomGenerator();
 
 	public void run() {
@@ -35,9 +36,20 @@ public class MidTerm1645 extends GraphicsProgram {
 			if (getElementAt(x, y) == obj) {
 				count++;
 			}
-			if (count == 3) {
-				remove(obj);
-				count = 0;
+			if(count == 1){
+				objTest = obj;
+				if(getElementAt(x, y) == objTest){
+					count ++;
+					if (count == 3) {
+						remove(obj);
+						count = 0;
+					}
+				}else{
+					if(getElementAt(x, y) != objTest){
+						count = 0;
+						objTest = obj;
+					}
+				}
 			}
 			if (getElementAt(x, y) == null) {
 				count = 0;
