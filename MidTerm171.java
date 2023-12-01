@@ -22,7 +22,6 @@ public class MidTerm171 extends GraphicsProgram {
 		add(num, getWidth() / 2 - num.getWidth() / 2, getHeight() / 2 + num.getAscent() / 2);
 		add(rect);
 
-		System.out.println(k);
 	}
 
 	public void mouseDragged(MouseEvent e) {
@@ -32,6 +31,7 @@ public class MidTerm171 extends GraphicsProgram {
 		double moveX = mouseX - SIZE / 2;
 		rect.setLocation(moveX, mouseY - SIZE / 2);
 		num.setLocation(mouseX - num.getWidth() / 2, mouseY + num.getAscent() / 2);
+		System.out.println(k);
 		if ((num.getX() - num.getWidth() / 2) == coordinate1) {
 			k++;
 			coordinate1 = num.getX() - num.getWidth() / 2;
