@@ -24,5 +24,6 @@ public class isAritmeticProgres extends ConsoleProgram{
 			}
 			a1 = a;
 		}
+		print(answer);
 	}
 }
