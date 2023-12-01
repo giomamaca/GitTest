@@ -32,10 +32,10 @@ public class MidTerm1645 extends GraphicsProgram{
 		
 		if(getElementAt(x, y) != null){
 			GObject obj = getElementAt(x, y);
+			GObject objTest = obj;
 			if(getElementAt(x, y) == obj){
 				count++;
 				if(count == 1){					
-					GObject objTest = obj;
 					if(getElementAt(x, y) == objTest){
 						count++;
 					}
@@ -43,7 +43,6 @@ public class MidTerm1645 extends GraphicsProgram{
 						count = 0;
 						obj = null;
 					}
-					count = 0;
 				}
 				if(count == 3){
 					remove(obj);
