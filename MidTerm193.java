@@ -1,9 +1,8 @@
 import java.awt.event.MouseEvent;
-
+import java.awt.Color;
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
-import javafx.scene.paint.Color;
 
 public class MidTerm193 extends GraphicsProgram {
 	private final static int CIRCLE_D = 100;
@@ -32,24 +31,24 @@ public class MidTerm193 extends GraphicsProgram {
 		}
 		if(o != null){
 			obj = o;
-			while(obj.getColor() != java.awt.Color.GREEN){				
+			while(obj.getColor() != Color.GREEN){				
 				obj.setColor(randomColor());
-				pause(100);
+				pause(200);
 			}
 		}
 	}
 
-	private java.awt.Color randomColor() {
+	private Color randomColor() {
 		int a = rgen.nextInt(N_COLORS);
 		if (a == 0) {
-			return java.awt.Color.GREEN;
+			return Color.GREEN;
 		} else if (a == 1) {
-			return java.awt.Color.RED;
+			return Color.RED;
 		} else if (a == 2) {
-			return java.awt.Color.BLUE;
+			return Color.BLUE;
 		} else if (a == 3) {
-			return java.awt.Color.BLACK;
+			return Color.BLACK;
 		}
-			return java.awt.Color.YELLOW;
+			return Color.YELLOW;
 	}
 }
