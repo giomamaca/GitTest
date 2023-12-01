@@ -25,13 +25,20 @@ public class MidTerm1645 extends GraphicsProgram{
 	}
 
 	public void mouseClicked (MouseEvent e){
-		if(getElementAt(e.getX(), e.getY()) != null){
-			count++;
-			if(count == 3){
-				remove(ball);
+		double x = e.getX();
+		double y = e.getY();
+		
+		if(getElementAt(x, y) != null){
+			GObject obj = getElementAt(x, y);
+			if(getElementAt(x, y) == obj){
+				count++;
+				if(count == 3){
+					remove(obj);
+					count = 0;
+				}				
+			}else{
 				count = 0;
 			}
-			
 		}
 	}
 
