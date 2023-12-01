@@ -19,9 +19,7 @@ public class MidTerm1645 extends GraphicsProgram{
 		drawCircle();
 		pause(DELAY);
 		while(getElementCount() != 0 && getElementCount() <= CIRCLE_NUM){
-			for(int i = 0; i < 25; i++){
-				drawCircle();				
-			}
+			drawCircle();				
 			pause(DELAY);
 		}
 	}
