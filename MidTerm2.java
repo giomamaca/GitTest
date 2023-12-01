@@ -2,25 +2,20 @@ import acm.program.ConsoleProgram;
 
 public class MidTerm2 extends ConsoleProgram {
 	public void run() {
-		String son = readLine();
 		String father = readLine();
-		
-		if(isFather(son, father)){
-			println("is son");
-		}else{
-			println("not");
-		}
+		String son = readLine();
+		println(isFath(father, son));
 	}
 
-	private boolean isFather(String son, String father) {
-		String s = "";
-		for(int i = 0; i< son.length(); i++){
-			for(int j = 0; j < son.length(); j++){
-				s = son.substring(i, j);
+	private boolean isFath(String father, String son) {
+		String so = "";
+		for (int i = 0; i < son.length(); i++) {
+			for (int j = i+1; j < son.length(); j++) {
+				 so = son.substring(i, j);
+					if (father.contains(so) && so.length() >= father.length() / 2){ 
+						return true;
+					}
 			}
-		}
-		if(father.contains(s)){
-			return true;
 		}
 		return false;
 	}
