@@ -35,6 +35,7 @@ public class MidTerm193 extends GraphicsProgram {
 				obj.setColor(randomColor());
 				pause(300);
 			}
+			pause(100);
 		}
 	}
 
