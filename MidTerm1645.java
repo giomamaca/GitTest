@@ -42,7 +42,7 @@ public class MidTerm1645 extends GraphicsProgram {
 				if(getElementAt(x, y) == objTest){
 					count++;
 					if (count == 3) {
-						remove(objTest);
+						remove(obj);
 						count = 0;
 					}
 				}else{
