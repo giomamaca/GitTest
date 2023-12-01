@@ -16,7 +16,9 @@ public class MidTerm1645 extends GraphicsProgram{
 	
 	public void run(){
 		addMouseListeners();
-		drawCircle();
+		for(int i = 0; i< 25; i++){
+			drawCircle();			
+		}
 		pause(DELAY);
 		while(getElementCount() != 0 && getElementCount() <= CIRCLE_NUM){
 			drawCircle();				
@@ -30,9 +32,13 @@ public class MidTerm1645 extends GraphicsProgram{
 		
 		if(getElementAt(x, y) != null){
 			GObject obj = getElementAt(x, y);
+			GObject objTest = obj;
 			if(getElementAt(x, y) == obj){
 				count++;
 				if(getElementAt(x, y) != obj){
+					count = 0;
+				}
+				if(obj != objTest){
 					count = 0;
 				}
 				if(count == 3){
