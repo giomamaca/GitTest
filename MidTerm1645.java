@@ -39,10 +39,15 @@ public class MidTerm1645 extends GraphicsProgram {
 			if(count == 1){
 				objTest = obj;
 				System.out.println(objTest);
-			}
-			if (count == 3) {
-				remove(obj);
-				count = 0;
+				if(getElementAt(x, y) == objTest){
+					count++;
+					if (count == 3) {
+						remove(objTest);
+						count = 0;
+					}
+				}else{
+					count = 0;
+				}
 			}
 			if (getElementAt(x, y) == null) {
 				count = 0;
