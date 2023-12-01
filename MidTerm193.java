@@ -33,7 +33,7 @@ public class MidTerm193 extends GraphicsProgram {
 			obj = o;
 			while(obj.getColor() != Color.GREEN){				
 				obj.setColor(randomColor());
-				pause(200);
+				pause(300);
 			}
 		}
 	}
