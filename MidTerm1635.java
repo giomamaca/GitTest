@@ -16,7 +16,7 @@ public class MidTerm1635 extends GraphicsProgram{
 	
 	public void run(){
 		addMouseListeners();
-
+		makeCirclesFlicker();
 	}
 	
 	public void mouseClicked(MouseEvent e) {
@@ -29,13 +29,6 @@ public class MidTerm1635 extends GraphicsProgram{
 				currentCircle = (GOval)el;
 			}
 		}
-		if(currentCircle != null) {
-			while(currentCircle.getColor() != Color.GREEN) {
-				currentCircle.setColor(getRandomColor());
-				pause(DELAY);
-			}
-			currentCircle = null;
-		}
 		
 	}
 	
@@ -45,7 +38,19 @@ public class MidTerm1635 extends GraphicsProgram{
 		circle.setColor(rgen.nextColor());
 		add(circle, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
 	}
-	
+	private void makeCirclesFlicker() {
+		while(true) {
+			if(currentCircle != null) {
+				while(currentCircle.getColor() != Color.GREEN) {
+					currentCircle.setColor(getRandomColor());
+					pause(DELAY);
+				}
+				currentCircle = null;
+			}
+			
+			pause(RECHECK_DELAY);
+		}
+	}
 	private Color getRandomColor() {
 		int randomColorNumber = rgen.nextInt(N_COLORS);
 		
