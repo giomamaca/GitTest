@@ -36,13 +36,13 @@ public class MidTerm171 extends GraphicsProgram {
 			coordinate1 = num.getX() - num.getWidth() / 2;
 			coordinate2 = 0;
 			System.out.println(coordinate1);
-			if ((num.getX() - num.getWidth() / 2) > coordinate1) {
-				k++;
-				coordinate1 = num.getX() - num.getWidth() / 2;
-			}
-			if (num.getX() < coordinate1) {
-				k--;
-			}
+//			if ((num.getX() - num.getWidth() / 2) > coordinate1) {
+//				k++;
+//				coordinate1 = num.getX() - num.getWidth() / 2;
+//			}
+//			if (num.getX() < coordinate1) {
+//				k--;
+//			}
 		}
 	}
 }
