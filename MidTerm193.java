@@ -28,24 +28,24 @@ public class MidTerm193 extends GraphicsProgram {
 			oval.setFilled(true);
 			oval.setColor(rgen.nextColor());
 			add(oval);
-		}else{
-			if(obj == null){
-				obj = (GOval) o;
-			}
+		}
+		if(o != null){
+			obj = o;
+			obj.setColor(randomColor());
 		}
 	}
 
-	private Color randomColor() {
+	private java.awt.Color randomColor() {
 		int a = rgen.nextInt(5);
 		if (a == 0) {
-			return Color.GREEN;
+			return java.awt.Color.GREEN;
 		} else if (a == 1) {
-			return Color.RED;
+			return java.awt.Color.RED;
 		} else if (a == 2) {
-			return Color.BLUE;
+			return java.awt.Color.BLUE;
 		} else if (a == 3) {
-			return Color.BLACK;
+			return java.awt.Color.BLACK;
 		}
-			return Color.YELLOW;
+			return java.awt.Color.YELLOW;
 	}
 }
