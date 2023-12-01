@@ -24,7 +24,7 @@ public class MidTerm193 extends GraphicsProgram {
 		GObject o = getElementAt(x, y);
 		
 		if(o == null){			
-			oval = new GOval (x, y, CIRCLE_D, CIRCLE_D);
+			oval = new GOval (x - CIRCLE_D / 2, y - CIRCLE_D / 2, CIRCLE_D, CIRCLE_D);
 			oval.setFilled(true);
 			oval.setColor(rgen.nextColor());
 			add(oval);
