@@ -15,12 +15,12 @@ public class MidTerm171 extends GraphicsProgram{
 	private double cen2	= getHeight() / 2 - SIZE / 2;
 	
 	public void run(){
+		addMouseListeners();
 		
-		rect = new GRect(cen1, cen2, SIZE, SIZE);
+		rect = new GRect(0, 0, SIZE, SIZE);
 //		num = new GLabel(k);
 //		add(num, cen1 - num.getWidth() / 2, cen2 + num.getAscent() / 2);
 		add(rect);
-		addMouseListeners();
 		
 	}
 	
