@@ -31,16 +31,16 @@ public class MidTerm171 extends GraphicsProgram{
 		while(getElementAt(x, y) == rect){
 			double moveX = e.getX() + SIZE / 2;
 			rect.setLocation(moveX, e.getY() + SIZE / 2);
-			if( k != 9){				
-				if((rect.getX() + SIZE / 2) > X){
-					k++;
-					X = rect.getX() + SIZE / 2;
-				}
-				if((rect.getX() + SIZE / 2) < X){
-					k--;
-					X = rect.getX() + SIZE / 2;
-				}
-			}
+//			if( k != 9){				
+//				if((rect.getX() + SIZE / 2) > X){
+//					k++;
+//					X = rect.getX() + SIZE / 2;
+//				}
+//				if((rect.getX() + SIZE / 2) < X){
+//					k--;
+//					X = rect.getX() + SIZE / 2;
+//				}
+//			}
 		}
 	}
 }
