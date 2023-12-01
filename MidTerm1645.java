@@ -16,7 +16,7 @@ public class MidTerm1645 extends GraphicsProgram{
 	
 	public void run(){
 		addMouseListeners();
-		for(int i = 0; i< 25; i++){
+		for(int i = 0; i< 10; i++){
 			drawCircle();			
 		}
 		pause(DELAY);
