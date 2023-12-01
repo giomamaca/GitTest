@@ -37,13 +37,13 @@ public class MidTerm1645 extends GraphicsProgram{
 				if(count == 1){					
 					GObject objTest = obj;
 				}
-				if(getElementAt(x, y) == null){
-					count = 0;
-				}
 				if(count == 3){
 					remove(obj);
 					count = 0;
 				}
+			}
+			if(getElementAt(x, y) == null){
+				count = 0;
 			}
 		}
 	}
