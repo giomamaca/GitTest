@@ -44,6 +44,6 @@ public class MidTerm171 extends GraphicsProgram {
 		}
 	}
 	public void mouseReleased(MouseEvent e){
-		coordinate = e.getX();
+		coordinate = num.getX();
 	}
 }
