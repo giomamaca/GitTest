@@ -12,17 +12,19 @@ public class isAritmeticProgres extends ConsoleProgram{
 		int d = 0;
 		while(true){
 			int a = readInt();
+			a2 = a;
 			count++;
 			if(a == SENTINEL){
 				break;
 			}
 			if(count == 2){
-				d = a - a1;
+				d = a2 - a1;
 			}else{
-				if((a - a1) != d){
+				if((a2 - a1) != d){
 					answer = "not";
 				}
 			}
+			a1 = a2;
 		}
 		print(answer);
 	}
