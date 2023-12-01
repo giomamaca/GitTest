@@ -30,17 +30,7 @@ public class GraphicsPractice extends GraphicsProgram {
 		
 		if(obj == null) return;
 		
-		if(r1 == null && r2 == null){
-			r1 = (GRect) obj;
-			r1.setFilled(true);
-			return;
-		}
-		if(r1 == null && r2 != null){
-			r1 = r2;
-			r2 = obj;
-			r2.setFilled(true);
-			return;
-		}
+		
 		if(obj == r1){
 			r1.setFilled(false);
 			r1 = null;
