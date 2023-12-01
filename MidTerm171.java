@@ -24,7 +24,7 @@ public class MidTerm171 extends GraphicsProgram{
 		
 	}
 	
-	public void mouseDragged(MouseEvent e){
+	public void mouseMoved(MouseEvent e){
 		double x = e.getX();
 		double y = e.getY();
 		
