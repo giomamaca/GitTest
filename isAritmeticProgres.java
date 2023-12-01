@@ -7,6 +7,7 @@ public class isAritmeticProgres extends ConsoleProgram{
 	public void run(){
 		String answer = "correct";
 		int a1 = readInt();
+		int a2 = a1;
 		int count  = 1;
 		int d = 0;
 		while(true){
@@ -16,13 +17,12 @@ public class isAritmeticProgres extends ConsoleProgram{
 				break;
 			}
 			if(count == 2){
-				d = a1 - a;
+				d = a - a1;
 			}else{
 				if((a - a1) != d){
 					answer = "not";
 				}
 			}
-			a1 = a;
 		}
 		print(answer);
 	}
