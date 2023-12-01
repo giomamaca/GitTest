@@ -29,13 +29,15 @@ public class MidTerm193 extends GraphicsProgram {
 			oval.setColor(rgen.nextColor());
 			add(oval);
 		}
-		if(o != null){
-			obj = o;
-			while(obj.getColor() != Color.GREEN){				
-				obj.setColor(randomColor());
-				pause(500);
+		while(true){|			
+			if(o != null){
+				obj = o;
+				while(obj.getColor() != Color.GREEN){				
+					obj.setColor(randomColor());
+					pause(500);
+				}
+				pause(50);
 			}
-			pause(50);
 		}
 	}
 
