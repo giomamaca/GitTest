@@ -38,8 +38,9 @@ public class MidTerm1645 extends GraphicsProgram{
 					GObject objTest = obj;
 					if(getElementAt(x, y) == objTest){
 						count++;
-					}else{
-						count = 1;
+					}
+					if(getElementAt(x, y) != objTest){
+						count = 0;
 					}
 				}
 				if(count == 3){
