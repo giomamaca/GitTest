@@ -19,7 +19,7 @@ public class Practice46 extends ConsoleProgram{
 		int count = 0;
 		int index = 0;
 		while(index != -1){
-			index =str.indexOf(c, index + 1);
+			index =str.indexOf(c, index );
 			count++;
 		}
 		return count - 1;
