@@ -48,7 +48,7 @@ public class MidTerm1635 extends GraphicsProgram{
 				currentCircle = null;
 			}
 			
-			pause(RECHECK_DELAY);
+			
 		}
 	}
 	private Color getRandomColor() {
