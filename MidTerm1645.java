@@ -33,6 +33,7 @@ public class MidTerm1645 extends GraphicsProgram {
 
 		if (getElementAt(x, y) != null) {
 			GObject obj = getElementAt(x, y);
+			System.out.println(obj);
 			if (getElementAt(x, y) == obj) {
 				count++;
 			}
