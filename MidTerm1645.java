@@ -42,7 +42,7 @@ public class MidTerm1645 extends GraphicsProgram {
 				System.out.println(objTest);
 				if(count== 3){
 					remove(objTest);
-					return;
+					count = 0;
 				}
 			}
 			
