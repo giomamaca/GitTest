@@ -8,6 +8,7 @@ import javafx.scene.paint.Color;
 public class MidTerm193 extends GraphicsProgram {
 	private final int CIRCLE_D = 100;
 	private final int DELAY = 100;
+	private final static int N_COLORS = 5;
 	RandomGenerator rgen = new RandomGenerator();
 	
 	private GOval oval;
@@ -38,7 +39,7 @@ public class MidTerm193 extends GraphicsProgram {
 	}
 
 	private java.awt.Color randomColor() {
-		int a = rgen.nextInt(5);
+		int a = rgen.nextInt(N_COLORS);
 		if (a == 0) {
 			return java.awt.Color.GREEN;
 		} else if (a == 1) {
