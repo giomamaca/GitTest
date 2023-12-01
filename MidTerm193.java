@@ -6,8 +6,8 @@ import acm.util.RandomGenerator;
 import javafx.scene.paint.Color;
 
 public class MidTerm193 extends GraphicsProgram {
-	private final int CIRCLE_D = 100;
-	private final int DELAY = 100;
+	private final static int CIRCLE_D = 100;
+	private final static int DELAY = 100;
 	private final static int N_COLORS = 5;
 	RandomGenerator rgen = new RandomGenerator();
 	
@@ -34,6 +34,7 @@ public class MidTerm193 extends GraphicsProgram {
 			obj = o;
 			while(obj.getColor() != java.awt.Color.GREEN){				
 				obj.setColor(randomColor());
+				pause(10);
 			}
 		}
 	}
