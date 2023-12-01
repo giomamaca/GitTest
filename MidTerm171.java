@@ -11,8 +11,8 @@ public class MidTerm171 extends GraphicsProgram {
 	private GRect rect;
 	private GLabel num;
 	private int k = 0;
-	private double coordinate1 = num.getX() - num.getWidth() / 2;
-	private double coordinate2 = coordinate1;
+	private double coordinate1 = 0;
+	private double coordinate2 = 0;
 
 	public void run() {
 		addMouseListeners();
