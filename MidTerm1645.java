@@ -41,15 +41,15 @@ public class MidTerm1645 extends GraphicsProgram {
 				System.out.println(objTest);
 				if(getElementAt(x, y) == objTest){
 					count++;
-					if (count == 3) {
-						remove(obj);
-						count = 0;
-					}
 				}else{
 					if(getElementAt(x, y) != objTest){
 						count = 0;
 						return;
 					}
+				}
+				if (count == 3) {
+					remove(obj);
+					count = 0;
 				}
 			}
 			if (getElementAt(x, y) == null) {
