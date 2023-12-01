@@ -39,6 +39,7 @@ public class MidTerm1645 extends GraphicsProgram {
 					if(getElementAt(x, y) != objTest){
 						count = 0;
 						objTest = null;
+						return;
 					}
 				}
 			}
