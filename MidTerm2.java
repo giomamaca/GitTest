@@ -8,12 +8,11 @@ public class MidTerm2 extends ConsoleProgram {
 	}
 
 	private boolean isFath(String father, String son) {
-		String so = "";
+		String s = "";
 		for (int i = 0; i < son.length(); i++) {
 			for (int j = i+1; j < son.length(); j++) {
-				String s = son.substring(i, j);
-					so = s;
-					if (father.contains(s) && so.length() >= father.length() / 2){ 
+				s = son.substring(i, j);
+					if (father.contains(s) && s.length() >= father.length() / 2){ 
 						return true;
 					}
 			}
