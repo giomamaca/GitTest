@@ -39,10 +39,7 @@ public class MidTerm223 extends GraphicsProgram {
 			r2.setFilled(true);
 			return;
 		}
-		if (r2 == null & r1 != null) {
-			if (obj != null) {
-				r1.setFilled(false);
-			}
+		if (r2 == null && r1 != null) {
 			r2 = r1;
 			r1 = obj;
 			r1.setFilled(true);
