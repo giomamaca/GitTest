@@ -9,27 +9,29 @@ public class MidTerm193 extends GraphicsProgram {
 	private final int CIRCLE_D = 100;
 	private final int DELAY = 100;
 	RandomGenerator rgen = new RandomGenerator();
+	
+	private GOval oval;
+	private GObject obj = null;
 
 	public void run() {
-		drawCircle();
 		addMouseListeners();
-	}
-
-	private void drawCircle() {
-		GOval oval = new GOval (CIRCLE_D, CIRCLE_D);
-		oval.setFilled(true);
-		oval.setColor(rgen.nextColor());
-		add(oval);
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
-		if(getElementAt(x, y) == null){
-			drawCircle();			
-		}
-		if(getElementAt(x, y) != null){
-			
+		
+		GObject o = getElementAt(x, y);
+		
+		if(o == null){			
+			oval = new GOval (x, y, CIRCLE_D, CIRCLE_D);
+			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
+			add(oval);
+		}else{
+			if(obj == null){
+				obj = (GOval) o;
+			}
 		}
 	}
 
