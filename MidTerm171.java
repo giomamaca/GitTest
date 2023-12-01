@@ -24,11 +24,10 @@ public class MidTerm171 extends GraphicsProgram{
 		
 	}
 	
-	public void mouseMoved(MouseEvent e){
+	public void mouseDragged(MouseEvent e){
 		double x = e.getX();
 		double y = e.getY();
 		
-		while(getElementAt(x, y) == rect){
 			double moveX = e.getX() + SIZE / 2;
 			rect.setLocation(moveX, e.getY() + SIZE / 2);
 //			if( k != 9){				
@@ -41,6 +40,6 @@ public class MidTerm171 extends GraphicsProgram{
 //					X = rect.getX() + SIZE / 2;
 //				}
 //			}
-		}
+		
 	}
 }
