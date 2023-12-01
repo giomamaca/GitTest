@@ -3,6 +3,7 @@ import java.awt.Color;
 import acm.graphics.*;
 import acm.program.GraphicsProgram;
 import acm.util.RandomGenerator;
+import javafx.scene.paint.Color;
 
 public class MidTerm193 extends GraphicsProgram {
 	private final static int CIRCLE_D = 100;
@@ -29,29 +30,26 @@ public class MidTerm193 extends GraphicsProgram {
 			oval.setColor(rgen.nextColor());
 			add(oval);
 		}
-		while(true){|			
-			if(o != null){
-				obj = o;
-				while(obj.getColor() != Color.GREEN){				
-					obj.setColor(randomColor());
-					pause(500);
-				}
-				pause(50);
+		if(o != null){
+			obj = o;
+			while(obj.getColor() != java.awt.Color.GREEN){				
+				obj.setColor(randomColor());
+				pause(100);
 			}
 		}
 	}
 
-	private Color randomColor() {
+	private java.awt.Color randomColor() {
 		int a = rgen.nextInt(N_COLORS);
 		if (a == 0) {
-			return Color.GREEN;
+			return java.awt.Color.GREEN;
 		} else if (a == 1) {
-			return Color.RED;
+			return java.awt.Color.RED;
 		} else if (a == 2) {
-			return Color.BLUE;
+			return java.awt.Color.BLUE;
 		} else if (a == 3) {
-			return Color.BLACK;
+			return java.awt.Color.BLACK;
 		}
-			return Color.YELLOW;
+			return java.awt.Color.YELLOW;
 	}
 }
