@@ -63,8 +63,7 @@ public class MidTerm1635 extends GraphicsProgram{
 	 */
 	private void makeCircleFlicker(GOval circle) {
 		while(circle.getColor() != Color.GREEN) {
-			Color randomColor = getRandomColor();
-			circle.setColor(randomColor);
+			circle.setColor(getRandomColor());
 			pause(DELAY);
 		}
 	}
