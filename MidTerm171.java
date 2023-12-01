@@ -11,8 +11,8 @@ public class MidTerm171 extends GraphicsProgram {
 	private GRect rect;
 	private GLabel num;
 	private int k = 0;
-	private double cen1 = getWidth() / 2 - SIZE / 2;
-	private double cen2 = getHeight() / 2 - SIZE / 2;
+	public double cen1 = getWidth() / 2 - SIZE / 2;
+	public double cen2 = getHeight() / 2 - SIZE / 2;
 
 	public void run() {
 		addMouseListeners();
