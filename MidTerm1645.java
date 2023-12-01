@@ -43,6 +43,7 @@ public class MidTerm1645 extends GraphicsProgram{
 						count = 0;
 						obj = null;
 					}
+					count = 0;
 				}
 				if(count == 3){
 					remove(obj);
