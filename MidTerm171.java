@@ -11,8 +11,8 @@ public class MidTerm171 extends GraphicsProgram {
 	private GRect rect;
 	private GLabel num;
 	private int k = 0;
-	private double coordinate1 = 0;
-	private double coordinate2 = 0;
+	private double coordinate1 = coordinate1 = num.getX() - num.getWidth() / 2;
+	private double coordinate2 = coordinate1;
 
 	public void run() {
 		addMouseListeners();
@@ -33,9 +33,7 @@ public class MidTerm171 extends GraphicsProgram {
 		rect.setLocation(moveX, mouseY - SIZE / 2);
 		num.setLocation(mouseX - num.getWidth() / 2, mouseY + num.getAscent() / 2);
 		if (k != 9) {
-			coordinate1 = num.getX() - num.getWidth() / 2;
-			coordinate2 = 0;
-			System.out.println(coordinate1);
+			System.out.println(coordinate2);
 //			if ((num.getX() - num.getWidth() / 2) > coordinate1) {
 //				k++;
 //				coordinate1 = num.getX() - num.getWidth() / 2;
