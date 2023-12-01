@@ -34,6 +34,7 @@ public class MidTerm171 extends GraphicsProgram {
 		num.setLocation(mouseX - num.getWidth() / 2, mouseY + num.getAscent() / 2);
 		if (k != 9) {
 			coordinate1 = num.getX() - num.getWidth() / 2;
+			coordinate2 = coordinate1;
 			System.out.println(coordinate2);
 //			if ((num.getX() - num.getWidth() / 2) > coordinate1) {
 //				k++;
