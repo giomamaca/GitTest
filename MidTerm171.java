@@ -18,13 +18,28 @@ public class MidTerm171 extends GraphicsProgram {
 		addMouseListeners();
 
 		rect = new GRect(cen1, cen2, SIZE, SIZE);
-		num = new GLabel("da");
-		add(num, cen1 - num.getWidth() / 2, cen2 + num.getAscent() / 2);
+//		num = new GLabel("da");
+//		add(num, cen1 - num.getWidth() / 2, cen2 + num.getAscent() / 2);
 		add(rect);
 
 		System.out.println(k);
 	}
 
-	
-	
+	public void mouseDragged(MouseEvent e) {
+		double x = e.getX();
+		double y = e.getY();
+
+		double moveX = x - SIZE / 2;
+		rect.setLocation(moveX, y - SIZE / 2);
+		if (k != 9) {
+			if ((rect.getX() + SIZE / 2) > X) {
+				k++;
+				X = rect.getX() + SIZE / 2;
+			}
+			if ((rect.getX() + SIZE / 2) < X) {
+				k--;
+				X = rect.getX() + SIZE / 2;
+			}
+		}
+	}
 }
