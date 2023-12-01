@@ -8,7 +8,7 @@ public class GraphicsPractice extends GraphicsProgram {
 	
 	private static final double SIZE = 50;
 	
-	private GRect r1;
+	private GRect last;
 	private GRect r2;
 	
 	public void run(){
@@ -30,22 +30,22 @@ public class GraphicsPractice extends GraphicsProgram {
 		
 		if(obj == null) return;
 		
-		
-		if(obj == r1){
-			r1.setFilled(false);
-			r1 = null;
+		if(obj == last){
+			last.setFilled(false);
+			last = r2;
+			r2 = null;
 			return;
 		}
 		if(obj == r2){
 			r2.setFilled(false);
-			r2 = r1;
-			r1 = obj;
+			r2 = null;
 			return;
 		}
-		r1.setFilled(false);
-		r1 = r2;
-		r2 = obj;
-		r2.setFilled(true);
-		
+		if(r2 != null){
+			r2.setFilled(false);
+		}
+		obj.setFilled(true);
+		r2 = last;
+		last = obj;
 	}
 }
