@@ -30,10 +30,6 @@ public class MidTerm171 extends GraphicsProgram {
 		double moveX = mouseX - SIZE / 2;
 		rect.setLocation(moveX, mouseY - SIZE / 2);
 		num.setLocation(mouseX - num.getWidth() / 2, mouseY + num.getAscent() / 2);
-		System.out.println(k);
-		System.out.println(coordinate);
-		System.out.println(mouseX);
-		System.out.println("----");
 		if(mouseX > coordinate && k < 9){
 			k++;
 			num.setLabel("" + k);
@@ -42,8 +38,7 @@ public class MidTerm171 extends GraphicsProgram {
 			k--;
 			num.setLabel("" + k);
 		}
+		coordinate = e.getX();
 	}
-	public void mouseReleased(MouseEvent e){
-		coordinate = num.getX();
-	}
+	
 }
