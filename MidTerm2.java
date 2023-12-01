@@ -11,8 +11,9 @@ public class MidTerm2 extends ConsoleProgram {
 		String so = "";
 		for (int i = 0; i < son.length(); i++) {
 			for (int j = i+1; j < son.length(); j++) {
-				 so = son.substring(i, j);
-					if (father.contains(so) && so.length() >= father.length() / 2){ 
+				String s = son.substring(i, j);
+					so = s;
+					if (father.contains(s) && so.length() >= father.length() / 2){ 
 						return true;
 					}
 			}
