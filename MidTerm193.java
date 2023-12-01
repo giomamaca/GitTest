@@ -41,7 +41,6 @@ public class MidTerm193 extends GraphicsProgram {
 
 	private Color randomColor() {
 		int a = rgen.nextInt(N_COLORS);
-		System.out.println(a);
 		if (a == 0) {
 			return Color.GREEN;
 		} else if (a == 1) {
