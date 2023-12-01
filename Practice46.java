@@ -7,10 +7,6 @@ public class Practice46 extends ConsoleProgram{
 		int max = 1;
 		int min = 0;
 		
-		if(min > max){
-			max = min;
-			min = 0;
-		}
 		
 		for(int i = 0; i < s.length(); i++){
 			char a = s.charAt(i);
@@ -20,6 +16,10 @@ public class Practice46 extends ConsoleProgram{
 					min++;
 				}
 			}
+		}
+		if(min > max){
+			max = min;
+			min = 0;
 		}
 		println(max);
 	}
