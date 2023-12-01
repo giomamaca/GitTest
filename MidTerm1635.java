@@ -12,60 +12,38 @@ public class MidTerm1635 extends GraphicsProgram{
 
 	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
-	// Which circle do we want to flicker right now?
 	private GOval currentCircle = null;
 	
 	public void run(){
 		addMouseListeners();
-		makeCirclesFlicker();
+
 	}
 	
 	public void mouseClicked(MouseEvent e) {
 		GObject el = getElementAt(e.getX(), e.getY());
 		
 		if(el == null) {
-			// Clicked on empty space
 			drawCircle(e.getX(), e.getY());
 		} else {
-			// Another circle should not be flickering
 			if(currentCircle == null) {
-				// Clicked on a circle
 				currentCircle = (GOval)el;
 			}
+		}
+		if(currentCircle != null) {
+			while(currentCircle.getColor() != Color.GREEN) {
+				currentCircle.setColor(getRandomColor());
+				pause(DELAY);
+			}
+			currentCircle = null;
 		}
 		
 	}
 	
-	/**
-	 * Draws a circle with a random color
-	 */
 	private void drawCircle(double x, double y) {
 		GOval circle = new GOval(CIRCLE_D, CIRCLE_D);
 		circle.setFilled(true);
 		circle.setColor(rgen.nextColor());
 		add(circle, x - CIRCLE_D / 2, y - CIRCLE_D / 2);
-	}
-	private void makeCirclesFlicker() {
-		while(true) {
-			if(currentCircle != null) {
-				makeCircleFlicker(currentCircle);
-				// Wait for the next circle
-				currentCircle = null;
-			}
-			
-			pause(RECHECK_DELAY);
-		}
-	}
-	
-	/**
-	 * Makes the circle flicker until it's green
-	 * @param circle
-	 */
-	private void makeCircleFlicker(GOval circle) {
-		while(circle.getColor() != Color.GREEN) {
-			circle.setColor(getRandomColor());
-			pause(DELAY);
-		}
 	}
 	
 	private Color getRandomColor() {
