@@ -25,8 +25,9 @@ public class MidTerm193 extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
-		
-		drawCircle();
+		if(getElementAt(x, y) == null){
+			drawCircle();			
+		}
 		if(getElementAt(x, y) != null){
 			
 		}
