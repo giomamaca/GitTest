@@ -17,7 +17,7 @@ public class MidTerm171 extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
 
-		GRect rect = new GRect(getWidth() / 2 - SIZE / 2, getHeight() / 2 - SIZE / 2, SIZE, SIZE);
+		rect = new GRect(getWidth() / 2 - SIZE / 2, getHeight() / 2 - SIZE / 2, SIZE, SIZE);
 		num = new GLabel("da");
 		add(num, getWidth() / 2 - num.getWidth() / 2, getHeight() / 2 + num.getAscent() / 2);
 		add(rect);
