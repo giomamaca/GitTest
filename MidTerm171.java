@@ -38,7 +38,8 @@ public class MidTerm171 extends GraphicsProgram {
 			k--;
 			num.setLabel("" + k);
 		}
-		coordinate = e.getX();
 	}
-	
+	public void mouseReleased(MouseEvent e){
+		coordinate = num.getX();
+	}
 }
