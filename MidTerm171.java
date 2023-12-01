@@ -29,8 +29,8 @@ public class MidTerm171 extends GraphicsProgram {
 		double x = e.getX();
 		double y = e.getY();
 
-		double moveX = e.getX() - SIZE / 2;
-		rect.setLocation(moveX, e.getY() - SIZE / 2);
+		double moveX = x - SIZE / 2;
+		rect.setLocation(moveX, y - SIZE / 2);
 		if (k != 9) {
 			if ((rect.getX() + SIZE / 2) > X) {
 				k++;
