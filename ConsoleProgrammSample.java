@@ -18,5 +18,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		}
 		print(s);
 		
+		
 	}
 }
