@@ -13,7 +13,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		String s = "fshdfbasffsafsaf";
 		for(int i = 0; i< s.length(); i++){
-			String sub1 = s.substring(1,7);
+			String sub1 = s.substring(1,4);
 			s =  sub1;
 		}
 		print(s);
