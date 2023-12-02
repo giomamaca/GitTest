@@ -37,6 +37,8 @@ public class MidTerm173 extends ConsoleProgram {
 							ga = 0;
 							return true;
 						}
+						System.out.println(ba);
+						System.out.println(ga);
 					}
 				}
 			}
