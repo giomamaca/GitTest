@@ -1,29 +1,26 @@
 import acm.program.ConsoleProgram;
 
-public class MidTerm173 extends ConsoleProgram {
-	public void run() {
+public class MidTerm173 extends ConsoleProgram{
+	public void run(){
 		String gamarjoba = readLine();
 		String baro = readLine();
 		println(isIn(gamarjoba, baro));
-
+		
 	}
 
 	private boolean isIn(String gamarjoba, String baro) {
 		String sub = gamarjoba;
-		String dzma = baro;
-		int n = baro.length();
-
-		for (int i = 0; i < dzma.length(); i++) {
-			char bar = dzma.charAt(i);
-			for (int j = 0; j < sub.length(); j++) {
+		String dzm = baro;
+		
+		for(int i = 0; i< dzm.length(); i++){
+			char bar = dzm.charAt(i);
+			for(int j = 0; j < sub.length(); j++){
 				char gam = sub.charAt(j);
-				if (bar == gam) {
-					String s = sub.substring(0, j) + sub.substring(j + 1);
-					sub = s;
-					String b = dzma.substring(0, i) + dzma.substring(i + 1);
-					dzma = b;
+				if(bar == gam){
+					sub = sub.substring(0, j) + sub.substring(j + 1);
+					dzm = dzm.substring(0, i) + dzm.substring(i + 1);
+					return true;
 				}
-				System.out.println(sub);
 			}
 		}
 		return false;
