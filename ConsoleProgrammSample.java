@@ -14,6 +14,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		String s = "fshdfbasf";
 		for(int i = 0; i< s.length(); i++){
 			String sub = s.substring(4);
+			s = sub;
 		}
+		print(s);
 	}
 }
