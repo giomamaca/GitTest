@@ -9,13 +9,14 @@ public class MidTerm173 extends ConsoleProgram{
 	}
 
 	private boolean isIn(String gamarjoba, String baro) {
-		String sub = "";
+		String sub = gamarjoba;
 		
 		for(int i = 0; i< baro.length(); i++){
 			char bar = baro.charAt(i);
-			for(int j = 0; j < gamarjoba.length(); j++){
-				char gam = gamarjoba.charAt(j);
+			for(int j = 0; j < sub.length(); j++){
+				char gam = sub.charAt(j);
 				if(bar == gam){
+					String s = sub.substring(0, j) + sub.substring(j+1); 
 					return true;
 				}
 			}
