@@ -31,9 +31,9 @@ public class MidTerm173 extends ConsoleProgram {
 					for(int l = 0; l < bar.length(); l++){
 						if(bar.charAt(l) == x){
 							ba++;
+							System.out.println(ba);
+							System.out.println(ga);
 						}
-						System.out.println(ba);
-						System.out.println(ga);
 						if(ba <= ga){
 							ba = 0;
 							ga = 0;
