@@ -25,9 +25,6 @@ public class MidTerm173 extends ConsoleProgram {
 				}
 				System.out.println(sub);
 			}
-			if(dzma == null){
-				return true;
-			}
 		}
 		return false;
 	}
