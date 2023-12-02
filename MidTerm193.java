@@ -15,6 +15,7 @@ public class MidTerm193 extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
+		pause(50);
 	}
 
 	public void mouseClicked(MouseEvent e) {
@@ -33,9 +34,8 @@ public class MidTerm193 extends GraphicsProgram {
 			obj = o;
 			while(obj.getColor() != Color.GREEN){				
 				obj.setColor(randomColor());
-				pause(300);
 			}
-			pause(50);
+			pause(300);
 		}
 	}
 
