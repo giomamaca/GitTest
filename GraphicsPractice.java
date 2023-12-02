@@ -35,7 +35,7 @@ public class GraphicsPractice extends GraphicsProgram {
 		if(obj == last){
 			last.setFilled(false);
 			last = r2;
-			r2 = null;
+			
 			return;
 		}
 		if(obj == r2){
