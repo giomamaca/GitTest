@@ -22,5 +22,6 @@ public class texili extends GraphicsProgram{
 		startX = e.getX();
 		startY = e.getY();
 	}
+	pu
 	
 }
