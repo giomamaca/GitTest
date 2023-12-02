@@ -21,9 +21,9 @@ public class MidTerm173 extends ConsoleProgram {
 					
 				}
 			}
-		}
-		if(bar != null){
-			return false;			
+			if(bar != null){
+				return false;			
+			}
 		}
 		return true;
 	}
