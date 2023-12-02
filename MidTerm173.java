@@ -20,6 +20,9 @@ public class MidTerm173 extends ConsoleProgram {
 					gam = gam.substring(0, j) + gam.substring(j + 1);
 					System.out.println(bar);
 					System.out.println(gam);
+					if(bar != null){
+						return false;
+					}
 				}
 			}
 		}
