@@ -32,7 +32,9 @@ public class MidTerm173 extends ConsoleProgram {
 						if(bar.charAt(l) == x){
 							ba++;
 						}
-						if(ba == ga){
+						if(ba <= ga){
+							ba = 0;
+							ga = 0;
 							return true;
 						}
 					}
