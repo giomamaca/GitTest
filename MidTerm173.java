@@ -10,6 +10,7 @@ public class MidTerm173 extends ConsoleProgram{
 
 	private boolean isIn(String gamarjoba, String baro) {
 		String sub = gamarjoba;
+		System.out.println(sub);
 		
 		for(int i = 0; i< baro.length(); i++){
 			char bar = baro.charAt(i);
@@ -22,7 +23,6 @@ public class MidTerm173 extends ConsoleProgram{
 				}
 			}
 		}
-		System.out.println(sub);
 		return false;
 	}
 }
