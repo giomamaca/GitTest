@@ -15,6 +15,9 @@ public class MidTerm173 extends ConsoleProgram {
 			char x = bar.charAt(i);
 			for (int j = 0; j < gam.length(); j++) {
 				char y = gam.charAt(j);
+				
+				if(x != y) return false;
+				
 				if (x == y) {
 					bar = bar.substring(0, i) + bar.substring(i + 1);
 					gam = gam.substring(0, j) + gam.substring(j + 1);
