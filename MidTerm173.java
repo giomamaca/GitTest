@@ -4,11 +4,7 @@ public class MidTerm173 extends ConsoleProgram{
 	public void run(){
 		String gamarjoba = readLine();
 		String baro = readLine();
-		println(isIn(gamarjoba, baro));
-		
-	}
-
-	private boolean isIn(String gamarjoba, String baro) {
+	
 		String sub = gamarjoba;
 		String dzm = baro;
 		
@@ -22,6 +18,5 @@ public class MidTerm173 extends ConsoleProgram{
 				}
 			}
 		}
-		return false;
 	}
 }
