@@ -17,7 +17,10 @@ public class texili extends GraphicsProgram{
 		line = new GLine(startX, startY, e.getX(), e.getY());
 		add(line);
 		
+		line.setEndPoint(e.getX(), e.getY());
+		
 		startX = e.getX();
 		startY = e.getY();
 	}
+	
 }
