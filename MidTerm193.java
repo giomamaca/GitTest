@@ -49,9 +49,10 @@ public class MidTerm193 extends GraphicsProgram {
 	private void flick(){
 		while(obj.getColor() != Color.GREEN){				
 			obj.setColor(randomColor());
+			pause(DELAY);
 		}
 		flickering = false;
-		pause(DELAY);
+		
 	}
 
 	private Color randomColor() {
