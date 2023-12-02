@@ -13,12 +13,11 @@ public class texili extends GraphicsProgram{
 	public void run(){
 		addMouseListeners();
 	}
-	public void mouseClicked(MouseEvent e){
+	public void mouseDragged(MouseEvent e){
 		line = new GLine(startX, startY, e.getX(), e.getY());
 		add(line);
 		
 		startX = e.getX();
 		startY = e.getY();
-		
 	}
 }
