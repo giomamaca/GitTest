@@ -24,7 +24,7 @@ public class MidTerm173 extends ConsoleProgram {
 				
 				if (x == y) {
 					for(int k = 0; k < gam.length(); k++){
-						if(bar.charAt(k) == x){
+						if(gam.charAt(k) == x){
 							ga++;
 						}
 					}
