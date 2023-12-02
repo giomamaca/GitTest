@@ -16,7 +16,6 @@ public class MidTerm173 extends ConsoleProgram {
 			for (int j = 0; j < gam.length(); j++) {
 				char y = gam.charAt(j);
 				if (x == y) {
-					bar = bar.substring(0, i) + bar.substring(i + 1);
 					gam = gam.substring(0, j) + bar.substring(j + 1);
 					System.out.println(bar);
 					System.out.println(gam);
