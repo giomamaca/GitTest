@@ -32,13 +32,13 @@ public class MidTerm173 extends ConsoleProgram {
 						if(bar.charAt(l) == x){
 							ba++;
 						}
+						System.out.println(ba);
+						System.out.println(ga);
 						if(ba <= ga){
 							ba = 0;
 							ga = 0;
 							return true;
 						}
-						System.out.println(ba);
-						System.out.println(ga);
 					}
 				}
 			}
