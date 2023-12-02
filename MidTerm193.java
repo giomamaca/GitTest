@@ -6,7 +6,7 @@ import acm.util.RandomGenerator;
 
 public class MidTerm193 extends GraphicsProgram {
 	private final static int CIRCLE_D = 100;
-	private final static int DELAY = 100;
+	private final static int DELAY = 1000;
 	private final static int N_COLORS = 5;
 	RandomGenerator rgen = new RandomGenerator();
 	
@@ -51,7 +51,7 @@ public class MidTerm193 extends GraphicsProgram {
 			obj.setColor(randomColor());
 		}
 		flickering = false;
-		pause(5000);
+		pause(DELAY);
 	}
 
 	private Color randomColor() {
