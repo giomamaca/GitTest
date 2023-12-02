@@ -8,14 +8,14 @@ public class MidTerm223 extends GraphicsProgram {
 
 	private static final double SIZE = 50;
 
-	private GRect r1 = null;
+	private GRect last = null;
 	private GRect r2 = null;
 
-	public void run() {
+	public void run(){
 		drawBoard();
 		addMouseListeners();
 	}
-
+	
 	private void drawBoard() {
 		for (int i = 0; i < 8; i++) {
 			for (int j = 0; j < 8; j++) {
@@ -26,39 +26,28 @@ public class MidTerm223 extends GraphicsProgram {
 			}
 		}
 	}
-
-	public void mouseClicked(MouseEvent e) {
-		double x = e.getX();
-		double y = e.getY();
-
-		GRect obj = (GRect) getElementAt(x, y);
-		if (obj == null)
-			return;
-		if (r1 == null && r2 == null) {
-			r2 = obj;
-			r2.setFilled(true);
-			return;
-		}
-		if (r2 == null && r1 != null) {
-			r2 = r1;
-			r1 = obj;
-			r1.setFilled(true);
+	
+	public void mouseClicked(MouseEvent e){
+		GRect obj = (GRect) getElementAt(e.getX(), e.getY());
+		
+		if(obj == null) return;
+		
+		if(obj == last){
+			last.setFilled(false);
+			last = r2;
+			r2 = null;
 			return;
 		}
-		if (obj == r2) {
+		if(obj == r2){
 			r2.setFilled(false);
 			r2 = null;
 			return;
 		}
-		if (obj == r1) {
-			r1.setFilled(false);
-			r1 = r2;
-			r2 = null;
-			return;
+		if(r2 != null){
+			r2.setFilled(false);
 		}
-		r2.setFilled(false);
-		r2 = r1;
-		r1 = obj;
-		r1.setFilled(true);
+		obj.setFilled(true);
+		r2 = last;
+		last = obj;
 	}
 }
