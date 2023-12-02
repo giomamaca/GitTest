@@ -10,19 +10,22 @@ public class MidTerm173 extends ConsoleProgram {
 
 	private boolean isIn(String gamarjoba, String baro) {
 		String sub = gamarjoba;
+		String dzma = baro;
 		int n = baro.length();
 
-		for (int i = 0; i < baro.length(); i++) {
-			char bar = baro.charAt(i);
+		for (int i = 0; i < dzma.length(); i++) {
+			char bar = dzma.charAt(i);
 			for (int j = 0; j < sub.length(); j++) {
 				char gam = sub.charAt(j);
 				if (bar == gam) {
 					String s = sub.substring(0, j) + sub.substring(j + 1);
 					sub = s;
-
-					return true;
+					String b = dzma.substring(0, i) + dzma.substring(i + 1);
 				}
 				System.out.println(sub);
+			}
+			if(dzma == null){
+				return true;
 			}
 		}
 		return false;
