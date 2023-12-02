@@ -10,11 +10,21 @@ public class MidTerm193 extends GraphicsProgram {
 	private final static int N_COLORS = 5;
 	RandomGenerator rgen = new RandomGenerator();
 	
+	private boolean flickering = false;
+	
+	private GOval currentOval;
+	
 	private GOval oval;
 	private GObject obj = null;
 
 	public void run() {
 		addMouseListeners();
+		while(true){
+			if(flickering){
+				flick();
+			}
+			pause(1);
+		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
@@ -31,11 +41,17 @@ public class MidTerm193 extends GraphicsProgram {
 		}
 		if(o != null){
 			obj = o;
-			while(obj.getColor() != Color.GREEN){				
-				obj.setColor(randomColor());
-			}
-			pause(5000);
+			flickering = true;
+			
 		}
+	}
+	
+	private void flick(){
+		while(obj.getColor() != Color.GREEN){				
+			obj.setColor(randomColor());
+		}
+		flickering = false;
+		pause(5000);
 	}
 
 	private Color randomColor() {
