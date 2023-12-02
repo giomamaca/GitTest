@@ -8,15 +8,15 @@ public class MidTerm173 extends ConsoleProgram {
 	}
 
 	private boolean isIn(String a, String b) {
-		String gam = a;
-		String bar = b;
+		String gam = "";
+		String bar = "";
 
 		for (int i = 0; i < bar.length(); i++) {
 			char x = bar.charAt(i);
 			for (int j = 0; j < gam.length(); j++) {
 				char y = gam.charAt(j);
 				if (x == y) {
-					gam = gam.substring(0, j) + bar.substring(j + 1);
+					gam = gam.substring(0, j) + gam.substring(j + 1);
 					System.out.println(bar);
 					System.out.println(gam);
 				}
