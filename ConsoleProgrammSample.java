@@ -15,7 +15,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		for(int i = 0; i< s.length(); i++){
 			String sub = s.substring(0,4);
 			String sub1 = s.substring(5,s.length());
-			s = sub + sub1;
+			s =  sub1;
 		}
 		print(s);
 	}
