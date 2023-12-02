@@ -17,5 +17,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 			s =  sub1;
 		}
 		print(s);
+		
 	}
 }
