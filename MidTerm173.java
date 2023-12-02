@@ -16,9 +16,9 @@ public class MidTerm173 extends ConsoleProgram{
 			char bar = dzm.charAt(i);
 			for(int j = 0; j < sub.length(); j++){
 				char gam = sub.charAt(j);
-				if(sub.contains(gam)){
+				if(bar == gam){
 					sub = sub.substring(0, i) + sub.substring(i + 1);
-					
+					System.out.println(sub);
 				}
 			}
 		}
