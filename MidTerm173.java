@@ -18,11 +18,10 @@ public class MidTerm173 extends ConsoleProgram {
 				if (x == y) {
 					bar = bar.substring(0, i) + bar.substring(i + 1);
 					gam = gam.substring(0, j) + bar.substring(j + 1);
-					
+					if(bar != null){
+						return false;			
+					}					
 				}
-			}
-			if(bar != null){
-				return false;			
 			}
 		}
 		return true;
