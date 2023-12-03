@@ -16,10 +16,12 @@ public class random extends GraphicsProgram{
 		double coordX = rgen.nextDouble(0, getWidth() - radius);
 		double coordY = rgen.nextDouble(0, getHeight() - radius);
 		
-		for(int i = 0; i < 25; i++){
-			oval = new GOval(coordX, coordY, radius, radius);
-			oval.setFilled(true);
-			add(oval);
+		while(true){
+			for(int i = 0; i < 25; i++){
+				oval = new GOval(coordX, coordY, radius, radius);
+				oval.setFilled(true);
+				add(oval);
+			}			
 		}
 	}
 }
