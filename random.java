@@ -32,7 +32,7 @@ public class random extends GraphicsProgram {
 		while (true) {
 			if (mv) {
 				while(true){
-					obj.move(0, 100);					
+					obj.move(0, 3);					
 				}
 			}
 		}
@@ -49,6 +49,7 @@ public class random extends GraphicsProgram {
 		if (o == null) {
 			mv = true;
 			obj = null;
+			System.out.println(mv);
 		}
 	}
 }
