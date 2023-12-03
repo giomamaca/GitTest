@@ -66,6 +66,7 @@ public class MidTerm1625 extends GraphicsProgram{
 			o1 = null;
 			o2 = null;
 		}else{
+			o1 = null;
 			o2 = null;
 		}
 	}
