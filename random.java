@@ -40,8 +40,7 @@ public class random extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		GObject o = getElementAt(e.getX(), e.getY());
 
-		if (o == null && obj == null)
-			return;
+
 
 		if (o != null) {
 			obj = o;
