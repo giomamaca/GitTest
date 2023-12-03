@@ -15,7 +15,7 @@ public class Practice50 extends ConsoleProgram{
 		StringTokenizer tokenizer = new StringTokenizer(s, " ");
 		int count = 1;
 		while(tokenizer.hasMoreTokens()){
-			println("Token #" + count + ":" + tokenizer.nextToken());
+			println(tokenizer.nextToken());
 			count++;
 		}
 	}
