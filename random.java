@@ -10,15 +10,28 @@ public class random extends GraphicsProgram {
 	private static final double MAX_RADIUS = 80;
 	private GOval oval;
 
-	private GObject obj;
 
-	private boolean mv = false;
+	private GOval lastClick = null;
+	private GOval moving = null;
 
 	RandomGenerator rgen = new RandomGenerator();
 
 	public void run() {
 		addMouseListeners();
+		drawBalls();
+		movingBall();
+	}
 
+	private void movingBall() {
+		while(true){
+			if(moving != null){
+				moving.move(0, 3);
+			}
+			pause(10);
+		}
+	}
+
+	private void drawBalls() {
 		for (int i = 0; i < 25; i++) {
 			double radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
 			double coordX = rgen.nextDouble(0, getWidth() - radius);
@@ -28,30 +41,19 @@ public class random extends GraphicsProgram {
 			oval.setColor(rgen.nextColor());
 			add(oval);
 		}
-
-		while (true) {
-			if (mv) {
-				while(true){
-					obj.move(0, 3);					
-				}
-			}
-		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
 		GObject o = getElementAt(e.getX(), e.getY());
 
 		if (o != null) {
-			obj = o;
-			obj.setColor(rgen.nextColor());
-			mv = false;
-			System.out.println(obj);
-			System.out.println(mv);
-		}
-		if (o == null) {
-			mv = true;
-			obj = null;
-			System.out.println(mv);
+			lastClick = (GOval) o;
+			lastClick.setColor(rgen.nextColor());
+			moving = null;
+		}else{	
+			if (lastClick != null) {
+				moving = lastClick;
+			}
 		}
 	}
 }
