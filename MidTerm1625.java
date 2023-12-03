@@ -33,7 +33,7 @@ public class MidTerm1625 extends GraphicsProgram{
 			
 			oval = new GOval(corX, corY, CIRCLE_D,CIRCLE_D);
 			oval.setFilled(true);
-			oval.setColor(Color.RED));
+			oval.setColor(Color.RED);
 			add(oval);
 		}
 		while(true){
