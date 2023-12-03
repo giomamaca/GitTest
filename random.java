@@ -51,6 +51,6 @@ public class random extends GraphicsProgram {
 		if (o == null && obj != null) {
 			mv = true;
 		}
-		obj = null;
+		
 	}
 }
