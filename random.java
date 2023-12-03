@@ -18,12 +18,12 @@ public class random extends GraphicsProgram {
 
 	public void run() {
 		addMouseListeners();
-		double radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
-		double coordX = rgen.nextDouble(0, getWidth() - radius);
-		double coordY = rgen.nextDouble(0, getHeight() - radius);
 
 		for (int i = 0; i < 25; i++) {
-			oval = new GOval(rgen.nextDouble(),rgen.nextDouble(), radius, radius);
+			double radius = rgen.nextDouble(MIN_RADIUS, MAX_RADIUS);
+			double coordX = rgen.nextDouble(0, getWidth() - radius);
+			double coordY = rgen.nextDouble(0, getHeight() - radius);
+			oval = new GOval(coordX, coordY, radius, radius);
 			oval.setFilled(true);
 			add(oval);
 		}
