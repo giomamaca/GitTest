@@ -30,14 +30,10 @@ public class random extends GraphicsProgram {
 		}
 
 		while (true) {
-			moveball();
-		}
-	}
-
-	private void moveball() {
-		if (mv) {
-			while(true){
-				obj.move(0, 3);					
+			if (mv) {
+				while(true){
+					obj.move(0, 3);					
+				}
 			}
 		}
 	}
@@ -54,7 +50,7 @@ public class random extends GraphicsProgram {
 		}
 		if (o == null) {
 			mv = true;
-
+			obj = null;
 			System.out.println(mv);
 		}
 	}
