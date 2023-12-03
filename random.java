@@ -30,10 +30,14 @@ public class random extends GraphicsProgram {
 		}
 
 		while (true) {
-			if (mv) {
-				while(true){
-					obj.move(0, 3);					
-				}
+			moveball();
+		}
+	}
+
+	private void moveball() {
+		if (mv) {
+			while(true){
+				obj.move(0, 3);					
 			}
 		}
 	}
