@@ -30,8 +30,10 @@ public class random extends GraphicsProgram {
 
 		while (true) {
 			if (mv) {
-				obj.move(0, 3);
-				pause(10);
+				while(true){
+					obj.move(0, 3);
+					pause(10);					
+				}
 			}
 		}
 
@@ -48,7 +50,7 @@ public class random extends GraphicsProgram {
 			obj.setColor(rgen.nextColor());
 			mv = false;
 		}
-		if (o == null) {
+		if (o == null && obj != null) {
 			mv = true;
 			obj = null;
 		}
