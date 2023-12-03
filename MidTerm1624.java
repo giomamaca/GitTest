@@ -14,6 +14,7 @@ public class MidTerm1624 extends ConsoleProgram{
 		
 		while(tok.hasMoreTokens()){
 			String s = tok.nextToken();
+			String s1 = "";
 			for(int i = 0; i < s.length(); i++){
 				char a = s.charAt(i);
 				char b = s.charAt(i -1);
@@ -21,8 +22,11 @@ public class MidTerm1624 extends ConsoleProgram{
 				if(a == b){
 					String sub1 = s.substring(0, i - 1);
 					String sub2 = s.substring(i);
-					answer = sub1 + sub2;
+					s1 = sub1 + sub2;
+				}else{
+					answer += s;
 				}
+				answer += s1;
 			}
 		}
 		return answer;
