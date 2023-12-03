@@ -30,8 +30,15 @@ public class MidTerm1625 extends GraphicsProgram{
 		for(int i = 0; i < CIRCLE_NUM; i++){
 			double corX = rgen.nextDouble(0, getWidth() - CIRCLE_D);
 			double corY = rgen.nextDouble(0, getHeight() - CIRCLE_D);
+			double corX1 = rgen.nextDouble(0, getWidth() - CIRCLE_D);
+			double corY1 = rgen.nextDouble(0, getHeight() - CIRCLE_D);
 			
 			oval = new GOval(corX, corY, CIRCLE_D,CIRCLE_D);
+			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
+			add(oval);
+			
+			oval = new GOval(corX1, corY1, CIRCLE_D,CIRCLE_D);
 			oval.setFilled(true);
 			oval.setColor(rgen.nextColor());
 			add(oval);
@@ -70,4 +77,5 @@ public class MidTerm1625 extends GraphicsProgram{
 			o2 = null;
 		}
 	}
+	
 }
