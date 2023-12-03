@@ -46,6 +46,7 @@ public class random extends GraphicsProgram {
 			obj.setColor(rgen.nextColor());
 			mv = false;
 			System.out.println(obj);
+			System.out.println(mv);
 		}
 		if (o == null) {
 			mv = true;
