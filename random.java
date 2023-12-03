@@ -32,7 +32,7 @@ public class random extends GraphicsProgram {
 		while (true) {
 			if (mv) {
 				while(true){
-					obj.move(0, 10);					
+					obj.move(0, 100);					
 				}
 			}
 		}
