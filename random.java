@@ -54,7 +54,7 @@ public class random extends GraphicsProgram {
 		}
 		if (o == null) {
 			mv = true;
-			obj = null;
+
 			System.out.println(mv);
 		}
 	}
