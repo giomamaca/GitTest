@@ -22,9 +22,9 @@ public class MidTerm1624 extends ConsoleProgram{
 					String sub1 = s.substring(0, i - 1);
 					String sub2 = s.substring(i);
 					answer = sub1 + sub2;
-					return;
 				}
 			}
 		}
+		return answer;
 	}
 }
