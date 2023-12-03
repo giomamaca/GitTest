@@ -17,7 +17,7 @@ public class random extends GraphicsProgram {
 		double coordY = rgen.nextDouble(0, getHeight() - radius);
 
 		for (int i = 0; i < 25; i++) {
-			oval = new GOval(coordX, coordY, radius, radius);
+			oval = new GOval(coordX, coordY, 50, 50);
 			oval.setFilled(true);
 			add(oval);
 
