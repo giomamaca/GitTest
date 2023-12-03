@@ -8,19 +8,13 @@ public class eval extends ConsoleProgram{
 		angarishi(s);
 	}
 
-	private int angarishi(String s) {		
-		int k = 0;
-		int a = k;
+	private int angarishi(String s) {
+		StringTokenizer tok = new StringTokenizer(s, " ");
 		
-		String str = "";
-		
-		for(int i = 0; i < s.length(); i++){
-			char ch = s.charAt(i);
-			if("" + ch == " "){
-				str += ch;
-				System.out.println(str);
-			}
+		while(tok.hasMoreTokens()){
+			print(tok);
 		}
-		return 0;
+		
+
 	}
 }
