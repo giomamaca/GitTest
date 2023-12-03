@@ -1,4 +1,7 @@
+import acm.program.ConsoleProgram;
 
-public class eval {
-
+public class eval extends ConsoleProgram{
+	public void run(){
+		
+	}
 }
