@@ -12,9 +12,8 @@ public class eval extends ConsoleProgram{
 		StringTokenizer tok = new StringTokenizer(s, " ");
 		
 		while(tok.hasMoreTokens()){
-			print(tok);
+			print(tok.nextToken());
 		}
-		
-
+		return 0;
 	}
 }
