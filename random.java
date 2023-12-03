@@ -18,6 +18,7 @@ public class random extends GraphicsProgram{
 		
 		for(int i = 0; i < 25; i++){
 			oval = new GOval(coordX, coordY, radius, radius);
+			oval.setFilled(true);
 			add(oval);
 		}
 	}
