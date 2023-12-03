@@ -36,6 +36,16 @@ public class MidTerm1625 extends GraphicsProgram{
 			oval.setColor(rgen.nextColor());
 			add(oval);
 		}
+		while(true){
+			double corX = rgen.nextDouble(0, getWidth() - CIRCLE_D);
+			double corY = rgen.nextDouble(0, getHeight() - CIRCLE_D);
+			oval = new GOval(corX, corY, CIRCLE_D,CIRCLE_D);
+			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
+			add(oval);
+			
+			pause(DELAY);
+		}
 	}
 	
 	public void mouseClicked(MouseEvent e){
