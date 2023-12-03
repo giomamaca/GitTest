@@ -25,6 +25,7 @@ public class random extends GraphicsProgram {
 			double coordY = rgen.nextDouble(0, getHeight() - radius);
 			oval = new GOval(coordX, coordY, radius, radius);
 			oval.setFilled(true);
+			oval.setColor(rgen.nextColor());
 			add(oval);
 		}
 
