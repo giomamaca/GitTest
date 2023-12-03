@@ -21,6 +21,7 @@ public class MidTerm1625 extends GraphicsProgram{
 	
 	RandomGenerator rgen = new RandomGenerator();
 	
+	
 	public void run(){
 		addMouseListeners();
 		drawOvals();
@@ -32,15 +33,17 @@ public class MidTerm1625 extends GraphicsProgram{
 			double corY = rgen.nextDouble(0, getHeight() - CIRCLE_D);
 			double corX1 = rgen.nextDouble(0, getWidth() - CIRCLE_D);
 			double corY1 = rgen.nextDouble(0, getHeight() - CIRCLE_D);
+			 
+			Color col = rgen.nextColor();
 			
 			oval = new GOval(corX, corY, CIRCLE_D,CIRCLE_D);
 			oval.setFilled(true);
-			oval.setColor(rgen.nextColor());
+			oval.setColor(col);
 			add(oval);
 			
 			oval = new GOval(corX1, corY1, CIRCLE_D,CIRCLE_D);
 			oval.setFilled(true);
-			oval.setColor(rgen.nextColor());
+			oval.setColor(col);
 			add(oval);
 		}
 		while(true){
