@@ -29,13 +29,13 @@ public class random extends GraphicsProgram {
 			add(oval);
 		}
 
+		while (true) {
 			if (mv) {
 				while(true){
-					obj.move(0, 3);
-					pause(10);					
-				
+					obj.move(0, 10);					
+				}
 			}
-			}
+		}
 	}
 
 	public void mouseClicked(MouseEvent e) {
