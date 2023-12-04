@@ -26,10 +26,10 @@ public class MidTerm1624 extends ConsoleProgram{
 							count++;
 						}
 					}
-					String sub1 = s.substring(0, i - 1);
-					String sub2 = s.substring(i + count);
-					cor = sub1 + sub2;
 				}
+				String sub1 = s.substring(0, i - 1);
+				String sub2 = s.substring(i + count);
+				cor = sub1 + sub2;
 			}
 			System.out.println(cor);
 			for(int j = 0; j < s.length(); j++){
