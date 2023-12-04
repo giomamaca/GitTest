@@ -12,8 +12,8 @@ public class MidTerm1624 extends ConsoleProgram {
 		StringTokenizer tok = new StringTokenizer(text, " ");
 		String str = "";
 
-		String s = tok.nextToken(text);
 		while (tok.hasMoreTokens()) {
+			String s = tok.nextToken(text);
 			String cor = s;
 
 			char wrong = 'a';
@@ -35,6 +35,6 @@ public class MidTerm1624 extends ConsoleProgram {
 			}
 			str += cor + " ";
 		}
-		return s;
+		return str;
 	}
 }
