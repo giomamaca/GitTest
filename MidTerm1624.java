@@ -19,7 +19,6 @@ public class MidTerm1624 extends ConsoleProgram {
 			String s = tok.nextToken();
 			String cor = "";
 
-			int count = 1;
 			for (int i = 1; i < s.length(); i++) {
 				char a = s.charAt(i);
 				char b = s.charAt(i - 1);
