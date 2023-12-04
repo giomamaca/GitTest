@@ -13,7 +13,7 @@ public class MidTerm1624 extends ConsoleProgram {
 		String str = "";
 
 		while (tok.hasMoreTokens()) {
-			String s = tok.nextToken();
+			String s = tok.nextToken(text);
 			String cor = s;
 
 			char wrong = 'a';
@@ -35,6 +35,6 @@ public class MidTerm1624 extends ConsoleProgram {
 			}
 			str += cor + " ";
 		}
-		return str;
+		return s;
 	}
 }
