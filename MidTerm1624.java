@@ -32,6 +32,13 @@ public class MidTerm1624 extends ConsoleProgram {
 					cor += c;
 				}
 			}
+			for (int j = 0; j < cor.length(); j++) {
+				char c = s.charAt(j);
+				if (c != wrong) {
+					cor += c;
+				}
+			}
+			
 			str += cor + " ";
 			cor = "";
 		}
