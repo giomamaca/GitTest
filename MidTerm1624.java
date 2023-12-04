@@ -3,6 +3,9 @@ import java.util.StringTokenizer;
 import acm.program.ConsoleProgram;
 
 public class MidTerm1624 extends ConsoleProgram {
+	
+	private char wrong;
+	
 	public void run() {
 		String text = readLine();
 		println(unEvilText(text));
@@ -17,7 +20,6 @@ public class MidTerm1624 extends ConsoleProgram {
 			String cor = "";
 
 			int count = 1;
-			char wrong = 'a';
 			for (int i = 1; i < s.length(); i++) {
 				char a = s.charAt(i);
 				char b = s.charAt(i - 1);
