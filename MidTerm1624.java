@@ -20,14 +20,14 @@ public class MidTerm1624 extends ConsoleProgram {
 			for (int i = 1; i < s.length(); i++) {
 				char a = s.charAt(i);
 				char b = s.charAt(i - 1);
-				String ans = s;
+				String ans = "";
 				if (a == b) {
 					wrong = a;
-					for (int j = 0; j < ans.length(); j++) {
-						char c = ans.charAt(j);
+					for (int j = 0; j < cor.length(); j++) {
+						char c = cor.charAt(j);
 						if (c != wrong) {
-							ans = "";
-							ans += c;
+							cor = "";
+							cor += c;
 						}
 					}
 				}
