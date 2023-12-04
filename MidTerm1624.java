@@ -22,8 +22,6 @@ public class MidTerm1624 extends ConsoleProgram{
 					String sub2 = s.substring(i + 1);
 					
 					str = str + sub1 + sub2 + " ";
-				}else{
-					str += s;
 				}
 			}
 		}
