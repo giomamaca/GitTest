@@ -23,7 +23,6 @@ public class MidTerm1624 extends ConsoleProgram{
 					wrong = a;
 				}
 			}
-			System.out.println(cor);
 			for(int j = 0; j < s.length(); j++){
 				char c = s.charAt(j);
 				if(c != wrong){							
