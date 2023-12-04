@@ -29,6 +29,7 @@ public class MidTerm1624 extends ConsoleProgram {
 							cor = "";
 							cor += c;
 						}
+						wrong = 'a';
 					}
 				}
 			}
