@@ -17,11 +17,11 @@ public class MidTerm1624 extends ConsoleProgram {
 
 		while (tok.hasMoreTokens()) {
 			String s = tok.nextToken();
-			String cor = "";
-
-			for (int i = 1; i < s.length(); i++) {
-				char a = s.charAt(i);
-				char b = s.charAt(i - 1);
+			String cor = s;
+			
+			for (int i = 1; i < cor.length(); i++) {
+				char a = cor.charAt(i);
+				char b = cor.charAt(i - 1);
 				if (a == b) {
 					wrong = a;
 				}
@@ -29,6 +29,7 @@ public class MidTerm1624 extends ConsoleProgram {
 			for (int j = 0; j < s.length(); j++) {
 				char c = s.charAt(j);
 				if (c != wrong) {
+					cor = "";
 					cor += c;
 				}
 			}
