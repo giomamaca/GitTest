@@ -19,12 +19,16 @@ public class MidTerm1624 extends ConsoleProgram{
 				char b = s.charAt(i - 1);
 				
 				if(a == b){
-					String sub1 = s.substring(0, i - 1);
-					String sub2 = s.substring(i + 1);
-					
-					str = sub1 + sub2 + " ";
+					char wrong = a;
+					for(int j = 0; j < s.length(); j++){
+						char c = s.charAt(j);
+						if(c != wrong){							
+							cor += c;
+						}
+					}
 				}
 			}
+			str += cor + " ";
 		}
 		return str;
 	}
