@@ -36,15 +36,4 @@ public class MidTerm1624 extends ConsoleProgram {
 		}
 		return str;
 	}
-
-	private boolean bevri(String s) {
-		for (int i = 0; i < s.length(); i++) {
-			char a = s.charAt(i);
-			char b = s.charAt(i - 1);
-			if (a == b) {
-				return true;
-			}
-		}
-		return false;
-	}
 }
