@@ -23,15 +23,15 @@ public class MidTerm1624 extends ConsoleProgram {
 				String ans = "";
 				if (a == b) {
 					wrong = a;
-					for (int j = 0; j < cor.length(); j++) {
-						char c = cor.charAt(j);
-						if (c != wrong) {
-							cor = "";
-							cor += c;
-						}
-						wrong = 'a';
-					}
 				}
+			}
+			for (int j = 0; j < cor.length(); j++) {
+				char c = cor.charAt(j);
+				if (c != wrong) {
+					cor = "";
+					cor += c;
+				}
+				wrong = 'a';
 			}
 			str += cor + " ";
 		}
