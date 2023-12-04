@@ -32,7 +32,7 @@ public class MidTerm1624 extends ConsoleProgram {
 					cor += c;
 				}
 			}
-			str += cor + " ";
+			str += cor + "";
 		}
 		return str;
 	}
