@@ -18,7 +18,7 @@ public class MidTerm1624 extends ConsoleProgram {
 
 			int count = 1;
 			char wrong = 'a';
-			while(bevri(s)){				
+			if(bevri(s)){				
 				for (int i = 1; i < s.length(); i++) {
 					char a = s.charAt(i);
 					char b = s.charAt(i - 1);
