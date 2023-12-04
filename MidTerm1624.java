@@ -25,7 +25,6 @@ public class MidTerm1624 extends ConsoleProgram {
 				char b = s.charAt(i - 1);
 				if (a == b) {
 					wrong = a;
-
 				}
 			}
 			for (int j = 0; j < s.length(); j++) {
@@ -34,19 +33,15 @@ public class MidTerm1624 extends ConsoleProgram {
 					cor += c;
 				}
 			}
+			for (int j = 1; j < cor.length(); j++) {
+				char c = cor.charAt(j);
+				char z = cor.charAt(j - 1);
+				if (c != wrong) {
+					cor += c;
+				}
+			}
 			str += cor + " ";
 		}
 		return str;
-	}
-
-	private boolean bevri(String s) {
-		for (int i = 0; i < s.length(); i++) {
-			char a = s.charAt(i);
-			char b = s.charAt(i - 1);
-			if (a == b) {
-				return true;
-			}
-		}
-		return false;
 	}
 }
