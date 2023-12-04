@@ -21,9 +21,6 @@ public class MidTerm1624 extends ConsoleProgram{
 				char b = s.charAt(i - 1);
 				if(a == b){
 					wrong = a;
-					String sub1 = s.substring(0, i - 1);
-					String sub2 = s.substring(i + count);
-					cor = sub1 + sub2;
 				}
 			}
 			System.out.println(cor);
