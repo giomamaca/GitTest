@@ -13,6 +13,7 @@ public class MidTerm1624 extends ConsoleProgram{
 		
 		while(tok.hasMoreTokens()){
 			String s = tok.nextToken();
+			String cor = "";
 			for(int i = 1; i < s.length(); i++){
 				char a = s.charAt(i);
 				char b = s.charAt(i - 1);
@@ -21,7 +22,7 @@ public class MidTerm1624 extends ConsoleProgram{
 					String sub1 = s.substring(0, i - 1);
 					String sub2 = s.substring(i + 1);
 					
-					str = str + sub1 + sub2 + " ";
+					str = sub1 + sub2 + " ";
 				}
 			}
 		}
