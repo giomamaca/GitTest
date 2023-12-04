@@ -12,11 +12,11 @@ public class eval extends ConsoleProgram{
 
 	private int angarishi(String s) {
 		StringTokenizer tok = new StringTokenizer(s, " ");
-		int i = convertToInt(s); 
+		int i = Integer.parseInt(s); 
 		
 		while(tok.hasMoreTokens()){
 			String a = tok.nextToken();
-			int num = convertToInt(tok.nextToken());
+			int num = Integer.parseInt(tok.nextToken()); 
 			if(a.charAt(0) == '+'){
 				i += num;
 			}else{
