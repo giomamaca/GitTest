@@ -33,8 +33,8 @@ public class MidTerm1624 extends ConsoleProgram {
 					cor += c;
 				}
 			}
-		
 			str += cor + " ";
+			cor = "";
 		}
 		return str;
 	}
