@@ -14,22 +14,23 @@ public class MidTerm1624 extends ConsoleProgram {
 
 		while (tok.hasMoreTokens()) {
 			String s = tok.nextToken();
-			String cor = "";
+			String cor = s;
 
 			int count = 1;
 			char wrong = 'a';
 			for (int i = 1; i < s.length(); i++) {
 				char a = s.charAt(i);
 				char b = s.charAt(i - 1);
+				String ans = "";
 				if (a == b) {
 					wrong = a;
-
-				}
-			}
-			for (int j = 0; j < s.length(); j++) {
-				char c = s.charAt(j);
-				if (c != wrong) {
-					cor += c;
+					for (int j = 0; j < cor.length(); j++) {
+						char c = cor.charAt(j);
+						if (c != wrong) {
+							cor = "";
+							cor += c;
+						}
+					}
 				}
 			}
 			str += cor + " ";
