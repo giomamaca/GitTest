@@ -8,6 +8,6 @@ public class Practice56 extends ConsoleProgram{
 		for(int i = 0; i < num.length; i++){
 			
 		}
-		
+		println(num);
 	}
 }
