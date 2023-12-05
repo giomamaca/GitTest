@@ -23,18 +23,16 @@ public class MidTerm171 extends GraphicsProgram {
 
 	}
 
-	public void mouseDragged(MouseEvent e) {		
+	public void mouseDragged(MouseEvent e) {
 		double mouseX = e.getX();
 		double mouseY = e.getY();
-		
-		GObject o = getElementAt(mouseX, mouseY);
 
 		double moveX = mouseX - SIZE / 2;
-		
-		rect.setLocation(mouseX - SIZE / 2, mouseY - SIZE / 2);
-		num.setLocation(mouseX - SIZE / 2, mouseY - SIZE / 2);
+		if (e.getX() < rect.getX() || e.getX() > rect.getX() + SIZE || e.getY() < rect.getY()
+				|| e.getY() > rect.getY() + SIZE)
+			return;
 
-		if (mouseX > coordinate && k < 100) {
+		if (mouseX > coordinate && k < 9) {
 			k++;
 			num.setLabel("" + k);
 		} else {
