@@ -3,11 +3,14 @@ import acm.program.ConsoleProgram;
 public class Practice56 extends ConsoleProgram{
 	public void run(){
 		int n = readInt();
-		int [] num = new int[n];
-		for(int i = 0; i < num.length; i++){
-			num[i] = readInt();
-			
+		
+		int[] arr;
+		
+		arr = new int[n];
+		
+		for(int i = 0; i < arr.length; i++){
+			int k = readInt();
+			println("arr[" + k + "]");
 		}
-		println(num);
 	}
 }
