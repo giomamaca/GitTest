@@ -10,7 +10,7 @@ public class Practice56 extends ConsoleProgram{
 		
 		for(int i = 0; i < arr.length; i++){
 			int k = readInt();
-			println("arr[" + k + "]");
+			println("arr#" + i + "[" + k + "]");
 		}
 	}
 }
