@@ -8,9 +8,10 @@ public class Practice47 extends ConsoleProgram{
 
 	private boolean isPredicat(String s) {
 		String str = "";
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < s.length() -1; i++) {
 			str = s.charAt(i) + str;
 		}
+		
 		if (str == s) {
 			return true;
 		}
