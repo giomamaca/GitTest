@@ -12,8 +12,8 @@ public class Practice47 extends ConsoleProgram{
 			str = s.charAt(i) + str;
 		}
 		if (str != s) {
-			return false;
+			return true;
 		}
-		return true;
+		return false;
 	}
 }
