@@ -11,6 +11,7 @@ public class Practice47 extends ConsoleProgram{
 		for (int i = 0; i < s.length(); i++) {
 			str = s.charAt(i) + str;
 		}
+		System.out.println(str);
 		if (str == s) {
 			return true;
 		}
