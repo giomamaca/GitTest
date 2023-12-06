@@ -2,26 +2,29 @@ import acm.program.ConsoleProgram;
 
 public class Practice46 extends ConsoleProgram{
 	public void run(){
-		String str = readLine();
-		char chr = 'a';
-		int max = 0;
-		for(char c = 'a'; c <= 'z'; c++){
-			int count = countCharacter(str, c);
-			if(count > max){
-				max = count;
-				chr = c;
-			}
-		}
-		println(chr);
+		String s = readLine();
+		println(more(s));
 	}
 
-	private int countCharacter(String str, char c) {
+	private char more(String s) {
 		int count = 0;
-		int index = 0;
-		while(index != -1){
-			index =str.indexOf(c, index + 1);
-			count++;
+		int max = count;
+		
+		char ch = 'a';
+		
+		for(int i = 0; i < s.length(); i++){
+			char a = s.charAt(i);
+			for(int j = i; j < s.length(); j++){
+				char b = s.charAt(j);
+				if(a == b){
+					count++;
+					if(max < count){
+						max = count;
+						ch = a;
+					}
+				}
+				count = 0;
+			}
 		}
-		return count - 1;
 	}
 }
