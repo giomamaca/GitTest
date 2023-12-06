@@ -26,5 +26,6 @@ public class Practice46 extends ConsoleProgram{
 				count = 0;
 			}
 		}
+		return ch;
 	}
 }
