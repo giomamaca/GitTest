@@ -1,23 +1,21 @@
 import acm.program.ConsoleProgram;
 
-public class Practice47 extends ConsoleProgram{
-	public void run(){
-		String s = readLine("enter string : ");
-		if(isPredicat(s)){
-			println("predicat");
-		}else{
-			println("not predicat");
-		}
+public class Practice47 extends ConsoleProgram {
+	public void run() {
+		String s = readLine();
+		println(izPredicat(s));
 	}
 
-	private boolean isPredicat(String s) {
-		for(int i = 0; i < s.length(); i++){
+	private boolean izPredicat(String s) {
+		String str = "";
+		for(int i = s.length(); i > 0; i--){
 			char a = s.charAt(i);
-			char b = s.charAt(s.length() - i - 1);
-			if(a != b){
-				return false;
-			}
+			str += a;
 		}
+	if(str==s){	
 		return true;
+	}
+	
+	return false;
 	}
 }
