@@ -8,7 +8,7 @@ public class Practice46 extends ConsoleProgram{
 
 	private char more(String s) {
 		int count = 0;
-		int max = count;
+		int max = 0;
 		
 		char ch = 'a';
 		
