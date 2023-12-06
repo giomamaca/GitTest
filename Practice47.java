@@ -8,14 +8,14 @@ public class Practice47 extends ConsoleProgram {
 
 	private boolean izPredicat(String s) {
 		String str = "";
-		for(int i = s.length(); i > 0; i--){
+		for (int i = s.length(); i > 0; i--) {
 			char a = s.charAt(i);
 			str += a;
 		}
-	if(str==s){	
-		return true;
-	}
-	
-	return false;
+		if (str == s) {
+			return true;
+		}
+
+		return false;
 	}
 }
