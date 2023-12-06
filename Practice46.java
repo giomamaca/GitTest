@@ -20,7 +20,7 @@ public class Practice46 extends ConsoleProgram{
 					count++;
 					if(max < count){
 						max = count;
-						ch = a;
+						ch = b;
 					}
 				}
 				count = 0;
