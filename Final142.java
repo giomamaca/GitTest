@@ -5,7 +5,7 @@ import acm.program.ConsoleProgram;
 public class Final142 extends ConsoleProgram {
 	public void run() {
 		String text = readLine();
-		translateToTitle(text);
+		println(translateToTitle(text));
 	}
 
 	private String translateToTitle(String text) {
