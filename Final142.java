@@ -25,11 +25,11 @@ public class Final142 extends ConsoleProgram {
 				if (i == 0) {
 					s += a;
 					s.toUpperCase();
-					System.out.println(s);
 				} else {
 					st += a;
 					st.toLowerCase();
 				}
+				System.out.println(s);
 				s += st;
 				answer += s;
 			}
