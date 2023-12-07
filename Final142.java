@@ -33,7 +33,7 @@ public class Final142 extends ConsoleProgram {
 				s += st;
 				answer += s;
 			}
-			result += answer;
+			result += answer + " ";
 		}
 		return result;
 	}
