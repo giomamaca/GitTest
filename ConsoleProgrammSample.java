@@ -25,7 +25,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		private void change(ArrayList <Integer> list){
 		for(int i = 0; i < list.size() - 1; i++){
 			if(list.get(i) == 1){
-				list.add(i + 1 ,1);
+				list.add(i + 1, 1);
+				i++;
 			}
 		}
 	}
