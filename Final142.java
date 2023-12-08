@@ -24,10 +24,10 @@ public class Final142 extends ConsoleProgram {
 				String st = "";
 				if (i == 0) {
 					s += a;
-					s.toUpperCase();
+					s = s.toUpperCase();
 				} else {
 					st += a;
-					st.toLowerCase();
+					st = st.toLowerCase();
 				}
 				System.out.println(s);
 				s += st;
