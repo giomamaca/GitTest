@@ -21,7 +21,6 @@ public class Practice62 extends ConsoleProgram{
 				System.out.println("b" + b);
 				if(a.equals(b)){
 					println((i + 1) + " and " +  (j + 1));
-					break;
 				}
 			}
 		}
