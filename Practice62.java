@@ -12,14 +12,15 @@ public class Practice62 extends ConsoleProgram{
 			s = readLine();
 			list.add(s);
 		}
-		for(int i = 0; i < list.size() - i; i++){
+		for(int i = 0; i < list.size(); i++){
 			String a = list.get(i);
 			System.out.println("a" + a);
 			for(int j = i + 1; j < list.size() - 1; j++){
-				String b = list.get(j);
+				String b = list.get(j + 1);
 				System.out.println("b" + b);
-				if(a == b){
+				if(a.equals(b)){
 					println("aris");
+					break;
 				}
 			}
 		}
