@@ -8,7 +8,7 @@ public class Practice62 extends ConsoleProgram{
 		
 		ArrayList<String> list = new ArrayList<String>();
 		
-		while(s != ""){
+		while(s != "1"){
 			s = readLine();
 			list.add(s);
 		}
