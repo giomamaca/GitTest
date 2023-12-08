@@ -4,15 +4,15 @@ import acm.program.ConsoleProgram;
 
 public class Practice62 extends ConsoleProgram{
 	public void run(){
-		String s = readLine();
 		
 		ArrayList<String> list = new ArrayList<String>();
+		String s = readLine();
+		list.add(s);
 		
 		while(!s.equals("")){
 			s = readLine();
 			list.add(s);
 		}
-		System.out.println(list);
 		
 		for(int i = 0; i < list.size(); i++){
 			String a = list.get(i);
