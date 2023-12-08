@@ -11,7 +11,7 @@ public class Practice60 extends ConsoleProgram{
 			list.add(k);
 			k = readInt();
 		}
-		for(int i = list.size(); i > 0; i--){
+		for(int i = list.size() - 1; i > 0; i--){
 			println(list.get(i));
 		}
 	}
