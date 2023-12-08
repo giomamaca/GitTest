@@ -13,7 +13,7 @@ public class Practice60 extends ConsoleProgram{
 		k = readInt();
 	}
 	for(int i = list.size(); i > 0; i--){
-		println(list);
+		println(list.get(i));
 		}
 	}
 }
