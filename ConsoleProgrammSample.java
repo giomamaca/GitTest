@@ -14,8 +14,14 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		ArrayList <Integer> list = new ArrayList <Integer> ();
+		change(list);
+		println(list.toString());
+		
 		
 		}
+	
+	
+	
 		private void change(ArrayList <Integer> list){
 		for(int i = 0; i < list.size() - 1; i++){
 			if(list.get(i) == 1){
