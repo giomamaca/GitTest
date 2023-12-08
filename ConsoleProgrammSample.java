@@ -6,18 +6,21 @@
  * smallest and largest values in a list of integers.
  */
 
+import java.util.ArrayList;
+
 import acm.graphics.GOval;
 import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		String s = "fshdfbasffsafsaf";
-		for(int i = 0; i< s.length(); i++){
-			String sub1 = s.substring(0,4) + s.substring(s.length() - 4,s.length());
-			s =  sub1;
+		ArrayList <Integer> list = new ArrayList <Integer> ();
+		
 		}
-		print(s);
-		
-		
+		private void change(ArrayList <Integer> list){
+		for(int i = 0; i < list.size() - 1; i++){
+			if(list.get(i) == 1){
+				list.add(i + 1 ,1);
+			}
+		}
 	}
 }
