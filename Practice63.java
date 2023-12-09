@@ -59,7 +59,7 @@ public class Practice63 extends ConsoleProgram {
 //					answer = r;
 //					how2 = how1;
 //				}
-//				how1 = 0;
+			how1 = 0;
 			}
 		}
 		return answer;
