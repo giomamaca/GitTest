@@ -38,7 +38,7 @@ public class Practice63 extends ConsoleProgram{
 			}
 		}
 		String correct = friend;
-		
+		System.out.println(correct);
 		ArrayList<String> l = new ArrayList<String>();
 		for(int j = 0; j < correct.length(); j++){
 			StringTokenizer tok = new StringTokenizer(correct, " ");
