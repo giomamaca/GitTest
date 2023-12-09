@@ -19,14 +19,18 @@ public class Practice63 extends ConsoleProgram{
 
 	private String moreFriend(ArrayList<String> list) {
 		String answer = "";
-		int count = 0;
+		int count = 1;
 		
+		String friend = "";
 		
 		for(int i = 0; i < list.size(); i++){
 			StringTokenizer tk = new StringTokenizer(" ");
 			while(tk.hasMoreTokens()){
 				String s = tk.nextToken();
-				
+				if(count % 2 == 1){
+					friend += s;
+				}
+				count++;
 			}
 		}
 		
