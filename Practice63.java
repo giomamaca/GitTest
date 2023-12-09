@@ -49,16 +49,14 @@ public class Practice63 extends ConsoleProgram{
 		}
 		for(int p = 0; p < l.size(); p++){
 			String r = l.get(p);
-			for(int t = p + 1; t < l.size() - 1; t++){
+			for(int t = p + 1; t < l.size(); t++){
 				String g = l.get(t);
 				if(r.equals(g)){
 					how1++;
 					if(how1 > how2){
 						answer = r;
+						how2 = how1;
 					}
-				}
-				if(how1 > how2){					
-					how2 = how1;
 				}
 				how1 = 0;
 			}
