@@ -32,7 +32,7 @@ public class Practice63 extends ConsoleProgram {
 				String s = tk.nextToken();
 				if (count % 2 == 1) {
 					friend += s;
-					friend += " ";
+					friend += "";
 				}
 				count++;
 			}
