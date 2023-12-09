@@ -3,16 +3,16 @@ import java.util.StringTokenizer;
 
 import acm.program.ConsoleProgram;
 
-public class Practice63 extends ConsoleProgram{
-	public void run(){
+public class Practice63 extends ConsoleProgram {
+	public void run() {
 		ArrayList<String> list = new ArrayList<String>();
 		String s = readLine();
 		list.add(s);
-		
-		while(!s.equals("")){
+
+		while (!s.equals("")) {
 			s = readLine();
 			list.add(s);
-			
+
 		}
 		println(moreFriend(list));
 	}
@@ -22,15 +22,15 @@ public class Practice63 extends ConsoleProgram{
 		int count = 1;
 		int how1 = 0;
 		int how2 = how1;
-		
+
 		String friend = "";
-		
-		for(int i = 0; i < list.size(); i++){
+
+		for (int i = 0; i < list.size(); i++) {
 			String ls = list.get(i);
 			StringTokenizer tk = new StringTokenizer(ls, " ");
-			while(tk.hasMoreTokens()){
+			while (tk.hasMoreTokens()) {
 				String s = tk.nextToken();
-				if(count % 2 == 1){
+				if (count % 2 == 1) {
 					friend += s;
 					friend += " ";
 				}
@@ -40,22 +40,20 @@ public class Practice63 extends ConsoleProgram{
 		String correct = friend;
 		System.out.println(correct);
 		ArrayList<String> l = new ArrayList<String>();
-		for(int j = 0; j < correct.length(); j++){
-			StringTokenizer tok = new StringTokenizer(correct, " ");
-			while(tok.hasMoreTokens()){
-				String str = tok.nextToken();
-				l.add(str);
-			}
+		StringTokenizer tok = new StringTokenizer(correct, " ");
+		while (tok.hasMoreTokens()) {
+			String str = tok.nextToken();
+			l.add(str);
 		}
 		System.out.println(l);
-		for(int p = 0; p < l.size(); p++){
+		for (int p = 0; p < l.size(); p++) {
 			String r = l.get(p);
-			for(int t = p; t < l.size(); t++){
+			for (int t = p; t < l.size(); t++) {
 				String g = l.get(t);
-				if(r.equals(g)){
+				if (r.equals(g)) {
 					how1++;
 
-					if(how1 > how2){
+					if (how1 > how2) {
 						answer = r;
 						how2 = how1;
 
@@ -64,7 +62,7 @@ public class Practice63 extends ConsoleProgram{
 				how1 = 0;
 			}
 		}
-		
+
 		return answer;
 	}
 }
