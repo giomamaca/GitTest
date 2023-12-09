@@ -38,31 +38,29 @@ public class Practice63 extends ConsoleProgram {
 			}
 		}
 		String correct = friend;
-		System.out.println(correct);
+		
 		ArrayList<String> l = new ArrayList<String>();
+		
 		StringTokenizer tok = new StringTokenizer(correct, " ");
 		while (tok.hasMoreTokens()) {
 			String str = tok.nextToken();
 			l.add(str);
 		}
-		System.out.println(l);
+		
 		for (int p = 0; p < l.size(); p++) {
 			String r = l.get(p);
 			for (int t = p; t < l.size(); t++) {
 				String g = l.get(t);
 				if (r.equals(g)) {
 					how1++;
-
-					if (how1 > how2) {
-						answer = r;
-						how2 = how1;
-
-					}
+				}
+				if (how1 > how2) {
+					answer = r;
+					how2 = how1;
 				}
 				how1 = 0;
 			}
 		}
-
 		return answer;
 	}
 }
