@@ -50,7 +50,7 @@ public class Practice63 extends ConsoleProgram{
 		
 		for(int p = 0; p < l.size(); p++){
 			String r = l.get(p);
-			for(int t = p + 1; t < l.size(); t++){
+			for(int t = p; t < l.size(); t++){
 				String g = l.get(t);
 				if(r.equals(g)){
 					how1++;
