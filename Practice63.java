@@ -46,7 +46,7 @@ public class Practice63 extends ConsoleProgram {
 			String str = tok.nextToken();
 			l.add(str);
 		}
-		
+		System.out.println(l);
 		for (int p = 0; p < l.size(); p++) {
 			String r = l.get(p);
 			for (int t = p; t < l.size(); t++) {
