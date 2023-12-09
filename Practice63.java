@@ -47,15 +47,18 @@ public class Practice63 extends ConsoleProgram{
 				l.add(str);
 			}
 		}
+		
 		for(int p = 0; p < l.size(); p++){
 			String r = l.get(p);
 			for(int t = p + 1; t < l.size(); t++){
 				String g = l.get(t);
 				if(r.equals(g)){
 					how1++;
+					System.out.println(how1);
 					if(how1 > how2){
 						answer = r;
 						how2 = how1;
+						System.out.println(how2);
 					}
 				}
 				how1 = 0;
