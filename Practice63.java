@@ -55,11 +55,11 @@ public class Practice63 extends ConsoleProgram {
 					how1++;
 					System.out.println(how1);
 				}
-				if (how1 > how2) {
-					answer = r;
-					how2 = how1;
-				}
-				how1 = 0;
+//				if (how1 > how2) {
+//					answer = r;
+//					how2 = how1;
+//				}
+//				how1 = 0;
 			}
 		}
 		return answer;
