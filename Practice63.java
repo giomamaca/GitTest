@@ -34,6 +34,6 @@ public class Practice63 extends ConsoleProgram{
 			}
 		}
 		
-		return answer;
+		return friend;
 	}
 }
