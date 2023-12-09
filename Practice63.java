@@ -14,12 +14,22 @@ public class Practice63 extends ConsoleProgram{
 			list.add(s);
 			
 		}
+		println(moreFriend(list));
+	}
+
+	private String moreFriend(ArrayList<String> list) {
+		String answer = "";
+		int count = 0;
+		
+		
 		for(int i = 0; i < list.size(); i++){
-			StringTokenizer tk = new StringTokenizer(list.get(i), " ");
-			
+			StringTokenizer tk = new StringTokenizer(" ");
 			while(tk.hasMoreTokens()){
-				String str = tk.nextToken();
+				String s = tk.nextToken();
+				
 			}
 		}
+		
+		return answer;
 	}
 }
