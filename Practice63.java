@@ -20,6 +20,8 @@ public class Practice63 extends ConsoleProgram{
 	private String moreFriend(ArrayList<String> list) {
 		String answer = "";
 		int count = 1;
+		int how1 = 0;
+		int how2 = how1;
 		
 		String friend = "";
 		
@@ -30,8 +32,35 @@ public class Practice63 extends ConsoleProgram{
 				String s = tk.nextToken();
 				if(count % 2 == 1){
 					friend += s;
+					friend += " ";
 				}
 				count++;
+			}
+		}
+		String correct = friend;
+		
+		ArrayList<String> l = new ArrayList<String>();
+		for(int j = 0; j < correct.length(); j++){
+			StringTokenizer tok = new StringTokenizer(correct, " ");
+			while(tok.hasMoreTokens()){
+				String str = tok.nextToken();
+				l.add(str);
+			}
+		}
+		for(int p = 0; p < l.size(); p++){
+			String r = l.get(p);
+			for(int t = p + 1; t < l.size() - 1; t++){
+				String g = l.get(t);
+				if(r.equals(g)){
+					how1++;
+					if(how1 > how2){
+						answer = r;
+					}
+				}
+				if(how1 > how2){					
+					how2 = how1;
+				}
+				how1 = 0;
 			}
 		}
 		
