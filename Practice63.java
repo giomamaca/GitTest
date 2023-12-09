@@ -24,7 +24,8 @@ public class Practice63 extends ConsoleProgram{
 		String friend = "";
 		
 		for(int i = 0; i < list.size(); i++){
-			StringTokenizer tk = new StringTokenizer(" ");
+			String ls = list.get(i);
+			StringTokenizer tk = new StringTokenizer(ls, " ");
 			while(tk.hasMoreTokens()){
 				String s = tk.nextToken();
 				if(count % 2 == 1){
