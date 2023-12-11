@@ -2,36 +2,29 @@ import acm.graphics.*;
 import acm.program.ConsoleProgram;
 import acm.program.*;
 import java.awt.*;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
+		String a = readLine();
+		String b = readLine();
+		println(isIn(a, b));
 		
-		ArrayList<String> list = new ArrayList<String>();
-		try{
-			BufferedReader rd = new BufferedReader(new FileReader("HangmanLexicon.txt"));
-			while (true) {
-				String line = rd.readLine();
-				list.add(line);
-				if (line == null) {
-					break;
-				}
-			}
-			list.get(1);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		 getWordCount(list);
 	}
 
-	private void getWordCount(ArrayList<String> list) {
-		int count = 0;
-		
-		for(int i = 0; i < list.size(); i++){
-			count++;
+	private boolean isIn(String a, String b) {
+		for(int i = 0; i < b.length(); i++){
+			if(a.contains(b.charAt(i) + "")){
+				a = cut(a, b.charAt(i));
+				b = cut(b, b.charAt(i));
+			}else return false;
 		}
+		return true;
+	}
+
+	private String cut(String a, char c) {
+		String sub1 = a.substring(0, a.indexOf(c));
+		String sub2 = a.substring(a.indexOf(c) + 1);
+		
+		return sub1 + sub2;
 	}
 }
