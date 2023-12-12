@@ -11,5 +11,6 @@ public class Practice59 extends ConsoleProgram {
 
 			}
 		}
+		return rootPaneCheckingEnabled;
 	}
 }
