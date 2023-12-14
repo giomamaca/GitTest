@@ -2,36 +2,36 @@ import java.util.ArrayList;
 
 import acm.program.ConsoleProgram;
 
-public class Practice57 extends ConsoleProgram{
-	public void run(){
-		int n = readInt();
-		ArrayList<Integer> list = new ArrayList<Integer>();
-		
-		fillList(list, n);
-		println(list.toString());
-		makeCorrect(list);
-		println(list.toString());
+public class Practice57 extends ConsoleProgram {
+	public void run() {
+		String first = readLine("enter first : ");
+		String second = readLine("enter second : ");
+		println(isAnagram(first, second));
 	}
 
-	private void makeCorrect(ArrayList<Integer> list) {
-		for(int i = 0; i < list.size(); i++){
-			for(int j = 0; j < list.size(); j++){
-				if(list.get(j) > list.get(i)){
-					swap(list, j, i);
-				}
-			}
+	private boolean isAnagram(String first, String second) {
+		int[] one = new int[26];
+		int[] two = new int[26];
+		fillArr(one, first);
+		fillArr(two, second);
+
+		return anagram(one, two);
+	}
+
+	private boolean anagram(int[] one, int[] two) {
+		if (one.length != two.length)
+			return false;
+		for (int i = 0; i < one.length; i++) {
+			if (one[i] != two[i])
+				return false;
 		}
+		return true;
 	}
 
-	private void swap(ArrayList<Integer> list, int j, int i) {
-		int temp = list.get(j);
-		list.set(j, list.get(i));
-		list.set(i, temp);
-	}
-
-	private void fillList(ArrayList<Integer> list, int n) {
-		for(int i = 0; i < n; i++){
-			list.add(readInt());
+	private void fillArr(int[] one, String first) {
+		for (int i = 0; i < first.length(); i++) {
+			char c = first.charAt(i);
+			one[c - 'a']++;
 		}
 	}
 }
