@@ -8,7 +8,9 @@ public class Practice57 extends ConsoleProgram{
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		fillList(list, n);
-		println(makeCorrect(list));
+		println(list.toString());
+		makeCorrect(list);
+		println(list.toString());
 	}
 
 	private void makeCorrect(ArrayList<Integer> list) {
