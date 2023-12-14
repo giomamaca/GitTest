@@ -15,16 +15,16 @@ public class Practice57 extends ConsoleProgram{
 		for(int i = 0; i < list.size(); i++){
 			for(int j = 0; j < list.size(); j++){
 				if(list.get(j) > list.get(i)){
-					swap(j, i);
+					swap(list, j, i);
 				}
 			}
 		}
 	}
 
-	private void swap(int j, int i) {
-		int temp = i;
-		j = i;
-		
+	private void swap(ArrayList<Integer> list, int j, int i) {
+		int temp = list.get(j);
+		list.set(j, list.get(i));
+		list.set(i, temp);
 	}
 
 	private void fillList(ArrayList<Integer> list, int n) {
