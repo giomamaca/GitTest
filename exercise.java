@@ -9,6 +9,6 @@ public class exercise extends ConsoleProgram {
 		for(int i = 0; i < num.length; i++){
 			num [i] = readInt();
 		}
-		println(num);
+		println(num.toString());
 	}
 }
