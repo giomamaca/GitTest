@@ -5,22 +5,21 @@ import java.awt.*;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
-		int x = readInt();
-		int k = isPalindrome(x);
-		println(k);
-		
+		int n = readInt();
+		int[] nums = new int[n];
+		println(removeDuplicates(nums));
 	}
-	 public int isPalindrome(int x) {
-	        int k = x;
-	        int a = 0;
-//	        if(k < 0)return false;
-	        while(k != 0){
-	            a = a * 10 + x % 10;
-	            k /= 10;
-	        }
-//	        if(x == a){
-//	            return true;
-//	        }
-	        return x;
-	    }
+
+	private int removeDuplicates(int[] nums) {
+		int lng = 0;
+		int count = 0;
+		int[] answer = new int[nums.length];
+		for (int i = 1; i < nums.length; i++) {
+			int a = nums[0];
+			if(a == nums[i]){
+				count++;
+			}
+		}
+		return count;
+	}
 }
