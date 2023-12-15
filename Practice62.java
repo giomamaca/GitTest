@@ -19,7 +19,7 @@ public class Practice62 extends ConsoleProgram{
 			for(int j = i + 1; j < list.size(); j++){
 				String b = list.get(j);
 				if(a.equals(b)){
-					println((i + 1) + " and " +  (j + 1));
+					println(i + " and " + j);
 				}
 			}
 		}
