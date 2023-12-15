@@ -12,7 +12,7 @@ public class exercise extends ConsoleProgram {
 		for(int i = 0; i < nums.length; i ++) {
 			nums[i] = readInt();
 		}
-		pintln(Arrays.toString(nums));
+		println(Arrays.toString(nums));
 		println(removeDuplicates(nums));
 	}
 
