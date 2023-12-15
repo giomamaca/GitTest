@@ -6,7 +6,13 @@ import java.awt.*;
 public class exercise extends ConsoleProgram {	
 	public void run() {
 		int n = readInt();
+		int count = 0;
 		int[] nums = new int[n];
+		for(int i = 0; i < nums.length; i ++) {
+			nums[i] = readInt();
+		}
+		nums.toString();
+		println(nums);
 		println(removeDuplicates(nums));
 	}
 
