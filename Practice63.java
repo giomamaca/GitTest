@@ -14,10 +14,10 @@ public class Practice63 extends ConsoleProgram {
 			list.add(s);
 
 		}
-		println(moreFriend(list));
+		println(moreFriends(list));
 	}
 
-	private String moreFriend(ArrayList<String> list) {
+	private String moreFriends(ArrayList<String> list) {
 		String answer = "";
 		int count = 1;
 		int how1 = 0;
