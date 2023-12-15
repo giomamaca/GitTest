@@ -18,7 +18,7 @@ public class exercise extends ConsoleProgram {
 			if (nums[i] != val) {
 				count++;
 				for (int j = 0; i < answer.length; j++) {
-					answer[j] += nums[i];
+					
 				}
 			}
 		}
