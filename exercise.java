@@ -6,24 +6,20 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
-		int target = 7;
-		int[] nums = new int [4];
-		nums[0] = 1;
-		nums[1] = 3;
-		nums[2] = 6;
-		nums[3] = 8;
-		println(searchInsert(nums, target));
+		int target = 0;
+		String s =readLine();
+		int[] nums = {4,5,6,7,0,1,2};
+		println(search(nums, target));
 	}
 
-	public int searchInsert(int[] nums, int target) {
-        for(int i = 0; i < nums.length; i++){
-            if(nums[i] == target){
-                return i;
-            }
-            if(nums[i] > target){
-            	return i;
-            }
-        }
-        return 0;
-    }
+	  public int search(int[] nums, int target) {
+	        for(int i = 0; i < nums.length; i++){
+	            if(nums[i] == target){
+	                 return i;
+	            }else{
+	                return -1;
+	            }
+	        }
+	        return -1;
+	    }
 }
