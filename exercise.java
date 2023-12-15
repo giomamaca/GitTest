@@ -6,26 +6,18 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
-		int n = readInt();
-		int count = 0;
-		int[] nums = new int[n];
-		for(int i = 0; i < nums.length; i ++) {
-			nums[i] = readInt();
-		}
-		println(Arrays.toString(nums));
-		println(removeDuplicates(nums));
+		int target = 5;
+		int[] nums = new int [5];
+		nums[3] = 5;
+		println(searchInsert(nums, target));
 	}
 
-	private int removeDuplicates(int[] nums) {
-		int lng = 0;
-		int count = 0;
-		int[] answer = new int[nums.length];
-		for (int i = 1; i < nums.length; i++) {
-			int a = nums[0];
-			if(a == nums[i]){
-				count++;
-			}
-		}
-		return count;
-	}
+	public int searchInsert(int[] nums, int target) {
+        for(int i = 0; i < nums.length; i++){
+            if(nums[i] == target){
+                return i;
+            }
+        }
+        return 0;
+    }
 }
