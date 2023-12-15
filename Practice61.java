@@ -18,7 +18,7 @@ public class Practice61 extends ConsoleProgram{
 		}
 		for(int i = 0; i < list.size() - 1; i++){
 			int a = list.get(i);
-			for(int j = i; j < list.size(); j++){
+			for(int j = i + 1; j < list.size(); j++){
 				int b = list.get(j);
 				if((a + b) == m){
 					println(a + " and " + b);
