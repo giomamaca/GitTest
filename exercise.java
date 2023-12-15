@@ -6,12 +6,12 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
-		int target = 5;
+		int target = 7;
 		int[] nums = new int [4];
 		nums[0] = 1;
 		nums[1] = 3;
 		nums[2] = 6;
-		nums[3] = 7;
+		nums[3] = 8;
 		println(searchInsert(nums, target));
 	}
 
