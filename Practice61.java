@@ -4,7 +4,7 @@ import java.util.HashMap;
 import acm.program.ConsoleProgram;
 
 public class Practice61 extends ConsoleProgram{
-	public void run(){
+	public void run1(){
 		int count = 0;
 		
 		int m = readInt();
@@ -27,7 +27,7 @@ public class Practice61 extends ConsoleProgram{
 			}
 		}
 	}
-	public void run1(){
+	public void run(){
 		int m = readInt();
 		int n = readInt();
 		boolean found = false;
