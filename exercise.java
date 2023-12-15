@@ -6,7 +6,8 @@ import java.awt.*;
 public class exercise extends ConsoleProgram {	
 	public void run() {
 		int x = readInt();
-		println(isPalindrome(x));
+		int k = isPalindrome(x);
+		println(k);
 		
 	}
 	 public int isPalindrome(int x) {
