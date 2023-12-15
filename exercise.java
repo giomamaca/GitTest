@@ -7,7 +7,6 @@ import java.util.Arrays;
 public class exercise extends ConsoleProgram {	
 	public void run() {
 		int target = 0;
-		String s =readLine();
 		int[] nums = {4,5,6,7,0,1,2};
 		println(search(nums, target));
 	}
