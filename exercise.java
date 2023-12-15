@@ -2,6 +2,7 @@ import acm.graphics.*;
 import acm.program.ConsoleProgram;
 import acm.program.*;
 import java.awt.*;
+import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {	
 	public void run() {
@@ -11,8 +12,7 @@ public class exercise extends ConsoleProgram {
 		for(int i = 0; i < nums.length; i ++) {
 			nums[i] = readInt();
 		}
-		nums.toString();
-		println(nums);
+		Arrays.toString(nums);
 		println(removeDuplicates(nums));
 	}
 
