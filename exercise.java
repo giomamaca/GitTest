@@ -6,9 +6,11 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {
 	public void run() {
-		int[] num = new int[5];
+		int[][] num = new int[5][5];
 		for(int i = 0; i < num.length; i++){
-			num[i] = 1;
+			for(int j = 0; j < num[0].length; j++){
+				num[i][j] = 1;				
+			}
 		}
 		println(Arrays.toString(num));
 	}
