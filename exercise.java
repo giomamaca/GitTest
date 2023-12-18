@@ -13,5 +13,6 @@ public class exercise extends ConsoleProgram {
 			}
 		}
 		println(Arrays.toString(num));
+		println(num);
 	}
 }
