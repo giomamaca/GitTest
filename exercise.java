@@ -12,6 +12,6 @@ public class exercise extends ConsoleProgram {
 				num[i][j] = 1;
 			}
 		}
-		println(Arrays.toString(num));
+		println(num);
 	}
 }
