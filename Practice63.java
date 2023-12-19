@@ -1,10 +1,38 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 import acm.program.ConsoleProgram;
 
 public class Practice63 extends ConsoleProgram {
 	public void run() {
+		HashMap <String, Set<String>> map = new HashMap <String, Set<String>>();
+		
+		while(true){
+			String s = readLine();
+			if(map.isEmpty()){
+				break;
+			}
+			StringTokenizer tok = new StringTokenizer(s);
+			String a = tok.nextToken();
+			String b = tok.nextToken();
+			map.putIfAbsent(b, new HashSet<String>());
+			map.get(b).add(a);
+		}
+		println(map);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	private void run1(){
 		ArrayList<String> list = new ArrayList<String>();
 		String s = readLine();
 		list.add(s);
