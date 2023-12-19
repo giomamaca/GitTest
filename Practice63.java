@@ -20,8 +20,8 @@ public class Practice63 extends ConsoleProgram {
 			String b = tok.nextToken();
 			map.putIfAbsent(b, new HashSet<String>());
 			map.get(b).add(a);
+			println(map);
 		}
-		println(map);
 	}
 	
 	
