@@ -4,7 +4,7 @@ import acm.program.ConsoleProgram;
 
 public class Practice58 extends ConsoleProgram{
 	public void run(){
-		int [][] matrix = {{1, 3}, {2, 4}};
+		int [][] matrix = {{1, 3}, {2, 5}};
 		int [][] ma2 = new int[2][2];
 		println(isMagic(matrix));
 	}
