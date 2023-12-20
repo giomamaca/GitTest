@@ -8,6 +8,7 @@ public class Practice58 extends ConsoleProgram{
 		println(isMagic(m));
 	}
 	
+	
 	private boolean isMagic(int[][] m){
 		int n = m.length;
 		for(int i = 1; i <= n; i++){
