@@ -2,7 +2,8 @@ import acm.program.ConsoleProgram;
 
 public class leetCode extends ConsoleProgram {
 	public void run() {
-
+		String s = readLine();
+		println(maxScore(s));
 	}
 
 	private int maxScore(String s) {
