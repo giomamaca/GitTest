@@ -6,7 +6,12 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {
 	public void run() {
-		String s = "abcdefg";
-		println(s.substring(1,4));
+		int[][] num = new int[5][5];
+		for(int i = 0; i < num.length; i++){
+			for(int j = 0; j < num[0].length; j++){
+				num[i][j] = 1;				
+			}
+		}
+		println(Arrays.toString(num));
 	}
 }
