@@ -2,30 +2,36 @@ import acm.program.ConsoleProgram;
 
 public class leetCode extends ConsoleProgram {
 	public void run() {
-		String s = readLine();
-		println(maxScore(s));
+		String[] strs = new String[5];
+		strs[0] = "adamia";
+		strs[1] = "adamiani";
+		strs[2] = "adi";
+		strs[3] = "admin";
+		strs[4] = "adoli";
+				
+		println(longestCommonPrefix(strs));
 	}
 
-	private int maxScore(String s) {
-		int ans = 0;
-		int zeros = 0;
-		int ones = 0;
-		for (int i = 1; i < s.length(); i++) {
-			String sub1 = s.substring(i, s.length());
-			String sub2 = s.substring(0, i);
-			for (int j = 0; j < sub1.length(); j++) {
-				if (sub1.charAt(j) - '0' == 1) {
-					ones++;
+	private String longestCommonPrefix(String[] strs) {
+		String ans = "";
+		String s = strs[0];
+		if (strs.length > 1) {
+			for (int p = 0; p < s.length(); p++) {
+				char a = s.charAt(p);
+				for (int i = 1; i < strs.length; i++) {
+					String st = strs[i];
+					for (int j = 0; j < st.length(); j++) {
+						char b = st.charAt(p);
+						if (a != b) {
+							return ans;
+						}
+					}
 				}
+				ans += a;
 			}
-			for (int k = 0; k < sub2.length(); k++) {
-				if (sub2.charAt(k) - 'a' == 0) {
-					zeros++;
-				}
-			}
-			if ((zeros + ones) > ans) {
-				ans = zeros + ones;
-			}
+		}
+		if (strs.length == 1) {
+			ans = strs[0];
 		}
 		return ans;
 	}
