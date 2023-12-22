@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {
 	public void run() {
-		String s = "adcdefg";
+		String s = "abcdefg";
 		println(s.substring(1,4));
 	}
 }
