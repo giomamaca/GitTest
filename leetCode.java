@@ -14,12 +14,12 @@ public class leetCode extends ConsoleProgram {
 			String sub1 = s.substring(i, s.length());
 			String sub2 = s.substring(0, i);
 			for (int j = 0; j < sub1.length(); j++) {
-				if (sub1.charAt(j) == 1) {
+				if (sub1.charAt(j) - '0' == 1) {
 					ones++;
 				}
 			}
 			for (int k = 0; k < sub2.length(); k++) {
-				if (sub2.charAt(k) == 0) {
+				if (sub2.charAt(k) - 'a' == 0) {
 					zeros++;
 				}
 			}
