@@ -11,7 +11,7 @@ public class leetCode extends ConsoleProgram {
 		int zeros = 0;
 		int ones = 0;
 		for (int i = 1; i < s.length(); i++) {
-			String sub1 = s.substring(i, s.length() + 1);
+			String sub1 = s.substring(i, s.length());
 			String sub2 = s.substring(0, i);
 			for (int j = 0; j < sub1.length(); j++) {
 				if (sub1.charAt(j) == 1) {
