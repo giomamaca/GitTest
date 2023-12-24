@@ -20,9 +20,9 @@ public class exercise extends ConsoleProgram {
 	        int ans = 1;
 	        while(b >= (k + 1)/2){
 	            int up = fact(b);
-	            System.out.println(up);
+//	            System.out.println(up);
 	            int down1 = fact(a);
-//	            System.out.println(down1);
+	            System.out.println(down1);
 	            int down2 = fact(b - a);
 //	            System.out.println(down2);
 
