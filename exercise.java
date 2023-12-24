@@ -22,16 +22,16 @@ public class exercise extends ConsoleProgram {
 	            int up = fact(b);
 	            System.out.println(up);
 	            int down1 = fact(a);
-	            System.out.println(down1);
+//	            System.out.println(down1);
 	            int down2 = fact(b - a);
-	            System.out.println(down2);
+//	            System.out.println(down2);
 
 	            ans = ans + (up / (down1 * down2));
-	            System.out.println(ans);
+//	            System.out.println(ans);
 	            b -= 1;
-	            System.out.println(b);
+//	            System.out.println(b);
 	            a += 1;
-	            System.out.println(a);
+//	            System.out.println(a);
 	        }
 	        return ans;
 	    }
