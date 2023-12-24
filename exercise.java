@@ -22,12 +22,12 @@ public class exercise extends ConsoleProgram {
 			for (int i = 0; i < s.length() - 2; i++) {
 				for (int j = i + 2; j < s.length() + 1; j++) {
 					String sub = s.substring(i, j);
+					System.out.println(sub);
 					if (different(sub) && ans.length() < sub.length()) {
 						ans = sub;
 					}
 				}
 			}
-			System.out.println(ans);
 			return ans.length();
 		}
 		return 1;
