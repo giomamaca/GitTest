@@ -17,14 +17,13 @@ public class exercise extends ConsoleProgram {
 	    }
 	    private int sum(int a, int b){
 	        int ans = 1;
-	        int up = fact(b);
-	            System.out.println(up);
-	        int down1 = fact(a);
-//	        System.out.println(down1);
-	        int down2 = fact(b - a);
-//	            System.out.println(down2);
 	        while(b >= a){
-
+	        	int up = fact(b);
+	        	System.out.println(up);
+	        	int down1 = fact(a);
+//	        System.out.println(down1);
+	        	int down2 = fact(b - a);
+//	            System.out.println(down2);
 	            ans = ans + (up / (down1 * down2));
 //	            System.out.println(ans);
 	            b -= 1;
