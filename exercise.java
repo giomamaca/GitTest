@@ -19,7 +19,7 @@ public class exercise extends ConsoleProgram {
 			return 2;
 		if (s.length() > 2) {
 			String ans = "";
-			for (int i = 0; i < s.length() - 2; i++) {
+			for (int i = 0; i < s.length() - 1; i++) {
 				for (int j = i + 2; j < s.length() + 1; j++) {
 					String sub = s.substring(i, j);
 					System.out.println(sub);
