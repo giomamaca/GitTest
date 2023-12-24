@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class exercise extends ConsoleProgram {
 	public void run() {
-		String s = "aasdadadad";
+		String s = "aad";
 		metodi(s);
 	}
 
