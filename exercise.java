@@ -38,7 +38,7 @@ public class exercise extends ConsoleProgram {
 	    private int fact(int a){
 	        int ans = 1;
 	        while(a > 0){
-	            ans = ans * a;
+	            ans *= a;
 	            a = a - 1;
 	        }
 	        return ans;
