@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class exercise extends ConsoleProgram {
 	public void run() {
 		String s = "adadada";
-		println(s.substring(0, 3));
+		println(s.substring(0, 1));
 	}
 
 	   private int lengthOfLongestSubstring(String s) {
