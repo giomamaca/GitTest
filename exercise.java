@@ -16,7 +16,6 @@ public class exercise extends ConsoleProgram {
 	        return sum(1, n - 1);
 	    }
 	    private int sum(int a, int b){
-	        int k = b;
 	        int ans = 1;
 	        int up = fact(b);
 	            System.out.println(up);
@@ -24,7 +23,7 @@ public class exercise extends ConsoleProgram {
 //	        System.out.println(down1);
 	        int down2 = fact(b - a);
 //	            System.out.println(down2);
-	        while(b >= (k + 1)/2){
+	        while(b >= a){
 
 	            ans = ans + (up / (down1 * down2));
 //	            System.out.println(ans);
@@ -37,7 +36,7 @@ public class exercise extends ConsoleProgram {
 	    }
 	    private int fact(int a){
 	        int ans = 1;
-	        while(a > 0){
+	        while(a != 0){
 	            ans *= a;
 	            a = a - 1;
 	        }
