@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class exercise extends ConsoleProgram {
 	public void run() {
 		int n = readInt();
-		println(climbStairs(n));
+		println(fact(n));
 	}
 
 	 public int climbStairs(int n) {
@@ -34,7 +34,6 @@ public class exercise extends ConsoleProgram {
 //	        return ans;
 	    }
 	    private int fact(int a){
-	    	a = 5;
 	        int ans = 1;
 	        int count = 0;
 	        while(a != 0){
