@@ -7,6 +7,15 @@ import java.util.Arrays;
 public class exercise extends ConsoleProgram {
 	public void run() {
 		String s = "aasdadadad";
-		println(s.substring(0, s.length()));
+		metodi(s);
+	}
+
+	private void metodi(String s) {
+		for(int i = 0; i < s.length() - 1; i++){
+			for(int j = i + 1; j < s.length(); j++){
+				String sub = s.substring(i, j);
+				println(sub);
+			}
+		}
 	}
 }
