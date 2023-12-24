@@ -12,7 +12,7 @@ public class exercise extends ConsoleProgram {
 
 	private void metodi(String s) {
 		for(int i = 0; i < s.length() - 1; i++){
-			for(int j = i + 1; j < s.length(); j++){
+			for(int j = i + 1; j < s.length() + 1; j++){
 				String sub = s.substring(i, j);
 				println(sub);
 			}
