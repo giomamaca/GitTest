@@ -37,9 +37,9 @@ public class exercise extends ConsoleProgram {
 	        int ans = 1;
 	        int count = 0;
 	        while(a != 0){
-	        	a -= 1;
 	            ans *= a;
 	            System.out.println(ans);
+	            a -= 1;
 	        }
 	        return ans;
 	    }
