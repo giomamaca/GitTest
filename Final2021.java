@@ -19,7 +19,7 @@ public class Final2021 extends ConsoleProgram{
 		String tst = "";
 		int count = 0;
 		int test = 0;
-		int size = s.length();
+		int size = 0;
 		
 		char b = s.charAt(0);
 		char last = s.charAt(s.length());
@@ -33,7 +33,7 @@ public class Final2021 extends ConsoleProgram{
 				b = a;
 			}
 			if(a == last){
-				size--;
+				size++;
 			}
 		}
 		String sub = s.substring(size);
