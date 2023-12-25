@@ -40,16 +40,13 @@ public class Final2021 extends ConsoleProgram{
 		for(int j = 0; j < list.size() - k + 1; j++){
 			for(int p = 0; p < k; p++){
 				String cor = list.get(j + p);
-				count += cor.length();
 				tst += cor;
 			}
-			if(count > test){
-				test = count;
+			if(tst.length() > count){
 				ans = tst;
-			}else{
-				tst = "";
+				count = tst.length();
 			}
-			count = 0;
+			tst = "";
 		}
 		
 		return ans;
