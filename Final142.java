@@ -29,7 +29,6 @@ public class Final142 extends ConsoleProgram {
 					st += a;
 					st = st.toLowerCase();
 				}
-				System.out.println(s);
 				s += st;
 				answer += s;
 			}
