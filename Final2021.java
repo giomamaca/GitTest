@@ -19,22 +19,24 @@ public class Final2021 extends ConsoleProgram{
 		String tst = "";
 		int count = 0;
 		int test = 0;
-		int size = s.length();
+		int size = 0;
 		
 		char b = s.charAt(0);
+		char last = s.charAt(s.length());
 		for(int i = 0; i < s.length() - 1; i++){
 			char a = s.charAt(i);
 			if(a == b){
 				str += a;
-				size--;
 			}else{
 				list.add(str);
 				str = a + "";
 				b = a;
-				size -= 1;
+			}
+			if(a == last){
+				size++;
 			}
 		}
-		String sub = s.substring(size);
+		String sub = s.substring(s.length() - size, s.length() + 1);
 		list.add(sub);
 		System.out.println(list);
 		
