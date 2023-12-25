@@ -33,8 +33,8 @@ public class Final2021 extends ConsoleProgram{
 				b = a;
 			}
 		}
-		System.out.println(list);
 		String sub = s.substring(size1, s.length());
+		System.out.println(list);
 		list.add(sub);
 		
 		for(int j = 0; j < list.size() - k + 1; j++){
