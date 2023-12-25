@@ -31,6 +31,7 @@ public class Final2021 extends ConsoleProgram{
 				list.add(str);
 				str = a + "";
 				b = a;
+				size1++;
 			}
 		}
 		String sub = s.substring(size1);
