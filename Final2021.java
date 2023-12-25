@@ -30,7 +30,7 @@ public class Final2021 extends ConsoleProgram{
 				list.add(str);
 			}
 		}
-		
+		System.out.println(list);
 		for(int j = 0; j < list.size() - k + 1; j++){
 			for(int p = 0; p < k; p++){
 				String cor = list.get(j + p);
