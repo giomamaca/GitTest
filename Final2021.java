@@ -19,27 +19,31 @@ public class Final2021 extends ConsoleProgram{
 		String tst = "";
 		int count = 0;
 		int test = 0;
+		int size1 = 0;
 		
 		char b = s.charAt(0);
 		for(int i = 0; i < s.length() - 1; i++){
 			char a = s.charAt(i);
 			if(a == b){
 				str += a;
+				size1++;
 			}else{
 				list.add(str);
 				str = "";
 				b = a;
 			}
 		}
-		System.out.println(b);
-		System.out.println(list);
+		
+		String sub = s.substring(size1, s.length());
+		list.add(sub);
+		
 		for(int j = 0; j < list.size() - k + 1; j++){
 			for(int p = 0; p < k; p++){
 				String cor = list.get(j + p);
 				count += cor.length();
 				tst += cor;
 			}
-			if(count > test){					
+			if(count > test){
 				test = count;
 				ans = tst;
 			}else{
