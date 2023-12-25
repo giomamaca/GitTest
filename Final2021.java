@@ -22,7 +22,6 @@ public class Final2021 extends ConsoleProgram{
 		int size = 0;
 		
 		char b = s.charAt(0);
-		char last = s.charAt(s.length());
 		for(int i = 0; i < s.length() - 1; i++){
 			char a = s.charAt(i);
 			if(a == b){
