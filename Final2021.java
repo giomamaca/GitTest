@@ -22,7 +22,7 @@ public class Final2021 extends ConsoleProgram{
 		int size = 0;
 		
 		char b = s.charAt(0);
-		for(int i = 0; i < s.length() - 1; i++){
+		for(int i = 0; i < s.length(); i++){
 			char a = s.charAt(i);
 			if(a == b){
 				str += a;
