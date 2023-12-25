@@ -29,7 +29,7 @@ public class Final2021 extends ConsoleProgram{
 				size1++;
 			}else{
 				list.add(str);
-				str = "";
+				str = a + "";
 				b = a;
 			}
 		}
