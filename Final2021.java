@@ -33,13 +33,15 @@ public class Final2021 extends ConsoleProgram{
 			}
 		}
 		char last = s.charAt(s.length() - 1);
-		for(int h = 0; h < s.length(); h++){
+		for(int h = s.length() - 1; h > 0; h--){
 			if(s.charAt(h) == last){
 				size++;
+			}else{
+				last = 0;
 			}
 		}
-//		String sub = s.substring(s.length() - size);
-//		list.add(sub);
+		String sub = s.substring(s.length() - size);
+		list.add(sub);
 		System.out.println(list);
 		
 		for(int j = 0; j < list.size() - k + 1; j++){
