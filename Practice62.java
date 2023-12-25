@@ -3,8 +3,8 @@ import java.util.HashMap;
 
 import acm.program.ConsoleProgram;
 
-public class Practice62 extends ConsoleProgram{
-	public void run(){
+public class Practice62 extends ConsoleProgram{	
+	public void run2(){
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		
 		while(true){
