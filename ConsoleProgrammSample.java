@@ -21,5 +21,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	        // mapping for the key is not present in HashMap
 	        String value2 = numbers.getOrDefault(4, "Not Found");
 	        System.out.println("Value for key 4: " + value2);
+	        
+	  
 	}
 }
