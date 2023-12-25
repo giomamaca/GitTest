@@ -26,6 +26,7 @@ public class Final2021 extends ConsoleProgram{
 			if(a == b){
 				str += a;
 			}else{
+				str = "";
 				b = a;
 				list.add(str);
 			}
