@@ -31,6 +31,7 @@ public class Final2021 extends ConsoleProgram{
 				b = a;
 			}
 		}
+		System.out.println(b);
 		System.out.println(list);
 		for(int j = 0; j < list.size() - k + 1; j++){
 			for(int p = 0; p < k; p++){
