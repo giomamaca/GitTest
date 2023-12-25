@@ -32,7 +32,7 @@ public class Final2021 extends ConsoleProgram{
 				b = a;
 			}
 		}
-		char last = s.charAt(s.length());
+		char last = s.charAt(s.length() - 1);
 		for(int h = 0; h < s.length(); h++){
 			if(s.charAt(h) == last){
 				size++;
