@@ -7,10 +7,16 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		String s = "adda";
-		String sub1 = s.substring(0, s.length() / 2);
-		String sub2 = s.substring(s.length() / 2);
-		println(sub1);
-		println(sub2);
+		int[] prices = {1,4,6,7,84,3,2,4,79,5,3,2,2,345};
+		println(maxProfit(prices));
+	}
+
+	public int maxProfit(int[] prices) {
+		int ans = 0, mi = prices[0];
+		for (int v : prices) {
+			ans = Math.max(ans, v - mi);
+			mi = Math.min(mi, v);
+		}
+		return ans;
 	}
 }
