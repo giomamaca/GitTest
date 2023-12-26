@@ -15,9 +15,9 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		int ans = 0, mi = prices[0];
 		for (int v : prices) {
 			ans = Math.max(ans, v - mi);
-			System.out.println(ans);
+			System.out.println("ans: " + ans);
 			mi = Math.min(mi, v);
-			System.out.println(mi);
+			System.out.println("mi: " + mi);
 		}
 		return ans;
 	}
