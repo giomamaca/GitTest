@@ -1,6 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.StringTokenizer;
 
 import javax.swing.JButton;
@@ -12,19 +13,12 @@ import acm.graphics.GRect;
 import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
-	
 	public void run() {
-		String s = readLine();
-		println(lengthOfLastWord(s));
+		HashSet<Integer> s =new HashSet<Integer>();
+		int[] num = {1, 3, 7, 9, 1, 3, 4};
+		for(int i : num){
+			s.add(i);
+		}
+		println(s);
 	}
-	public int lengthOfLastWord(String s) {
-        StringTokenizer tk = new StringTokenizer(s, " ");
-        ArrayList <String> list = new ArrayList <String>();
-
-        while(tk.hasMoreTokens()){
-            String str = tk.nextToken();
-            list.add(str);
-        }
-        return list.get(list.size() - 1).length();
-    }
 }
