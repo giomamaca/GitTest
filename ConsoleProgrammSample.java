@@ -21,6 +21,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 				s[i][j] = "a";
 			}
 		}
-		println(s + "");
+		System.out.println(s);
 	}
 }
