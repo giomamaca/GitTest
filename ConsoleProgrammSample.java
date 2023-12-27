@@ -20,7 +20,12 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		map.put("gio", 2);
 		map.put("sofo", 3);
+		map.put("nino", 4);
+		map.put("nika", 5);
 		
-		println(map.get("gio"));
+		for(int i = 0; i < map.size(); i++){
+			println(map.get(i));
+		}
+		
 	}
 }
