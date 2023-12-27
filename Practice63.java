@@ -1,28 +1,38 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
 import acm.program.ConsoleProgram;
 
 public class Practice63 extends ConsoleProgram {
-	public void run() {
-		Map<String, Integer> map = new HashMap<>();
-		while (true) {
-			String name = readLine("Enter name: ");
-			if (name.equals("")) {
+	public void run1() {
+		HashMap <String, Set<String>> map = new HashMap <String, Set<String>>();
+		
+		while(true){
+			String s = readLine();
+			if(map.isEmpty()){
 				break;
 			}
-			if (!map.containsKey(name)) {
-				map.put(name, 0);
+			StringTokenizer tok = new StringTokenizer(s);
+			String a = tok.nextToken();
+			String b = tok.nextToken();
+			map.putIfAbsent(b, new HashSet<String>());
+			map.get(b).add(a);
+		}
+		String name = null;
+		println(map);
+		int ans = 0;
+		for(String friend : map.keySet()){
+			int amount = map.get(friend).size();
+			if(amount > ans){
+				ans = amount;
+				name = friend;
 			}
-			map.put(name, map.get(name) + 1);
 		}
-		for(String name : map.keySet()){
-			println(name + " - " + map.get(name));
-		}
+		println(name);
+		println(map);
 	}
 	
 	
@@ -33,7 +43,7 @@ public class Practice63 extends ConsoleProgram {
 	
 	
 	
-	private void run1(){
+	private void run(){
 		ArrayList<String> list = new ArrayList<String>();
 		String s = readLine();
 		list.add(s);
