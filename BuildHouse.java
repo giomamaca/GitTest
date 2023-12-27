@@ -88,11 +88,11 @@ public class BuildHouse extends GraphicsProgram {
 		 add(line);
 	}
 
-	static void drawWall() {
+	private void drawWall() {
 		GRect wall = new GRect (HOUSE_HEIGHT, HOUSE_WIDTH);
-		double x =  100;
-		double y =  200;
+		double x = getWidth() / 2 - 100;
+		double y = getHeight() / 2;
 		
-		
+		add(wall, x, y);
 	}
 }
