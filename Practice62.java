@@ -13,7 +13,7 @@ public class Practice62 extends ConsoleProgram{
 				break;
 			}
 			
-			map.put(name, map.getOrDefault(name, 0));
+			map.put(name, map.get(name) + 1);
 		}
 		println(map);
 	}
