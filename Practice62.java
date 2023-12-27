@@ -13,10 +13,9 @@ public class Practice62 extends ConsoleProgram{
 				break;
 			}
 			
-			map.put(name, map.getOrDefault(name, 0) + 1);
+			map.put(name, map.getOrDefault(name, 0));
 		}
-		println(map.getOrDefault("gio", 0));
-//		println(map);
+		println(map);
 	}
 		
 	private void run1(){
