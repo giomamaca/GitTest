@@ -14,12 +14,17 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 	
 	public void run() {
-		HashMap<String, Integer> map = new HashMap<String, Integer>();
-		map.put("gio", 2);
-		map.put("sofo", 3);
-		map.put("nino", 4);
-		map.put("nika", 5);
-		
-		println(map.keySet());
+		String s = readLine();
+		println(lengthOfLastWord(s));
 	}
+	public int lengthOfLastWord(String s) {
+        StringTokenizer tk = new StringTokenizer(s, " ");
+        ArrayList <String> list = new ArrayList <String>();
+
+        while(tk.hasMoreTokens()){
+            String str = tk.nextToken();
+            list.add(str);
+        }
+        return list.get(list.size() - 1).length();
+    }
 }
