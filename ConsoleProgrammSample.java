@@ -29,7 +29,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
     private static void printStringMatrix(int[][] s) {
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s[0].length; j++) {
-                System.out.print(i + " ");
+                System.out.print(j + " ");
             }
             System.out.println();
         }
