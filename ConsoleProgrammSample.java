@@ -14,7 +14,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private JButton but;
 	
 	public void run() {
-		text = new JTextField(10);
+		text = new JTextField(100);
 		add(text, SOUTH);
 	}
 }
