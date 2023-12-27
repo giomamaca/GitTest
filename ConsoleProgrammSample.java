@@ -15,16 +15,12 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		 final int[][] matrix = {
-		         { 1, 2, 3 },
-		         { 4, 5, 6 },
-		         { 7, 8, 9 }
-		      };
-		      for (int i = 0; i < matrix.length; i++) { //this equals to the row in our matrix.
-		         for (int j = 0; j < matrix[i].length; j++) { //this equals to the column in each row.
-		            System.out.print(matrix[i][j] + " ");
-		         }
-		         System.out.println(); //change line on console as row comes to end in the matrix.
-		      }
+		String[][] s = new String[3][4];
+		for(int i = 0; i < s.length; i++){
+			for(int j = 0; j < s[i].length; j++){
+				s[i][j] = "a";
+			}
+		}
+		System.out.println(s);
 	}
 }
