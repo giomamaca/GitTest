@@ -17,11 +17,11 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		int[][] s = new int[3][4];
 		
-//		for(int i = 0; i < s.length; i++){
-//			for(int j = 0; j < s[0].length; j++){
-//				s[i][j] = j;
-//			}
-//		}
+		for(int i = 0; i < s.length; i++){
+			for(int j = 0; j < s[0].length; j++){
+				s[i][j] = j;
+			}
+		}
 		printStringMatrix(s);
     }
 
