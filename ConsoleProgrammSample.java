@@ -29,8 +29,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void actionPerformed(ActionEvent e) {
 		if(text.getText().equals("BuildHouse")){
-			GRect rect = new GRect(100, 100);
-			add(null, null, rect);
+			println("correct");
+			
 		}
 	}
 }
