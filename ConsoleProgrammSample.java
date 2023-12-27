@@ -16,10 +16,10 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private JButton but;
 	
 	public void run() {
-		JLabel lab = new JLabel("text: ");
-		add(lab, SOUTH);
-//		text = new JTextField(10);
-//		add(text, SOUTH);
+//		JLabel lab = new JLabel("text: ");
+//		add(lab, SOUTH);
+		text = new JTextField(10);
+		add(text, SOUTH);
 		but = new JButton("ender");
 		add(but, SOUTH);
 		
