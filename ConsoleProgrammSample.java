@@ -22,6 +22,16 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 				s[i][j] = j;
 			}
 		}
-		print(s);
-	}
+		printStringMatrix(s);
+    }
+
+    // Helper method to print a matrix of strings
+    private static void printStringMatrix(int[][] s) {
+        for (String[] row : s) {
+            for (String element : row) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
+    }
 }
