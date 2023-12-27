@@ -27,8 +27,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 
     // Helper method to print a matrix of strings
     private static void printStringMatrix(int[][] s) {
-        for (String[] row : s) {
-            for (String element : row) {
+        for (int[] row : s) {
+            for (int element : row) {
                 System.out.print(element + " ");
             }
             System.out.println();
