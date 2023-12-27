@@ -4,7 +4,7 @@ import java.util.HashMap;
 import acm.program.ConsoleProgram;
 
 public class Practice62 extends ConsoleProgram{	
-	public void run2(){
+	public void run(){
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		
 		while(true){
