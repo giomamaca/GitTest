@@ -17,21 +17,10 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	private JButton but;
 	
 	public void run() {
-		JLabel lab = new JLabel("text: ");
-		add(lab, SOUTH);
-		text = new JTextField(10);
-		add(text, SOUTH);
-		but = new JButton("ender");
-		add(but, SOUTH);
-		text.addActionListener(this);
-		addActionListeners();
-	}
-
-	public void actionPerformed(ActionEvent e) {
-		if(text.getText().equals("BuildHouse")){
-			println("correct");
-		}else{
-			println("not correct");
-		}
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		map.put("gio", 2);
+		map.put("sofo", 3);
+		
+		println(map.get(1));
 	}
 }
