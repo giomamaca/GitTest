@@ -23,10 +23,13 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		but = new JButton("ender");
 		add(but, SOUTH);
 		text.addActionListener(this);
-		
+		addActionListeners();
 	}
 
 	private void actionPerformed(ActionEvent e) {
-		
+		if(text.getText().length() > 0){
+			println(text.getText());
+			text.setText("");
+		}
 	}
 }
