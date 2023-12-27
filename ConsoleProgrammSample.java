@@ -26,7 +26,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		addActionListeners();
 	}
 
-	private void actionPerformed(ActionEvent e) {
+	public void actionPerformed(ActionEvent e) {
 		if(text.getText().length() > 0){
 			println(text.getText());
 			text.setText("");
