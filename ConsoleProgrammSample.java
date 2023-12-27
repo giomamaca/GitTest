@@ -15,12 +15,7 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		String[][] s = new String[3][4];
-		for(int i = 0; i < s.length; i++){
-			for(int j = 0; j < s[i].length; j++){
-				s[i][j] = "a";
-			}
-		}
-		System.out.println(s);
+		String[][] s = {{"a","b"},{"c","d"},{"d"}};
+		println(s);
 	}
 }
