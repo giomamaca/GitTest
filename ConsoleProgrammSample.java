@@ -13,9 +13,6 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	
-	private JTextField text;
-	private JButton but;
-	
 	public void run() {
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		map.put("gio", 2);
@@ -23,9 +20,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		map.put("nino", 4);
 		map.put("nika", 5);
 		
-		for(int i = 0; i < map.size(); i++){
-			println(map.get(i));
-		}
-		
+		println(map.keySet());
 	}
 }
