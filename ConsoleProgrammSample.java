@@ -30,7 +30,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public void actionPerformed(ActionEvent e) {
 		if(text.getText().equals("BuildHouse")){
 			println("correct");
-			
+		}else{
+			println("not correct");
 		}
 	}
 }
