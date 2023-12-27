@@ -14,10 +14,11 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		HashSet<Integer> s =new HashSet<Integer>();
-		int[] num = {1, 3, 7, 9, 1, 3, 4};
-		for(int i : num){
-			s.add(i);
+		String[][] s = new String[3][4];
+		for(int i = 0; i < s.length; i++){
+			for(int j = 0; j < s[0].length; j++){
+				s[i][j] = "a";
+			}
 		}
 		println(s);
 	}
