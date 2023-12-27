@@ -27,9 +27,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if(text.getText().length() > 0){
-			println(text.getText());
-			text.setText("");
+		if(text.getText().equals("BuildHouse")){
+			BuildHouse.drawWall();
 		}
 	}
 }
