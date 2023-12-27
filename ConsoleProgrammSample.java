@@ -18,8 +18,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		JLabel lab = new JLabel("text: ");
 		add(lab, SOUTH);
-		text = new JTextField(10);
-		add(text, SOUTH);
+//		text = new JTextField(10);
+//		add(text, SOUTH);
 		but = new JButton("ender");
 		add(but, SOUTH);
 		
