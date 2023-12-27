@@ -15,7 +15,7 @@ import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
-		int[][] s = new int[5][4];
+		int[][] s = new int[3][4];
 		
 		for(int i = 0; i < s.length; i++){
 			for(int j = 0; j < s[0].length; j++){
@@ -31,7 +31,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
             for (int j = 0; j < s[0].length; j++) {
                 System.out.print(j + " ");
             }
-            System.out.println();
+           
         }
     }
 }
