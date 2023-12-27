@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
+
 import acm.graphics.GOval;
 import acm.graphics.GRect;
 import acm.program.*;
@@ -20,6 +21,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 				s[i][j] = "a";
 			}
 		}
-		println(s);
+		println(s + "");
 	}
 }
