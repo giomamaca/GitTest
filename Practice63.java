@@ -43,7 +43,7 @@ public class Practice63 extends ConsoleProgram {
 	
 	
 	
-	private void run(){
+	public void run(){
 		ArrayList<String> list = new ArrayList<String>();
 		String s = readLine();
 		list.add(s);
