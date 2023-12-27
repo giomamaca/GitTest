@@ -21,6 +21,6 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 		map.put("gio", 2);
 		map.put("sofo", 3);
 		
-		println(map.get(0));
+		println(map.get("gio"));
 	}
 }
