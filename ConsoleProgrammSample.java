@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import acm.graphics.GOval;
+import acm.graphics.GRect;
 import acm.program.*;
 
 public class ConsoleProgrammSample extends ConsoleProgram {
@@ -28,7 +29,8 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 
 	public void actionPerformed(ActionEvent e) {
 		if(text.getText().equals("BuildHouse")){
-			BuildHouse.drawWall();
+			GRect rect = new GRect(100, 100);
+			add(null, null, rect);
 		}
 	}
 }
