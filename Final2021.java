@@ -42,7 +42,6 @@ public class Final2021 extends ConsoleProgram{
 		}
 		String sub = s.substring(s.length() - size);
 		list.add(sub);
-		System.out.println(list);
 		
 		for(int j = 0; j < list.size() - k + 1; j++){
 			for(int p = 0; p < k; p++){
