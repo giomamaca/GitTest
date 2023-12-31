@@ -16,19 +16,16 @@ import acm.program.*;
 public class ConsoleProgrammSample extends ConsoleProgram {
 	public void run() {
 		double a = Math.sqrt(12);
-		
+		println(a);
 		println(mySqrt(a));
 	}
 
 	// Helper method to print a matrix of strings
 	public int mySqrt(double a) {
 		int n = 0;
-		for (int i = 0; true; i++) {
-			if ((n * n) <= a) {
-				n++;
-			}else{
-				return n;
-			}
+		while((n * n) <= a) {
+			n++;
 		}
+		return n;
 	}
 }
