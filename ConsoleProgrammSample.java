@@ -24,7 +24,7 @@ public class ConsoleProgrammSample extends ConsoleProgram {
 	public int mySqrt(double a) {
 		int n = 0;
 		for (int i = 0; true; i++) {
-			if ((n * n) < a) {
+			if ((n * n) <= a) {
 				n++;
 			}else{
 				return n;
