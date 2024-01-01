@@ -21,8 +21,9 @@ public class Practice64 extends ConsoleProgram {
 				if(c % 2 == 0){
 					list.add(str);
 				}else{					
-					map.put(save, list);
+					map.put(str, list);
 				}
+				c++;
 			}
 			println(map);
 		}
