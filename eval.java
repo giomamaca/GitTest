@@ -13,6 +13,7 @@ public class eval extends ConsoleProgram{
 	private int angarishi(String s) {
 		StringTokenizer tok = new StringTokenizer(s, " ");
 		int i = Integer.parseInt(tok.nextToken()); 
+		System.out.println(i);
 		
 		while(tok.hasMoreTokens()){
 			String a = tok.nextToken();
