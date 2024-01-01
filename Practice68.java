@@ -9,10 +9,10 @@ public class Practice68 extends ConsoleProgram{
 	private JButton enter;
 	private JTextField text;
 	public void run(){
-		enter = new JButton("enter");
-		add(enter, SOUTH);
 		text = new JTextField(10);
 		add(text, SOUTH);
+		enter = new JButton("enter");
+		add(enter, SOUTH);
 		text.addActionListener(this);
 		addActionListeners();
 	}
