@@ -4,7 +4,7 @@ import acm.util.RandomGenerator;
 public class Practice59 extends ConsoleProgram {
 	RandomGenerator rgen = new RandomGenerator();
 	public void run() {
-		int[][] m = new int[4][4];
+		int[][] m = new int[6][6];
 		fillRandomMatrixWithOnesAndZeroes(m);
 		printMatrix(m);
 		println();
