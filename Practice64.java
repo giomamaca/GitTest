@@ -15,7 +15,7 @@ public class Practice64 extends ConsoleProgram{
 			
 			StringTokenizer tk = new StringTokenizer(s, " ");
 			String str = tk.nextToken();
-			if(c % 2 == 1){
+			if(c % 2 == 0){
 				list.add(str);
 			}
 			c++;
