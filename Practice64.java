@@ -18,7 +18,7 @@ public class Practice64 extends ConsoleProgram {
 			int c = 0;
 			while (tk.hasMoreTokens()) {
 				String str = tk.nextToken();
-				println(tk.nextToken());
+				println(str);
 				map.put(save, list);
 			}
 		}
