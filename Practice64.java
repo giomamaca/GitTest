@@ -15,12 +15,10 @@ public class Practice64 extends ConsoleProgram{
 			
 			StringTokenizer tk = new StringTokenizer(s, " ");
 			String str = tk.nextToken();
-			if(c % 2 == 0){
+			if(c % 2 == 1){
 				list.add(str);
 			}
-			c++;
 			map.put(str, list);
-			println(map);
 		}
 	}
 }
