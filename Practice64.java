@@ -5,6 +5,7 @@ import java.util.StringTokenizer;
 import acm.program.ConsoleProgram;
 
 public class Practice64 extends ConsoleProgram{
+	private String save;
 	public void run(){
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		
@@ -15,10 +16,14 @@ public class Practice64 extends ConsoleProgram{
 			
 			StringTokenizer tk = new StringTokenizer(s, " ");
 			String str = tk.nextToken();
+			if(c % 2 == 0){
+				save = str;
+			}
 			if(c % 2 == 1){
 				list.add(str);
 			}
-			map.put(str, list);
+			c++;
+			map.put(save, list);
 			System.out.println(map);
 		}
 	}
