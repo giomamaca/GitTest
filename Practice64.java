@@ -19,6 +19,7 @@ public class Practice64 extends ConsoleProgram{
 				list.add(str);
 			}
 			map.put(str, list);
+			System.out.println(map);
 		}
 	}
 }
