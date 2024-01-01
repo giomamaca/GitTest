@@ -19,7 +19,7 @@ public class Practice59 extends ConsoleProgram {
 				}
 			}
 		}
-		println("max is: " + fullMax);
+		println("max is: " + full);
 	}
 	private int checkMatrix(int[][]mat, int i, int j, int k, int l) {
 		int max = -1;
