@@ -20,6 +20,7 @@ public class Practice64 extends ConsoleProgram{
 			}
 			c++;
 			map.put(str, list);
+			println(map);
 		}
 	}
 }
