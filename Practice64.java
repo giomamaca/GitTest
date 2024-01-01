@@ -23,6 +23,7 @@ public class Practice64 extends ConsoleProgram{
 				list.add(str);
 			}
 			c++;
+			System.out.println(c);
 			map.put(save, list);
 			System.out.println(map);
 		}
