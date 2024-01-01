@@ -29,6 +29,8 @@ public class Practice65 extends ConsoleProgram{
 				}
 				c++;
 			}
+			String ans = "";
+			
 			println(map);
 		}
 	}
