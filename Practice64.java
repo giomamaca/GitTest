@@ -14,7 +14,7 @@ public class Practice64 extends ConsoleProgram{
 			ArrayList<String> list = new ArrayList<String>();
 			String s = readLine();
 			
-			StringTokenizer tk = new StringTokenizer(s, " ");
+			StringTokenizer tk = new StringTokenizer(s);
 			String str = tk.nextToken();
 			System.out.println(str);
 //			map.put(save, list);
