@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 import acm.program.ConsoleProgram;
 
 public class Practice64 extends ConsoleProgram{
-	private String save;
+	private String save = "";
 	public void run(){
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		
