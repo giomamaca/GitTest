@@ -15,6 +15,8 @@ public class Practice65 extends ConsoleProgram{
 
 			StringTokenizer tk = new StringTokenizer(s);
 			int c = 0;
+			String ans = "";
+			int max = 0;
 			while (tk.hasMoreTokens()) {
 				String str = tk.nextToken();
 				if(c % 2 == 0){
@@ -23,15 +25,17 @@ public class Practice65 extends ConsoleProgram{
 				}else{					
 					if(map.containsKey(str)){
 						map.get(str).add(save);
+						if(map.get(str).size() > max){
+							max = map.get(str).size();
+							ans = str;
+						}
 					}else{						
 						map.put(str, list);
 					}
 				}
 				c++;
 			}
-			String ans = "";
 			
-			println(map);
 		}
 	}
 }
