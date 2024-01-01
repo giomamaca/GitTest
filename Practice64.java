@@ -16,6 +16,7 @@ public class Practice64 extends ConsoleProgram{
 			
 			StringTokenizer tk = new StringTokenizer(s);
 			String str = tk.nextToken();
+			println(str);
 //			map.put(save, list);
 //			System.out.println(map);
 		}
