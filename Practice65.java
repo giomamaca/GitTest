@@ -35,7 +35,7 @@ public class Practice65 extends ConsoleProgram{
 				}
 				c++;
 			}
-			
+			println(ans);
 		}
 	}
 }
