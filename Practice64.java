@@ -4,21 +4,23 @@ import java.util.StringTokenizer;
 
 import acm.program.ConsoleProgram;
 
-public class Practice64 extends ConsoleProgram{
+public class Practice64 extends ConsoleProgram {
 	private String save;
-	public void run(){
+
+	public void run() {
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
-		
-		while(true){
-			int c = 0;
+
+		while (true) {
 			ArrayList<String> list = new ArrayList<String>();
 			String s = readLine();
-			
+
 			StringTokenizer tk = new StringTokenizer(s);
-			String str = tk.nextToken();
-			println(tk.nextToken());
-//			map.put(save, list);
-//			System.out.println(map);
+			int c = 0;
+			while (tk.hasMoreTokens()) {
+				String str = tk.nextToken();
+				println(tk.nextToken());
+				map.put(save, list);
+			}
 		}
 	}
 }
