@@ -20,8 +20,13 @@ public class Practice64 extends ConsoleProgram {
 				String str = tk.nextToken();
 				if(c % 2 == 0){
 					list.add(str);
+					save = str;
 				}else{					
-					map.put(str, list);
+					if(map.containsKey(str)){
+						map.get(str).add(save);
+					}else{						
+						map.put(str, list);
+					}
 				}
 				c++;
 			}
