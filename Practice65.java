@@ -8,7 +8,6 @@ public class Practice65 extends ConsoleProgram{
 	private String save;
 	public void run(){
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
-
 		while (true) {
 			ArrayList<String> list = new ArrayList<String>();
 			String s = readLine();
@@ -28,6 +27,7 @@ public class Practice65 extends ConsoleProgram{
 						if(map.get(str).size() > max){
 							max = map.get(str).size();
 							ans = str;
+							println(ans);
 						}
 					}else{						
 						map.put(str, list);
@@ -35,7 +35,6 @@ public class Practice65 extends ConsoleProgram{
 				}
 				c++;
 			}
-			println(ans);
 		}
 	}
 }
