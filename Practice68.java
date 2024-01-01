@@ -16,8 +16,9 @@ public class Practice68 extends ConsoleProgram{
 		text.addActionListener(this);
 		addActionListeners();
 	}
-	public void ActionListener(ActionEvent e){
-		if(text.getText().length() > 0){
+
+	public void actionPerformed(ActionEvent e) {
+		if (text.getText().length() > 0) {
 			println(text.getText());
 			text.setText("");
 		}
