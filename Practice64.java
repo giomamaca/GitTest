@@ -9,10 +9,17 @@ public class Practice64 extends ConsoleProgram{
 		HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
 		
 		while(true){
+			int c = 1;
+			ArrayList<String> list = new ArrayList<String>();
 			String s = readLine();
 			
 			StringTokenizer tk = new StringTokenizer(s, " ");
 			String str = tk.nextToken();
+			if(c % 2 == 1){
+				list.add(str);
+			}
+			c++;
+			map.put(str, list);
 		}
 	}
 }
